@@ -1,0 +1,1926 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-20T20:41:50Z",
+  "catalogRevision": 5,
+  "recipes": [
+    {
+      "schemaVersion": 1,
+      "sourceId": "anzmanga_com",
+      "name": "AnzManga",
+      "baseUrl": "https://www.anzmanga25.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MANGA_READER_CMS",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://www.anzmanga25.com/"
+      },
+      "selectors": {
+        "listSelector": "div.media, div.col-sm-6",
+        "titleSelector": "h5.media-heading a, h4.media-heading a",
+        "linkSelector": "h5.media-heading a, h4.media-heading a",
+        "chapterSelector": "ul.chapters li a",
+        "pageImgSelector": "div#all img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://www.anzmanga25.com/"
+        }
+      ],
+      "mirrors": [
+        "https://www.anzmanga25.com"
+      ],
+      "upstreamSourceId": 7374498796507972405,
+      "upstreamExtVersionCode": 106002,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "arenascan_com",
+      "name": "Arena Scans",
+      "baseUrl": "https://arenascan.com",
+      "lang": "en",
+      "version": 1,
+      "preset": "MANGA_THEMESIA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "div.listupd div.bsx",
+        "titleSelector": "div.tt",
+        "linkSelector": "a",
+        "chapterSelector": "div#chapterlist ul li a",
+        "pageImgSelector": "div#readerarea img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "css_select",
+          "selector": "div.listupd div.bsx",
+          "attribute": "innerHTML",
+          "takeFirst": false
+        },
+        {
+          "op": "trim_normalize",
+          "collapseWhitespace": true
+        },
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://arenascan.com/"
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "asialotus_com",
+      "name": "Asia Lotus",
+      "baseUrl": "https://asialotuss.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MANGA_THEMESIA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://asialotuss.com/"
+      },
+      "selectors": {
+        "listSelector": "div.listupd div.bsx a, div.bsx a",
+        "titleSelector": "div.tt",
+        "linkSelector": "a",
+        "chapterSelector": "div#chapterlist ul li a",
+        "pageImgSelector": "div#readerarea img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://asialotuss.com/"
+        }
+      ],
+      "mirrors": [
+        "https://asialotuss.com"
+      ],
+      "upstreamSourceId": 3655128076360662290,
+      "upstreamExtVersionCode": 106003,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "barmanga_com",
+      "name": "BarManga",
+      "baseUrl": "https://archiviumbar.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://archiviumbar.com/"
+      },
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "h3.h5 a, div.post-title a",
+        "linkSelector": "h3.h5 a, div.post-title a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img, div.page-break img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://archiviumbar.com/"
+        }
+      ],
+      "mirrors": [
+        "https://archiviumbar.com"
+      ],
+      "upstreamSourceId": 404674447362480247,
+      "upstreamExtVersionCode": 106072,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "begatranslation_com",
+      "name": "Bega Translation",
+      "baseUrl": "https://begatranslation.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": true,
+      "headers": {
+        "Referer": "https://begatranslation.com/"
+      },
+      "mirrors": [
+        "https://begatranslation.com"
+      ],
+      "upstreamSourceId": 6757330205319558057,
+      "upstreamRepo": "Keiyoushi",
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "h3.h5 a, div.post-title a",
+        "linkSelector": "h3.h5 a, div.post-title a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img, div.page-break img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://begatranslation.com/"
+        }
+      ],
+      "upstreamExtVersionCode": 106063
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "bloomscans_com",
+      "name": "Bloom Scans",
+      "baseUrl": "https://bloomscans.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MANGA_THEMESIA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/series",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://bloomscans.com/"
+      },
+      "selectors": {
+        "listSelector": "div.listupd div.bsx a, div.bsx a",
+        "titleSelector": "div.tt",
+        "linkSelector": "a",
+        "chapterSelector": "div#chapterlist ul li a",
+        "pageImgSelector": "div#readerarea img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://bloomscans.com/"
+        }
+      ],
+      "mirrors": [
+        "https://bloomscans.com"
+      ],
+      "upstreamSourceId": 2598725055968738551,
+      "upstreamExtVersionCode": 106005,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "bokugentranslation_com",
+      "name": "BokugenTranslation",
+      "baseUrl": "https://bokugents.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MANGA_THEMESIA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://bokugents.com/"
+      },
+      "selectors": {
+        "listSelector": "div.listupd div.bsx a, div.bsx a",
+        "titleSelector": "div.tt",
+        "linkSelector": "a",
+        "chapterSelector": "div#chapterlist ul li a",
+        "pageImgSelector": "div#readerarea img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://bokugents.com/"
+        }
+      ],
+      "mirrors": [
+        "https://bokugents.com"
+      ],
+      "upstreamSourceId": 1598762687295904337,
+      "upstreamExtVersionCode": 106020,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "bymichiscan_com",
+      "name": "Bymichi Scan",
+      "baseUrl": "https://bymichiby.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MANGA_THEMESIA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://bymichiby.com/"
+      },
+      "selectors": {
+        "listSelector": "div.listupd div.bsx a, div.bsx a",
+        "titleSelector": "div.tt",
+        "linkSelector": "a",
+        "chapterSelector": "div#chapterlist ul li a",
+        "pageImgSelector": "div#readerarea img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://bymichiby.com/"
+        }
+      ],
+      "mirrors": [
+        "https://bymichiby.com"
+      ],
+      "upstreamSourceId": 4436777272781358384,
+      "upstreamExtVersionCode": 106003,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "cerberusseries_com",
+      "name": "Cerberus Series",
+      "baseUrl": "https://legionscans.com/wp",
+      "lang": "es",
+      "version": 1,
+      "versionId": 2,
+      "preset": "MANGA_THEMESIA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://legionscans.com/wp/"
+      },
+      "selectors": {
+        "listSelector": "div.listupd div.bsx a, div.bsx a",
+        "titleSelector": "div.tt",
+        "linkSelector": "a",
+        "chapterSelector": "div#chapterlist ul li a",
+        "pageImgSelector": "div#readerarea img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://legionscans.com/wp/"
+        }
+      ],
+      "mirrors": [
+        "https://legionscans.com/wp"
+      ],
+      "upstreamSourceId": 1814471239661920836,
+      "upstreamExtVersionCode": 106003,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "emperorscan_es",
+      "name": "Emperor Scan",
+      "baseUrl": "https://imperiomanhwa.com",
+      "lang": "es",
+      "version": 2,
+      "preset": "CSS_GENERIC",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "div.bsx, div.page-item-detail",
+        "titleSelector": "div.tt, h3.h5 a",
+        "linkSelector": "a",
+        "chapterSelector": "div#chapterlist ul li a, li.wp-manga-chapter a",
+        "pageImgSelector": "div#readerarea img, div.reading-content img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "css_select",
+          "selector": "div.bsx, div.page-item-detail",
+          "attribute": "innerHTML",
+          "takeFirst": false
+        },
+        {
+          "op": "trim_normalize",
+          "collapseWhitespace": true
+        },
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://imperiomanhwa.com/"
+        }
+      ],
+      "upstreamSourceId": 4562754350961964148,
+      "upstreamRepo": "keiyoushi/extensions-source",
+      "mirrors": [
+        "https://imperiomanhwa.com"
+      ],
+      "upstreamExtVersionCode": 106075
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "es.apollcomics",
+      "name": "ApollComics",
+      "baseUrl": "https://apollcomics.es",
+      "lang": "es",
+      "version": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "catalogPath": "/manga",
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "h3.h5 a, div.post-title a",
+        "linkSelector": "h3.h5 a, div.post-title a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img.wp-manga-chapter-img, div.reading-content img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "css_select",
+          "selector": "div.page-item-detail",
+          "attribute": "innerHTML",
+          "takeFirst": false
+        },
+        {
+          "op": "trim_normalize",
+          "collapseWhitespace": true
+        }
+      ],
+      "upstreamSourceId": 3044113561993269522,
+      "upstreamRepo": "keiyoushi/extensions-source",
+      "mirrors": [
+        "https://apollcomics.es"
+      ],
+      "upstreamExtVersionCode": 106063
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "es.capibaratraductor",
+      "name": "CapibaraTraductor",
+      "baseUrl": "https://capibaratraductor.com",
+      "lang": "es",
+      "version": 1,
+      "preset": "JSON_API",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "$.data[*]"
+      },
+      "pipelineSteps": [
+        {
+          "op": "json_path",
+          "expression": "$.data.items[*].title"
+        },
+        {
+          "op": "trim_normalize",
+          "collapseWhitespace": true
+        }
+      ],
+      "upstreamSourceId": 3335229490349802396,
+      "upstreamRepo": "keiyoushi/extensions-source",
+      "mirrors": [
+        "https://capibaratraductor.com"
+      ],
+      "upstreamExtVersionCode": 106005
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "es.dragontranslation",
+      "name": "DragonTranslation.org",
+      "baseUrl": "https://dragontranslation.org",
+      "lang": "es",
+      "version": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "catalogPath": "/manga",
+      "useHomeFallback": true,
+      "requiresWebViewCapture": true,
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "div#mkAgrid a[href*='/manga/'], div.agrid a[href*='/manga/'], div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "div.m3ae409d, h3.h5 a, div.post-title a, .g-title, .gcard-title",
+        "linkSelector": "a[href*='/manga/'], h3.h5 a, div.post-title a, a.gcard",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img.wp-manga-chapter-img, div.reading-content img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "css_select",
+          "selector": "div.page-item-detail",
+          "attribute": "innerHTML"
+        },
+        {
+          "op": "trim_normalize",
+          "collapseWhitespace": true
+        }
+      ],
+      "upstreamSourceId": 4647982373411241498,
+      "upstreamRepo": "keiyoushi/extensions-source",
+      "mirrors": [
+        "https://dragontranslation.org"
+      ],
+      "upstreamExtVersionCode": 106068
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "es.heavenmanga",
+      "name": "HeavenManga",
+      "baseUrl": "https://heavenmanga.com",
+      "lang": "es",
+      "version": 2,
+      "preset": "MANGA_READER_CMS",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "div.tab-summary div.post-title a, a[href*='/manga/']",
+        "titleSelector": "h4 a, h3 a",
+        "linkSelector": "a[href*='/manga/']",
+        "chapterSelector": "$.data[*].id",
+        "pageImgSelector": "script:containsData(imgURL), div#all img"
+      },
+      "requiresWebViewCapture": false,
+      "pipelineSteps": [
+        {
+          "op": "css_select",
+          "selector": "script:containsData(imgURL)",
+          "takeFirst": true
+        },
+        {
+          "op": "regex_extract",
+          "pattern": "\"imgURL\"\\s*:\\s*\"([^\"]+)\"",
+          "group": 1
+        },
+        {
+          "op": "trim_normalize",
+          "collapseWhitespace": true
+        },
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://heavenmanga.com/"
+        }
+      ],
+      "upstreamSourceId": 1872740333369520717,
+      "upstreamRepo": "keiyoushi/extensions-source",
+      "mirrors": [
+        "https://heavenmanga.com"
+      ],
+      "upstreamExtVersionCode": 106002
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "es.lectortaurus",
+      "name": "Taurus Fansub",
+      "baseUrl": "https://lectortaurus.com",
+      "lang": "es",
+      "version": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "catalogPath": "/manga",
+      "useHomeFallback": true,
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content, div.manga__item, div.manga__thumb_item",
+        "titleSelector": "h3.h5 a, div.post-title a, h4 a",
+        "linkSelector": "h3.h5 a, div.post-title a, a[href]",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img.wp-manga-chapter-img, div.reading-content img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "css_select",
+          "selector": "div.page-item-detail",
+          "attribute": "innerHTML"
+        },
+        {
+          "op": "trim_normalize",
+          "collapseWhitespace": true
+        }
+      ],
+      "upstreamSourceId": 5157867187592331768,
+      "upstreamRepo": "keiyoushi/extensions-source",
+      "mirrors": [
+        "https://lectortaurus.com"
+      ],
+      "upstreamExtVersionCode": 106071
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "es.mangafire",
+      "name": "MangaFire",
+      "baseUrl": "https://mangafire.to",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "JSON_API",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "headers": {
+        "Referer": "https://mangafire.to/"
+      },
+      "mirrors": [
+        "https://mangafire.to"
+      ],
+      "selectors": {
+        "listSelector": "$.result.items[*]"
+      },
+      "pipelineSteps": [
+        {
+          "op": "json_path",
+          "expression": "$.result.html"
+        },
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://mangafire.to/"
+        }
+      ],
+      "upstreamSourceId": 8098539940032331958,
+      "upstreamRepo": "keiyoushi/extensions-source",
+      "upstreamExtVersionCode": 106038,
+      "querySigner": {
+        "algorithm": "sbox_xor_cbc",
+        "pathPrefix": "/api",
+        "stripPathPrefix": true,
+        "paramName": "vrf",
+        "stages": [
+          {
+            "tableBase64": "yINlmUNho8VYJT+ibTIP+9ESiULpVEtMOoD6U6lRE0R/xwXo/Xp9NrUgC4cw/Lmo33vUyjUE40kUoEWIr/fxfNNcq2s79ShQ5NhNrFnJ4hXPwOu/SuXzIbuTQKGFvfm08E9jvCfqAtoDqvQq3dVWPQFmJjgvkISBeXY3BgANR+yVnjGbcxZ47d6kLNfZPIayTq3/YGySb1KuVZodWp/WGNAO5pfMcpaK53Hhs0allBszaMaxuouOwdxbwgxIw6YunSsXjI05Yi0j9j4eHKfSXR8Ifo/Od+8iamRfCXTyvm7NGRGYdcQ0ywcK/u6RXhrbcCm4t2eCtrDgQVecJGkQ+A==",
+            "keyBase64": "0Ec58JOY3uBzJK9m3zqIOpdlF7UFiax9DmA=",
+            "iv": 90
+          },
+          {
+            "tableBase64": "IUFltCxD3Oc2cwCgkJffthaOg9cgPUb0LgW6H/VtfcF0kc5F25t+aWj6JH9VOhOaY0rAFdUxlDnl5BLNvwEJvQtP5qcw7vdb/K+chnbwnspSHT8mz5lqwz41TezG0hkO06FTjJZhsyNuFLDpD2ZZxQj/QIRcF90zpmQ7Byu483WsQqUE0C342HL+JXngRB6fRzxRyVTaKu83h7UYTJ0QMt6ixFh6S3F8gqkKwrGTL3jHNBsD45UnifK8+RGtishQV2K3rujLKEkiZxpr2dYcudFW4oFsDKhad3CLBvuyTqsCo4B7mL5IKQ1vXo/MOOvq1I1d8ar9X6Ttu5KF4fZgiA==",
+            "keyBase64": "AAdjb1iPY8CiDmq9H34tKTBF8a3oDQ==",
+            "iv": 53
+          },
+          {
+            "tableBase64": "NQHlu1/wVO5EmkwQymF810qqY2xG1k2obcas4Z9mCsPEIFl9pRIjFxbJ7ybMHbBckT5Ton85E0FOeHezbh/mjlEYpmpnlXOS8dgrqeq2KfxImTh1YK9y0PeMNhzA1OQzSY9brYOJq/l2QnE/hwOeZIhPixVSKIUlDb5vLcH6RWKxkIEMuP0bDwIqQ71AJJaEaMJL7A6YtyIwoRT+L5v4aZzodN/0+3nOGsfblFjgxSfPzVDjNFeNl5P26+kEC/8AHgdrpAbt3hHz3HrRN1Y6e+JHgF7ncFWnoF0y3THL1S71WgWGCa6KtSzTCCG58n68nTyj2T3Sshk7utqCtMi/ZQ==",
+            "keyBase64": "DELOJgPsVaCcblDtTGMdHzM=",
+            "iv": 186
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "es.mangasin",
+      "name": "Mangas.in",
+      "baseUrl": "https://m440.in",
+      "lang": "es",
+      "version": 1,
+      "preset": "MANGA_READER_CMS",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "div.media",
+        "titleSelector": "h5.media-heading a",
+        "linkSelector": "h5.media-heading a",
+        "chapterSelector": "ul.chapters li a",
+        "pageImgSelector": "div#all img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "css_select",
+          "selector": "div.media",
+          "attribute": "innerHTML"
+        },
+        {
+          "op": "trim_normalize",
+          "collapseWhitespace": true
+        }
+      ],
+      "upstreamSourceId": 3344386250058668105,
+      "upstreamRepo": "keiyoushi/extensions-source",
+      "mirrors": [
+        "https://m440.in"
+      ],
+      "upstreamExtVersionCode": 106004
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "es.novelcool",
+      "name": "NovelCool",
+      "baseUrl": "https://es.novelcool.com",
+      "lang": "es",
+      "version": 1,
+      "preset": "CSS_GENERIC",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "div.book-item",
+        "titleSelector": "div.book-name",
+        "linkSelector": "a",
+        "chapterSelector": "div.chp-item a",
+        "pageImgSelector": "img.manga_pic"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://es.novelcool.com"
+        },
+        {
+          "op": "css_select",
+          "selector": "img.manga_pic",
+          "attribute": "src",
+          "takeFirst": false
+        }
+      ],
+      "upstreamSourceId": 438359803442833644,
+      "upstreamRepo": "keiyoushi/extensions-source",
+      "mirrors": [
+        "https://$sub.novelcool.com"
+      ],
+      "upstreamExtVersionCode": 106002
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "haremdekira_lat",
+      "name": "Harem de Kira",
+      "baseUrl": "https://kiraproject.lat",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MADARA",
+      "status": "QUARANTINED",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": true,
+      "headers": {
+        "Referer": "https://kiraproject.lat/"
+      },
+      "mirrors": [
+        "https://kiraproject.lat"
+      ],
+      "upstreamSourceId": 1480472727871484054,
+      "upstreamRepo": "FelipeGFA",
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "h3.h5 a, div.post-title a",
+        "linkSelector": "h3.h5 a, div.post-title a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img, div.page-break img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://kiraproject.lat/"
+        }
+      ],
+      "upstreamExtVersionCode": 106059
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "houseofotakus_xyz",
+      "name": "House Of Otakus",
+      "baseUrl": "https://houseofotakusv2.xyz",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://houseofotakusv2.xyz/"
+      },
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "h3.h5 a, div.post-title a",
+        "linkSelector": "h3.h5 a, div.post-title a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img, div.page-break img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://houseofotakusv2.xyz/"
+        }
+      ],
+      "mirrors": [
+        "https://houseofotakusv2.xyz"
+      ],
+      "upstreamSourceId": 1968531533450563052,
+      "upstreamExtVersionCode": 106060,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "ikigai_mangas",
+      "name": "Ikigai Mangas",
+      "baseUrl": "https://visorikigai.gettocaboca.com",
+      "lang": "es",
+      "version": 2,
+      "preset": "CSS_GENERIC",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "a[href^='/series/']:not(:has(img.w-10))",
+        "titleSelector": "h2, h3, h4, span.font-bold",
+        "linkSelector": "a[href^='/series/']",
+        "chapterSelector": "li a[href^='/capitulo/']",
+        "pageImgSelector": "main img[src*='/series/']"
+      },
+      "requiresWebViewCapture": false,
+      "pipelineSteps": [
+        {
+          "op": "css_select",
+          "selector": "main img[src*='/series/']",
+          "attribute": "src",
+          "takeFirst": false
+        },
+        {
+          "op": "trim_normalize",
+          "collapseWhitespace": true
+        },
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://visorikigai.gettocaboca.com/"
+        }
+      ],
+      "upstreamSourceId": 7749406396573482811,
+      "upstreamRepo": "keiyoushi/extensions-source",
+      "mirrors": [
+        "https://visorikigai.gettocaboca.com"
+      ],
+      "versionId": 2,
+      "upstreamExtVersionCode": 106044
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "infrafandub_com",
+      "name": "InfraFandub",
+      "baseUrl": "https://infrafandub.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": true,
+      "headers": {
+        "Referer": "https://infrafandub.com/"
+      },
+      "mirrors": [
+        "https://infrafandub.com"
+      ],
+      "upstreamSourceId": 5594696691862732725,
+      "upstreamRepo": "Keiyoushi",
+      "selectors": {
+        "listSelector": "div.manga-item, div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "div.title a, h3.h5 a, div.post-title a",
+        "linkSelector": "div.title a, h3.h5 a, div.post-title a",
+        "chapterSelector": "a.chapter-item, li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img, div.page-break img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://infrafandub.com/"
+        }
+      ],
+      "upstreamExtVersionCode": 106064
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "inmortalscan_com",
+      "name": "Inmortal Scan",
+      "baseUrl": "https://scan-inmortal.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": true,
+      "headers": {
+        "Referer": "https://scan-inmortal.com/"
+      },
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "h3.h5 a, div.post-title a",
+        "linkSelector": "h3.h5 a, div.post-title a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img, div.page-break img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://scan-inmortal.com/"
+        }
+      ],
+      "mirrors": [
+        "https://scan-inmortal.com"
+      ],
+      "upstreamSourceId": 8879875375160764811,
+      "upstreamExtVersionCode": 106065,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "inventariooculto_com",
+      "name": "Inventario Oculto",
+      "baseUrl": "https://inventariooculto.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://inventariooculto.com/"
+      },
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "h3.h5 a, div.post-title a",
+        "linkSelector": "h3.h5 a, div.post-title a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img, div.page-break img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://inventariooculto.com/"
+        }
+      ],
+      "mirrors": [
+        "https://inventariooculto.com"
+      ],
+      "upstreamSourceId": 609477585841458199,
+      "upstreamExtVersionCode": 106060,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "kazokuden_com",
+      "name": "Kazoku Den",
+      "baseUrl": "https://www.kazokuden.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://www.kazokuden.com/"
+      },
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "h3.h5 a, div.post-title a",
+        "linkSelector": "h3.h5 a, div.post-title a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img, div.page-break img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://www.kazokuden.com/"
+        }
+      ],
+      "mirrors": [
+        "https://www.kazokuden.com"
+      ],
+      "upstreamSourceId": 475788948976592183,
+      "upstreamExtVersionCode": 106060,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "lagoonscans_com",
+      "name": "Lagoon Scans",
+      "baseUrl": "https://lagoonscans.com",
+      "lang": "en",
+      "version": 1,
+      "preset": "MANGA_THEMESIA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "div.listupd div.bsx",
+        "titleSelector": "div.tt",
+        "linkSelector": "a",
+        "chapterSelector": "div#chapterlist ul li a",
+        "pageImgSelector": "div#readerarea img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "css_select",
+          "selector": "div.listupd div.bsx",
+          "attribute": "innerHTML",
+          "takeFirst": false
+        },
+        {
+          "op": "trim_normalize",
+          "collapseWhitespace": true
+        },
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://lagoonscans.com/"
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "lectorhades_com",
+      "name": "Hades no Fansub",
+      "baseUrl": "https://lectorhades.latamtoon.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/tmo",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://lectorhades.latamtoon.com/"
+      },
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "h3.h5 a, div.post-title a",
+        "linkSelector": "h3.h5 a, div.post-title a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img, div.page-break img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://lectorhades.latamtoon.com/"
+        }
+      ],
+      "mirrors": [
+        "https://lectorhades.latamtoon.com"
+      ],
+      "upstreamSourceId": 8311505150576608267,
+      "upstreamExtVersionCode": 106065,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "leercapitulo_co",
+      "name": "LeerCapitulo",
+      "baseUrl": "https://www.leercapitulo.co",
+      "lang": "es",
+      "version": 1,
+      "preset": "CSS_GENERIC",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "div.cate-manga div.media",
+        "titleSelector": "h4.media-heading a",
+        "linkSelector": "h4.media-heading a",
+        "chapterSelector": "div.chapter-list ul li a",
+        "pageImgSelector": "div#array_data, div.comic_wraCon img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "css_select",
+          "selector": "div.cate-manga div.media",
+          "attribute": "innerHTML",
+          "takeFirst": false
+        },
+        {
+          "op": "trim_normalize",
+          "collapseWhitespace": true
+        },
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://www.leercapitulo.co/"
+        }
+      ],
+      "upstreamSourceId": 5621901596522308538,
+      "upstreamRepo": "keiyoushi/extensions-source",
+      "mirrors": [
+        "https://www.leercapitulo.co"
+      ],
+      "upstreamExtVersionCode": 106001
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "leermangaesp_org",
+      "name": "LeerMangaEsp",
+      "baseUrl": "https://mangalect.org",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "CSS_GENERIC",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "",
+      "requiresWebViewCapture": true,
+      "headers": {
+        "Referer": "https://mangalect.org/"
+      },
+      "mirrors": [
+        "https://mangalect.org"
+      ],
+      "upstreamSourceId": 8196066207928937350,
+      "upstreamRepo": "Keiyoushi",
+      "selectors": {
+        "listSelector": "div.manga-card-v2, div.nx-search-item, article",
+        "titleSelector": "h3.overlay-text-title, h3, h4, span, a",
+        "linkSelector": "a[href^='/info/'], a[href*='/info/'], a[href]",
+        "chapterSelector": "a[href*='/lectura/'], a[href*='/leer-m/'], a[href*='/capitulo']",
+        "pageImgSelector": "img[src*='/mangas/'], div.reading-content img, main img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://mangalect.org/"
+        }
+      ],
+      "upstreamExtVersionCode": 106001
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "leermanhwas_com",
+      "name": "LeerManhwas",
+      "baseUrl": "https://leermanhwas.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "CSS_GENERIC",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "",
+      "headers": {
+        "Referer": "https://leermanhwas.com/"
+      },
+      "mirrors": [
+        "https://leermanhwas.com"
+      ],
+      "upstreamSourceId": 8701445043633550960,
+      "upstreamRepo": "Keiyoushi",
+      "selectors": {
+        "listSelector": "div.latest-item, div.box, div.page-item-detail",
+        "titleSelector": "h3, h4, a",
+        "linkSelector": "a[href]",
+        "chapterSelector": "ul li a, div.chapter-list a, a[href*='capitulo']",
+        "pageImgSelector": "div.reading-content img, div#readerarea img, main img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://leermanhwas.com/"
+        }
+      ],
+      "upstreamExtVersionCode": 106003
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "mangacrab_es",
+      "name": "Manga Crab",
+      "baseUrl": "https://es.mangacrab.org",
+      "lang": "es",
+      "version": 1,
+      "preset": "CSS_GENERIC",
+      "status": "DRAFT",
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.post-title",
+        "titleSelector": "h3 a, h5 a",
+        "linkSelector": "h3 a, h5 a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "css_select",
+          "selector": "div.page-item-detail, div.post-title",
+          "attribute": "innerHTML",
+          "takeFirst": false
+        },
+        {
+          "op": "trim_normalize",
+          "collapseWhitespace": true
+        },
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://es.mangacrab.org/"
+        }
+      ],
+      "upstreamSourceId": 6167683270485370369,
+      "upstreamRepo": "keiyoushi/extensions-source",
+      "mirrors": [
+        "https://es.mangacrab.org"
+      ],
+      "upstreamExtVersionCode": 106026
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "mangadot_net",
+      "name": "MangaDot",
+      "baseUrl": "https://mangadot.net",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "CSS_GENERIC",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "",
+      "requiresWebViewCapture": true,
+      "headers": {
+        "Referer": "https://mangadot.net/"
+      },
+      "mirrors": [
+        "https://mangadot.net"
+      ],
+      "upstreamSourceId": 1356109540530417190,
+      "upstreamRepo": "Keiyoushi",
+      "selectors": {
+        "listSelector": "a[href^='/manga/'], article",
+        "titleSelector": "h3, h4, span, a",
+        "linkSelector": "a[href^='/manga/'], a[href]",
+        "chapterSelector": "a[href*='/chapter'], a[href*='/ch/'], a[href*='/capitulo']",
+        "pageImgSelector": "main img, div.reading-content img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://mangadot.net/"
+        }
+      ],
+      "upstreamExtVersionCode": 106030
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "mangaoni_com",
+      "name": "MangaOni",
+      "baseUrl": "https://manga-oni.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "CSS_GENERIC",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/directorio",
+      "requiresWebViewCapture": true,
+      "headers": {
+        "Referer": "https://manga-oni.com/"
+      },
+      "mirrors": [
+        "https://manga-oni.com"
+      ],
+      "upstreamSourceId": 2202687009511923782,
+      "upstreamRepo": "Keiyoushi",
+      "selectors": {
+        "listSelector": "div#article-div a, a[href*='/manga/'], a[href*='/manhwa/']",
+        "titleSelector": "strong, h3, h4, span",
+        "linkSelector": "a[href]",
+        "chapterSelector": "div#c_list a, a[href*='/lector/']",
+        "pageImgSelector": "img#m_img, div#slider img, div#all img, div.reading-content img, main img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://manga-oni.com/"
+        }
+      ],
+      "upstreamExtVersionCode": 106001
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "mangasnosekai_com",
+      "name": "Mangas No Sekai",
+      "baseUrl": "https://mangasnosekai.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": true,
+      "headers": {
+        "Referer": "https://mangasnosekai.com/"
+      },
+      "mirrors": [
+        "https://mangasnosekai.com"
+      ],
+      "upstreamSourceId": 829053423099062956,
+      "upstreamRepo": "Keiyoushi",
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "h3.h5 a, div.post-title a",
+        "linkSelector": "h3.h5 a, div.post-title a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img, div.page-break img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://mangasnosekai.com/"
+        }
+      ],
+      "upstreamExtVersionCode": 106081
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "mangatv_net",
+      "name": "Manga TV",
+      "baseUrl": "https://mangatv.net",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MANGA_THEMESIA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://mangatv.net/"
+      },
+      "selectors": {
+        "listSelector": "div.listupd div.bsx a, div.bsx a",
+        "titleSelector": "div.tt",
+        "linkSelector": "a",
+        "chapterSelector": "div#chapterlist ul li a",
+        "pageImgSelector": "div#readerarea img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://mangatv.net/"
+        }
+      ],
+      "mirrors": [
+        "https://mangatv.net"
+      ],
+      "upstreamSourceId": 7214040353404261084,
+      "upstreamExtVersionCode": 106007,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "manhwalatino_com",
+      "name": "Manhwa-Latino",
+      "baseUrl": "https://manhwa-latino.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://manhwa-latino.com/"
+      },
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "h3.h5 a, div.post-title a",
+        "linkSelector": "h3.h5 a, div.post-title a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img, div.page-break img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://manhwa-latino.com/"
+        }
+      ],
+      "mirrors": [
+        "https://manhwa-latino.com",
+        "https://manhwa-es.com"
+      ],
+      "upstreamSourceId": 3548601371328353875,
+      "upstreamExtVersionCode": 106071,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "manhwaweb_com",
+      "name": "ManhwaWeb",
+      "baseUrl": "https://manhwaweb.com",
+      "lang": "es",
+      "version": 1,
+      "preset": "JSON_API",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "$.data[*]",
+        "titleSelector": "$.name",
+        "linkSelector": "$._id",
+        "chapterSelector": "$.chapters[*]",
+        "pageImgSelector": "$.chapters.img[*]"
+      },
+      "pipelineSteps": [
+        {
+          "op": "json_path",
+          "expression": "$.data[*].name"
+        },
+        {
+          "op": "trim_normalize",
+          "collapseWhitespace": true
+        },
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://manhwaweb.com/"
+        }
+      ],
+      "upstreamSourceId": 5943212552955476721,
+      "upstreamRepo": "keiyoushi/extensions-source",
+      "mirrors": [
+        "https://manhwaweb.com"
+      ],
+      "upstreamExtVersionCode": 106016
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "marmota_me",
+      "name": "Marmota",
+      "baseUrl": "https://marmota.me",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://marmota.me/"
+      },
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "h3.h5 a, div.post-title a",
+        "linkSelector": "h3.h5 a, div.post-title a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img, div.page-break img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://marmota.me/"
+        }
+      ],
+      "mirrors": [
+        "https://marmota.me"
+      ],
+      "upstreamSourceId": 5937472249278743372,
+      "upstreamExtVersionCode": 106060,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "mhscans_com",
+      "name": "MHScans",
+      "baseUrl": "https://mhscans.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 2,
+      "preset": "CSS_GENERIC",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "",
+      "headers": {
+        "Referer": "https://mhscans.com/"
+      },
+      "mirrors": [
+        "https://mhscans.com"
+      ],
+      "upstreamSourceId": 9008444898589746680,
+      "upstreamRepo": "Keiyoushi",
+      "selectors": {
+        "listSelector": "a.comic-card, div.gm-card, div.cr-card, div.wt-card, a[href*='/comics/']",
+        "titleSelector": "h3, h4, span, a",
+        "linkSelector": "a[href*='/comics/'], a[href]",
+        "chapterSelector": "a[href*='/leer/'], a[href*='/capitulo'], a[href*='/chapter'], div.chapter-list a",
+        "pageImgSelector": "img.page-img, div.page-img-wrap img, div.reading-content img, main img, article img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://mhscans.com/"
+        }
+      ],
+      "upstreamExtVersionCode": 106071
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "miauscan_com",
+      "name": "Miau Scan",
+      "baseUrl": "https://leer.lectovela.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MANGA_THEMESIA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "headers": {
+        "Referer": "https://leer.lectovela.com/"
+      },
+      "mirrors": [
+        "https://leer.lectovela.com"
+      ],
+      "upstreamSourceId": 2886862669347225416,
+      "upstreamRepo": "Keiyoushi",
+      "selectors": {
+        "listSelector": "div.listupd div.bsx a, div.bsx a",
+        "titleSelector": "div.tt",
+        "linkSelector": "a",
+        "chapterSelector": "div#chapterlist ul li a",
+        "pageImgSelector": "div#readerarea img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://leer.lectovela.com/"
+        }
+      ],
+      "upstreamExtVersionCode": 106010
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "monopolymanhua_com",
+      "name": "Monopoly Scan",
+      "baseUrl": "https://monopolymanhua.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://monopolymanhua.com/"
+      },
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "h3.h5 a, div.post-title a",
+        "linkSelector": "h3.h5 a, div.post-title a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img, div.page-break img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://monopolymanhua.com/"
+        }
+      ],
+      "mirrors": [
+        "https://monopolymanhua.com"
+      ],
+      "upstreamSourceId": 5862188113261788590,
+      "upstreamExtVersionCode": 106060,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "mundomanhwa_com",
+      "name": "Mundo Manhwa",
+      "baseUrl": "https://mundomanhwa.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://mundomanhwa.com/"
+      },
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "h3.h5 a, div.post-title a",
+        "linkSelector": "h3.h5 a, div.post-title a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img, div.page-break img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://mundomanhwa.com/"
+        }
+      ],
+      "mirrors": [
+        "https://mundomanhwa.com"
+      ],
+      "upstreamSourceId": 7121772696835562045,
+      "upstreamExtVersionCode": 106060,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "nekoscans_org",
+      "name": "NekoScans",
+      "baseUrl": "https://nekoproject.org",
+      "lang": "es",
+      "version": 1,
+      "versionId": 3,
+      "preset": "MANGA_THEMESIA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://nekoproject.org/"
+      },
+      "selectors": {
+        "listSelector": "div.listupd div.bsx a, div.bsx a",
+        "titleSelector": "div.tt",
+        "linkSelector": "a",
+        "chapterSelector": "div#chapterlist ul li a",
+        "pageImgSelector": "div#readerarea img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://nekoproject.org/"
+        }
+      ],
+      "mirrors": [
+        "https://nekoproject.org"
+      ],
+      "upstreamSourceId": 8396340084333456288,
+      "upstreamExtVersionCode": 106010,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "olympusxyz_com",
+      "name": "Olympus Scanlation",
+      "baseUrl": "https://olympusxyz.com",
+      "lang": "es",
+      "version": 1,
+      "preset": "JSON_API",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "$.data[*]",
+        "titleSelector": "$.name",
+        "linkSelector": "$.slug",
+        "chapterSelector": "$.chapters[*]",
+        "pageImgSelector": "$.chapter.pages[*]"
+      },
+      "pipelineSteps": [
+        {
+          "op": "json_path",
+          "expression": "$.data.series[*].name"
+        },
+        {
+          "op": "trim_normalize",
+          "collapseWhitespace": true
+        },
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://olympusxyz.com/"
+        }
+      ],
+      "upstreamSourceId": 1596411039134168890,
+      "upstreamRepo": "keiyoushi/extensions-source",
+      "mirrors": [
+        "https://olympusxyz.com"
+      ],
+      "versionId": 3,
+      "upstreamExtVersionCode": 106005
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "ragnarokscanlation_org",
+      "name": "Ragnarok Scanlation",
+      "baseUrl": "https://ragnarokscanlation.org",
+      "lang": "es",
+      "version": 2,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "catalogPath": "/series",
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "h3.h5 a, div.post-title a",
+        "linkSelector": "h3.h5 a, div.post-title a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img"
+      },
+      "requiresWebViewCapture": false,
+      "pipelineSteps": [
+        {
+          "op": "css_select",
+          "selector": "div.reading-content img",
+          "attribute": "data-src",
+          "takeFirst": false
+        },
+        {
+          "op": "trim_normalize",
+          "collapseWhitespace": true
+        },
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://ragnarokscanlation.org/"
+        }
+      ],
+      "upstreamSourceId": 1348827658894665970,
+      "upstreamRepo": "keiyoushi/extensions-source",
+      "mirrors": [
+        "https://ragnarokscanlation.org"
+      ],
+      "versionId": 2,
+      "upstreamExtVersionCode": 106063
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "seraphicdeviltry_com",
+      "name": "SeraphicDeviltry",
+      "baseUrl": "https://spanish.seraphic-deviltry.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://spanish.seraphic-deviltry.com/"
+      },
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "h3.h5 a, div.post-title a",
+        "linkSelector": "h3.h5 a, div.post-title a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img, div.page-break img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://spanish.seraphic-deviltry.com/"
+        }
+      ],
+      "mirrors": [
+        "https://seraphic-deviltry.com"
+      ],
+      "upstreamSourceId": 6626112947749020527,
+      "upstreamExtVersionCode": 106062,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "spicyscan_com",
+      "name": "Spicy Scan",
+      "baseUrl": "https://spicyseries.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "CSS_GENERIC",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "",
+      "requiresWebViewCapture": true,
+      "headers": {
+        "Referer": "https://spicyseries.com/"
+      },
+      "mirrors": [
+        "https://spicyseries.com"
+      ],
+      "upstreamSourceId": 2665002677795338092,
+      "upstreamRepo": "Keiyoushi",
+      "selectors": {
+        "listSelector": "a[href*='/comic/'], article, div.group",
+        "titleSelector": "h3, h4, p, span",
+        "linkSelector": "a[href*='/comic/'], a[href]",
+        "chapterSelector": "a[href*='/capitulo'], a[href*='/chapter'], a[href*='/comic/']",
+        "pageImgSelector": "main img, div.reading-content img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://spicyseries.com/"
+        }
+      ],
+      "upstreamExtVersionCode": 106001
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "submanhwa_com",
+      "name": "Submanhwa",
+      "baseUrl": "https://submanhwa.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "CSS_GENERIC",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "",
+      "requiresWebViewCapture": true,
+      "headers": {
+        "Referer": "https://submanhwa.com/"
+      },
+      "mirrors": [
+        "https://submanhwa.com"
+      ],
+      "upstreamSourceId": 1136717301008230074,
+      "upstreamRepo": "Keiyoushi",
+      "selectors": {
+        "listSelector": "div.up-card, div.bsx, article",
+        "titleSelector": "a.up-title, h3, h4, a",
+        "linkSelector": "a[href*='/serie/'], a[href]",
+        "chapterSelector": "div.lc-info a.lc-t, a.lc-t, a[href*='/capitulo'], a[href*='/leer/'], ul li a",
+        "pageImgSelector": "div#readerarea img, div.reading-content img, main img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://submanhwa.com/"
+        }
+      ],
+      "upstreamExtVersionCode": 106005
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "uchuujin_com",
+      "name": "Uchuujin Projects",
+      "baseUrl": "https://uchuujinmangas.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MANGA_THEMESIA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://uchuujinmangas.com/"
+      },
+      "selectors": {
+        "listSelector": "div.listupd div.bsx a, div.bsx a",
+        "titleSelector": "div.tt",
+        "linkSelector": "a",
+        "chapterSelector": "div#chapterlist ul li a",
+        "pageImgSelector": "div#readerarea img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://uchuujinmangas.com/"
+        }
+      ],
+      "mirrors": [
+        "https://uchuujinmangas.com"
+      ],
+      "upstreamSourceId": 3953107753690791431,
+      "upstreamExtVersionCode": 106004,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "vermanhwas_com",
+      "name": "Ver Manhwas",
+      "baseUrl": "https://vermanhwa.com",
+      "lang": "es",
+      "version": 1,
+      "versionId": 1,
+      "preset": "MADARA",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "catalogPath": "/manga",
+      "useHomeFallback": false,
+      "headers": {
+        "Referer": "https://vermanhwa.com/"
+      },
+      "selectors": {
+        "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+        "titleSelector": "h3.h5 a, div.post-title a",
+        "linkSelector": "h3.h5 a, div.post-title a",
+        "chapterSelector": "li.wp-manga-chapter a",
+        "pageImgSelector": "div.reading-content img, div.page-break img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://vermanhwa.com/"
+        }
+      ],
+      "mirrors": [
+        "https://vermanhwa.com"
+      ],
+      "upstreamSourceId": 4150746388640244220,
+      "upstreamExtVersionCode": 106062,
+      "upstreamRepo": "keiyoushi/extensions-source"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "vortexscans_org",
+      "name": "Vortex Scans",
+      "baseUrl": "https://vortexscans.org",
+      "lang": "en",
+      "version": 1,
+      "preset": "CSS_GENERIC",
+      "status": "ACTIVE",
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "a[href*='/series/']",
+        "titleSelector": "h1, h2, h3, span",
+        "linkSelector": "a[href*='/series/']",
+        "chapterSelector": "a[href*='/chapter-']",
+        "pageImgSelector": "main img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "css_select",
+          "selector": "a[href*='/series/']",
+          "attribute": "innerHTML",
+          "takeFirst": false
+        },
+        {
+          "op": "trim_normalize",
+          "collapseWhitespace": true
+        },
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://vortexscans.org/"
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "zonatmo_org",
+      "name": "ZonaTMO.org",
+      "baseUrl": "https://zonatmo.org",
+      "lang": "es",
+      "version": 1,
+      "preset": "CSS_GENERIC",
+      "status": "DRAFT",
+      "maxHtmlBytes": 2097152,
+      "selectors": {
+        "listSelector": "div.element",
+        "titleSelector": "h4.text-truncate",
+        "linkSelector": "a",
+        "chapterSelector": "li.upload-link a",
+        "pageImgSelector": "div.img-container img"
+      },
+      "pipelineSteps": [
+        {
+          "op": "css_select",
+          "selector": "div.element",
+          "attribute": "innerHTML",
+          "takeFirst": false
+        },
+        {
+          "op": "trim_normalize",
+          "collapseWhitespace": true
+        },
+        {
+          "op": "referer_bind",
+          "refererUrl": "https://zonatmo.org/"
+        }
+      ]
+    }
+  ]
+}
