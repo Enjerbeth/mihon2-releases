@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.apollcomics",
+  "name": "ApollComics",
+  "baseUrl": "https://apollcomics.es",
+  "lang": "es",
+  "version": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "catalogPath": "/manga",
+  "maxHtmlBytes": 2097152,
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img.wp-manga-chapter-img, div.reading-content img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "css_select",
+      "selector": "div.page-item-detail",
+      "attribute": "innerHTML",
+      "takeFirst": false
+    },
+    {
+      "op": "trim_normalize",
+      "collapseWhitespace": true
+    }
+  ],
+  "upstreamSourceId": 3044113561993269522,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "mirrors": [
+    "https://apollcomics.es"
+  ],
+  "upstreamExtVersionCode": 106063,
+  "versionId": 1,
+  "recipePath": "recipes/es.apollcomics.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    3044113561993269522
+  ],
+  "versionCode": 106063,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

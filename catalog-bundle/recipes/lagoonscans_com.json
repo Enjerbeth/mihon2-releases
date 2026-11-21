@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "lagoonscans_com",
+  "name": "Lagoon Scans",
+  "baseUrl": "https://lagoonscans.com",
+  "lang": "en",
+  "version": 1,
+  "preset": "MANGA_THEMESIA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "selectors": {
+    "listSelector": "div.listupd div.bsx",
+    "titleSelector": "div.tt",
+    "linkSelector": "a",
+    "chapterSelector": "div#chapterlist ul li a",
+    "pageImgSelector": "div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "css_select",
+      "selector": "div.listupd div.bsx",
+      "attribute": "innerHTML",
+      "takeFirst": false
+    },
+    {
+      "op": "trim_normalize",
+      "collapseWhitespace": true
+    },
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://lagoonscans.com/"
+    }
+  ],
+  "versionId": 1,
+  "recipePath": "recipes/lagoonscans_com.json",
+  "mode": "declarative",
+  "upstreamSourceId": 7925933833035450162,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "upstreamSourceIds": [
+    7925933833035450162
+  ],
+  "upstreamExtVersionCode": 106002,
+  "versionCode": 106002,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

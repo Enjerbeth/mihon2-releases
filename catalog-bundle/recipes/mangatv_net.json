@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "mangatv_net",
+  "name": "Manga TV",
+  "baseUrl": "https://mangatv.net",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MANGA_THEMESIA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://mangatv.net/"
+  },
+  "selectors": {
+    "listSelector": "div.listupd div.bsx a, div.bsx a",
+    "titleSelector": "div.tt",
+    "linkSelector": "a",
+    "chapterSelector": "div#chapterlist ul li a",
+    "pageImgSelector": "div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://mangatv.net/"
+    }
+  ],
+  "mirrors": [
+    "https://mangatv.net"
+  ],
+  "upstreamSourceId": 7214040353404261084,
+  "upstreamExtVersionCode": 106007,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "recipePath": "recipes/mangatv_net.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    7214040353404261084
+  ],
+  "versionCode": 106007,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

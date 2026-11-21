@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.novelcool",
+  "name": "NovelCool",
+  "baseUrl": "https://es.novelcool.com",
+  "lang": "es",
+  "version": 1,
+  "preset": "CSS_GENERIC",
+  "family": "MULTI_VIEW_HTML",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "headers": {
+    "Referer": "https://es.novelcool.com/"
+  },
+  "selectors": {
+    "listSelector": "div.book-item",
+    "titleSelector": "div.book-name, div.book-title",
+    "linkSelector": "div.book-pic a[href], a[href*='/novel/'], a",
+    "chapterSelector": "div.chp-item a[href]",
+    "pageImgSelector": "img.manga_pic, div.pic_box img, img[src*='movietop.cc'], img[data-src*='movietop.cc']",
+    "nextPageSelector": "a[href*='_{page+1}.html'], a[href*='page={page+1}']"
+  },
+  "popularRequest": {
+    "method": "GET",
+    "firstPagePathTemplate": "/category/popular.html",
+    "pathTemplate": "/category/popular_{page}.html"
+  },
+  "latestRequest": {
+    "method": "GET",
+    "firstPagePathTemplate": "/category/latest.html",
+    "pathTemplate": "/category/latest_{page}.html"
+  },
+  "searchRequest": {
+    "method": "GET",
+    "pathTemplate": "/search/?name={query}&page={page}"
+  },
+  "multiViewReader": {
+    "urlTemplate": "{chapterBase}-10-{page}.html",
+    "maxViews": 25,
+    "minItemsPerView": 10
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://es.novelcool.com/"
+    }
+  ],
+  "upstreamSourceId": 438359803442833644,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "mirrors": [
+    "https://es.novelcool.com"
+  ],
+  "upstreamExtVersionCode": 106002,
+  "versionId": 1,
+  "recipePath": "recipes/es.novelcool.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    438359803442833644
+  ],
+  "versionCode": 106002,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

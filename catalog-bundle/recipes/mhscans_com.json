@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "mhscans_com",
+  "name": "MHScans",
+  "baseUrl": "https://mhscans.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 2,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "searchPath": "/search?q={query}",
+  "headers": {
+    "Referer": "https://mhscans.com/"
+  },
+  "mirrors": [
+    "https://mhscans.com"
+  ],
+  "upstreamSourceId": 9008444898589746680,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "selectors": {
+    "listSelector": "a.comic-card, div.gm-card, div.cr-card, div.wt-card, a[href*='/comics/']",
+    "titleSelector": "h3, h4, span, a",
+    "linkSelector": "a[href*='/comics/'], a[href]",
+    "chapterSelector": "a[href*='/leer/'], a[href*='/capitulo'], a[href*='/chapter'], div.chapter-list a",
+    "pageImgSelector": "img.page-img, div.page-img-wrap img, div.reading-content img, main img, article img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://mhscans.com/"
+    }
+  ],
+  "upstreamExtVersionCode": 106071,
+  "recipePath": "recipes/mhscans_com.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    9008444898589746680
+  ],
+  "versionCode": 106071,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

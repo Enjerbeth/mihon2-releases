@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "mangadot_net",
+  "name": "MangaDot",
+  "baseUrl": "https://mangadot.net",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "requiresWebViewCapture": true,
+  "headers": {
+    "Referer": "https://mangadot.net/"
+  },
+  "mirrors": [
+    "https://mangadot.net"
+  ],
+  "upstreamSourceId": 1356109540530417190,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "selectors": {
+    "listSelector": "a[href^='/manga/'], article",
+    "titleSelector": "h3, h4, span, a",
+    "linkSelector": "a[href^='/manga/'], a[href]",
+    "chapterSelector": "a[href*='/chapter'], a[href*='/ch/'], a[href*='/capitulo']",
+    "pageImgSelector": "main img, div.reading-content img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://mangadot.net/"
+    }
+  ],
+  "upstreamExtVersionCode": 106030,
+  "recipePath": "recipes/mangadot_net.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1356109540530417190
+  ],
+  "versionCode": 106030,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

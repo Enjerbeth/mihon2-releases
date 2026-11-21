@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "mangaoni_com",
+  "name": "MangaOni",
+  "baseUrl": "https://manga-oni.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/directorio",
+  "searchPath": "/buscar?q={query}",
+  "requiresWebViewCapture": true,
+  "headers": {
+    "Referer": "https://manga-oni.com/"
+  },
+  "mirrors": [
+    "https://manga-oni.com"
+  ],
+  "upstreamSourceId": 2202687009511923782,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "selectors": {
+    "listSelector": "div#article-div a, a[href*='/manga/'], a[href*='/manhwa/']",
+    "titleSelector": "strong, h3, h4, span",
+    "linkSelector": "a[href]",
+    "chapterSelector": "div#c_list a, a[href*='/lector/']",
+    "pageImgSelector": "img#m_img, div#slider img, div#all img, div.reading-content img, main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://manga-oni.com/"
+    }
+  ],
+  "upstreamExtVersionCode": 106001,
+  "recipePath": "recipes/mangaoni_com.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    2202687009511923782
+  ],
+  "versionCode": 106001,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

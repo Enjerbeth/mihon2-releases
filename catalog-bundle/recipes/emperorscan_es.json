@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "emperorscan_es",
+  "name": "Emperor Scan",
+  "baseUrl": "https://imperiomanhwa.com",
+  "lang": "es",
+  "version": 2,
+  "preset": "CSS_GENERIC",
+  "family": "INERTIA_SSR",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "headers": {
+    "Referer": "https://imperiomanhwa.com/"
+  },
+  "selectors": {
+    "listSelector": "div.bsx, div.page-item-detail",
+    "titleSelector": "div.tt, h3.h5 a",
+    "linkSelector": "a",
+    "chapterSelector": "div#chapterlist ul li a, li.wp-manga-chapter a",
+    "pageImgSelector": "div#readerarea img, div.reading-content img"
+  },
+  "popularRequest": {
+    "method": "GET",
+    "firstPagePathTemplate": "/manga/?order=vistas",
+    "pathTemplate": "/manga/page/{page}/?order=vistas"
+  },
+  "latestRequest": {
+    "method": "GET",
+    "firstPagePathTemplate": "/manga/?order=reciente",
+    "pathTemplate": "/manga/page/{page}/?order=reciente"
+  },
+  "searchRequest": {
+    "method": "GET",
+    "pathTemplate": "/buscar?q={query}&page={page}"
+  },
+  "inertia": {
+    "scriptSelector": "script[data-page]",
+    "seriesListPath": "$.props.series[*]",
+    "seriesDetailsPath": "$.props.series",
+    "chaptersPath": "$.props.chapters[*]",
+    "pagesPath": "$.props.pages[*]",
+    "nextPagesPath": "$.props.chapters_pagination.pages[*]",
+    "nextListUrlPath": "$.props.pagination.next",
+    "lockedComponentName": "Reader/Locked",
+    "chapterLockedPath": "$.props.chapter.locked",
+    "urlRewriteHosts": ["imperiomanhua.com"]
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://imperiomanhwa.com/"
+    }
+  ],
+  "upstreamSourceId": 4562754350961964148,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "mirrors": [
+    "https://imperiomanhwa.com"
+  ],
+  "upstreamExtVersionCode": 106075,
+  "versionId": 1,
+  "recipePath": "recipes/emperorscan_es.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    4562754350961964148,
+    8065115147869874040
+  ],
+  "versionCode": 106075,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

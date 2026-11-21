@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "leermanhwas_com",
+  "name": "LeerManhwas",
+  "baseUrl": "https://leermanhwas.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "searchPath": "/search/?s={query}",
+  "headers": {
+    "Referer": "https://leermanhwas.com/"
+  },
+  "mirrors": [
+    "https://leermanhwas.com"
+  ],
+  "upstreamSourceId": 8701445043633550960,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "selectors": {
+    "listSelector": "div.latest-item, div.box, div.page-item-detail",
+    "titleSelector": "h3, h4, a",
+    "linkSelector": "a[href]",
+    "chapterSelector": "ul li a, div.chapter-list a, a[href*='capitulo']",
+    "pageImgSelector": "div.reading-content img, div#readerarea img, main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://leermanhwas.com/"
+    }
+  ],
+  "upstreamExtVersionCode": 106003,
+  "recipePath": "recipes/leermanhwas_com.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    8701445043633550960
+  ],
+  "versionCode": 106003,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

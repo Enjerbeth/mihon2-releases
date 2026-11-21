@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "anzmanga_com",
+  "name": "AnzManga",
+  "baseUrl": "https://www.anzmanga25.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MANGA_READER_CMS",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://www.anzmanga25.com/"
+  },
+  "selectors": {
+    "listSelector": "div.media, div.col-sm-6",
+    "titleSelector": "h5.media-heading a, h4.media-heading a",
+    "linkSelector": "h5.media-heading a, h4.media-heading a",
+    "chapterSelector": "ul.chapters li a",
+    "pageImgSelector": "div#all img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://www.anzmanga25.com/"
+    }
+  ],
+  "mirrors": [
+    "https://www.anzmanga25.com"
+  ],
+  "upstreamSourceId": 7374498796507972405,
+  "upstreamExtVersionCode": 106002,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "recipePath": "recipes/anzmanga_com.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    7374498796507972405
+  ],
+  "versionCode": 106002,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.lectortaurus",
+  "name": "Taurus Fansub",
+  "baseUrl": "https://lectortaurus.com",
+  "lang": "es",
+  "version": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "maxHtmlBytes": 2097152,
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content, div.manga__item, div.manga__thumb_item",
+    "titleSelector": "h3.h5 a, div.post-title a, h4 a",
+    "linkSelector": "h3.h5 a, div.post-title a, a[href]",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img.wp-manga-chapter-img, div.reading-content img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "css_select",
+      "selector": "div.page-item-detail",
+      "attribute": "innerHTML"
+    },
+    {
+      "op": "trim_normalize",
+      "collapseWhitespace": true
+    }
+  ],
+  "upstreamSourceId": 5157867187592331768,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "mirrors": [
+    "https://lectortaurus.com"
+  ],
+  "upstreamExtVersionCode": 106071,
+  "versionId": 1,
+  "recipePath": "recipes/es.lectortaurus.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    5157867187592331768
+  ],
+  "versionCode": 106071,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

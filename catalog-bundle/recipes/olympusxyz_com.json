@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "olympusxyz_com",
+  "name": "Olympus Scanlation",
+  "baseUrl": "https://olympusxyz.com",
+  "lang": "es",
+  "version": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "headers": {
+    "Referer": "https://olympusxyz.com/"
+  },
+  "selectors": {
+    "listSelector": "$.data.series.data[*]",
+    "titleSelector": "$.name",
+    "linkSelector": "$.slug",
+    "chapterSelector": "$.chapters[*]",
+    "pageImgSelector": "$.chapter.pages[*]"
+  },
+  "jsonApi": {
+    "imageHeaders": {
+      "Referer": "{baseUrl}/"
+    },
+    "popularRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/series?page={page}&direction=asc&type=comic",
+      "headers": {
+        "Referer": "{baseUrl}/"
+      }
+    },
+    "latestRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/series?page={page}&direction=desc&type=comic",
+      "headers": {
+        "Referer": "{baseUrl}/"
+      }
+    },
+    "searchFallbackPages": 3,
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/series/{slug}?type=comic",
+      "headers": {
+        "Referer": "{baseUrl}/"
+      }
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/series/{slug}/chapters?page={page}&direction=desc&type=comic",
+      "headers": {
+        "Referer": "{baseUrl}/"
+      }
+    },
+    "mangaList": {
+      "itemsPath": "$.data.series.data[*]",
+      "slugPath": "$.slug",
+      "titlePaths": ["$.name"],
+      "urlTemplate": "/series/comic-{slug}",
+      "coverPaths": ["$.cover"],
+      "pagination": {
+        "mode": "JSON_PAGE_COMPARE",
+        "startPage": 1,
+        "pageSize": 24,
+        "currentPagePath": "$.data.series.current_page",
+        "lastPagePath": "$.data.series.last_page"
+      }
+    },
+    "details": {
+      "rootPath": "$.data",
+      "titlePaths": ["$.name"],
+      "descriptionPaths": ["$.summary"],
+      "coverPaths": ["$.cover"],
+      "genresPath": "$.genres[*].name"
+    },
+    "chapters": {
+      "itemsPath": "$.data[*]",
+      "numberPath": "$.name",
+      "nameTemplate": "Capítulo {number}",
+      "urlTemplate": "/series/comic-{slug}/capitulo/{number}",
+      "datePath": "$.published_at",
+      "dateFormat": "iso",
+      "pagination": {
+        "mode": "JSON_PAGE_COMPARE",
+        "startPage": 1,
+        "pageSize": 24,
+        "lastPagePath": "$.meta.last_page",
+        "maxPages": 20
+      }
+    },
+    "pages": {
+      "itemsPath": "$.pages[*]",
+      "imageHeaders": {
+        "Referer": "{baseUrl}/"
+      },
+      "requiresReaderHtmlFallback": true,
+      "readerHtmlPageSelector": "img",
+      "readerHtmlRegex": "https?://media\\.imagesolymp\\.xyz/comics/\\d+/\\d+/[^\"'\\s<>\\\\]+",
+      "readerHtmlAllowedTokens": ["/comics/"],
+      "readerHtmlExcludedTokens": ["/covers/"]
+    }
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://olympusxyz.com/"
+    }
+  ],
+  "upstreamSourceId": 1596411039134168890,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "mirrors": [
+    "https://olympusxyz.com"
+  ],
+  "versionId": 3,
+  "upstreamExtVersionCode": 106005,
+  "recipePath": "recipes/olympusxyz_com.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    103866367515281440,
+    1596411039134168890,
+    4384315126107049412,
+    4629124532272720968
+  ],
+  "versionCode": 106005,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

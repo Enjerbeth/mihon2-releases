@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "cerberusseries_com",
+  "name": "Cerberus Series",
+  "baseUrl": "https://legionscans.com/wp",
+  "lang": "es",
+  "version": 1,
+  "versionId": 2,
+  "preset": "MANGA_THEMESIA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://legionscans.com/wp/"
+  },
+  "selectors": {
+    "listSelector": "div.listupd div.bsx a, div.bsx a",
+    "titleSelector": "div.tt",
+    "linkSelector": "a",
+    "chapterSelector": "div#chapterlist ul li a",
+    "pageImgSelector": "div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://legionscans.com/wp/"
+    }
+  ],
+  "mirrors": [
+    "https://legionscans.com/wp"
+  ],
+  "upstreamSourceId": 1814471239661920836,
+  "upstreamExtVersionCode": 106003,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "recipePath": "recipes/cerberusseries_com.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1814471239661920836
+  ],
+  "versionCode": 106003,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

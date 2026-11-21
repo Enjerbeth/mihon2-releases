@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.mangasin",
+  "name": "Mangas.in",
+  "baseUrl": "https://m440.in",
+  "lang": "es",
+  "version": 1,
+  "preset": "MANGA_READER_CMS",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "selectors": {
+    "listSelector": "div.media",
+    "titleSelector": "h5.media-heading a",
+    "linkSelector": "h5.media-heading a",
+    "chapterSelector": "ul.chapters li a",
+    "pageImgSelector": "div#all img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "css_select",
+      "selector": "div.media",
+      "attribute": "innerHTML"
+    },
+    {
+      "op": "trim_normalize",
+      "collapseWhitespace": true
+    }
+  ],
+  "upstreamSourceId": 3344386250058668105,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "mirrors": [
+    "https://m440.in"
+  ],
+  "upstreamExtVersionCode": 106004,
+  "versionId": 1,
+  "recipePath": "recipes/es.mangasin.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    3344386250058668105
+  ],
+  "versionCode": 106004,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

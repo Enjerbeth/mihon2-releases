@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "inmortalscan_com",
+  "name": "Inmortal Scan",
+  "baseUrl": "https://scan-inmortal.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://scan-inmortal.com/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://scan-inmortal.com/"
+    }
+  ],
+  "mirrors": [
+    "https://scan-inmortal.com"
+  ],
+  "upstreamSourceId": 8879875375160764811,
+  "upstreamExtVersionCode": 106065,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "recipePath": "recipes/inmortalscan_com.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    8879875375160764811
+  ],
+  "versionCode": 106065,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

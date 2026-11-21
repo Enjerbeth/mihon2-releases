@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "miauscan_com",
+  "name": "Miau Scan",
+  "baseUrl": "https://leer.lectovela.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MANGA_THEMESIA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "headers": {
+    "Referer": "https://leer.lectovela.com/"
+  },
+  "mirrors": [
+    "https://leer.lectovela.com"
+  ],
+  "upstreamSourceId": 2886862669347225416,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "selectors": {
+    "listSelector": "div.listupd div.bsx a, div.bsx a",
+    "titleSelector": "div.tt",
+    "linkSelector": "a",
+    "chapterSelector": "div#chapterlist ul li a",
+    "pageImgSelector": "div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://leer.lectovela.com/"
+    }
+  ],
+  "upstreamExtVersionCode": 106010,
+  "recipePath": "recipes/miauscan_com.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    2886862669347225416
+  ],
+  "versionCode": 106010,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

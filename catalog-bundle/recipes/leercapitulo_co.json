@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "leercapitulo_co",
+  "name": "LeerCapitulo",
+  "baseUrl": "https://www.leercapitulo.co",
+  "lang": "es",
+  "version": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "headers": {
+    "Referer": "https://www.leercapitulo.co/"
+  },
+  "selectors": {
+    "listSelector": "div.lc-card, div.cate-manga div.media",
+    "titleSelector": "a.lc-card-name, h4.media-heading a",
+    "linkSelector": "a.lc-card-name[href*='/manga/'], h4.media-heading a",
+    "coverSelector": "a.lc-card-cover img, img",
+    "chapterSelector": "a[href*='/leer/']",
+    "pageImgSelector": "div.comic_wraCon img, div#all img, div.reading-content img, img[data-src]:not([src*='/covers/']):not([data-src*='/covers/']):not([src*='/assets/']):not([data-src*='/assets/']), img[src]:not([src*='/covers/']):not([src*='/assets/'])",
+    "nextPageSelector": "a[href*='page={page+1}'], a[rel=next]"
+  },
+  "popularRequest": {
+    "method": "GET",
+    "firstPagePathTemplate": "/manga/",
+    "pathTemplate": "/manga/?page={page}"
+  },
+  "latestRequest": {
+    "method": "GET",
+    "firstPagePathTemplate": "/",
+    "pathTemplate": "/manga/?page={page}"
+  },
+  "searchRequest": {
+    "method": "GET",
+    "pathTemplate": "/manga/?q={query}&page={page}"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://www.leercapitulo.co/"
+    }
+  ],
+  "upstreamSourceId": 5621901596522308538,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "mirrors": [
+    "https://www.leercapitulo.co"
+  ],
+  "upstreamExtVersionCode": 106001,
+  "versionId": 1,
+  "recipePath": "recipes/leercapitulo_co.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    5621901596522308538
+  ],
+  "versionCode": 106001,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

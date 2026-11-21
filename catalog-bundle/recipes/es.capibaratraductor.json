@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.capibaratraductor",
+  "name": "CapibaraTraductor",
+  "baseUrl": "https://capibaratraductor.com",
+  "lang": "es",
+  "version": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "headers": {
+    "Referer": "https://capibaratraductor.com/",
+    "Origin": "https://capibaratraductor.com"
+  },
+  "selectors": {
+    "listSelector": "$.data.items[*]"
+  },
+  "jsonApi": {
+    "defaultOrg": "senshimanga",
+    "popularRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga-custom?page={page}&limit=24",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "{baseUrl}/",
+        "x-organization": "{org}"
+      }
+    },
+    "latestRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga-custom?page={page}&limit=24",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "{baseUrl}/",
+        "x-organization": "{org}"
+      }
+    },
+    "searchRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga-custom?page={page}&limit=24&search={query}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "{baseUrl}/",
+        "x-organization": "{org}"
+      }
+    },
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga-custom/{slug}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "{baseUrl}/",
+        "x-organization": "{org}"
+      }
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga-custom/{slug}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "{baseUrl}/",
+        "x-organization": "{org}"
+      }
+    },
+    "pagesRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga-custom/{slug}/chapter/{chapterNum}/pages",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "{baseUrl}/",
+        "x-organization": "{org}"
+      }
+    },
+    "mangaUrlTemplate": "{baseUrl}/{org}/manga/{slug}",
+    "chapterUrlTemplate": "{baseUrl}/{org}/manga/{slug}/chapters/{chapterNum}",
+    "imageHeaders": {
+      "Referer": "{baseUrl}/",
+      "Origin": "{baseUrl}",
+      "Sec-Fetch-Dest": "image",
+      "Sec-Fetch-Mode": "no-cors",
+      "Sec-Fetch-Site": "same-site"
+    },
+    "mangaList": {
+      "itemsPath": "$.data.items[*]",
+      "titlePaths": ["$.title", "$.manga.title"],
+      "slugPath": "$.manga.slug",
+      "orgPath": "$.organization.slug",
+      "urlTemplate": "{slug}/{org}",
+      "coverPaths": ["$.imageUrl", "$.manga.imageUrl"],
+      "pagination": {
+        "mode": "JSON_PAGE_COMPARE",
+        "startPage": 1,
+        "pageSize": 24,
+        "lastPagePath": "$.data.maxPage"
+      }
+    },
+    "details": {
+      "rootPath": "$.data",
+      "titlePaths": ["$.title", "$.manga.title"],
+      "descriptionPaths": ["$.description", "$.shortDescription", "$.manga.description"],
+      "coverPaths": ["$.imageUrl", "$.manga.imageUrl"],
+      "genresPath": "$.genres[*].name"
+    },
+    "chapters": {
+      "itemsPath": "$.data.chapters[*]",
+      "numberPath": "$.number",
+      "namePath": "$.title",
+      "nameTemplate": "Capítulo {number} - {name}",
+      "urlTemplate": "{number}/{slug}/{org}",
+      "datePath": "$.releasedAt",
+      "dateFormat": "iso",
+      "skipIfTruePath": "$.isUnreleased",
+      "skipIfNonBlankPath": "$.deletedAt"
+    },
+    "pages": {
+      "itemsPath": "$.data[*]",
+      "imageUrlPath": "$.imageUrl",
+      "orderPath": "$.number",
+      "decoyTriggerPath": "$.ph"
+    }
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://capibaratraductor.com/"
+    }
+  ],
+  "upstreamSourceId": 3335229490349802396,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "mirrors": [
+    "https://capibaratraductor.com"
+  ],
+  "upstreamExtVersionCode": 106005,
+  "versionId": 1,
+  "recipePath": "recipes/es.capibaratraductor.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    3335229490349802396
+  ],
+  "versionCode": 106005,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

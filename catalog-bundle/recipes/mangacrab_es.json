@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "mangacrab_es",
+  "name": "Manga Crab",
+  "baseUrl": "https://es.mangacrab.org",
+  "lang": "es",
+  "version": 1,
+  "preset": "CSS_GENERIC",
+  "status": "DRAFT",
+  "maxHtmlBytes": 2097152,
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.post-title",
+    "titleSelector": "h3 a, h5 a",
+    "linkSelector": "h3 a, h5 a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "css_select",
+      "selector": "div.page-item-detail, div.post-title",
+      "attribute": "innerHTML",
+      "takeFirst": false
+    },
+    {
+      "op": "trim_normalize",
+      "collapseWhitespace": true
+    },
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://es.mangacrab.org/"
+    }
+  ],
+  "upstreamSourceId": 6167683270485370369,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "mirrors": [
+    "https://es.mangacrab.org"
+  ],
+  "upstreamExtVersionCode": 106026,
+  "versionId": 1,
+  "recipePath": "recipes/mangacrab_es.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    6167683270485370369
+  ],
+  "versionCode": 106026,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

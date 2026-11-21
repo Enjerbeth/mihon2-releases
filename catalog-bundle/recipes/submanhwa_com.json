@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "submanhwa_com",
+  "name": "Submanhwa",
+  "baseUrl": "https://submanhwa.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "searchPath": "/search?q={query}",
+  "requiresWebViewCapture": true,
+  "headers": {
+    "Referer": "https://submanhwa.com/"
+  },
+  "mirrors": [
+    "https://submanhwa.com"
+  ],
+  "upstreamSourceId": 1136717301008230074,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "selectors": {
+    "listSelector": "div.up-card, div.bsx, article",
+    "titleSelector": "a.up-title, h3, h4, a",
+    "linkSelector": "a[href*='/serie/'], a[href]",
+    "chapterSelector": "div.lc-info a.lc-t, a.lc-t, a[href*='/capitulo'], a[href*='/leer/'], ul li a",
+    "pageImgSelector": "div#readerarea img, div.reading-content img, main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://submanhwa.com/"
+    }
+  ],
+  "upstreamExtVersionCode": 106005,
+  "recipePath": "recipes/submanhwa_com.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1136717301008230074
+  ],
+  "versionCode": 106005,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

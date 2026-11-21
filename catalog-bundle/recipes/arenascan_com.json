@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "arenascan_com",
+  "name": "Arena Scans",
+  "baseUrl": "https://arenascan.com",
+  "lang": "en",
+  "version": 1,
+  "preset": "MANGA_THEMESIA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "selectors": {
+    "listSelector": "div.listupd div.bsx",
+    "titleSelector": "div.tt",
+    "linkSelector": "a",
+    "chapterSelector": "div#chapterlist ul li a",
+    "pageImgSelector": "div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "css_select",
+      "selector": "div.listupd div.bsx",
+      "attribute": "innerHTML",
+      "takeFirst": false
+    },
+    {
+      "op": "trim_normalize",
+      "collapseWhitespace": true
+    },
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://arenascan.com/"
+    }
+  ],
+  "versionId": 1,
+  "recipePath": "recipes/arenascan_com.json",
+  "mode": "declarative",
+  "upstreamSourceId": 8861274191478178487,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "upstreamSourceIds": [
+    8861274191478178487
+  ],
+  "upstreamExtVersionCode": 106002,
+  "versionCode": 106002,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "kazokuden_com",
+  "name": "Kazoku Den",
+  "baseUrl": "https://www.kazokuden.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://www.kazokuden.com/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://www.kazokuden.com/"
+    }
+  ],
+  "mirrors": [
+    "https://www.kazokuden.com"
+  ],
+  "upstreamSourceId": 475788948976592183,
+  "upstreamExtVersionCode": 106060,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "recipePath": "recipes/kazokuden_com.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    475788948976592183
+  ],
+  "versionCode": 106060,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

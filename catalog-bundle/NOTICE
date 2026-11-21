@@ -1,0 +1,16 @@
+Mihon Declarative Catalog Bundle — Third-Party Attribution & License Notice
+========================================================================
+
+This catalog bundle is distributed under the Apache License, Version 2.0.
+Recipes derived from external open-source extension repositories retain their
+verified OSI-compliant licenses and upstream contributor attributions below:
+
+- Source: FelipeGFA/fonte-extensoes
+  License: Apache-2.0
+  Attribution: FelipeGFA Contributors
+  Recipes (1): haremdekira_lat
+
+- Source: keiyoushi/extensions-source
+  License: Apache-2.0
+  Attribution: The Tachiyomi / Keiyoushi Contributors
+  Recipes (51): anzmanga_com, arenascan_com, asialotus_com, barmanga_com, begatranslation_com, bloomscans_com, bokugentranslation_com, bymichiscan_com, cerberusseries_com, emperorscan_es, es.apollcomics, es.capibaratraductor, es.dragontranslation, es.heavenmanga, es.lectortaurus, es.mangafire, es.mangasin, es.novelcool, houseofotakus_xyz, ikigai_mangas, infrafandub_com, inmortalscan_com, inventariooculto_com, kazokuden_com, lagoonscans_com, lectorhades_com, leercapitulo_co, leermangaesp_org, leermanhwas_com, mangacrab_es, mangadot_net, mangaoni_com, mangasnosekai_com, mangatv_net, manhwalatino_com, manhwaweb_com, marmota_me, mhscans_com, miauscan_com, monopolymanhua_com, mundomanhwa_com, nekoscans_org, olympusxyz_com, ragnarokscanlation_org, seraphicdeviltry_com, spicyscan_com, submanhwa_com, uchuujin_com, vermanhwas_com, vortexscans_org, zonatmo_org

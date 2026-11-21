@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "houseofotakus_xyz",
+  "name": "House Of Otakus",
+  "baseUrl": "https://houseofotakusv2.xyz",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://houseofotakusv2.xyz/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://houseofotakusv2.xyz/"
+    }
+  ],
+  "mirrors": [
+    "https://houseofotakusv2.xyz"
+  ],
+  "upstreamSourceId": 1968531533450563052,
+  "upstreamExtVersionCode": 106060,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "recipePath": "recipes/houseofotakus_xyz.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1968531533450563052
+  ],
+  "versionCode": 106060,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}

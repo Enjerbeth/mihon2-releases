@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "ragnarokscanlation_org",
+  "name": "Ragnarok Scanlation",
+  "baseUrl": "https://ragnarokscanlation.org",
+  "lang": "es",
+  "version": 2,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "catalogPath": "/series",
+  "maxHtmlBytes": 2097152,
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img"
+  },
+  "requiresWebViewCapture": false,
+  "pipelineSteps": [
+    {
+      "op": "css_select",
+      "selector": "div.reading-content img",
+      "attribute": "data-src",
+      "takeFirst": false
+    },
+    {
+      "op": "trim_normalize",
+      "collapseWhitespace": true
+    },
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://ragnarokscanlation.org/"
+    }
+  ],
+  "upstreamSourceId": 1348827658894665970,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "mirrors": [
+    "https://ragnarokscanlation.org"
+  ],
+  "versionId": 2,
+  "upstreamExtVersionCode": 106063,
+  "recipePath": "recipes/ragnarokscanlation_org.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1348827658894665970
+  ],
+  "versionCode": 106063,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+}
