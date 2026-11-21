@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-20T20:41:50Z",
-  "catalogRevision": 5,
+  "generatedAt": "2026-11-21T00:30:45Z",
+  "catalogRevision": 6,
   "recipes": [
     {
       "schemaVersion": 1,
@@ -1096,6 +1096,7 @@
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
       "catalogPath": "",
+      "searchPath": "/search/?s={query}",
       "headers": {
         "Referer": "https://leermanhwas.com/"
       },
@@ -1207,6 +1208,7 @@
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
       "catalogPath": "/directorio",
+      "searchPath": "/buscar?q={query}",
       "requiresWebViewCapture": true,
       "headers": {
         "Referer": "https://manga-oni.com/"
@@ -1426,6 +1428,7 @@
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
       "catalogPath": "",
+      "searchPath": "/search?q={query}",
       "headers": {
         "Referer": "https://mhscans.com/"
       },
@@ -1758,6 +1761,7 @@
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
       "catalogPath": "",
+      "searchPath": "/search?q={query}",
       "requiresWebViewCapture": true,
       "headers": {
         "Referer": "https://submanhwa.com/"
