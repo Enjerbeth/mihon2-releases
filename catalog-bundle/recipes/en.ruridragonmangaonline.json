@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.ruridragonmangaonline",
+  "name": "RuriDragon Manga Online",
+  "baseUrl": "https://w2.ruridragon.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": false,
+  "headers": {
+    "Referer": "https://w2.ruridragon.com/"
+  },
+  "selectors": {
+    "listSelector": "a[href*='/manga/']",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "a[href*='/manga/']",
+    "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/manga/']",
+    "pageImgSelector": "main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://w2.ruridragon.com/"
+    }
+  ],
+  "recipePath": "recipes/en.ruridragonmangaonline.json",
+  "mode": "declarative",
+  "upstreamSourceId": 2796812439185810666,
+  "upstreamSourceIds": [
+    2796812439185810666
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://w2.ruridragon.com"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.en.ruridragonmangaonline",
+  "upstreamExtVersionCode": 106003,
+  "versionCode": 106003,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/ruridragonmangaonline/res/mipmap-xhdpi/ic_launcher.png"
+}

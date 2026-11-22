@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.baramangaonline",
+  "name": "Bara Manga Online",
+  "baseUrl": "https://baramangaonline.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": false,
+  "headers": {
+    "Referer": "https://baramangaonline.com/"
+  },
+  "selectors": {
+    "listSelector": "article",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "a[href]",
+    "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/leer/'], a[href*='/read/'], li a",
+    "pageImgSelector": "article img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://baramangaonline.com/"
+    }
+  ],
+  "recipePath": "recipes/en.baramangaonline.json",
+  "mode": "declarative",
+  "upstreamSourceId": 4820009787408102796,
+  "upstreamSourceIds": [
+    4820009787408102796
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://baramangaonline.com"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.all.baramangaonline",
+  "upstreamExtVersionCode": 106001,
+  "versionCode": 106001,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/baramangaonline/res/mipmap-xhdpi/ic_launcher.png"
+}

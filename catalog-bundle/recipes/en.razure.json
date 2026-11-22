@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.razure",
+  "name": "Razure",
+  "baseUrl": "https://razure.org",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": false,
+  "headers": {
+    "Referer": "https://razure.org/"
+  },
+  "selectors": {
+    "listSelector": "article",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "a[href]",
+    "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/leer/'], a[href*='/read/'], li a",
+    "pageImgSelector": "main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://razure.org/"
+    }
+  ],
+  "recipePath": "recipes/en.razure.json",
+  "mode": "declarative",
+  "upstreamSourceId": 3017959474962204247,
+  "upstreamSourceIds": [
+    3017959474962204247
+  ],
+  "license": "Apache-2.0",
+  "attribution": "FelipeGFA Contributors",
+  "mirrors": [
+    "https://razure.org"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.en.razure",
+  "upstreamExtVersionCode": 106000,
+  "versionCode": 106000,
+  "upstreamRepo": "FelipeGFA/fonte-extensoes",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/en/razure/res/mipmap-xhdpi/ic_launcher.png"
+}

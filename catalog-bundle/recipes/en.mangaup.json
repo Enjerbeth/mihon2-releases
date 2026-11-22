@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.mangaup",
+  "name": "Manga UP!",
+  "baseUrl": "https://global.manga-up.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": true,
+  "headers": {
+    "Referer": "https://global.manga-up.com/"
+  },
+  "selectors": {
+    "listSelector": "a[href*='/manga/']",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "a[href*='/manga/']",
+    "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/manga/']",
+    "pageImgSelector": "div.reading-content img, div#readerarea img, main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://global.manga-up.com/"
+    }
+  ],
+  "recipePath": "recipes/en.mangaup.json",
+  "mode": "declarative",
+  "upstreamSourceId": 7689478295161479290,
+  "upstreamSourceIds": [
+    7689478295161479290
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://global.manga-up.com"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.all.mangaup",
+  "upstreamExtVersionCode": 106004,
+  "versionCode": 106004,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/mangaup/res/mipmap-xhdpi/ic_launcher.png"
+}

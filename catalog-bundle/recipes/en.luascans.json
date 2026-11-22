@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.luascans",
+  "name": "Lua Scans",
+  "baseUrl": "https://luacomic.org",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": false,
+  "headers": {
+    "Referer": "https://luacomic.org/"
+  },
+  "selectors": {
+    "listSelector": "a[href*='/series/']",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "a[href*='/series/']",
+    "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/read/'], a[href*='/series/']",
+    "pageImgSelector": "main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://luacomic.org/"
+    }
+  ],
+  "recipePath": "recipes/en.luascans.json",
+  "mode": "declarative",
+  "upstreamSourceId": 972271455406675873,
+  "upstreamSourceIds": [
+    972271455406675873
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://luacomic.org"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.en.luascans",
+  "upstreamExtVersionCode": 106054,
+  "versionCode": 106054,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/luascans/res/mipmap-xhdpi/ic_launcher.png"
+}

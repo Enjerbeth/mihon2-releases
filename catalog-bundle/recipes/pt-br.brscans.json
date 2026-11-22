@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.brscans",
+  "name": "BRScans",
+  "baseUrl": "https://brscans.vercel.app",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": false,
+  "headers": {
+    "Referer": "https://brscans.vercel.app/"
+  },
+  "selectors": {
+    "listSelector": "a[href*='/manga/']",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "a[href*='/manga/']",
+    "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/manga/']",
+    "pageImgSelector": "div.reading-content img, div#readerarea img, main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://brscans.vercel.app/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.brscans.json",
+  "mode": "declarative",
+  "upstreamSourceId": 1420003550573697308,
+  "upstreamSourceIds": [
+    1420003550573697308
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://brscans.vercel.app"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.brscans",
+  "upstreamExtVersionCode": 106002,
+  "versionCode": 106002,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/brscans/res/mipmap-xhdpi/ic_launcher.png"
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.noranofansub",
+  "name": "Nora no Fansub",
+  "baseUrl": "https://www.noranofansub.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": false,
+  "headers": {
+    "Referer": "https://www.noranofansub.com/"
+  },
+  "selectors": {
+    "listSelector": "article",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "a[href]",
+    "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/leer/'], a[href*='/read/'], li a",
+    "pageImgSelector": "article img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://www.noranofansub.com/"
+    }
+  ],
+  "recipePath": "recipes/es.noranofansub.json",
+  "mode": "declarative",
+  "upstreamSourceId": 7799054035626535709,
+  "upstreamSourceIds": [
+    7799054035626535709
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://www.noranofansub.com"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.es.noranofansub",
+  "upstreamExtVersionCode": 106007,
+  "versionCode": 106007,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/noranofansub/res/mipmap-xhdpi/ic_launcher.png"
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.arvenscans",
+  "name": "Arven Scans",
+  "baseUrl": "https://arvenscans.net",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": false,
+  "headers": {
+    "Referer": "https://arvenscans.net/"
+  },
+  "selectors": {
+    "listSelector": "a[href*='/series/']",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "a[href*='/series/']",
+    "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/read/'], a[href*='/series/']",
+    "pageImgSelector": "main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://arvenscans.net/"
+    }
+  ],
+  "recipePath": "recipes/en.arvenscans.json",
+  "mode": "declarative",
+  "upstreamSourceId": 640484333556017983,
+  "upstreamSourceIds": [
+    640484333556017983
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://arvenscans.net"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.en.arvenscansnet",
+  "upstreamExtVersionCode": 106001,
+  "versionCode": 106001,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/arvenscansnet/res/mipmap-xhdpi/ic_launcher.png"
+}

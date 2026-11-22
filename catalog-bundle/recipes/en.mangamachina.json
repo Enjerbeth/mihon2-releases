@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.mangamachina",
+  "name": "MangaMachina",
+  "baseUrl": "https://mangamachina.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": false,
+  "headers": {
+    "Referer": "https://mangamachina.com/"
+  },
+  "selectors": {
+    "listSelector": "article",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "a[href]",
+    "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/leer/'], a[href*='/read/'], li a",
+    "pageImgSelector": "main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://mangamachina.com/"
+    }
+  ],
+  "recipePath": "recipes/en.mangamachina.json",
+  "mode": "declarative",
+  "upstreamSourceId": 5509878196968851775,
+  "upstreamSourceIds": [
+    5509878196968851775
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://mangamachina.com"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.all.rawkumame",
+  "upstreamExtVersionCode": 106004,
+  "versionCode": 106004,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/rawkumame/res/mipmap-xhdpi/ic_launcher.png"
+}

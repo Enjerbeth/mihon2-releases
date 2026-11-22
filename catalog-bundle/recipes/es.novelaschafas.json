@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.novelaschafas",
+  "name": "Novelas Chafas",
+  "baseUrl": "https://novelasmaschafas.blogspot.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://novelasmaschafas.blogspot.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.post, div.grid a, div.hentai",
+    "titleSelector": "h2, h3, h4, a",
+    "linkSelector": "a[href]",
+    "chapterSelector": "div.chapter-list a, ul.chapters a, a[href*='.html']",
+    "pageImgSelector": "div.post-body img, div.separator img, article img, main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://novelasmaschafas.blogspot.com/"
+    }
+  ],
+  "recipePath": "recipes/es.novelaschafas.json",
+  "mode": "declarative",
+  "upstreamSourceId": 5995681780527202568,
+  "upstreamSourceIds": [
+    5995681780527202568
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://novelasmaschafas.blogspot.com"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.es.novelaschafas",
+  "upstreamExtVersionCode": 104002,
+  "versionCode": 104002,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

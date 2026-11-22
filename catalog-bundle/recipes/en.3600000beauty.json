@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.3600000beauty",
+  "name": "3600000 Beauty",
+  "baseUrl": "https://3600000.xyz",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": false,
+  "headers": {
+    "Referer": "https://3600000.xyz/"
+  },
+  "selectors": {
+    "listSelector": "article",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "a[href]",
+    "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/leer/'], a[href*='/read/'], li a",
+    "pageImgSelector": "main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://3600000.xyz/"
+    }
+  ],
+  "recipePath": "recipes/en.3600000beauty.json",
+  "mode": "declarative",
+  "upstreamSourceId": 5498091984644576825,
+  "upstreamSourceIds": [
+    5498091984644576825
+  ],
+  "license": "Apache-2.0",
+  "attribution": "FelipeGFA Contributors",
+  "mirrors": [
+    "https://3600000.xyz"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.all.beauty3600000",
+  "upstreamExtVersionCode": 104006,
+  "versionCode": 104006,
+  "upstreamRepo": "FelipeGFA/fonte-extensoes",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/all/beauty3600000/res/mipmap-xhdpi/ic_launcher.png"
+}

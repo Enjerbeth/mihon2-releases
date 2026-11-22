@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.18porncomic",
+  "name": "18 Porn Comic",
+  "baseUrl": "https://18porncomic.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": false,
+  "headers": {
+    "Referer": "https://18porncomic.com/"
+  },
+  "selectors": {
+    "listSelector": "a[href*='/comic/']",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "a[href*='/comic/']",
+    "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/comic/']",
+    "pageImgSelector": "main img, article img, div img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://18porncomic.com/"
+    }
+  ],
+  "recipePath": "recipes/en.18porncomic.json",
+  "mode": "declarative",
+  "upstreamSourceId": 5133553291675008671,
+  "upstreamSourceIds": [
+    5133553291675008671
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://18porncomic.com"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.en.eighteenporncomic",
+  "upstreamExtVersionCode": 106001,
+  "versionCode": 106001,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/lib-multisrc/manga18/res/mipmap-xhdpi/ic_launcher.png"
+}

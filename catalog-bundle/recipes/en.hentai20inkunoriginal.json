@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.hentai20inkunoriginal",
+  "name": "Hentai20.ink (unoriginal)",
+  "baseUrl": "https://www.hentai20.ink",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": false,
+  "headers": {
+    "Referer": "https://www.hentai20.ink/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "h3 a, h5 a, div.post-title a, a",
+    "chapterSelector": "a[href*='chapter']",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://www.hentai20.ink/"
+    }
+  ],
+  "recipePath": "recipes/en.hentai20inkunoriginal.json",
+  "mode": "declarative",
+  "upstreamSourceId": 2602706581383358969,
+  "upstreamSourceIds": [
+    2602706581383358969
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://www.hentai20.ink"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.all.hentai20ink",
+  "upstreamExtVersionCode": 106060,
+  "versionCode": 106060,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/hentai20ink/res/mipmap-xhdpi/ic_launcher.png"
+}

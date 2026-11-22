@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.readthebeginningaftertheendmangaonline",
+  "name": "Read The Beginning After The End Manga Online",
+  "baseUrl": "https://w22.thebeginningaftertheendmanga.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": false,
+  "headers": {
+    "Referer": "https://w22.thebeginningaftertheendmanga.com/"
+  },
+  "selectors": {
+    "listSelector": "a[href*='/manga/']",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "a[href*='/manga/']",
+    "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/manga/']",
+    "pageImgSelector": "main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://w22.thebeginningaftertheendmanga.com/"
+    }
+  ],
+  "recipePath": "recipes/en.readthebeginningaftertheendmangaonline.json",
+  "mode": "declarative",
+  "upstreamSourceId": 1751128597475577885,
+  "upstreamSourceIds": [
+    1751128597475577885
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://w22.thebeginningaftertheendmanga.com"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.en.thebeginningaftertheendmangaonline",
+  "upstreamExtVersionCode": 106003,
+  "versionCode": 106003,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/thebeginningaftertheendmangaonline/res/mipmap-xhdpi/ic_launcher.png"
+}

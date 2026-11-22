@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.webcomics",
+  "name": "Webcomics",
+  "baseUrl": "https://webcomicsapp.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": false,
+  "headers": {
+    "Referer": "https://webcomicsapp.com/"
+  },
+  "selectors": {
+    "listSelector": "a[href*='/comic/']",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "a[href*='/comic/']",
+    "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/comic/']",
+    "pageImgSelector": "main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://webcomicsapp.com/"
+    }
+  ],
+  "recipePath": "recipes/en.webcomics.json",
+  "mode": "declarative",
+  "upstreamSourceId": 5830834696627804450,
+  "upstreamSourceIds": [
+    5830834696627804450
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://webcomicsapp.com"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.all.webcomics",
+  "upstreamExtVersionCode": 106014,
+  "versionCode": 106014,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/webcomics/res/mipmap-xhdpi/ic_launcher.png"
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.mangamo",
+  "name": "Mangamo",
+  "baseUrl": "https://www.mangamo.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": false,
+  "headers": {
+    "Referer": "https://www.mangamo.com/"
+  },
+  "selectors": {
+    "listSelector": "a[href*='/manga/']",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "a[href*='/manga/']",
+    "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/manga/']",
+    "pageImgSelector": "main img, article img, div img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://www.mangamo.com/"
+    }
+  ],
+  "recipePath": "recipes/en.mangamo.json",
+  "mode": "declarative",
+  "upstreamSourceId": 6458420328066857684,
+  "upstreamSourceIds": [
+    6458420328066857684
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://www.mangamo.com"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.en.mangamo",
+  "upstreamExtVersionCode": 106009,
+  "versionCode": 106009,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/mangamo/res/mipmap-xhdpi/ic_launcher.png"
+}

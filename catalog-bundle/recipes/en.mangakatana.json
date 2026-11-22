@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.mangakatana",
+  "name": "MangaKatana",
+  "baseUrl": "https://mangakatana.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": false,
+  "headers": {
+    "Referer": "https://mangakatana.com/"
+  },
+  "selectors": {
+    "listSelector": "div.media",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "h4 a, h5 a, a",
+    "chapterSelector": "div.chapters a, ul.chapters a, div#chapters a, div.chapter-list a",
+    "pageImgSelector": "main img, article img, div img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://mangakatana.com/"
+    }
+  ],
+  "recipePath": "recipes/en.mangakatana.json",
+  "mode": "declarative",
+  "upstreamSourceId": 3170561626848540385,
+  "upstreamSourceIds": [
+    3170561626848540385
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://mangakatana.com"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.en.mangakatana",
+  "upstreamExtVersionCode": 106002,
+  "versionCode": 106002,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/mangakatana/res/mipmap-xhdpi/ic_launcher.png"
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.nexusscanlation",
+  "name": "NexusScanlation",
+  "baseUrl": "https://nexusscanlation.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": true,
+  "headers": {
+    "Referer": "https://nexusscanlation.com/"
+  },
+  "selectors": {
+    "listSelector": "a[href*='/series/']",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "a[href*='/series/']",
+    "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/read/'], a[href*='/series/']",
+    "pageImgSelector": "div.reading-content img, div#readerarea img, main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://nexusscanlation.com/"
+    }
+  ],
+  "recipePath": "recipes/es.nexusscanlation.json",
+  "mode": "declarative",
+  "upstreamSourceId": 4086183896761281232,
+  "upstreamSourceIds": [
+    4086183896761281232
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://nexusscanlation.com"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.es.nexusscanlation",
+  "upstreamExtVersionCode": 106008,
+  "versionCode": 106008,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/nexusscanlation/res/mipmap-xhdpi/ic_launcher.png"
+}

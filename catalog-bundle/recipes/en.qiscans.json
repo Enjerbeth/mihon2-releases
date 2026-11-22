@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.qiscans",
+  "name": "QiScans",
+  "baseUrl": "https://qimanga.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": false,
+  "headers": {
+    "Referer": "https://qimanga.com/"
+  },
+  "selectors": {
+    "listSelector": "article",
+    "titleSelector": "h3, h4, h5, span, a",
+    "linkSelector": "a[href]",
+    "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/leer/'], a[href*='/read/'], li a",
+    "pageImgSelector": "main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://qimanga.com/"
+    }
+  ],
+  "recipePath": "recipes/en.qiscans.json",
+  "mode": "declarative",
+  "upstreamSourceId": 5806040666300479660,
+  "upstreamSourceIds": [
+    5806040666300479660
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://qimanga.com"
+  ],
+  "pkgName": "eu.kanade.tachiyomi.extension.en.qiscans",
+  "upstreamExtVersionCode": 106004,
+  "versionCode": 106004,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/qiscans/res/mipmap-xhdpi/ic_launcher.png"
+}
