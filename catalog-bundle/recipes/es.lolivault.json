@@ -4,7 +4,7 @@
   "name": "Lolivault",
   "baseUrl": "https://lector.lolivault.net",
   "lang": "es",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -31,6 +31,21 @@
     "chapterDateFormat": "yyyy.MM.dd"
   },
   "pipelineSteps": [
+    {
+      "op": "css_select",
+      "selector": "script:containsData(var pages)",
+      "takeFirst": true
+    },
+    {
+      "op": "regex_extract",
+      "pattern": "\"url\"\\s*:\\s*\"([^\"]+)\"",
+      "group": 1,
+      "takeAll": true
+    },
+    {
+      "op": "trim_normalize",
+      "collapseWhitespace": true
+    },
     {
       "op": "referer_bind",
       "refererUrl": "https://lector.lolivault.net/"

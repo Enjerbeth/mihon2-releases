@@ -4,7 +4,7 @@
   "name": "Lector Asteria",
   "baseUrl": "https://visor.chifa-tong.online",
   "lang": "es",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -15,15 +15,11 @@
     "Referer": "https://visor.chifa-tong.online/"
   },
   "selectors": {
-    "listSelector": "article, div.manga-item, div.page-item-detail",
-    "titleSelector": "h3 a, h4 a, a",
+    "listSelector": "article",
+    "titleSelector": "h3, h4, a",
     "linkSelector": "a",
-    "coverSelector": "div.item-thumb img, img.post-thumb",
-    "chapterSelector": "li a, div.chapter-item a",
-    "pageImgSelector": "div.reading-content img, div#readerarea img",
-    "detailsTitleSelector": "div.post-title h1, h1.entry-title",
-    "detailsCoverSelector": "div.summary_image img",
-    "descriptionSelector": "div.description-summary"
+    "chapterSelector": "a[href*='/capitulo']",
+    "pageImgSelector": "main img"
   },
   "pipelineSteps": [
     {

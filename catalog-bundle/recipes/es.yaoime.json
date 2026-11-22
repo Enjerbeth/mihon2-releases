@@ -4,7 +4,7 @@
   "name": "Yaoi.me",
   "baseUrl": "https://yaoi.me",
   "lang": "es",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -15,11 +15,11 @@
     "Referer": "https://yaoi.me/"
   },
   "selectors": {
-    "listSelector": "article, div.manga-item, div.page-item-detail",
-    "titleSelector": "h3 a, h4 a, a",
-    "linkSelector": "a",
-    "chapterSelector": "li a, div.chapter-item a",
-    "pageImgSelector": "div.reading-content img, div#readerarea img"
+    "listSelector": "a[href*='/series/']",
+    "titleSelector": "h3, h4, span, a",
+    "linkSelector": "a[href*='/series/']",
+    "chapterSelector": "a[href*='/chapter']",
+    "pageImgSelector": "main img, div.reading-content img"
   },
   "pipelineSteps": [
     {
@@ -51,5 +51,6 @@
     "hmacSecret": "85cedf4fed3602c3a35c18010b502584dee9594708ba673052d562c7f2b1a9de",
     "target": "QUERY",
     "timestampFormat": "EPOCH_MILLIS"
-  }
+  },
+  "requiresWebViewCapture": true
 }

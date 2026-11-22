@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-22T20:40:17Z",
-  "catalogRevision": 23,
+  "generatedAt": "2026-11-22T21:44:25Z",
+  "catalogRevision": 25,
   "entries": [
     {
       "sourceId": "anzmanga_com",
@@ -30,7 +30,7 @@
       "name": "Arena Scans",
       "baseUrl": "https://arenascan.com",
       "lang": "en",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "MANGA_THEMESIA",
       "status": "ACTIVE",
@@ -45,7 +45,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "9851e3b952bcd7758b00436a5992d70eb4adca78095b252ff4398669c1aa7bf1"
+      "sha256": "2a00eb915e3640a784c50b0e5d9c6b4befbfb9ad17b808e798fe4d337d03c5ec"
     },
     {
       "sourceId": "bloomscans_com",
@@ -797,7 +797,7 @@
       "name": "Death Toll Scans",
       "baseUrl": "https://reader.deathtollscans.net",
       "lang": "en",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -812,7 +812,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "b654222ec9f965b815fdb998aa4f00183f4cc04bbaf32a068f84afe00efb96c6"
+      "sha256": "acf4131bcbd9cba91932ce7684bb01b70806921a0aca14d6f8379e7e758f4c94"
     },
     {
       "sourceId": "en.decadencescans",
@@ -2589,7 +2589,7 @@
       "name": "Luscious",
       "baseUrl": "https://www.luscious.net",
       "lang": "en",
-      "version": 2,
+      "version": 3,
       "versionId": 1,
       "preset": "JSON_API",
       "status": "ACTIVE",
@@ -2605,7 +2605,7 @@
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
       "requiresCloudflareBypass": true,
-      "sha256": "29ebfa7273c08e2c647259fa7cda429c589a72015add5254b79d774d02ba6350"
+      "sha256": "e18650de4bcdef2303cc3e98854b4c91853ef02a4806fc08147bd055ba84b48e"
     },
     {
       "sourceId": "en.madaradex",
@@ -3480,7 +3480,7 @@
       "name": "Mangatellers",
       "baseUrl": "https://reader.mangatellers.gr",
       "lang": "en",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -3495,7 +3495,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "f8969c526f7946468b1d11e29f7c401060b32c01df3091fbe21c73fcc873aec2"
+      "sha256": "a7815f84cba2bbb259da20f3c9a10364748bb64bdcf357b5bce81c305191dbe1"
     },
     {
       "sourceId": "en.mangatrend",
@@ -4268,10 +4268,10 @@
       "name": "NHentai",
       "baseUrl": "https://nhentai.net",
       "lang": "en",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "JSON_API",
-      "status": "ACTIVE",
+      "status": "QUARANTINED",
       "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/all/nhentai/res/mipmap-xhdpi/ic_launcher.png",
       "recipePath": "recipes/en.nhentai.json",
       "mode": "declarative",
@@ -4284,7 +4284,7 @@
       "license": "Apache-2.0",
       "attribution": "FelipeGFA Contributors",
       "requiresCloudflareBypass": true,
-      "sha256": "9775e53c062b1614524a8542ba3671f65c554321e8a39024aad8d3fb2872952a"
+      "sha256": "ef5431662c6472599ecb40e96db067415f7393a8b8f749d9f1b179ea8be192b4"
     },
     {
       "sourceId": "en.nhentaicom",
@@ -5162,7 +5162,7 @@
       "name": "Seinagi",
       "baseUrl": "https://reader.seinagi.org.es",
       "lang": "en",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -5177,7 +5177,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "ed79bc8fe85b8768a004d33974be0a95dbe317f2168baac685c0a11a479591a3"
+      "sha256": "95f1d0b24360749f41cf7646cd72848f9645f10d5bd3c48687624afa3ee70047"
     },
     {
       "sourceId": "en.seraphicdeviltry",
@@ -6106,10 +6106,10 @@
       "name": "XoManga",
       "baseUrl": "https://www.xomanga.site",
       "lang": "en",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "JSON_API",
-      "status": "ACTIVE",
+      "status": "QUARANTINED",
       "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/xomanga/res/mipmap-xhdpi/ic_launcher.png",
       "recipePath": "recipes/en.xomanga.json",
       "mode": "declarative",
@@ -6122,7 +6122,7 @@
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
       "requiresCloudflareBypass": true,
-      "sha256": "537758515bb75e11e039ecbca8000f2f59e03516c748ea50063ceb74bc706976"
+      "sha256": "f973bbdc3fa7386069f0ee5b80a6c8133a2cfe11f3d22d9622a3f70ad2da51ac"
     },
     {
       "sourceId": "en.xoxocomics",
@@ -6532,7 +6532,7 @@
       "name": "Yaoi.me",
       "baseUrl": "https://yaoi.me",
       "lang": "es-419",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -6547,14 +6547,14 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "26d827af3b09b17ac6e3290a1a9e11827cd94234817478120dca5328007cbece"
+      "sha256": "3b583228ab79903169cff6216b6a233f0fa2ddd703d00a571e28f883615ab685"
     },
     {
       "sourceId": "es.achymanga",
       "name": "AchyManga",
       "baseUrl": "https://achymanga.online",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -6569,7 +6569,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "4ca83531eb8c402a8ed2652ea2f2f255f25a85a0b1803f47012280378b342ae4"
+      "sha256": "09625404298c235b912bf14345f4ebcaa0cc71291a0d6bff0b36d2dade2ccb21"
     },
     {
       "sourceId": "es.akuma",
@@ -6800,7 +6800,7 @@
       "name": "Colorcito Scan",
       "baseUrl": "https://coloresito.site",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -6816,7 +6816,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "90a204544f20463cfd3e2833023a50d0ec865796438b41bca48c3ed3265c96e3"
+      "sha256": "dc4b30d73acb8fce39bc48b4aece946f44723d2d21a9d518de07538d7d4e0f41"
     },
     {
       "sourceId": "es.comics18",
@@ -6978,7 +6978,7 @@
       "name": "EternalMangas",
       "baseUrl": "https://eternalmangas.org",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -6995,7 +6995,7 @@
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
       "requiresCloudflareBypass": true,
-      "sha256": "bcdac4bd41d33e98a2c9e1ba522b41aecf25431fe6960f8230aec944793f2008"
+      "sha256": "329fc9c41606c344115aabfcaa1f1d6e69b0c9d54422f78eab39e290cad2a34a"
     },
     {
       "sourceId": "es.gocomics",
@@ -7181,9 +7181,9 @@
       "name": "Ikuhentai",
       "baseUrl": "https://ikuhentai.net",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
-      "preset": "CSS_GENERIC",
+      "preset": "MADARA",
       "status": "ACTIVE",
       "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/ikuhentai/res/mipmap-xhdpi/ic_launcher.png",
       "recipePath": "recipes/es.ikuhentai.json",
@@ -7196,7 +7196,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "298bf27c8cd154fe93a6dbdfbb6771a96f49f372fe42b73cbf10aaaccee405a2"
+      "sha256": "21de28b6c94b6d100c4caf6298a4bc31712407e1a799a612ae91d2fb48045886"
     },
     {
       "sourceId": "es.imhentai",
@@ -7272,7 +7272,7 @@
       "name": "Jeaz Scans",
       "baseUrl": "https://lectorhub.j5z.xyz",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -7287,7 +7287,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "72715bcc2915de8ed334cbc1261a9d079515c5e2f07402b296c86096c9c6b6df"
+      "sha256": "b2c3034895b0e2f014b6d25976042df1cb05e0eef8f74e58c6516854f7e34071"
     },
     {
       "sourceId": "es.jentranslation",
@@ -7361,7 +7361,7 @@
       "name": "Komiwa",
       "baseUrl": "https://www.komiwa.net",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -7376,14 +7376,14 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "95e78c05da3654120a33460cac918d1feb802f3d4bf20e84d7864285af117b4a"
+      "sha256": "1efbc8228b90d5bce3bc7a44cd5a78451fecc93913e50eb70cb7e2724e0ee0a2"
     },
     {
       "sourceId": "es.lectorasteria",
       "name": "Lector Asteria",
       "baseUrl": "https://visor.chifa-tong.online",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -7398,7 +7398,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "952e5c785bda68274449bcfbb5104456fe860d5f6ae92cc23e24874d39bf1c75"
+      "sha256": "35da0cd59970dc30916e3b985909db84c6f14ca31d8ac0d030fa3a1247d74f78"
     },
     {
       "sourceId": "es.lectorhentai",
@@ -7427,7 +7427,7 @@
       "name": "MangoLibreria",
       "baseUrl": "https://lectorfenix.com",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -7442,7 +7442,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "d393cc1ec51dd27251c836c274ed422a0144d462ddbfdd14c1d50545ba9b2e26"
+      "sha256": "661c30beb5b43f9f82ee8bdf02ed2efb00515b4ca97e39d2006078051e99f23a"
     },
     {
       "sourceId": "es.lectortaurus",
@@ -7607,7 +7607,7 @@
       "name": "Lolivault",
       "baseUrl": "https://lector.lolivault.net",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -7622,14 +7622,14 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "23b4a06ba513130e02fe3a8c355d7d9b65cb2aba33083995e4f77750bcd604aa"
+      "sha256": "2e52fc403aab1f357f9f5919ef686d4b137090a0c4c4c0eb04412bb15a2b301d"
     },
     {
       "sourceId": "es.luscious",
       "name": "Luscious",
       "baseUrl": "https://www.luscious.net",
       "lang": "es",
-      "version": 2,
+      "version": 3,
       "versionId": 1,
       "preset": "JSON_API",
       "status": "ACTIVE",
@@ -7645,7 +7645,7 @@
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
       "requiresCloudflareBypass": true,
-      "sha256": "552206e9bb69121aeb1fd0f30c8cd44441abef3a1c4412b40f4d0bfbef56562d"
+      "sha256": "c1c93052c41891f5c9886b4f6a1908242936275e629324d6828ef8eabb4a21d6"
     },
     {
       "sourceId": "es.magicaltranslators",
@@ -7674,7 +7674,7 @@
       "name": "Manga Crab",
       "baseUrl": "https://es.mangacrab.org",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -7690,7 +7690,7 @@
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
       "requiresCloudflareBypass": true,
-      "sha256": "6a7c3f4027a0f02775d1780d863bbcd23a6393cdc6b7049433aeaa74dd66d7a7"
+      "sha256": "eea5eb6c5c662f569a55980795c34519fdf770cb5c4f8b3411d4ea32a5864827"
     },
     {
       "sourceId": "es.mangafire",
@@ -7783,6 +7783,28 @@
       "sha256": "35f3dae0e88d7a0c9db727aea02bc7d2de9a1c1ea7422e004b1e98aacde80553"
     },
     {
+      "sourceId": "es.mangasin",
+      "name": "Mangas.in",
+      "baseUrl": "https://m440.in",
+      "lang": "es",
+      "version": 2,
+      "versionId": 1,
+      "preset": "CSS_GENERIC",
+      "status": "ACTIVE",
+      "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/mangasin/res/mipmap-xhdpi/ic_launcher.png",
+      "recipePath": "recipes/es.mangasin.json",
+      "mode": "declarative",
+      "pkgName": "eu.kanade.tachiyomi.extension.es.mangasin",
+      "versionCode": 106004,
+      "upstreamSourceId": 3344386250058668105,
+      "upstreamSourceIds": [
+        3344386250058668105
+      ],
+      "license": "Apache-2.0",
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "b566d05d415a595d095ed8fd0f0165a38e4316a6861b586da9b38aa9b5443abc"
+    },
+    {
       "sourceId": "es.mangasnosekai",
       "name": "Mangas No Sekai",
       "baseUrl": "https://mangasnosekai.com",
@@ -7810,7 +7832,7 @@
       "name": "MangaVault",
       "baseUrl": "https://mangavault.lat",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -7826,7 +7848,7 @@
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
       "requiresCloudflareBypass": true,
-      "sha256": "0e4f04a92d406d56946a948fa615682ab760840659e800b771de55543abdd913"
+      "sha256": "4b04f5d579306f34d935755c2cadb50fc727dc1fccbef87e479dbb762d62fdbe"
     },
     {
       "sourceId": "es.manhuarm",
@@ -7901,7 +7923,7 @@
       "name": "ManhwaShot",
       "baseUrl": "https://manhwashot.lat",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -7916,14 +7938,14 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "3cc7519a45a1b4d6425c74882de7a9d79f69a308b9073cea2674e8284ec27df6"
+      "sha256": "8bfc9754762885df9d67689efa33ba76f56be57d6d81f8c974c022d13b0fe0f1"
     },
     {
       "sourceId": "es.mantrazscan",
       "name": "Mantraz Scan",
       "baseUrl": "https://mantrazscanss.lat",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -7938,7 +7960,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "0ba7adff698bb0889c6d5db510adc546c2b457a4880d5f28845a89c45461b2ed"
+      "sha256": "787c902447d6e8eee4b7f2e2aea1e8f8f8baad0a66f71eb1cf21279c6aa70959"
     },
     {
       "sourceId": "es.melapelacomics",
@@ -8126,7 +8148,7 @@
       "name": "Platinum Lily Scan",
       "baseUrl": "https://platinumlilyscan.com",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -8141,7 +8163,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "c76c6662fa94786a151918c6c2d1fc485785faa9ee20a39ff7f5e42783c38f97"
+      "sha256": "3a818233741287caf1096009a5623ded186d9d4debb2e4ae13ab341bc7a9d0fb"
     },
     {
       "sourceId": "es.plottwistnofansub",
@@ -8171,7 +8193,7 @@
       "name": "Pzykosis666HFansub",
       "baseUrl": "https://lector.pzykosis666hfansub.com",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -8186,14 +8208,14 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "45cff8526b8ebf2a2c0033c9ba3ad621f281ea190381ba82083e1fdb96bb57ae"
+      "sha256": "6d65ba55f0cf94c55312776092f65093c447478eef7555e3462a10a43d84665b"
     },
     {
       "sourceId": "es.qtoonunoriginal",
       "name": "Qtoon (unoriginal)",
       "baseUrl": "https://qtoon.org",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -8208,7 +8230,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "175fb002b6f53cd56ef96bec41159a643685810511dea359a047e93c8bf82c31"
+      "sha256": "17e9dc7097d441e6629829939e744a607bf320dabc66dc232b721d985187cc33"
     },
     {
       "sourceId": "es.rakuentranslations",
@@ -8237,7 +8259,7 @@
       "name": "Ranoa",
       "baseUrl": "https://www.ranoa.lat",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -8252,7 +8274,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "b30b1fa2216ee1be04e68fb6d7491a68862a68c07e9ee8e5645bccde77ef8630"
+      "sha256": "6b1e30eb1704551b930d4405ec5ec378be291f18da28ea13f1e6bc2412e0e589"
     },
     {
       "sourceId": "es.sapphirescan",
@@ -8282,7 +8304,7 @@
       "name": "SayManhwa",
       "baseUrl": "https://saymanhwa.net",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -8298,14 +8320,14 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "6fe16bb870056fedbc4151d054dd0ad051050b8d232cc6a6e3e1c21f07777ce4"
+      "sha256": "6184f81cee3bbb078f9e34c4233d3494ab39bc6ae84279191328fab9badffa8b"
     },
     {
       "sourceId": "es.seinagi",
       "name": "Seinagi",
       "baseUrl": "https://online.seinagi.org.es",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -8321,7 +8343,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "dc17b35c3bc477125e8eaa9bc876f9efc8eeaba91bf428c129c13835b15f8ba1"
+      "sha256": "ff9995ba80853c90abdb5bdbf513564a43af6cbae0c617fbe779bff00b56fff7"
     },
     {
       "sourceId": "es.seraphicdeviltry",
@@ -8419,8 +8441,8 @@
       "name": "Submanhwa",
       "baseUrl": "https://submanhwa.com",
       "lang": "es",
-      "version": 1,
-      "versionId": 1,
+      "version": 3,
+      "versionId": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/submanhwa/res/mipmap-xhdpi/ic_launcher.png",
@@ -8434,14 +8456,14 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "9c57d405da2f9365f12bd21c7899e07a19a87348ea05ff2fb6aee921509df5f1"
+      "sha256": "2f5c6d45142c8708fc27c3e713f7eee6046e73e54e1e4e016f69b8471f2444d6"
     },
     {
       "sourceId": "es.swordmangas",
       "name": "SwordMangas",
       "baseUrl": "https://swordmangas.com",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -8456,7 +8478,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "d146fb65c394af64be2eec2728cba18731fd00203b68632e49bad50caa7861b4"
+      "sha256": "4f369f89da966bd8e3f69fa353d98cff38518aafcae29127a736cae9f1406e5c"
     },
     {
       "sourceId": "es.tenkaiscan",
@@ -8622,7 +8644,7 @@
       "name": "Traducciones Moonlight",
       "baseUrl": "https://traduccionesmoonlight.com",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 3,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -8637,7 +8659,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "3d3621b1694a26c0407ba541f70e12c8763eb7b2d70cf742d1da8a94251a0c54"
+      "sha256": "77a2176ad2c14fe46a43bee082f066d9b220d5c3d74eed241751f3a1c15424f3"
     },
     {
       "sourceId": "es.undertranslations",
@@ -8735,7 +8757,7 @@
       "name": "Yaoi.me",
       "baseUrl": "https://yaoi.me",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -8750,7 +8772,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "8620e91e0b6338cd915519ba42c9d15b2d2467ca612ea999bc3e922d798ee439"
+      "sha256": "2da56827d1e0bd5a36b084aa31e92c5a3c385f4ed78619bb1af3a526c3ef2abd"
     },
     {
       "sourceId": "es.yellownote",
@@ -8937,7 +8959,7 @@
       "name": "Lagoon Scans",
       "baseUrl": "https://lagoonscans.com",
       "lang": "en",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "MANGA_THEMESIA",
       "status": "ACTIVE",
@@ -8952,7 +8974,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "58bbf37c3ccef4cea37dc8000e6d94131c2e25aaf50739e25a7f52d7031b4983"
+      "sha256": "dbbad21a30e9a3c9c2d124338a077ca71a608b7c75e515a407d37122311bc401"
     },
     {
       "sourceId": "lectorhades_com",
@@ -9003,7 +9025,7 @@
       "name": "MangaDot",
       "baseUrl": "https://mangadot.net",
       "lang": "es",
-      "version": 2,
+      "version": 3,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -9019,7 +9041,7 @@
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
       "requiresCloudflareBypass": true,
-      "sha256": "f44faabe4ec182c0c96a3806642b673f94b7c2f9b888e023abd3c3c9d38312a8"
+      "sha256": "da8cf111ae81226557a41096505bda41a3cf3c24dd22564708a5892bfd337338"
     },
     {
       "sourceId": "mangaoni_com",
@@ -9386,10 +9408,10 @@
       "name": "Blackout Comics",
       "baseUrl": "https://blackoutcomics.com",
       "lang": "pt-BR",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "JSON_API",
-      "status": "ACTIVE",
+      "status": "QUARANTINED",
       "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/blackoutcomics/res/mipmap-xhdpi/ic_launcher.png",
       "recipePath": "recipes/pt-br.blackoutcomics.json",
       "mode": "declarative",
@@ -9402,7 +9424,7 @@
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
       "requiresCloudflareBypass": true,
-      "sha256": "1ef9873aecf8222a46b604a054590326ddd28ed8639be50d0a9794023aabe0fc"
+      "sha256": "92d4c8efc23269af68df4f6783c42d6ecfbc21c1c4ef24322570bf328b3e9753"
     },
     {
       "sourceId": "pt-br.blitztoons",
@@ -10077,7 +10099,7 @@
       "name": "Luscious",
       "baseUrl": "https://www.luscious.net",
       "lang": "pt-BR",
-      "version": 2,
+      "version": 3,
       "versionId": 1,
       "preset": "JSON_API",
       "status": "ACTIVE",
@@ -10093,7 +10115,7 @@
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
       "requiresCloudflareBypass": true,
-      "sha256": "6ebd95bdcf08642e8cde1382308f54e7efb13de3c4e0e54e1fa455caeba3bb13"
+      "sha256": "b41af89962e4faa514e107772ad7c8cb20677a56e23a50410dc8a56724730009"
     },
     {
       "sourceId": "pt-br.lycantoons",
@@ -11383,7 +11405,7 @@
       "name": "Vortex Scans",
       "baseUrl": "https://vortexscans.org",
       "lang": "en",
-      "version": 2,
+      "version": 3,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -11398,14 +11420,14 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "7abe3a04ac3300b28bd508a7421143f60c547e64c679fb104efa18c56c00e3ce"
+      "sha256": "a7bd9840059c3a37e5c405e216a5c697fe5acacf122d87aa29e1f6c915117065"
     },
     {
       "sourceId": "zonatmo_org",
       "name": "ZonaTMO.org",
       "baseUrl": "https://zonatmo.org",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -11420,7 +11442,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "2c83473a5868cfb38e6491eb6a2c8126a4705863b9fc8a4d881f986e6ed4373d"
+      "sha256": "46511c3b59cb2e2093cad77d3b8ec09d08a0379a2cbd8db5a21d8a4d6334bdd0"
     }
   ]
 }

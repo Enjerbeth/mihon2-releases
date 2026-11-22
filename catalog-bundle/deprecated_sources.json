@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "auditedAt": "2026-11-19",
+  "repoIndex": "https://raw.githubusercontent.com/FelipeGFA/extensoes/refs/heads/repo/index.pb",
+  "removeImmediately": [
+    {
+      "sourceId": "4097111295486074350",
+      "name": "NineMangaEs",
+      "lang": "es",
+      "category": "ORPHANED_FROM_REPO",
+      "reason": "Absent from FelipeGFA index.pb and stalled on niadd.com since 2026-05-17.",
+      "suggestedReplacements": [
+        "manhwaweb_com",
+        "leercapitulo_co",
+        "olympusxyz_com"
+      ]
+    },
+    {
+      "sourceId": "2774059050491200502",
+      "name": "",
+      "lang": "unknown",
+      "category": "ORPHANED_FROM_REPO",
+      "reason": "Unnamed orphaned source pointing to resource.qqtoon.com absent from index.pb.",
+      "suggestedReplacements": []
+    },
+    {
+      "sourceId": "temple_scan",
+      "name": "Temple Scan",
+      "lang": "es",
+      "category": "DNS_DEAD_OR_DOMAIN_ROTATED",
+      "reason": "Dead DNS on aedexnox.akan01.com and aedexnox.syakaihoken-web.com.",
+      "suggestedReplacements": [
+        "es.apollcomics",
+        "manhwaweb_com"
+      ]
+    },
+    {
+      "sourceId": "es_mi2manga",
+      "name": "Es.Mi2Manga",
+      "lang": "es",
+      "category": "DNS_DEAD_OR_DOMAIN_ROTATED",
+      "reason": "Dead DNS on origin host.",
+      "suggestedReplacements": [
+        "zonatmo_org",
+        "leercapitulo_co"
+      ]
+    },
+    {
+      "sourceId": "catharsis_world",
+      "name": "Catharsis World",
+      "lang": "es",
+      "category": "DNS_DEAD_OR_DOMAIN_ROTATED",
+      "reason": "Origin timeout and legacy cleartext http:// covers.",
+      "suggestedReplacements": [
+        "olympusxyz_com",
+        "ikigai_mangas",
+        "mangacrab_es"
+      ]
+    },
+    {
+      "sourceId": "lectormanga_lat",
+      "name": "LectorManga.lat",
+      "lang": "es",
+      "category": "ORIGIN_SERVER_DOWN",
+      "reason": "Cloudflare HTTP 521 (web server down).",
+      "suggestedReplacements": [
+        "zonatmo_org",
+        "leercapitulo_co"
+      ]
+    },
+    {
+      "sourceId": "richtoscan",
+      "name": "RichtoScan",
+      "lang": "es",
+      "category": "ORIGIN_SERVER_DOWN",
+      "reason": "Origin returns HTTP 500 Internal Server Error.",
+      "suggestedReplacements": [
+        "olympusxyz_com",
+        "ragnarokscanlation_org",
+        "lagoonscans_com"
+      ]
+    },
+    {
+      "sourceId": "7570101320206504111",
+      "name": "NovelCool (EN)",
+      "lang": "en",
+      "category": "DUPLICATE_SOURCE",
+      "reason": "Duplicates NovelCool (ES) 438359803442833644.",
+      "suggestedReplacements": [
+        "es.novelcool"
+      ]
+    },
+    {
+      "sourceId": "e_hentai_duplicate",
+      "name": "E-Hentai (Duplicate)",
+      "lang": "all",
+      "category": "DUPLICATE_SOURCE",
+      "reason": "Duplicate source installation.",
+      "suggestedReplacements": []
+    }
+  ],
+  "rejectedDuringProbe": [
+    {
+      "name": "Nova Manhwas",
+      "baseUrl": "https://novamanhwa.cc",
+      "lang": "es",
+      "reason": "Live HTTPS probe failed with HTTP 525 SSL handshake error."
+    },
+    {
+      "name": "SamuraiScan",
+      "baseUrl": "https://samurai.j5z.xyz",
+      "lang": "es",
+      "reason": "Site currently shows an official closure notice (Comunicado oficial)."
+    }
+  ]
+}

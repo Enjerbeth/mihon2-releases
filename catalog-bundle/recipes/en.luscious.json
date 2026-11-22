@@ -4,7 +4,7 @@
   "name": "Luscious",
   "baseUrl": "https://www.luscious.net",
   "lang": "en",
-  "version": 2,
+  "version": 3,
   "versionId": 1,
   "preset": "JSON_API",
   "status": "ACTIVE",
@@ -39,44 +39,52 @@
   "versionCode": 106003,
   "upstreamRepo": "keiyoushi/extensions-source",
   "jsonApi": {
-    "apiBaseUrl": "https://www.luscious.net",
+    "apiBaseUrl": "https://apicdn.luscious.net",
     "popularRequest": {
-      "method": "GET",
-      "pathTemplate": "/graphql"
+      "method": "POST",
+      "pathTemplate": "/graphql/nobatch/",
+      "graphqlQuery": "query AlbumList($input: AlbumListInput!) { album { list(input: $input) { info { has_next_page } items { id title url cover { url } } } } }",
+      "graphqlVariablesTemplate": "{\"input\":{\"display\":\"rating_all_time\",\"page\":{page},\"items_per_page\":24,\"filters\":[{\"name\":\"album_type\",\"value\":\"manga\"}]}}"
     },
     "latestRequest": {
-      "method": "GET",
-      "pathTemplate": "/graphql"
+      "method": "POST",
+      "pathTemplate": "/graphql/nobatch/",
+      "graphqlQuery": "query AlbumList($input: AlbumListInput!) { album { list(input: $input) { info { has_next_page } items { id title url cover { url } } } } }",
+      "graphqlVariablesTemplate": "{\"input\":{\"display\":\"date_newest\",\"page\":{page},\"items_per_page\":24,\"filters\":[{\"name\":\"album_type\",\"value\":\"manga\"}]}}"
     },
     "searchRequest": {
-      "method": "GET",
-      "pathTemplate": "/graphql"
+      "method": "POST",
+      "pathTemplate": "/graphql/nobatch/",
+      "graphqlQuery": "query AlbumList($input: AlbumListInput!) { album { list(input: $input) { info { has_next_page } items { id title url cover { url } } } } }",
+      "graphqlVariablesTemplate": "{\"input\":{\"display\":\"date_newest\",\"page\":{page},\"items_per_page\":24,\"filters\":[{\"name\":\"search_query\",\"value\":\"{rawQuery}\"},{\"name\":\"album_type\",\"value\":\"manga\"}]}}"
     },
     "detailsRequest": {
-      "method": "GET",
-      "pathTemplate": "/graphql"
+      "method": "POST",
+      "pathTemplate": "/graphql/nobatch/",
+      "graphqlQuery": "query AlbumGet($id: ID!) { album { get(id: $id) { id title description cover { url } genres { title } } } }",
+      "graphqlVariablesTemplate": "{\"id\":\"{mangaId}\"}"
     },
     "chaptersRequest": {
-      "method": "GET",
-      "pathTemplate": "/graphql"
+      "method": "POST",
+      "pathTemplate": "/graphql/nobatch/",
+      "graphqlQuery": "query AlbumGet($id: ID!) { album { get(id: $id) { id title description cover { url } genres { title } } } }",
+      "graphqlVariablesTemplate": "{\"id\":\"{mangaId}\"}"
     },
     "pagesRequest": {
-      "method": "GET",
-      "pathTemplate": "/graphql"
+      "method": "POST",
+      "pathTemplate": "/graphql/nobatch/",
+      "graphqlQuery": "query PictureListInsideAlbum($input: PictureListInput!) { picture { list(input: $input) { info { has_next_page } items { url_to_original url_to_video } } } }",
+      "graphqlVariablesTemplate": "{\"input\":{\"display\":\"position\",\"album_id\":\"{mangaId}\",\"page\":1,\"items_per_page\":500}}"
     },
     "mangaList": {
-      "itemsPath": "$.items[*]",
+      "itemsPath": "$.data.album.list.items[*]",
       "titlePaths": [
-        "$.title",
-        "$.name"
+        "$.title"
       ],
       "urlPath": "$.url",
-      "slugPath": "$.slug",
       "idPath": "$.id",
       "coverPaths": [
-        "$.cover",
-        "$.thumbnail",
-        "$.image"
+        "$.cover.url"
       ],
       "pagination": {
         "mode": "PAGE_NUMBER",
@@ -85,36 +93,27 @@
       }
     },
     "details": {
-      "rootPath": "$.data",
+      "rootPath": "$.data.album.get",
       "titlePaths": [
-        "$.title",
-        "$.name"
+        "$.title"
       ],
       "descriptionPaths": [
-        "$.description",
-        "$.synopsis"
+        "$.description"
       ],
       "coverPaths": [
-        "$.cover",
-        "$.thumbnail",
-        "$.image"
+        "$.cover.url"
       ],
-      "authorsPath": "$.author",
-      "artistsPath": "$.artist",
-      "genresPath": "$.genres[*]",
-      "statusPath": "$.status"
+      "genresPath": "$.genres[*].title"
     },
     "chapters": {
-      "itemsPath": "$.items[*]",
+      "itemsPath": "$.data.album.get",
       "namePath": "$.title",
-      "urlPath": "$.url",
-      "idPath": "$.id",
-      "numberPath": "$.number",
-      "datePath": "$.createdAt"
+      "urlPath": "$.id",
+      "idPath": "$.id"
     },
     "pages": {
-      "itemsPath": "$.items[*]",
-      "imageUrlPath": "$.url"
+      "itemsPath": "$.data.picture.list.items[*]",
+      "imageUrlPath": "$.url_to_original"
     }
   },
   "requiresCloudflareBypass": true,

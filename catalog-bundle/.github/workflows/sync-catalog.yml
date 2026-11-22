@@ -1,0 +1,80 @@
+name: Sync External Catalog
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+    inputs:
+      langs:
+        description: 'Comma-separated language codes (e.g. es,en) or all'
+        required: false
+        default: 'es,en'
+      probe_live:
+        description: 'Run live HTTP smoke test (>= 3 items)'
+        type: boolean
+        required: false
+        default: true
+      add_slugs:
+        description: 'Optional comma-separated extension slugs to convert'
+        required: false
+        default: ''
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    name: Shallow Clone, Deduplicate & Smoke Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Sync catalog recipes and v2 index
+        env:
+          INPUT_LANGS: ${{ inputs.langs || 'es,en' }}
+          INPUT_PROBE_LIVE: ${{ inputs.probe_live != false && 'true' || 'false' }}
+          INPUT_ADD_SLUGS: ${{ inputs.add_slugs || '' }}
+        run: |
+          ARGS=(--clone-upstreams --apply --langs "$INPUT_LANGS")
+          if [ "$INPUT_PROBE_LIVE" = "true" ]; then
+            ARGS+=(--probe-live)
+          fi
+          if [ -n "$INPUT_ADD_SLUGS" ]; then
+            IFS=',' read -r -a SLUGS <<< "$INPUT_ADD_SLUGS"
+            for slug in "${SLUGS[@]}"; do
+              slug="${slug#"${slug%%[![:space:]]*}"}"
+              slug="${slug%"${slug##*[![:space:]]}"}"
+              if [ -n "$slug" ]; then
+                ARGS+=(--add-slug "$slug")
+              fi
+            done
+          fi
+          python -B tools/sync_catalog.py "${ARGS[@]}"
+          python -B tools/validate_catalog.py
+          python -B -m unittest discover -s tests -v
+
+      - name: Commit updated catalog bundle if changed
+        run: |
+          if [ -n "$(git status --porcelain recipes/ index.json NOTICE)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A recipes/ index.json NOTICE
+            git commit -m "Sync v2 declarative catalog bundle"
+            git push origin HEAD
+          else
+            echo "Catalog bundle is already up to date."
+          fi

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.mangasin",
+  "name": "Mangas.in",
+  "baseUrl": "https://m440.in",
+  "lang": "es",
+  "version": 2,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": true,
+  "headers": {
+    "Referer": "https://m440.in/"
+  },
+  "selectors": {
+    "listSelector": "div.manga-item, div.media",
+    "titleSelector": "h3.manga-heading a[href*='/manga/'], h5.media-heading a",
+    "linkSelector": "h3.manga-heading a[href*='/manga/'], h5.media-heading a",
+    "chapterSelector": "ul.chapters li a, a[href*='/manga/']",
+    "pageImgSelector": "div#all img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://m440.in/"
+    }
+  ],
+  "recipePath": "recipes/es.mangasin.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    3344386250058668105
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://m440.in"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/mangasin/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.mangasin",
+  "upstreamSourceId": 3344386250058668105,
+  "upstreamExtVersionCode": 106004,
+  "versionCode": 106004,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

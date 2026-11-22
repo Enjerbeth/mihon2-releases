@@ -1,0 +1,9 @@
+{
+  "data": {
+    "items": [
+      {"title": "Series One", "slug": "series-one"},
+      {"title": "Series Two", "slug": "series-two"},
+      {"title": "Series Three", "slug": "series-three"}
+    ]
+  }
+}

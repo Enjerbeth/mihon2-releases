@@ -1,0 +1,54 @@
+name: Validate Catalog Bundle
+
+on:
+  push:
+    paths:
+      - 'recipes/**'
+      - 'index.json'
+      - 'schema/**'
+      - 'fixtures/**'
+      - 'tools/**'
+      - 'tests/**'
+      - 'NOTICE'
+      - '.github/workflows/validate-catalog.yml'
+  pull_request:
+    paths:
+      - 'recipes/**'
+      - 'index.json'
+      - 'schema/**'
+      - 'fixtures/**'
+      - 'tools/**'
+      - 'tests/**'
+      - 'NOTICE'
+      - '.github/workflows/validate-catalog.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate v2 Catalog, Schemas & Isolation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Run unit and isolation tests
+        run: python -B -m unittest discover -s tests -v
+
+      - name: Validate catalog bundle
+        run: python -B tools/validate_catalog.py

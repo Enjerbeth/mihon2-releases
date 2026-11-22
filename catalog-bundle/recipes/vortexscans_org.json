@@ -4,7 +4,7 @@
   "name": "Vortex Scans",
   "baseUrl": "https://vortexscans.org",
   "lang": "en",
-  "version": 2,
+  "version": 3,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
   "maxHtmlBytes": 2097152,
@@ -16,16 +16,6 @@
     "pageImgSelector": "main img"
   },
   "pipelineSteps": [
-    {
-      "op": "css_select",
-      "selector": "a[href*='/series/']",
-      "attribute": "innerHTML",
-      "takeFirst": false
-    },
-    {
-      "op": "trim_normalize",
-      "collapseWhitespace": true
-    },
     {
       "op": "referer_bind",
       "refererUrl": "https://vortexscans.org/"

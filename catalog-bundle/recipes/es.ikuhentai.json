@@ -4,9 +4,9 @@
   "name": "Ikuhentai",
   "baseUrl": "https://ikuhentai.net",
   "lang": "es",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
-  "preset": "CSS_GENERIC",
+  "preset": "MADARA",
   "status": "ACTIVE",
   "maxHtmlBytes": 2097152,
   "catalogPath": "/manga",
@@ -15,11 +15,11 @@
     "Referer": "https://ikuhentai.net/"
   },
   "selectors": {
-    "listSelector": "article, div.manga-item, div.page-item-detail",
-    "titleSelector": "h3 a, h4 a, a",
-    "linkSelector": "a",
-    "chapterSelector": "li a, div.chapter-item a",
-    "pageImgSelector": "div.reading-content img, div#readerarea img"
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
   },
   "pipelineSteps": [
     {

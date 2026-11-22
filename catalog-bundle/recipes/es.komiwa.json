@@ -4,7 +4,7 @@
   "name": "Komiwa",
   "baseUrl": "https://www.komiwa.net",
   "lang": "es",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -15,11 +15,11 @@
     "Referer": "https://www.komiwa.net/"
   },
   "selectors": {
-    "listSelector": "article, div.manga-item, div.page-item-detail",
-    "titleSelector": "h3 a, h4 a, a",
-    "linkSelector": "a",
-    "chapterSelector": "li a, div.chapter-item a",
-    "pageImgSelector": "div.reading-content img, div#readerarea img"
+    "listSelector": "a[href*='/manga/']",
+    "titleSelector": "h3, h4, span, a",
+    "linkSelector": "a[href*='/manga/']",
+    "chapterSelector": "a[href*='/chapter']",
+    "pageImgSelector": "main img"
   },
   "pipelineSteps": [
     {
