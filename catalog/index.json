@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-22T21:03:11Z",
-  "catalogRevision": 9,
+  "generatedAt": "2026-11-22T21:42:14Z",
+  "catalogRevision": 10,
   "recipes": [
     {
       "schemaVersion": 1,
@@ -57,16 +57,6 @@
         "pageImgSelector": "div#readerarea img"
       },
       "pipelineSteps": [
-        {
-          "op": "css_select",
-          "selector": "div.listupd div.bsx",
-          "attribute": "innerHTML",
-          "takeFirst": false
-        },
-        {
-          "op": "trim_normalize",
-          "collapseWhitespace": true
-        },
         {
           "op": "referer_bind",
           "refererUrl": "https://arenascan.com/"
@@ -344,16 +334,6 @@
       },
       "pipelineSteps": [
         {
-          "op": "css_select",
-          "selector": "div.bsx, div.page-item-detail",
-          "attribute": "innerHTML",
-          "takeFirst": false
-        },
-        {
-          "op": "trim_normalize",
-          "collapseWhitespace": true
-        },
-        {
           "op": "referer_bind",
           "refererUrl": "https://imperiomanhwa.com/"
         }
@@ -615,26 +595,21 @@
       "name": "Mangas.in",
       "baseUrl": "https://m440.in",
       "lang": "es",
-      "version": 1,
-      "preset": "MANGA_READER_CMS",
+      "version": 2,
+      "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
       "selectors": {
-        "listSelector": "div.media",
-        "titleSelector": "h5.media-heading a",
-        "linkSelector": "h5.media-heading a",
-        "chapterSelector": "ul.chapters li a",
+        "listSelector": "div.manga-item, div.media",
+        "titleSelector": "h3.manga-heading a[href*='/manga/'], h5.media-heading a",
+        "linkSelector": "h3.manga-heading a[href*='/manga/'], h5.media-heading a",
+        "chapterSelector": "ul.chapters li a, a[href*='/manga/']",
         "pageImgSelector": "div#all img"
       },
       "pipelineSteps": [
         {
-          "op": "css_select",
-          "selector": "div.media",
-          "attribute": "innerHTML"
-        },
-        {
-          "op": "trim_normalize",
-          "collapseWhitespace": true
+          "op": "referer_bind",
+          "refererUrl": "https://m440.in/"
         }
       ],
       "upstreamSourceId": 3344386250058668105,
@@ -642,7 +617,13 @@
       "mirrors": [
         "https://m440.in"
       ],
-      "upstreamExtVersionCode": 106004
+      "upstreamExtVersionCode": 106004,
+      "catalogPath": "",
+      "useHomeFallback": true,
+      "requiresWebViewCapture": true,
+      "headers": {
+        "Referer": "https://m440.in/"
+      }
     },
     {
       "schemaVersion": 1,
@@ -957,16 +938,6 @@
       },
       "pipelineSteps": [
         {
-          "op": "css_select",
-          "selector": "div.listupd div.bsx",
-          "attribute": "innerHTML",
-          "takeFirst": false
-        },
-        {
-          "op": "trim_normalize",
-          "collapseWhitespace": true
-        },
-        {
           "op": "referer_bind",
           "refererUrl": "https://lagoonscans.com/"
         }
@@ -1135,7 +1106,7 @@
       "name": "Manga Crab",
       "baseUrl": "https://es.mangacrab.org",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "preset": "CSS_GENERIC",
       "status": "DRAFT",
       "maxHtmlBytes": 2097152,
@@ -1148,16 +1119,6 @@
       },
       "pipelineSteps": [
         {
-          "op": "css_select",
-          "selector": "div.page-item-detail, div.post-title",
-          "attribute": "innerHTML",
-          "takeFirst": false
-        },
-        {
-          "op": "trim_normalize",
-          "collapseWhitespace": true
-        },
-        {
           "op": "referer_bind",
           "refererUrl": "https://es.mangacrab.org/"
         }
@@ -1167,7 +1128,9 @@
       "mirrors": [
         "https://es.mangacrab.org"
       ],
-      "upstreamExtVersionCode": 106026
+      "upstreamExtVersionCode": 106026,
+      "requiresCloudflareBypass": true,
+      "requiresWebViewCapture": true
     },
     {
       "schemaVersion": 1,
@@ -1175,7 +1138,7 @@
       "name": "MangaDot",
       "baseUrl": "https://mangadot.net",
       "lang": "es",
-      "version": 2,
+      "version": 3,
       "versionId": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -1194,7 +1157,7 @@
         "listSelector": "a[href^='/manga/'], article",
         "titleSelector": "h3, h4, span, a",
         "linkSelector": "a[href^='/manga/'], a[href]",
-        "chapterSelector": "ul.chapters a, div.chapters a, div.chapter-list a, a[href*='/chapter-'], a[href*='/ch-'], a[href*='/capitulo-']",
+        "chapterSelector": "a[href^='/chapter/'], ul.chapters a, div.chapters a, div.chapter-list a, a[href*='/chapter-'], a[href*='/ch-'], a[href*='/capitulo-']",
         "pageImgSelector": "main img, div.reading-content img"
       },
       "pipelineSteps": [
@@ -1203,7 +1166,8 @@
           "refererUrl": "https://mangadot.net/"
         }
       ],
-      "upstreamExtVersionCode": 106030
+      "upstreamExtVersionCode": 106030,
+      "useHomeFallback": true
     },
     {
       "schemaVersion": 1,
@@ -1764,14 +1728,14 @@
       "name": "Submanhwa",
       "baseUrl": "https://submanhwa.com",
       "lang": "es",
-      "version": 2,
+      "version": 3,
       "versionId": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
       "catalogPath": "",
       "searchPath": "/search?q={query}",
-      "requiresWebViewCapture": true,
+      "requiresWebViewCapture": false,
       "headers": {
         "Referer": "https://submanhwa.com/"
       },
@@ -1781,11 +1745,11 @@
       "upstreamSourceId": 1136717301008230074,
       "upstreamRepo": "Keiyoushi",
       "selectors": {
-        "listSelector": "div.up-card, div.bsx, article",
-        "titleSelector": "a.up-title, h3, h4, a",
+        "listSelector": "article.up-card, div.up-card, article",
+        "titleSelector": "a.up-title, h2.hero-title a, h3, h4, a",
         "linkSelector": "a[href*='/serie/'], a[href]",
-        "chapterSelector": "div.lc-list a.lc-t, div.lc-row a.lc-t, div.lc-info a.lc-t",
-        "pageImgSelector": "div#readerarea img, div.reading-content img, main img"
+        "chapterSelector": "div.lc-box a.lc-t, a.lc-t, a.lc-chapter-row",
+        "pageImgSelector": "div#all img, main#lcPages img, div#readerarea img"
       },
       "pipelineSteps": [
         {
@@ -1793,7 +1757,8 @@
           "refererUrl": "https://submanhwa.com/"
         }
       ],
-      "upstreamExtVersionCode": 106005
+      "upstreamExtVersionCode": 106005,
+      "useHomeFallback": true
     },
     {
       "schemaVersion": 1,
@@ -1886,16 +1851,6 @@
       },
       "pipelineSteps": [
         {
-          "op": "css_select",
-          "selector": "a[href*='/series/']",
-          "attribute": "innerHTML",
-          "takeFirst": false
-        },
-        {
-          "op": "trim_normalize",
-          "collapseWhitespace": true
-        },
-        {
           "op": "referer_bind",
           "refererUrl": "https://vortexscans.org/"
         }
@@ -1920,16 +1875,6 @@
         "pageImgSelector": "div.img-container img"
       },
       "pipelineSteps": [
-        {
-          "op": "css_select",
-          "selector": "div.element",
-          "attribute": "innerHTML",
-          "takeFirst": false
-        },
-        {
-          "op": "trim_normalize",
-          "collapseWhitespace": true
-        },
         {
           "op": "referer_bind",
           "refererUrl": "https://zonatmo.org/"
