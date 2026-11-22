@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.akaitomangas",
+  "name": "Akaito Mangás",
+  "baseUrl": "https://akaitomangas.com",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://akaitomangas.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://akaitomangas.com/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.akaitomangas.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    2836576732412182275
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://akaitomangas.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/akaitomangas/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.akaitomangas",
+  "upstreamSourceId": 2836576732412182275,
+  "upstreamExtVersionCode": 106001,
+  "versionCode": 106001,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

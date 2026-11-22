@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.lectortmounoriginal",
+  "name": "LectorTMO (unoriginal)",
+  "baseUrl": "https://lectortmo.vip",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://lectortmo.vip/"
+  },
+  "selectors": null,
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://lectortmo.vip/"
+    }
+  ],
+  "recipePath": "recipes/es.lectortmounoriginal.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    7092791175237698168
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://lectortmo.vip"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/lectortmounoriginal/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.lectortmounoriginal",
+  "upstreamSourceId": 7092791175237698168,
+  "upstreamExtVersionCode": 106001,
+  "versionCode": 106001,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "jsonApi": {
+    "apiBaseUrl": "https://lectortmo.vip",
+    "popularRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "latestRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "searchRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga?page={page}&q={query}"
+    },
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga/{slug}"
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga/{slug}/chapters"
+    },
+    "pagesRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/chapters/{chapterId}/pages"
+    },
+    "mangaList": {
+      "itemsPath": "$.data[*]",
+      "titlePaths": [
+        "$.title",
+        "$.name"
+      ],
+      "urlPath": "$.url",
+      "slugPath": "$.slug",
+      "idPath": "$.id",
+      "coverPaths": [
+        "$.cover",
+        "$.thumbnail",
+        "$.image"
+      ],
+      "pagination": {
+        "mode": "PAGE_NUMBER",
+        "startPage": 1,
+        "pageSize": 24
+      }
+    },
+    "details": {
+      "rootPath": "$.data",
+      "titlePaths": [
+        "$.title",
+        "$.name"
+      ],
+      "descriptionPaths": [
+        "$.description",
+        "$.synopsis"
+      ],
+      "coverPaths": [
+        "$.cover",
+        "$.thumbnail",
+        "$.image"
+      ],
+      "authorsPath": "$.author",
+      "artistsPath": "$.artist",
+      "genresPath": "$.genres[*]",
+      "statusPath": "$.status"
+    },
+    "chapters": {
+      "itemsPath": "$.data[*]",
+      "namePath": "$.title",
+      "urlPath": "$.url",
+      "idPath": "$.id",
+      "numberPath": "$.number",
+      "datePath": "$.createdAt"
+    },
+    "pages": {
+      "itemsPath": "$.data[*]",
+      "imageUrlPath": "$.url"
+    }
+  },
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

@@ -30,9 +30,7 @@
   "recipePath": "recipes/en.saymanhwa.json",
   "mode": "declarative",
   "upstreamSourceIds": [
-    160957764321519511,
-    2550435243743833052,
-    3639911276143172075
+    160957764321519511
   ],
   "license": "Apache-2.0",
   "attribution": "The Tachiyomi / Keiyoushi Contributors",

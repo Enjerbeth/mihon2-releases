@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.dankefurslesen",
+  "name": "Danke fürs Lesen",
+  "baseUrl": "https://danke.moe",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 3145728,
+  "catalogPath": "/api/get_all_series/",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://danke.moe/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://danke.moe/"
+    }
+  ],
+  "recipePath": "recipes/en.dankefurslesen.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    370316150648855996
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://danke.moe"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/dankefurslesen/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.dankefurslesen",
+  "upstreamSourceId": 370316150648855996,
+  "upstreamExtVersionCode": 106002,
+  "versionCode": 106002,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "jsonApi": {
+    "apiBaseUrl": "https://danke.moe",
+    "popularRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/get_all_series/",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://danke.moe/"
+      }
+    },
+    "latestRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/get_all_series/",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://danke.moe/"
+      }
+    },
+    "searchRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/get_all_series/",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://danke.moe/"
+      }
+    },
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/series/{slug}/",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://danke.moe/"
+      }
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/series/{slug}/",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://danke.moe/"
+      }
+    },
+    "mangaList": {
+      "itemsPath": "$.*",
+      "titlePaths": [
+        "$.title",
+        "$.slug"
+      ],
+      "slugPath": "$.slug",
+      "urlTemplate": "/read/manga/{slug}/",
+      "coverBaseUrl": "https://danke.moe",
+      "coverPaths": [
+        "$.cover"
+      ],
+      "pagination": {
+        "mode": "PAGE_NUMBER",
+        "startPage": 1,
+        "pageSize": 100
+      }
+    },
+    "details": {
+      "rootPath": "$",
+      "titlePaths": [
+        "$.title"
+      ],
+      "descriptionPaths": [
+        "$.description"
+      ],
+      "coverPaths": [
+        "$.cover"
+      ],
+      "authorsPath": "$.author",
+      "artistsPath": "$.artist"
+    },
+    "chapters": {
+      "itemsPath": "$.chapters.*",
+      "namePath": "$.title",
+      "numberPath": "$.chapter",
+      "datePath": "$.release_date"
+    },
+    "pages": {
+      "itemsPath": "$.groups.*[*]",
+      "imageUrlPath": "$.*"
+    }
+  }
+}

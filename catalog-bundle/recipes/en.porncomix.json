@@ -40,8 +40,8 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/porncomix/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.porncomix",
   "upstreamSourceId": 6627320413337959683,
-  "upstreamExtVersionCode": 106002,
-  "versionCode": 106002,
+  "upstreamExtVersionCode": 106003,
+  "versionCode": 106003,
   "upstreamRepo": "keiyoushi/extensions-source",
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false

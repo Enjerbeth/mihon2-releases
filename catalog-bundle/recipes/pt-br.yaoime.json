@@ -43,6 +43,13 @@
   "upstreamExtVersionCode": 106003,
   "versionCode": 106003,
   "upstreamRepo": "keiyoushi/extensions-source",
-  "requiresCloudflareBypass": true,
-  "requiresWebViewCapture": false
+  "querySigner": {
+    "algorithm": "hmac_sha256",
+    "pathPrefix": "/api",
+    "stripPathPrefix": true,
+    "paramName": "sig",
+    "hmacSecret": "85cedf4fed3602c3a35c18010b502584dee9594708ba673052d562c7f2b1a9de",
+    "target": "QUERY",
+    "timestampFormat": "EPOCH_MILLIS"
+  }
 }

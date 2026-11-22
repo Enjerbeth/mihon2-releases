@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.valirscans",
+  "name": "Valir Scans",
+  "baseUrl": "https://valirscans.org",
+  "lang": "en",
+  "version": 1,
+  "versionId": 4,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://valirscans.org/"
+  },
+  "selectors": {
+    "listSelector": "div.col-6.col-md-3, div.col-6.col-sm-3, div.manga-card",
+    "titleSelector": "h3.manga-title a, a.manga-name",
+    "linkSelector": "h3.manga-title a, a.manga-name",
+    "coverSelector": "img.manga-poster, img.lazyload",
+    "chapterSelector": "div.chapter-list a, ul.list-chapters li a",
+    "pageImgSelector": "div.reading-content img, div.viewer-content img",
+    "nextPageSelector": "a.next.page-numbers",
+    "detailsTitleSelector": "h1.manga-detail-name, h1.title",
+    "detailsCoverSelector": "div.manga-poster img",
+    "descriptionSelector": "div.manga-description, div.synopsis"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://valirscans.org/"
+    }
+  ],
+  "recipePath": "recipes/en.valirscans.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    9114028255622294379
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://valirscans.org"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/valirscans/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.valirscans",
+  "upstreamSourceId": 9114028255622294379,
+  "upstreamExtVersionCode": 106031,
+  "versionCode": 106031,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

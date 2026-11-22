@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.miauscan",
+  "name": "Miau Scan",
+  "baseUrl": "https://leer.lectovela.com",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MANGA_THEMESIA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://leer.lectovela.com/"
+  },
+  "selectors": {
+    "listSelector": "div.listupd div.bsx a, div.bsx a",
+    "titleSelector": "div.tt",
+    "linkSelector": "a",
+    "chapterSelector": "div#chapterlist ul li a",
+    "pageImgSelector": "div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://leer.lectovela.com/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.miauscan.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    6705370418823255358
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://leer.lectovela.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/miauscan/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.all.miauscan",
+  "upstreamSourceId": 6705370418823255358,
+  "upstreamExtVersionCode": 106010,
+  "versionCode": 106010,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

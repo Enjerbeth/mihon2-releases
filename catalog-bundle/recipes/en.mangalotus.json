@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.mangalotus",
+  "name": "Manga Lotus (unoriginal)",
+  "baseUrl": "https://mangalotus.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://mangalotus.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://mangalotus.com/"
+    }
+  ],
+  "recipePath": "recipes/en.mangalotus.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    2494989395865456034
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://mangalotus.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/mangalotus/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.all.mangalotus",
+  "upstreamSourceId": 2494989395865456034,
+  "upstreamExtVersionCode": 106001,
+  "versionCode": 106001,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

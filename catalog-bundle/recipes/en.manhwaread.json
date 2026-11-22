@@ -4,9 +4,9 @@
   "name": "ManhwaRead",
   "baseUrl": "https://manhwaread.org",
   "lang": "en",
-  "version": 1,
+  "version": 4,
   "versionId": 1,
-  "preset": "CSS_GENERIC",
+  "preset": "JSON_API",
   "status": "ACTIVE",
   "maxHtmlBytes": 2097152,
   "catalogPath": "/manga",
@@ -14,13 +14,7 @@
   "headers": {
     "Referer": "https://manhwaread.org/"
   },
-  "selectors": {
-    "listSelector": "article, div.manga-item, div.page-item-detail",
-    "titleSelector": "h3 a, h4 a, a",
-    "linkSelector": "a",
-    "chapterSelector": "li a, div.chapter-item a",
-    "pageImgSelector": "div.reading-content img, div#readerarea img"
-  },
+  "selectors": null,
   "pipelineSteps": [
     {
       "op": "referer_bind",
@@ -44,6 +38,85 @@
   "upstreamExtVersionCode": 106002,
   "versionCode": 106002,
   "upstreamRepo": "keiyoushi/extensions-source",
+  "jsonApi": {
+    "apiBaseUrl": "https://manhwaread.com",
+    "popularRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "latestRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "searchRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga?page={page}&q={query}"
+    },
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga/{slug}"
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga/{slug}/chapters"
+    },
+    "pagesRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/chapters/{chapterId}/pages"
+    },
+    "mangaList": {
+      "itemsPath": "$.data[*]",
+      "titlePaths": [
+        "$.title",
+        "$.name"
+      ],
+      "urlPath": "$.url",
+      "slugPath": "$.slug",
+      "idPath": "$.id",
+      "coverPaths": [
+        "$.cover",
+        "$.thumbnail",
+        "$.image"
+      ],
+      "pagination": {
+        "mode": "PAGE_NUMBER",
+        "startPage": 1,
+        "pageSize": 24
+      }
+    },
+    "details": {
+      "rootPath": "$.data",
+      "titlePaths": [
+        "$.title",
+        "$.name"
+      ],
+      "descriptionPaths": [
+        "$.description",
+        "$.synopsis"
+      ],
+      "coverPaths": [
+        "$.cover",
+        "$.thumbnail",
+        "$.image"
+      ],
+      "authorsPath": "$.author",
+      "artistsPath": "$.artist",
+      "genresPath": "$.genres[*]",
+      "statusPath": "$.status"
+    },
+    "chapters": {
+      "itemsPath": "$.data[*]",
+      "namePath": "$.title",
+      "urlPath": "$.url",
+      "idPath": "$.id",
+      "numberPath": "$.number",
+      "datePath": "$.createdAt"
+    },
+    "pages": {
+      "itemsPath": "$.data[*]",
+      "imageUrlPath": "$.url"
+    }
+  },
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false
 }

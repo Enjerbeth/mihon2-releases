@@ -40,7 +40,7 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/rizzcomic/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.rizzcomic",
   "upstreamSourceId": 3062320139670175675,
-  "upstreamExtVersionCode": 106018,
-  "versionCode": 106018,
+  "upstreamExtVersionCode": 106019,
+  "versionCode": 106019,
   "upstreamRepo": "keiyoushi/extensions-source"
 }

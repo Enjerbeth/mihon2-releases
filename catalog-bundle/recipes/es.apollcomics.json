@@ -42,50 +42,5 @@
   "upstreamSourceId": 3044113561993269522,
   "upstreamExtVersionCode": 106063,
   "versionCode": 106063,
-  "upstreamRepo": "keiyoushi/extensions-source",
-  "accountSync": {
-    "loginUrl": "https://apollcomics.es/wp-login.php",
-    "loggedOutStatusCodes": [
-      401,
-      403
-    ],
-    "loggedOutBodyMarkers": [
-      "c-modal_item",
-      "wp-login.php"
-    ],
-    "loggedOutRedirectContains": [
-      "wp-login.php"
-    ],
-    "maxPagesPerSection": 10,
-    "sections": [
-      {
-        "kind": "FAVORITES",
-        "format": "HTML",
-        "request": {
-          "pathTemplate": "/user-settings/?tab=bookmark&page={page}"
-        },
-        "itemsSelector": "table.list-bookmark tr:has(a[href*='/manga/']), div.c-tabs-item__content",
-        "urlSelector": "div.m-name a, h3 a, div.post-title a, a[href*='/manga/']",
-        "titleSelector": "div.m-name a, h3 a, div.post-title a, a[href*='/manga/']",
-        "coverSelector": "img",
-        "lastChapterSelector": "div.chapter a, span.chapter a, td.chapter a",
-        "lastChapterUrlSelector": "div.chapter a, span.chapter a, td.chapter a",
-        "nextPageSelector": "a.next.page-numbers, nav.navigation a.next"
-      },
-      {
-        "kind": "READING_HISTORY",
-        "format": "HTML",
-        "request": {
-          "pathTemplate": "/user-settings/?tab=history&page={page}"
-        },
-        "itemsSelector": "div.history-content div.row, div.c-tabs-item__content",
-        "urlSelector": "div.item-infor h3 a, div.post-title a, a[href*='/manga/']",
-        "titleSelector": "div.item-infor h3 a, div.post-title a, a[href*='/manga/']",
-        "coverSelector": "img",
-        "lastChapterSelector": "div.chapter a, span.chapter a",
-        "lastChapterUrlSelector": "div.chapter a, span.chapter a",
-        "nextPageSelector": "a.next.page-numbers, nav.navigation a.next"
-      }
-    ]
-  }
+  "upstreamRepo": "keiyoushi/extensions-source"
 }

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.megahentai",
+  "name": "MegaHentai",
+  "baseUrl": "https://megahentai.biz",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://megahentai.biz/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://megahentai.biz/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.megahentai.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    6293316436960053544
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://megahentai.biz"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/megahentai/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.megahentai",
+  "upstreamSourceId": 6293316436960053544,
+  "upstreamExtVersionCode": 106000,
+  "versionCode": 106000,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

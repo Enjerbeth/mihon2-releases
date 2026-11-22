@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.kewnscans",
+  "name": "Kewn Scans",
+  "baseUrl": "https://kewnscans.org",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/latest/",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://kewnscans.org/"
+  },
+  "selectors": {
+    "listSelector": "div.grid > div.group, article.ru-card, div.grid div.group, a.group[href]",
+    "titleSelector": "a.grid h3, h2.ru-title a, h3, h2",
+    "linkSelector": "a[href*='/series/'], h2.ru-title > a, a[href]",
+    "coverSelector": "img.ru-cover-img, img, *[style*=background-image]",
+    "chapterSelector": "a.chapter-row[href], #chapters > a, #chapters > div",
+    "pageImgSelector": "#strip-reader img.reader-page, #pages > img",
+    "nextPageSelector": "button[aria-label='Next recently updated page']:not([disabled]), a.next-page, a.next",
+    "detailsTitleSelector": "div.grid > h1, h1",
+    "detailsCoverSelector": "meta[property=og:image], div.series-poster img, img.ru-cover-img",
+    "descriptionSelector": "#series-desc, #expand_content p, div.synopsis",
+    "authorSelector": "div:has(span:containsOwn(Author)) ~ div, span.text-xs:containsOwn(Author)",
+    "statusSelector": "div.text-xs:containsOwn(Status) + div span.text-sm, div:has(span:containsOwn(Status)) ~ div",
+    "genresSelector": "a[href*='?browse&tag'], div:has(>h1) a[href*='genre=']"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://kewnscans.org/"
+    }
+  ],
+  "recipePath": "recipes/en.kewnscans.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    2816768640766208312
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://kewnscans.org"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/kewnscans/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.kewnscans",
+  "upstreamSourceId": 2816768640766208312,
+  "upstreamExtVersionCode": 106027,
+  "versionCode": 106027,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "multisrcTheme": "keyoapp",
+  "popularRequest": {
+    "method": "GET",
+    "pathTemplate": "/latest/",
+    "firstPagePathTemplate": "/latest/"
+  },
+  "latestRequest": {
+    "method": "GET",
+    "pathTemplate": "/latest/",
+    "firstPagePathTemplate": "/latest/"
+  },
+  "searchRequest": {
+    "method": "GET",
+    "pathTemplate": "/series?q={query}"
+  }
+}

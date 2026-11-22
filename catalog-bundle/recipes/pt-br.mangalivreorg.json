@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "sourceId": "pt-br.mangalivreorg",
   "name": "MangaLivre.org",
-  "baseUrl": "https://noxmangas.org",
+  "baseUrl": "https://mangalivre.org",
   "lang": "pt-BR",
-  "version": 1,
+  "version": 4,
   "versionId": 1,
   "preset": "JSON_API",
   "status": "ACTIVE",
@@ -12,13 +12,13 @@
   "catalogPath": "/manga",
   "useHomeFallback": true,
   "headers": {
-    "Referer": "https://noxmangas.org/"
+    "Referer": "https://mangalivre.org/"
   },
   "selectors": null,
   "pipelineSteps": [
     {
       "op": "referer_bind",
-      "refererUrl": "https://noxmangas.org/"
+      "refererUrl": "https://mangalivre.org/"
     }
   ],
   "recipePath": "recipes/pt-br.mangalivreorg.json",
@@ -29,8 +29,8 @@
   "license": "Apache-2.0",
   "attribution": "FelipeGFA Contributors",
   "mirrors": [
-    "https://noxmangas.org",
-    "https://mangalivre.org"
+    "https://mangalivre.org",
+    "https://noxmangas.org"
   ],
   "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/pt/mangalivreorg/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.pt.mangalivreorg",

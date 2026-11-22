@@ -6,20 +6,20 @@
   "lang": "en",
   "version": 1,
   "versionId": 1,
-  "preset": "CSS_GENERIC",
+  "preset": "MADARA",
   "status": "ACTIVE",
   "maxHtmlBytes": 2097152,
-  "catalogPath": "/manga",
-  "useHomeFallback": true,
+  "catalogPath": "/comics",
+  "useHomeFallback": false,
   "headers": {
     "Referer": "https://milftoon.xxx/"
   },
   "selectors": {
-    "listSelector": "article, div.manga-item, div.page-item-detail",
-    "titleSelector": "h3 a, h4 a, a",
-    "linkSelector": "a",
-    "chapterSelector": "li a, div.chapter-item a",
-    "pageImgSelector": "div.reading-content img, div#readerarea img"
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
   },
   "pipelineSteps": [
     {
@@ -33,16 +33,16 @@
     4002667303103881826
   ],
   "license": "Apache-2.0",
-  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "attribution": "FelipeGFA Contributors",
   "mirrors": [
     "https://milftoon.xxx"
   ],
-  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/milftoon/res/mipmap-xhdpi/ic_launcher.png",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/en/milftoon/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.milftoon",
   "upstreamSourceId": 4002667303103881826,
-  "upstreamExtVersionCode": 106060,
-  "versionCode": 106060,
-  "upstreamRepo": "keiyoushi/extensions-source",
+  "upstreamExtVersionCode": 106057,
+  "versionCode": 106057,
+  "upstreamRepo": "FelipeGFA/fonte-extensoes",
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false
 }

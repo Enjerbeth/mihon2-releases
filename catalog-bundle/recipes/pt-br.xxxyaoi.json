@@ -41,8 +41,8 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/xxxyaoi/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.pt.xxxyaoi",
   "upstreamSourceId": 4493410832840030334,
-  "upstreamExtVersionCode": 106069,
-  "versionCode": 106069,
+  "upstreamExtVersionCode": 106070,
+  "versionCode": 106070,
   "upstreamRepo": "keiyoushi/extensions-source",
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false

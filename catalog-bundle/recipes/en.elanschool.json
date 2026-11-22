@@ -40,8 +40,8 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/elanschool/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.elanschool",
   "upstreamSourceId": 6159323532820101296,
-  "upstreamExtVersionCode": 106001,
-  "versionCode": 106001,
+  "upstreamExtVersionCode": 106002,
+  "versionCode": 106002,
   "upstreamRepo": "keiyoushi/extensions-source",
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false

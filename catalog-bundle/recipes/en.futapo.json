@@ -40,19 +40,80 @@
   "jsonApi": {
     "apiBaseUrl": "https://futapo.com",
     "popularRequest": {
+      "method": "GET",
       "pathTemplate": "/api/manga?page={page}"
     },
     "latestRequest": {
+      "method": "GET",
       "pathTemplate": "/api/manga?page={page}"
     },
     "searchRequest": {
-      "pathTemplate": "/api/manga?page={page}"
+      "method": "GET",
+      "pathTemplate": "/api/manga?page={page}&q={query}"
     },
-    "popularMapping": {
-      "itemsPath": "$.data[*]",
-      "titlePath": "$.title",
-      "urlPath": "$.slug",
-      "coverPath": "$.cover"
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga/{slug}"
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/manga/{slug}/chapters"
+    },
+    "pagesRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/chapters/{chapterId}/pages"
+    },
+    "mangaList": {
+      "itemsPath": "$.data.rows[*]",
+      "titlePaths": [
+        "$.title",
+        "$.name"
+      ],
+      "urlPath": "$.url",
+      "slugPath": "$.slug",
+      "idPath": "$.id",
+      "coverPaths": [
+        "$.cover",
+        "$.thumbnail",
+        "$.image"
+      ],
+      "pagination": {
+        "mode": "PAGE_NUMBER",
+        "startPage": 1,
+        "pageSize": 24
+      }
+    },
+    "details": {
+      "rootPath": "$.data",
+      "titlePaths": [
+        "$.title",
+        "$.name"
+      ],
+      "descriptionPaths": [
+        "$.description",
+        "$.synopsis"
+      ],
+      "coverPaths": [
+        "$.cover",
+        "$.thumbnail",
+        "$.image"
+      ],
+      "authorsPath": "$.author",
+      "artistsPath": "$.artist",
+      "genresPath": "$.genres[*]",
+      "statusPath": "$.status"
+    },
+    "chapters": {
+      "itemsPath": "$.data.rows[*]",
+      "namePath": "$.title",
+      "urlPath": "$.url",
+      "idPath": "$.id",
+      "numberPath": "$.number",
+      "datePath": "$.createdAt"
+    },
+    "pages": {
+      "itemsPath": "$.data.rows[*]",
+      "imageUrlPath": "$.url"
     }
   },
   "requiresCloudflareBypass": true,

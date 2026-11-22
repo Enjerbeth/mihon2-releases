@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.mrtenzus",
+  "name": "MR Tenzus",
+  "baseUrl": "https://mrtenzus.com",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://mrtenzus.com/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://mrtenzus.com/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.mrtenzus.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    4272456161813617008
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://mrtenzus.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/mrtenzus/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.mrtenzus",
+  "upstreamSourceId": 4272456161813617008,
+  "upstreamExtVersionCode": 106061,
+  "versionCode": 106061,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

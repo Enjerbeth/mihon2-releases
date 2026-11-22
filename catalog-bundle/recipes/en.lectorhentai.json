@@ -25,6 +25,13 @@
     {
       "op": "referer_bind",
       "refererUrl": "https://lectorhentai.com/"
+    },
+    {
+      "op": "quickjs_eval",
+      "preset": "PACKER",
+      "script": "var out = unpackPacker(input); out;",
+      "outputVar": "out",
+      "timeoutMs": 2000
     }
   ],
   "recipePath": "recipes/en.lectorhentai.json",

@@ -42,7 +42,5 @@
   "upstreamSourceId": 3696994059835859589,
   "upstreamExtVersionCode": 106004,
   "versionCode": 106004,
-  "upstreamRepo": "keiyoushi/extensions-source",
-  "requiresCloudflareBypass": true,
-  "requiresWebViewCapture": false
+  "upstreamRepo": "keiyoushi/extensions-source"
 }

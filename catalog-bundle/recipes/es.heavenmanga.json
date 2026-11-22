@@ -71,14 +71,14 @@
   "mirrors": [
     "https://heavenmanga.com"
   ],
-  "upstreamExtVersionCode": 106002,
+  "upstreamExtVersionCode": 106003,
   "versionId": 1,
   "recipePath": "recipes/es.heavenmanga.json",
   "mode": "declarative",
   "upstreamSourceIds": [
     1872740333369520717
   ],
-  "versionCode": 106002,
+  "versionCode": 106003,
   "license": "Apache-2.0",
   "attribution": "The Tachiyomi / Keiyoushi Contributors",
   "pkgName": "eu.kanade.tachiyomi.extension.es.heavenmanga",

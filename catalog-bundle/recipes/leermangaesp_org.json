@@ -4,7 +4,7 @@
   "name": "LeerMangaEsp",
   "baseUrl": "https://mangalect.org",
   "lang": "es",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -23,7 +23,7 @@
     "listSelector": "div.manga-card-v2, div.nx-search-item, article",
     "titleSelector": "h3.overlay-text-title, h3, h4, span, a",
     "linkSelector": "a[href^='/info/'], a[href*='/info/'], a[href]",
-    "chapterSelector": "a[href*='/lectura/'], a[href*='/leer-m/'], a[href*='/capitulo']",
+    "chapterSelector": "div.chapter-card a, div.chapter-scroll a, a[href*='/lectura/'], a[href*='/leer-m/']",
     "pageImgSelector": "img[src*='/mangas/'], div.reading-content img, main img"
   },
   "pipelineSteps": [

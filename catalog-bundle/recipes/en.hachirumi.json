@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.hachirumi",
+  "name": "Hachirumi",
+  "baseUrl": "https://hachirumi.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/api/get_all_series/",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://hachirumi.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://hachirumi.com/"
+    }
+  ],
+  "recipePath": "recipes/en.hachirumi.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    593241987912872030
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://hachirumi.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/hachirumi/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.hachirumi",
+  "upstreamSourceId": 593241987912872030,
+  "upstreamExtVersionCode": 106002,
+  "versionCode": 106002,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "jsonApi": {
+    "apiBaseUrl": "https://hachirumi.com",
+    "popularRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/get_all_series/",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://hachirumi.com/"
+      }
+    },
+    "latestRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/get_all_series/",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://hachirumi.com/"
+      }
+    },
+    "searchRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/get_all_series/",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://hachirumi.com/"
+      }
+    },
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/series/{slug}/",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://hachirumi.com/"
+      }
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/series/{slug}/",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://hachirumi.com/"
+      }
+    },
+    "mangaList": {
+      "itemsPath": "$.*",
+      "titlePaths": [
+        "$.title"
+      ],
+      "slugPath": "$.slug",
+      "urlTemplate": "/read/manga/{slug}/",
+      "coverBaseUrl": "https://hachirumi.com",
+      "coverPaths": [
+        "$.cover"
+      ],
+      "pagination": {
+        "mode": "PAGE_NUMBER",
+        "startPage": 1,
+        "pageSize": 100
+      }
+    },
+    "details": {
+      "rootPath": "$",
+      "titlePaths": [
+        "$.title"
+      ],
+      "descriptionPaths": [
+        "$.description"
+      ],
+      "coverPaths": [
+        "$.cover"
+      ],
+      "authorsPath": "$.author",
+      "artistsPath": "$.artist"
+    },
+    "chapters": {
+      "itemsPath": "$.chapters.*",
+      "namePath": "$.title",
+      "numberPath": "$.chapter",
+      "datePath": "$.release_date"
+    },
+    "pages": {
+      "itemsPath": "$.groups.*[*]",
+      "imageUrlPath": "$.*"
+    }
+  }
+}

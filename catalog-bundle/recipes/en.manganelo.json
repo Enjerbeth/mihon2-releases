@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.manganelo",
+  "name": "Manganato",
+  "baseUrl": "https://www.natomanga.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga_list",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://www.natomanga.com/"
+  },
+  "selectors": {
+    "listSelector": "div.list-truyen-item-wrap, div.content-genres-item, div.story_item, div.item",
+    "titleSelector": "h3 a, a.genres-item-name, a.story_name",
+    "linkSelector": "h3 a, a.genres-item-name, a.story_name",
+    "coverSelector": "img.img-loading, a img, img.story_img",
+    "chapterSelector": "ul.row-content-chapter li, div.chapter-list div.row, div.list-chapter p.chapter",
+    "pageImgSelector": "div.container-chapter-reader img, div.panel-read-story img",
+    "nextPageSelector": "a.page-blue.page-last, a.page_next, a.next",
+    "detailsTitleSelector": "div.story-info-right h1, div.panel-story-info h1",
+    "detailsCoverSelector": "span.info-image img, div.story-info-left img",
+    "descriptionSelector": "div.panel-story-info-description, div#noidungm, div.story-info-right-extent",
+    "authorSelector": "table.variations-tableInfo tr:has(td.table-label:contains(Author)) td.table-value a, li:contains(Author) a",
+    "genresSelector": "table.variations-tableInfo tr:has(td.table-label:contains(Genres)) td.table-value a, li:contains(Genres) a",
+    "statusSelector": "table.variations-tableInfo tr:has(td.table-label:contains(Status)) td.table-value, li:contains(Status)",
+    "chapterNameSelector": "a.chapter-name, a",
+    "chapterDateSelector": "span.chapter-time, span.text-nowrap",
+    "chapterDateFormat": "MMM dd,yyyy"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://www.natomanga.com/"
+    }
+  ],
+  "recipePath": "recipes/en.manganelo.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1024627298672457456
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://www.natomanga.com",
+    "https://www.nelomanga.net",
+    "https://www.manganato.gg"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/manganelo/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.manganelo",
+  "upstreamSourceId": 1024627298672457456,
+  "upstreamExtVersionCode": 106027,
+  "versionCode": 106027,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "multisrcTheme": "mangabox",
+  "popularRequest": {
+    "method": "GET",
+    "pathTemplate": "/manga_list?type=topview&category=all&state=all&page={page}",
+    "firstPagePathTemplate": "/manga_list?type=topview&category=all&state=all&page=1"
+  },
+  "latestRequest": {
+    "method": "GET",
+    "pathTemplate": "/manga_list?type=latest&category=all&state=all&page={page}",
+    "firstPagePathTemplate": "/manga_list?type=latest&category=all&state=all&page=1"
+  },
+  "searchRequest": {
+    "method": "GET",
+    "pathTemplate": "/search/story/{query}?page={page}",
+    "firstPagePathTemplate": "/search/story/{query}"
+  }
+}

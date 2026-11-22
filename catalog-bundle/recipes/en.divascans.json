@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.divascans",
+  "name": "Diva Scans",
+  "baseUrl": "https://divascans.org",
+  "lang": "en",
+  "version": 1,
+  "versionId": 2,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://divascans.org/"
+  },
+  "selectors": {
+    "listSelector": "div.col-6.col-md-3, div.col-6.col-sm-3, div.manga-card",
+    "titleSelector": "h3.manga-title a, a.manga-name",
+    "linkSelector": "h3.manga-title a, a.manga-name",
+    "coverSelector": "img.manga-poster, img.lazyload",
+    "chapterSelector": "div.chapter-list a, ul.list-chapters li a",
+    "pageImgSelector": "div.reading-content img, div.viewer-content img",
+    "nextPageSelector": "a.next.page-numbers",
+    "detailsTitleSelector": "h1.manga-detail-name, h1.title",
+    "detailsCoverSelector": "div.manga-poster img",
+    "descriptionSelector": "div.manga-description, div.synopsis"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://divascans.org/"
+    }
+  ],
+  "recipePath": "recipes/en.divascans.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    3513996752712952755
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://divascans.org"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/divascans/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.divascans",
+  "upstreamSourceId": 3513996752712952755,
+  "upstreamExtVersionCode": 106034,
+  "versionCode": 106034,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

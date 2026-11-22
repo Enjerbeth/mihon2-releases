@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.xoxocomics",
+  "name": "XOXO Comics",
+  "baseUrl": "https://xoxocomic.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/hot",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://xoxocomic.com/"
+  },
+  "selectors": {
+    "listSelector": "div.item, div.row-item, div.manga-box",
+    "titleSelector": "h3 a, figcaption h3 a, a.jumbo",
+    "linkSelector": "h3 a, figcaption h3 a, a.jumbo",
+    "coverSelector": "div.image img, div.thumb img",
+    "chapterSelector": "div.list-chapter ul li a, nav.chapter-list ul li a",
+    "pageImgSelector": "div.page-chapter img, div.reading-detail img",
+    "nextPageSelector": "a.next, ul.pagination li.active + li a",
+    "detailsTitleSelector": "h1.title-detail, h1.title",
+    "detailsCoverSelector": "div.col-image img",
+    "descriptionSelector": "div.detail-content, div.shortened",
+    "authorSelector": "li.author p.col-xs-8 a",
+    "statusSelector": "li.status p.col-xs-8",
+    "genresSelector": "li.kind p.col-xs-8 a"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://xoxocomic.com/"
+    }
+  ],
+  "recipePath": "recipes/en.xoxocomics.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    2385956107618754468
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://xoxocomic.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/xoxocomics/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.xoxocomics",
+  "upstreamSourceId": 2385956107618754468,
+  "upstreamExtVersionCode": 106018,
+  "versionCode": 106018,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "multisrcTheme": "wpcomics",
+  "popularRequest": {
+    "method": "GET",
+    "pathTemplate": "/hot?page={page}",
+    "firstPagePathTemplate": "/hot"
+  }
+}

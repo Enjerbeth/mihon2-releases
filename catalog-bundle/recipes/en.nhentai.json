@@ -40,19 +40,80 @@
   "jsonApi": {
     "apiBaseUrl": "https://nhentai.net",
     "popularRequest": {
+      "method": "GET",
       "pathTemplate": "/search/?q=\\"
     },
     "latestRequest": {
-      "pathTemplate": "/search/?q=\\"
+      "method": "GET",
+      "pathTemplate": "/?page={page}"
     },
     "searchRequest": {
-      "pathTemplate": "/search/?q=\\"
+      "method": "POST",
+      "pathTemplate": "/favorites/?q={query}&page={page}&q={query}&page={page}"
     },
-    "popularMapping": {
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/graphql"
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/{slug}"
+    },
+    "pagesRequest": {
+      "method": "GET",
+      "pathTemplate": "/graphql"
+    },
+    "mangaList": {
       "itemsPath": "$.data[*]",
-      "titlePath": "$.title",
-      "urlPath": "$.slug",
-      "coverPath": "$.cover"
+      "titlePaths": [
+        "$.title",
+        "$.name"
+      ],
+      "urlPath": "$.url",
+      "slugPath": "$.slug",
+      "idPath": "$.id",
+      "coverPaths": [
+        "$.cover",
+        "$.thumbnail",
+        "$.image"
+      ],
+      "pagination": {
+        "mode": "PAGE_NUMBER",
+        "startPage": 1,
+        "pageSize": 24
+      }
+    },
+    "details": {
+      "rootPath": "$.data",
+      "titlePaths": [
+        "$.title",
+        "$.name"
+      ],
+      "descriptionPaths": [
+        "$.description",
+        "$.synopsis"
+      ],
+      "coverPaths": [
+        "$.cover",
+        "$.thumbnail",
+        "$.image"
+      ],
+      "authorsPath": "$.author",
+      "artistsPath": "$.artist",
+      "genresPath": "$.genres[*]",
+      "statusPath": "$.status"
+    },
+    "chapters": {
+      "itemsPath": "$.data[*]",
+      "namePath": "$.title",
+      "urlPath": "$.url",
+      "idPath": "$.id",
+      "numberPath": "$.number",
+      "datePath": "$.createdAt"
+    },
+    "pages": {
+      "itemsPath": "$.pages[*]",
+      "imageUrlPath": "$.url"
     }
   },
   "requiresCloudflareBypass": true,

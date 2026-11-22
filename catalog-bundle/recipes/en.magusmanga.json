@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.magusmanga",
+  "name": "Magus Manga",
+  "baseUrl": "https://magustoon.org",
+  "lang": "en",
+  "version": 1,
+  "versionId": 3,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/api/query?perPage=18&orderBy=totalViews&orderDirection=desc&page=1",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://magustoon.org/"
+  },
+  "selectors": {
+    "listSelector": "$.posts[*]"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://magustoon.org/"
+    }
+  ],
+  "recipePath": "recipes/en.magusmanga.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1589747287364201069
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "jsonApi": {
+    "apiBaseUrl": "https://magustoon.org",
+    "popularRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/query?perPage=18&orderBy=totalViews&orderDirection=desc&page={page}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://magustoon.org/"
+      }
+    },
+    "latestRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/query?perPage=18&orderBy=lastChapterAddedAt&orderDirection=desc&page={page}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://magustoon.org/"
+      }
+    },
+    "searchRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/query?perPage=18&searchTerm={query}&page={page}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://magustoon.org/"
+      }
+    },
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/post?postSlug={slug}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://magustoon.org/"
+      }
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/chapters?postId={id}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://magustoon.org/"
+      }
+    },
+    "pagesRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/chapter?chapterId={chapterId}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://magustoon.org/"
+      }
+    },
+    "mangaList": {
+      "itemsPath": "$.posts[*]",
+      "titlePaths": [
+        "$.postTitle",
+        "$.title",
+        "$.name"
+      ],
+      "urlTemplate": "{slug}/{id}",
+      "slugPath": "$.slug",
+      "idPath": "$.id",
+      "coverPaths": [
+        "$.featuredImage",
+        "$.cover",
+        "$.thumbnail"
+      ],
+      "pagination": {
+        "mode": "PAGE_NUMBER",
+        "startPage": 1,
+        "pageSize": 18
+      }
+    },
+    "details": {
+      "rootPath": "$.post",
+      "titlePaths": [
+        "$.postTitle",
+        "$.title",
+        "$.name"
+      ],
+      "descriptionPaths": [
+        "$.postContent",
+        "$.description",
+        "$.synopsis"
+      ],
+      "stripHtmlInDescription": true,
+      "coverPaths": [
+        "$.featuredImage",
+        "$.cover",
+        "$.thumbnail"
+      ],
+      "genresPath": "$.genres[*].name",
+      "statusPath": "$.seriesStatus",
+      "statusMap": {
+        "ONGOING": 1,
+        "COMING_SOON": 1,
+        "MASS_RELEASED": 1,
+        "COMPLETED": 2,
+        "CANCELLED": 5,
+        "DROPPED": 5
+      }
+    },
+    "chapters": {
+      "itemsPath": "$.post.chapters[*]",
+      "namePath": "$.title",
+      "urlTemplate": "{id}",
+      "idPath": "$.id",
+      "numberPath": "$.number",
+      "lockedPath": "$.isLocked",
+      "datePath": "$.createdAt",
+      "dateFormat": "iso"
+    },
+    "pages": {
+      "itemsPath": "$.chapter.images[*]",
+      "imageUrlPath": "$.url"
+    }
+  },
+  "mirrors": [
+    "https://magustoon.org"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/magusmanga/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.magusmanga",
+  "upstreamSourceId": 1589747287364201069,
+  "upstreamExtVersionCode": 106075,
+  "versionCode": 106075,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

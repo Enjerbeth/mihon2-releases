@@ -27,16 +27,16 @@
     784276282691018699
   ],
   "license": "Apache-2.0",
-  "attribution": "FelipeGFA Contributors",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
   "mirrors": [
     "https://taosect.com"
   ],
-  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/pt/taosect/res/mipmap-xhdpi/ic_launcher.png",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/taosect/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.pt.taosect",
   "upstreamSourceId": 784276282691018699,
-  "upstreamExtVersionCode": 104022,
-  "versionCode": 104022,
-  "upstreamRepo": "FelipeGFA/fonte-extensoes",
+  "upstreamExtVersionCode": 106002,
+  "versionCode": 106002,
+  "upstreamRepo": "keiyoushi/extensions-source",
   "jsonApi": {
     "apiBaseUrl": "https://taosect.com",
     "popularRequest": {

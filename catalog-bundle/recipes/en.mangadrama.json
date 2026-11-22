@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.mangadrama",
+  "name": "Manga Drama",
+  "baseUrl": "https://mangadrama.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga/",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://mangadrama.com/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.manga-item",
+    "titleSelector": "div.item-title a, h5.title a",
+    "linkSelector": "div.item-title a, h5.title a",
+    "coverSelector": "div.item-thumb img",
+    "chapterSelector": "li.wp-manga-chapter, div.chapter-item",
+    "pageImgSelector": "div.page-break img, div.reading-content img",
+    "detailsTitleSelector": "div.post-title h1, h1.entry-title",
+    "detailsCoverSelector": "div.summary_image img",
+    "descriptionSelector": "div.description-summary, div.summary__content",
+    "authorSelector": "div.author-content a",
+    "genresSelector": "div.genres-content a",
+    "statusSelector": "div.post-status div.summary-content"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://mangadrama.com/"
+    }
+  ],
+  "recipePath": "recipes/en.mangadrama.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    3174596843279946873
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://mangadrama.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/mangadrama/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.mangadrama",
+  "upstreamSourceId": 3174596843279946873,
+  "upstreamExtVersionCode": 106010,
+  "versionCode": 106010,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "multisrcTheme": "madaralegacy",
+  "popularRequest": {
+    "method": "GET",
+    "pathTemplate": "/manga/?m_orderby=views&page={page}",
+    "firstPagePathTemplate": "/manga/?m_orderby=views"
+  },
+  "latestRequest": {
+    "method": "GET",
+    "pathTemplate": "/manga/?m_orderby=latest&page={page}",
+    "firstPagePathTemplate": "/manga/?m_orderby=latest"
+  },
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

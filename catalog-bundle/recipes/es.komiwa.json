@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.komiwa",
+  "name": "Komiwa",
+  "baseUrl": "https://www.komiwa.net",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://www.komiwa.net/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://www.komiwa.net/"
+    }
+  ],
+  "recipePath": "recipes/es.komiwa.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    62756090386045468
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://www.komiwa.net"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/komiwa/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.komiwa",
+  "upstreamSourceId": 62756090386045468,
+  "upstreamExtVersionCode": 106006,
+  "versionCode": 106006,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "sourceId": "es.sapphirescan",
   "name": "SapphireScan",
-  "baseUrl": "https://www.sapphirescan.com",
+  "baseUrl": "https://www.storagesizebox.com",
   "lang": "es",
-  "version": 6,
+  "version": 9,
   "versionId": 1,
   "preset": "JSON_API",
   "status": "ACTIVE",
@@ -12,7 +12,7 @@
   "catalogPath": "/feeds/posts/default?alt=json",
   "useHomeFallback": false,
   "headers": {
-    "Referer": "https://www.sapphirescan.com/"
+    "Referer": "https://www.storagesizebox.com/"
   },
   "selectors": {
     "listSelector": "$.feed.entry[*]"
@@ -20,7 +20,7 @@
   "pipelineSteps": [
     {
       "op": "referer_bind",
-      "refererUrl": "https://www.sapphirescan.com/"
+      "refererUrl": "https://www.storagesizebox.com/"
     }
   ],
   "recipePath": "recipes/es.sapphirescan.json",
@@ -102,8 +102,8 @@
     }
   },
   "mirrors": [
-    "https://www.sapphirescan.com",
-    "https://www.storagesizebox.com"
+    "https://www.storagesizebox.com",
+    "https://www.sapphirescan.com"
   ],
   "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/es/sapphirescan/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.es.sapphirescan",

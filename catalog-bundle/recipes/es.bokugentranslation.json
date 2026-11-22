@@ -40,8 +40,8 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/bokugentranslation/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.es.bokugentranslation",
   "upstreamSourceId": 1598762687295904337,
-  "upstreamExtVersionCode": 106020,
-  "versionCode": 106020,
+  "upstreamExtVersionCode": 106021,
+  "versionCode": 106021,
   "upstreamRepo": "keiyoushi/extensions-source",
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false

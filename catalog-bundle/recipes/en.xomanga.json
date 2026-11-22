@@ -6,7 +6,7 @@
   "lang": "en",
   "version": 1,
   "versionId": 1,
-  "preset": "CSS_GENERIC",
+  "preset": "JSON_API",
   "status": "ACTIVE",
   "maxHtmlBytes": 2097152,
   "catalogPath": "/manga",
@@ -14,13 +14,7 @@
   "headers": {
     "Referer": "https://www.xomanga.site/"
   },
-  "selectors": {
-    "listSelector": "article, div.manga-item, div.page-item-detail",
-    "titleSelector": "h3 a, h4 a, a",
-    "linkSelector": "a",
-    "chapterSelector": "li a, div.chapter-item a",
-    "pageImgSelector": "div.reading-content img, div#readerarea img"
-  },
+  "selectors": null,
   "pipelineSteps": [
     {
       "op": "referer_bind",
@@ -43,6 +37,85 @@
   "upstreamExtVersionCode": 106004,
   "versionCode": 106004,
   "upstreamRepo": "keiyoushi/extensions-source",
+  "jsonApi": {
+    "apiBaseUrl": "https://www.xomanga.site",
+    "popularRequest": {
+      "method": "GET",
+      "pathTemplate": "/graphql"
+    },
+    "latestRequest": {
+      "method": "GET",
+      "pathTemplate": "/graphql"
+    },
+    "searchRequest": {
+      "method": "GET",
+      "pathTemplate": "/graphql"
+    },
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/graphql"
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/graphql"
+    },
+    "pagesRequest": {
+      "method": "GET",
+      "pathTemplate": "/graphql"
+    },
+    "mangaList": {
+      "itemsPath": "$.data[*]",
+      "titlePaths": [
+        "$.title",
+        "$.name"
+      ],
+      "urlPath": "$.url",
+      "slugPath": "$.slug",
+      "idPath": "$.id",
+      "coverPaths": [
+        "$.cover",
+        "$.thumbnail",
+        "$.image"
+      ],
+      "pagination": {
+        "mode": "PAGE_NUMBER",
+        "startPage": 1,
+        "pageSize": 24
+      }
+    },
+    "details": {
+      "rootPath": "$",
+      "titlePaths": [
+        "$.title",
+        "$.name"
+      ],
+      "descriptionPaths": [
+        "$.description",
+        "$.synopsis"
+      ],
+      "coverPaths": [
+        "$.cover",
+        "$.thumbnail",
+        "$.image"
+      ],
+      "authorsPath": "$.author",
+      "artistsPath": "$.artist",
+      "genresPath": "$.genres[*]",
+      "statusPath": "$.status"
+    },
+    "chapters": {
+      "itemsPath": "$.chapters[*]",
+      "namePath": "$.title",
+      "urlPath": "$.url",
+      "idPath": "$.id",
+      "numberPath": "$.number",
+      "datePath": "$.createdAt"
+    },
+    "pages": {
+      "itemsPath": "$.images[*]",
+      "imageUrlPath": "$.url"
+    }
+  },
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false
 }

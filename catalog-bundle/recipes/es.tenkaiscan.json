@@ -25,6 +25,12 @@
     {
       "op": "referer_bind",
       "refererUrl": "https://falcoscan.net/"
+    },
+    {
+      "op": "grid_unscramble",
+      "mode": "GRID",
+      "columns": 2,
+      "rows": 2
     }
   ],
   "recipePath": "recipes/es.tenkaiscan.json",
@@ -33,16 +39,16 @@
     5992780069311625546
   ],
   "license": "Apache-2.0",
-  "attribution": "FelipeGFA Contributors",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
   "mirrors": [
     "https://falcoscan.net"
   ],
-  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/es/tenkaiscan/res/mipmap-xhdpi/ic_launcher.png",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/tenkaiscan/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.es.tenkaiscan",
   "upstreamSourceId": 5992780069311625546,
-  "upstreamExtVersionCode": 104039,
-  "versionCode": 104039,
-  "upstreamRepo": "FelipeGFA/fonte-extensoes",
+  "upstreamExtVersionCode": 106001,
+  "versionCode": 106001,
+  "upstreamRepo": "keiyoushi/extensions-source",
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false
 }

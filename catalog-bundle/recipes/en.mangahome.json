@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.mangahome",
+  "name": "MangaHome",
+  "baseUrl": "https://www.mangahome.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://www.mangahome.com/"
+  },
+  "selectors": {
+    "listSelector": "a[href*='/manga/'], a[href*='/series/'], div.manga-item",
+    "titleSelector": "h3 a, h2 a, a.title",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter a",
+    "pageImgSelector": "div.page img, img.chapter-img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://www.mangahome.com/"
+    },
+    {
+      "op": "quickjs_eval",
+      "preset": "PACKER",
+      "script": "var out = unpackPacker(input); out;",
+      "outputVar": "out",
+      "timeoutMs": 2000
+    }
+  ],
+  "recipePath": "recipes/en.mangahome.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    933332296024902732
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://www.mangahome.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/mangahome/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.mangahome",
+  "upstreamSourceId": 933332296024902732,
+  "upstreamExtVersionCode": 106001,
+  "versionCode": 106001,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

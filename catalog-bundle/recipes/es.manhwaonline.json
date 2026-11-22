@@ -18,7 +18,7 @@
     "listSelector": "article, div.manga-item, div.page-item-detail",
     "titleSelector": "h3 a, h4 a, a",
     "linkSelector": "a",
-    "chapterSelector": "li a, div.chapter-item a",
+    "chapterSelector": "div.chapter-list-full a.chapter-link",
     "pageImgSelector": "div.reading-content img, div#readerarea img"
   },
   "pipelineSteps": [

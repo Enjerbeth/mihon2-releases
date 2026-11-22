@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.hijalascans",
+  "name": "Hijala Scans",
+  "baseUrl": "https://en-hijala.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/api/query?perPage=18&orderBy=totalViews&orderDirection=desc&page=1",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://en-hijala.com/"
+  },
+  "selectors": {
+    "listSelector": "$.posts[*]"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://en-hijala.com/"
+    }
+  ],
+  "recipePath": "recipes/en.hijalascans.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    454381816904772144
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "jsonApi": {
+    "apiBaseUrl": "https://en-hijala.com",
+    "popularRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/query?perPage=18&orderBy=totalViews&orderDirection=desc&page={page}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://en-hijala.com/"
+      }
+    },
+    "latestRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/query?perPage=18&orderBy=lastChapterAddedAt&orderDirection=desc&page={page}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://en-hijala.com/"
+      }
+    },
+    "searchRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/query?perPage=18&searchTerm={query}&page={page}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://en-hijala.com/"
+      }
+    },
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/post?postSlug={slug}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://en-hijala.com/"
+      }
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/chapters?postId={id}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://en-hijala.com/"
+      }
+    },
+    "pagesRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/chapter?chapterId={chapterId}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://en-hijala.com/"
+      }
+    },
+    "mangaList": {
+      "itemsPath": "$.posts[*]",
+      "titlePaths": [
+        "$.postTitle",
+        "$.title",
+        "$.name"
+      ],
+      "urlTemplate": "{slug}/{id}",
+      "slugPath": "$.slug",
+      "idPath": "$.id",
+      "coverPaths": [
+        "$.featuredImage",
+        "$.cover",
+        "$.thumbnail"
+      ],
+      "pagination": {
+        "mode": "PAGE_NUMBER",
+        "startPage": 1,
+        "pageSize": 18
+      }
+    },
+    "details": {
+      "rootPath": "$.post",
+      "titlePaths": [
+        "$.postTitle",
+        "$.title",
+        "$.name"
+      ],
+      "descriptionPaths": [
+        "$.postContent",
+        "$.description",
+        "$.synopsis"
+      ],
+      "stripHtmlInDescription": true,
+      "coverPaths": [
+        "$.featuredImage",
+        "$.cover",
+        "$.thumbnail"
+      ],
+      "genresPath": "$.genres[*].name",
+      "statusPath": "$.seriesStatus",
+      "statusMap": {
+        "ONGOING": 1,
+        "COMING_SOON": 1,
+        "MASS_RELEASED": 1,
+        "COMPLETED": 2,
+        "CANCELLED": 5,
+        "DROPPED": 5
+      }
+    },
+    "chapters": {
+      "itemsPath": "$.post.chapters[*]",
+      "namePath": "$.title",
+      "urlTemplate": "{id}",
+      "idPath": "$.id",
+      "numberPath": "$.number",
+      "lockedPath": "$.isLocked",
+      "datePath": "$.createdAt",
+      "dateFormat": "iso"
+    },
+    "pages": {
+      "itemsPath": "$.chapter.images[*]",
+      "imageUrlPath": "$.url"
+    }
+  },
+  "mirrors": [
+    "https://en-hijala.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/hijalascans/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.hijalascans",
+  "upstreamSourceId": 454381816904772144,
+  "upstreamExtVersionCode": 106029,
+  "versionCode": 106029,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

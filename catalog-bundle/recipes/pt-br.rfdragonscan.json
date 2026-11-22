@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.rfdragonscan",
+  "name": "RF Dragon Scan",
+  "baseUrl": "https://rfdragonscan.net",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://rfdragonscan.net/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://rfdragonscan.net/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.rfdragonscan.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    3492404357721425345
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://rfdragonscan.net"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/rfdragonscan/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.rfdragonscan",
+  "upstreamSourceId": 3492404357721425345,
+  "upstreamExtVersionCode": 106002,
+  "versionCode": 106002,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

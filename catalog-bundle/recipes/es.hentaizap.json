@@ -15,12 +15,12 @@
     "Referer": "https://hentaizap.com/"
   },
   "selectors": {
-    "listSelector": "article, div.manga-item, div.page-item-detail",
-    "titleSelector": "h3 a, h4 a, a",
-    "linkSelector": "a",
+    "listSelector": "div.gallery, div.thumb-container, div.item",
+    "titleSelector": "div.caption a, a.cover",
+    "linkSelector": "a.cover, div.caption a",
     "coverSelector": "img.lazyload, img.cover-image",
-    "chapterSelector": "li a, div.chapter-item a",
-    "pageImgSelector": "div.reading-content img, div#readerarea img",
+    "chapterSelector": "div.chapter-list a, a.read-btn",
+    "pageImgSelector": "div.image-container img, div#image-container img",
     "detailsTitleSelector": "h1.title, h2.title",
     "detailsCoverSelector": "div#cover img, div.cover img",
     "descriptionSelector": "div#tags, div.tags"
@@ -46,5 +46,7 @@
   "upstreamSourceId": 4825793506555725623,
   "upstreamExtVersionCode": 106014,
   "versionCode": 106014,
-  "upstreamRepo": "keiyoushi/extensions-source"
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
 }

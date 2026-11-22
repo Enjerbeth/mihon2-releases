@@ -43,6 +43,18 @@
   "upstreamExtVersionCode": 106011,
   "versionCode": 106011,
   "upstreamRepo": "keiyoushi/extensions-source",
+  "authPreFlight": {
+    "url": "https://akuma.moe/",
+    "method": "GET",
+    "headers": {
+      "Referer": "https://akuma.moe/"
+    },
+    "extractMode": "REGEX",
+    "extractPattern": "<meta[^>]*name=[\"\\']csrf-token[\"\\'][^>]*content=[\"\\']([^\"\\']+)",
+    "cacheTtlSeconds": 1800,
+    "targetHeader": "X-CSRF-TOKEN",
+    "valuePrefix": ""
+  },
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false
 }

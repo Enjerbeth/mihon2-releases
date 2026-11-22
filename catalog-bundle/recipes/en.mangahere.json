@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.mangahere",
+  "name": "Mangahere",
+  "baseUrl": "https://www.mangahere.cc",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://www.mangahere.cc/"
+  },
+  "selectors": {
+    "listSelector": ".manga-list-1-list li",
+    "titleSelector": "h3 a, h2 a, a.title",
+    "linkSelector": "a",
+    "chapterSelector": "ul.detail-main-list > li",
+    "pageImgSelector": "div.page img, img.chapter-img",
+    "nextPageSelector": "div.pager-list-left a:last-child"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://www.mangahere.cc/"
+    },
+    {
+      "op": "quickjs_eval",
+      "preset": "PACKER",
+      "script": "var out = unpackPacker(input); out;",
+      "outputVar": "out",
+      "timeoutMs": 2000
+    }
+  ],
+  "recipePath": "recipes/en.mangahere.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    2
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://www.mangahere.cc"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/mangahere/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.mangahere",
+  "upstreamSourceId": 2,
+  "upstreamExtVersionCode": 106003,
+  "versionCode": 106003,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

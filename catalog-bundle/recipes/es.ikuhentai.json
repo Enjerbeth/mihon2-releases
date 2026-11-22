@@ -40,7 +40,7 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/ikuhentai/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.es.ikuhentai",
   "upstreamSourceId": 7567013997438852760,
-  "upstreamExtVersionCode": 106001,
-  "versionCode": 106001,
+  "upstreamExtVersionCode": 106002,
+  "versionCode": 106002,
   "upstreamRepo": "keiyoushi/extensions-source"
 }

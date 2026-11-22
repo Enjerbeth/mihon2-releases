@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.reimanga",
+  "name": "ReiManga",
+  "baseUrl": "https://reimanga.net",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://reimanga.net/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://reimanga.net/"
+    }
+  ],
+  "recipePath": "recipes/en.reimanga.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    5627909338430537186
+  ],
+  "license": "Apache-2.0",
+  "attribution": "FelipeGFA Contributors",
+  "mirrors": [
+    "https://reimanga.net"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/en/reimanga/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.reimanga",
+  "upstreamSourceId": 5627909338430537186,
+  "upstreamExtVersionCode": 106005,
+  "versionCode": 106005,
+  "upstreamRepo": "FelipeGFA/fonte-extensoes"
+}

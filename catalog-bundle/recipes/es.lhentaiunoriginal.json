@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.lhentaiunoriginal",
+  "name": "lHentai (unoriginal)",
+  "baseUrl": "https://lhentai.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://lhentai.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://lhentai.com/"
+    }
+  ],
+  "recipePath": "recipes/es.lhentaiunoriginal.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    6809619983940497141
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://lhentai.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/lhentaiunoriginal/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.lhentaiunoriginal",
+  "upstreamSourceId": 6809619983940497141,
+  "upstreamExtVersionCode": 106001,
+  "versionCode": 106001,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

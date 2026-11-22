@@ -4,7 +4,7 @@
   "name": "LikeManga",
   "baseUrl": "https://mgread.io",
   "lang": "en",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",

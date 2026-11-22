@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.kenscans",
+  "name": "Ken Scans",
+  "baseUrl": "https://kencomics.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/api/query?perPage=18&orderBy=totalViews&orderDirection=desc&page=1",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://kencomics.com/"
+  },
+  "selectors": {
+    "listSelector": "$.posts[*]"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://kencomics.com/"
+    }
+  ],
+  "recipePath": "recipes/en.kenscans.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    7831933086917318633
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "jsonApi": {
+    "apiBaseUrl": "https://kencomics.com",
+    "popularRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/query?perPage=18&orderBy=totalViews&orderDirection=desc&page={page}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://kencomics.com/"
+      }
+    },
+    "latestRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/query?perPage=18&orderBy=lastChapterAddedAt&orderDirection=desc&page={page}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://kencomics.com/"
+      }
+    },
+    "searchRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/query?perPage=18&searchTerm={query}&page={page}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://kencomics.com/"
+      }
+    },
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/post?postSlug={slug}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://kencomics.com/"
+      }
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/chapters?postId={id}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://kencomics.com/"
+      }
+    },
+    "pagesRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/chapter?chapterId={chapterId}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://kencomics.com/"
+      }
+    },
+    "mangaList": {
+      "itemsPath": "$.posts[*]",
+      "titlePaths": [
+        "$.postTitle",
+        "$.title",
+        "$.name"
+      ],
+      "urlTemplate": "{slug}/{id}",
+      "slugPath": "$.slug",
+      "idPath": "$.id",
+      "coverPaths": [
+        "$.featuredImage",
+        "$.cover",
+        "$.thumbnail"
+      ],
+      "pagination": {
+        "mode": "PAGE_NUMBER",
+        "startPage": 1,
+        "pageSize": 18
+      }
+    },
+    "details": {
+      "rootPath": "$.post",
+      "titlePaths": [
+        "$.postTitle",
+        "$.title",
+        "$.name"
+      ],
+      "descriptionPaths": [
+        "$.postContent",
+        "$.description",
+        "$.synopsis"
+      ],
+      "stripHtmlInDescription": true,
+      "coverPaths": [
+        "$.featuredImage",
+        "$.cover",
+        "$.thumbnail"
+      ],
+      "genresPath": "$.genres[*].name",
+      "statusPath": "$.seriesStatus",
+      "statusMap": {
+        "ONGOING": 1,
+        "COMING_SOON": 1,
+        "MASS_RELEASED": 1,
+        "COMPLETED": 2,
+        "CANCELLED": 5,
+        "DROPPED": 5
+      }
+    },
+    "chapters": {
+      "itemsPath": "$.post.chapters[*]",
+      "namePath": "$.title",
+      "urlTemplate": "{id}",
+      "idPath": "$.id",
+      "numberPath": "$.number",
+      "lockedPath": "$.isLocked",
+      "datePath": "$.createdAt",
+      "dateFormat": "iso"
+    },
+    "pages": {
+      "itemsPath": "$.chapter.images[*]",
+      "imageUrlPath": "$.url"
+    }
+  },
+  "mirrors": [
+    "https://kencomics.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/kenscans/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.kenscans",
+  "upstreamSourceId": 7831933086917318633,
+  "upstreamExtVersionCode": 106039,
+  "versionCode": 106039,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

@@ -2,29 +2,23 @@
   "schemaVersion": 2,
   "sourceId": "es.luscious",
   "name": "Luscious",
-  "baseUrl": "https://members.luscious.net",
+  "baseUrl": "https://www.luscious.net",
   "lang": "es",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
-  "preset": "CSS_GENERIC",
+  "preset": "JSON_API",
   "status": "ACTIVE",
   "maxHtmlBytes": 2097152,
   "catalogPath": "/manga",
   "useHomeFallback": true,
   "headers": {
-    "Referer": "https://members.luscious.net/"
+    "Referer": "https://www.luscious.net/"
   },
-  "selectors": {
-    "listSelector": "article, div.manga-item, div.page-item-detail",
-    "titleSelector": "h3 a, h4 a, a",
-    "linkSelector": "a",
-    "chapterSelector": "li a, div.chapter-item a",
-    "pageImgSelector": "div.reading-content img, div#readerarea img"
-  },
+  "selectors": null,
   "pipelineSteps": [
     {
       "op": "referer_bind",
-      "refererUrl": "https://members.luscious.net/"
+      "refererUrl": "https://www.luscious.net/"
     }
   ],
   "recipePath": "recipes/es.luscious.json",
@@ -35,8 +29,8 @@
   "license": "Apache-2.0",
   "attribution": "The Tachiyomi / Keiyoushi Contributors",
   "mirrors": [
-    "https://members.luscious.net",
-    "https://www.luscious.net"
+    "https://www.luscious.net",
+    "https://members.luscious.net"
   ],
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/luscious/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.all.luscious",
@@ -44,6 +38,85 @@
   "upstreamExtVersionCode": 106003,
   "versionCode": 106003,
   "upstreamRepo": "keiyoushi/extensions-source",
+  "jsonApi": {
+    "apiBaseUrl": "https://www.luscious.net",
+    "popularRequest": {
+      "method": "GET",
+      "pathTemplate": "/graphql"
+    },
+    "latestRequest": {
+      "method": "GET",
+      "pathTemplate": "/graphql"
+    },
+    "searchRequest": {
+      "method": "GET",
+      "pathTemplate": "/graphql"
+    },
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/graphql"
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/graphql"
+    },
+    "pagesRequest": {
+      "method": "GET",
+      "pathTemplate": "/graphql"
+    },
+    "mangaList": {
+      "itemsPath": "$.items[*]",
+      "titlePaths": [
+        "$.title",
+        "$.name"
+      ],
+      "urlPath": "$.url",
+      "slugPath": "$.slug",
+      "idPath": "$.id",
+      "coverPaths": [
+        "$.cover",
+        "$.thumbnail",
+        "$.image"
+      ],
+      "pagination": {
+        "mode": "PAGE_NUMBER",
+        "startPage": 1,
+        "pageSize": 24
+      }
+    },
+    "details": {
+      "rootPath": "$.data",
+      "titlePaths": [
+        "$.title",
+        "$.name"
+      ],
+      "descriptionPaths": [
+        "$.description",
+        "$.synopsis"
+      ],
+      "coverPaths": [
+        "$.cover",
+        "$.thumbnail",
+        "$.image"
+      ],
+      "authorsPath": "$.author",
+      "artistsPath": "$.artist",
+      "genresPath": "$.genres[*]",
+      "statusPath": "$.status"
+    },
+    "chapters": {
+      "itemsPath": "$.items[*]",
+      "namePath": "$.title",
+      "urlPath": "$.url",
+      "idPath": "$.id",
+      "numberPath": "$.number",
+      "datePath": "$.createdAt"
+    },
+    "pages": {
+      "itemsPath": "$.items[*]",
+      "imageUrlPath": "$.url"
+    }
+  },
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false
 }

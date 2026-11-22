@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.mangafox",
+  "name": "MangaFox",
+  "baseUrl": "https://fanfox.net",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://fanfox.net/"
+  },
+  "selectors": {
+    "listSelector": "ul.manga-list-1-list li",
+    "titleSelector": "h3 a, h2 a, a.title",
+    "linkSelector": "a",
+    "chapterSelector": "ul.detail-main-list li a",
+    "pageImgSelector": "div.page img, img.chapter-img",
+    "nextPageSelector": ".pager-list-left a.active + a + a"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://fanfox.net/"
+    }
+  ],
+  "recipePath": "recipes/en.mangafox.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    6484561431658238800
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://fanfox.net"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/mangafox/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.mangafox",
+  "upstreamSourceId": 6484561431658238800,
+  "upstreamExtVersionCode": 106003,
+  "versionCode": 106003,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

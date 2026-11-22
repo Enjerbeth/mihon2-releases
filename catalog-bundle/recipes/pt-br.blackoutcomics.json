@@ -40,20 +40,93 @@
   "jsonApi": {
     "apiBaseUrl": "https://blackoutcomics.com",
     "popularRequest": {
-      "pathTemplate": "/api/manga?page={page}"
+      "method": "GET",
+      "pathTemplate": "/graphql"
     },
     "latestRequest": {
-      "pathTemplate": "/api/manga?page={page}"
+      "method": "GET",
+      "pathTemplate": "/graphql"
     },
     "searchRequest": {
-      "pathTemplate": "/api/manga?page={page}"
+      "method": "GET",
+      "pathTemplate": "/graphql"
     },
-    "popularMapping": {
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/graphql"
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/graphql"
+    },
+    "pagesRequest": {
+      "method": "GET",
+      "pathTemplate": "/graphql"
+    },
+    "mangaList": {
       "itemsPath": "$.items[*]",
-      "titlePath": "$.title",
-      "urlPath": "$.slug",
-      "coverPath": "$.cover"
+      "titlePaths": [
+        "$.title",
+        "$.name"
+      ],
+      "urlPath": "$.url",
+      "slugPath": "$.slug",
+      "idPath": "$.id",
+      "coverPaths": [
+        "$.cover",
+        "$.thumbnail",
+        "$.image"
+      ],
+      "pagination": {
+        "mode": "PAGE_NUMBER",
+        "startPage": 1,
+        "pageSize": 24
+      }
+    },
+    "details": {
+      "rootPath": "$.data",
+      "titlePaths": [
+        "$.title",
+        "$.name"
+      ],
+      "descriptionPaths": [
+        "$.description",
+        "$.synopsis"
+      ],
+      "coverPaths": [
+        "$.cover",
+        "$.thumbnail",
+        "$.image"
+      ],
+      "authorsPath": "$.author",
+      "artistsPath": "$.artist",
+      "genresPath": "$.genres[*]",
+      "statusPath": "$.status"
+    },
+    "chapters": {
+      "itemsPath": "$.items[*]",
+      "namePath": "$.title",
+      "urlPath": "$.url",
+      "idPath": "$.id",
+      "numberPath": "$.number",
+      "datePath": "$.createdAt"
+    },
+    "pages": {
+      "itemsPath": "$.items[*]",
+      "imageUrlPath": "$.url"
     }
+  },
+  "authPreFlight": {
+    "url": "https://blackoutcomics.com/",
+    "method": "GET",
+    "headers": {
+      "Referer": "https://blackoutcomics.com/"
+    },
+    "extractMode": "REGEX",
+    "extractPattern": "<meta[^>]*name=[\"\\']csrf-token[\"\\'][^>]*content=[\"\\']([^\"\\']+)",
+    "cacheTtlSeconds": 1800,
+    "targetHeader": "X-CSRF-TOKEN",
+    "valuePrefix": ""
   },
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false

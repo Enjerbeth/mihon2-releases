@@ -34,8 +34,8 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/taimumangas/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.pt.taimumangas",
   "upstreamSourceId": 8914871231496469978,
-  "upstreamExtVersionCode": 106001,
-  "versionCode": 106001,
+  "upstreamExtVersionCode": 106002,
+  "versionCode": 106002,
   "upstreamRepo": "keiyoushi/extensions-source",
   "jsonApi": {
     "apiBaseUrl": "https://beta.taimumangas.com",

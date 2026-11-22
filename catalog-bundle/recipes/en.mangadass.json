@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.mangadass",
+  "name": "Manga Dass",
+  "baseUrl": "https://mangadass.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://mangadass.com/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.manga-item",
+    "titleSelector": "div.item-title a, h3.title a",
+    "linkSelector": "div.item-title a, h3.title a",
+    "coverSelector": "div.item-thumb img",
+    "chapterSelector": "li.wp-manga-chapter, div.chapter-item",
+    "pageImgSelector": "div.page-break img, div.text-left img",
+    "detailsTitleSelector": "div.post-title h1, h1.entry-title",
+    "detailsCoverSelector": "div.summary_image img",
+    "descriptionSelector": "div.description-summary"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://mangadass.com/"
+    }
+  ],
+  "recipePath": "recipes/en.mangadass.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    5571661567325096882
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://mangadass.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/mangadass/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.mangadass",
+  "upstreamSourceId": 5571661567325096882,
+  "upstreamExtVersionCode": 106060,
+  "versionCode": 106060,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

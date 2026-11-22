@@ -43,6 +43,18 @@
   "upstreamExtVersionCode": 106001,
   "versionCode": 106001,
   "upstreamRepo": "keiyoushi/extensions-source",
+  "authPreFlight": {
+    "url": "https://animebbg.net/",
+    "method": "GET",
+    "headers": {
+      "Referer": "https://animebbg.net/"
+    },
+    "extractMode": "REGEX",
+    "extractPattern": "<meta[^>]*name=[\"\\']csrf-token[\"\\'][^>]*content=[\"\\']([^\"\\']+)",
+    "cacheTtlSeconds": 1800,
+    "targetHeader": "X-CSRF-TOKEN",
+    "valuePrefix": ""
+  },
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false
 }

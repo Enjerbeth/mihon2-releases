@@ -40,7 +40,7 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/lectormonline/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.es.lectormonline",
   "upstreamSourceId": 4234224579308349686,
-  "upstreamExtVersionCode": 106005,
-  "versionCode": 106005,
+  "upstreamExtVersionCode": 106006,
+  "versionCode": 106006,
   "upstreamRepo": "keiyoushi/extensions-source"
 }

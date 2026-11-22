@@ -34,8 +34,8 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/yupmanga/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.es.yupmanga",
   "upstreamSourceId": 4437245120973625796,
-  "upstreamExtVersionCode": 106003,
-  "versionCode": 106003,
+  "upstreamExtVersionCode": 106004,
+  "versionCode": 106004,
   "upstreamRepo": "keiyoushi/extensions-source",
   "jsonApi": {
     "apiBaseUrl": "https://www.yupmanga.com",

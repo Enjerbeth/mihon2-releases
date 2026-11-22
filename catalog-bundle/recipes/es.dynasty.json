@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.dynasty",
+  "name": "Dynasty",
+  "baseUrl": "https://manhuako.net",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://manhuako.net/"
+  },
+  "selectors": null,
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://manhuako.net/"
+    }
+  ],
+  "recipePath": "recipes/es.dynasty.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1788469981763672104
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://manhuako.net"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/dynasty/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.dynasty",
+  "upstreamSourceId": 1788469981763672104,
+  "upstreamExtVersionCode": 106002,
+  "versionCode": 106002,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "jsonApi": {
+    "apiBaseUrl": "https://manhuako.net",
+    "popularRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/mangas?page={page}&limit=20&sort=popular"
+    },
+    "latestRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/mangas?page={page}&limit=20&sort=newest"
+    },
+    "searchRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/mangas"
+    },
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/mangas/$id"
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/page/{page}"
+    },
+    "pagesRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/chapter-pages?chapter_id={chapterId}"
+    },
+    "mangaList": {
+      "itemsPath": "$.data[*]",
+      "titlePaths": [
+        "$.title",
+        "$.name"
+      ],
+      "urlPath": "$.url",
+      "slugPath": "$.slug",
+      "idPath": "$.id",
+      "coverPaths": [
+        "$.cover",
+        "$.thumbnail",
+        "$.image"
+      ],
+      "pagination": {
+        "mode": "PAGE_NUMBER",
+        "startPage": 1,
+        "pageSize": 24
+      }
+    },
+    "details": {
+      "rootPath": "$.data",
+      "titlePaths": [
+        "$.title",
+        "$.name"
+      ],
+      "descriptionPaths": [
+        "$.description",
+        "$.synopsis"
+      ],
+      "coverPaths": [
+        "$.cover",
+        "$.thumbnail",
+        "$.image"
+      ],
+      "authorsPath": "$.author",
+      "artistsPath": "$.artist",
+      "genresPath": "$.genres[*]",
+      "statusPath": "$.status"
+    },
+    "chapters": {
+      "itemsPath": "$.chapters[*]",
+      "namePath": "$.title",
+      "urlPath": "$.url",
+      "idPath": "$.id",
+      "numberPath": "$.number",
+      "datePath": "$.createdAt"
+    },
+    "pages": {
+      "itemsPath": "$.pages[*]",
+      "imageUrlPath": "$.url"
+    }
+  }
+}

@@ -47,8 +47,8 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/meitoon/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.meitoon",
   "upstreamSourceId": 3314074618469377356,
-  "upstreamExtVersionCode": 106025,
-  "versionCode": 106025,
+  "upstreamExtVersionCode": 106026,
+  "versionCode": 106026,
   "upstreamRepo": "keiyoushi/extensions-source",
   "multisrcTheme": "keyoapp",
   "popularRequest": {

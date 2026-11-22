@@ -40,7 +40,7 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/egotoons/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.pt.egotoons",
   "upstreamSourceId": 4749792168996703143,
-  "upstreamExtVersionCode": 106011,
-  "versionCode": 106011,
+  "upstreamExtVersionCode": 106012,
+  "versionCode": 106012,
   "upstreamRepo": "keiyoushi/extensions-source"
 }

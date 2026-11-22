@@ -47,8 +47,8 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/ritharscans/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.ritharscans",
   "upstreamSourceId": 8220771912098311271,
-  "upstreamExtVersionCode": 106031,
-  "versionCode": 106031,
+  "upstreamExtVersionCode": 106032,
+  "versionCode": 106032,
   "upstreamRepo": "keiyoushi/extensions-source",
   "multisrcTheme": "keyoapp",
   "popularRequest": {

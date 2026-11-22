@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-22T10:58:54Z",
-  "catalogRevision": 7,
+  "generatedAt": "2026-11-22T18:46:21Z",
+  "catalogRevision": 8,
   "recipes": [
     {
       "schemaVersion": 1,
@@ -1054,8 +1054,8 @@
       "name": "LeerMangaEsp",
       "baseUrl": "https://mangalect.org",
       "lang": "es",
-      "version": 1,
-      "versionId": 1,
+      "version": 2,
+      "versionId": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
@@ -1073,7 +1073,7 @@
         "listSelector": "div.manga-card-v2, div.nx-search-item, article",
         "titleSelector": "h3.overlay-text-title, h3, h4, span, a",
         "linkSelector": "a[href^='/info/'], a[href*='/info/'], a[href]",
-        "chapterSelector": "a[href*='/lectura/'], a[href*='/leer-m/'], a[href*='/capitulo']",
+        "chapterSelector": "div.chapter-card a, div.chapter-scroll a, a[href*='/lectura/'], a[href*='/leer-m/']",
         "pageImgSelector": "img[src*='/mangas/'], div.reading-content img, main img"
       },
       "pipelineSteps": [
@@ -1090,8 +1090,8 @@
       "name": "LeerManhwas",
       "baseUrl": "https://leermanhwas.com",
       "lang": "es",
-      "version": 1,
-      "versionId": 1,
+      "version": 2,
+      "versionId": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
@@ -1106,11 +1106,20 @@
       "upstreamSourceId": 8701445043633550960,
       "upstreamRepo": "Keiyoushi",
       "selectors": {
-        "listSelector": "div.latest-item, div.box, div.page-item-detail",
+        "listSelector": "div.latest-item, div.page-item-detail",
         "titleSelector": "h3, h4, a",
         "linkSelector": "a[href]",
-        "chapterSelector": "div.chapter-list a, a[href*='/capitulo-'], a[href*='capitulo']",
-        "pageImgSelector": "div.reading-content img, div#readerarea img, main img"
+        "chapterSelector": "ul.chapter-list li a, .chapter-list li a, div.chapter-list li a",
+        "pageImgSelector": "div.reading-content img, div#readerarea img, main img",
+        "detailsTitleSelector": "h1.main-info-title, h1",
+        "detailsCoverSelector": "img.img-cover, .manga-info-pic img",
+        "descriptionSelector": "div.short-desc-content, div.short-desc",
+        "authorSelector": "ul.main-info-list a[href*='/autor/']",
+        "artistSelector": "ul.main-info-list a[href*='/artista/']",
+        "genresSelector": "ul.main-info-list a[href*='/genero/']",
+        "chapterNameSelector": "span.chapter-name",
+        "chapterDateSelector": "span.ct-update",
+        "chapterDateFormat": "dd MMM yyyy"
       },
       "pipelineSteps": [
         {
@@ -1166,8 +1175,8 @@
       "name": "MangaDot",
       "baseUrl": "https://mangadot.net",
       "lang": "es",
-      "version": 1,
-      "versionId": 1,
+      "version": 2,
+      "versionId": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
@@ -1185,7 +1194,7 @@
         "listSelector": "a[href^='/manga/'], article",
         "titleSelector": "h3, h4, span, a",
         "linkSelector": "a[href^='/manga/'], a[href]",
-        "chapterSelector": "a[href*='/chapter'], a[href*='/ch/'], a[href*='/capitulo']",
+        "chapterSelector": "ul.chapters a, div.chapters a, div.chapter-list a, a[href*='/chapter-'], a[href*='/ch-'], a[href*='/capitulo-']",
         "pageImgSelector": "main img, div.reading-content img"
       },
       "pipelineSteps": [
@@ -1202,8 +1211,8 @@
       "name": "MangaOni",
       "baseUrl": "https://manga-oni.com",
       "lang": "es",
-      "version": 1,
-      "versionId": 1,
+      "version": 2,
+      "versionId": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
@@ -1222,7 +1231,7 @@
         "listSelector": "div#article-div a, a[href*='/manga/'], a[href*='/manhwa/']",
         "titleSelector": "strong, h3, h4, span",
         "linkSelector": "a[href]",
-        "chapterSelector": "div#c_list a, a[href*='/lector/']",
+        "chapterSelector": "div#c_list a, div.chapters-list a, a[href*='/lector/'][href*='capitulo']",
         "pageImgSelector": "img#m_img, div#slider img, div#all img, div.reading-content img, main img"
       },
       "pipelineSteps": [
@@ -1422,8 +1431,8 @@
       "name": "MHScans",
       "baseUrl": "https://mhscans.com",
       "lang": "es",
-      "version": 1,
-      "versionId": 2,
+      "version": 2,
+      "versionId": 3,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
@@ -1441,7 +1450,7 @@
         "listSelector": "a.comic-card, div.gm-card, div.cr-card, div.wt-card, a[href*='/comics/']",
         "titleSelector": "h3, h4, span, a",
         "linkSelector": "a[href*='/comics/'], a[href]",
-        "chapterSelector": "a[href*='/leer/'], a[href*='/capitulo'], a[href*='/chapter'], div.chapter-list a",
+        "chapterSelector": "div.chapter-list a, .chapter-list a, a[href*='/leer/'][href*='capitulo'], a[href*='/capitulo-'], a[href*='/chapter-']",
         "pageImgSelector": "img.page-img, div.page-img-wrap img, div.reading-content img, main img, article img"
       },
       "pipelineSteps": [
@@ -1719,8 +1728,8 @@
       "name": "Spicy Scan",
       "baseUrl": "https://spicyseries.com",
       "lang": "es",
-      "version": 1,
-      "versionId": 1,
+      "version": 2,
+      "versionId": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
@@ -1738,7 +1747,7 @@
         "listSelector": "a[href*='/comic/'], article, div.group",
         "titleSelector": "h3, h4, p, span",
         "linkSelector": "a[href*='/comic/'], a[href]",
-        "chapterSelector": "a[href*='/capitulo'], a[href*='/chapter'], a[href*='/comic/']",
+        "chapterSelector": "div.grid a[href*='/capitulo'], a[href*='/comic/'][href*='/capitulo-'], a[href*='/comic/'][href*='/chapter-']",
         "pageImgSelector": "main img, div.reading-content img"
       },
       "pipelineSteps": [
@@ -1755,8 +1764,8 @@
       "name": "Submanhwa",
       "baseUrl": "https://submanhwa.com",
       "lang": "es",
-      "version": 1,
-      "versionId": 1,
+      "version": 2,
+      "versionId": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
@@ -1775,7 +1784,7 @@
         "listSelector": "div.up-card, div.bsx, article",
         "titleSelector": "a.up-title, h3, h4, a",
         "linkSelector": "a[href*='/serie/'], a[href]",
-        "chapterSelector": "div.lc-info a.lc-t, a.lc-t, a[href*='/capitulo'], a[href*='/leer/'], ul li a",
+        "chapterSelector": "div.lc-list a.lc-t, div.lc-row a.lc-t, div.lc-info a.lc-t",
         "pageImgSelector": "div#readerarea img, div.reading-content img, main img"
       },
       "pipelineSteps": [
@@ -1864,7 +1873,7 @@
       "name": "Vortex Scans",
       "baseUrl": "https://vortexscans.org",
       "lang": "en",
-      "version": 1,
+      "version": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
@@ -1872,7 +1881,7 @@
         "listSelector": "a[href*='/series/']",
         "titleSelector": "h1, h2, h3, span",
         "linkSelector": "a[href*='/series/']",
-        "chapterSelector": "a[href*='/chapter-']",
+        "chapterSelector": "div.chapter-list a, div.chapters a, a[href*='/chapter-']",
         "pageImgSelector": "main img"
       },
       "pipelineSteps": [
@@ -1890,7 +1899,8 @@
           "op": "referer_bind",
           "refererUrl": "https://vortexscans.org/"
         }
-      ]
+      ],
+      "versionId": 2
     },
     {
       "schemaVersion": 1,

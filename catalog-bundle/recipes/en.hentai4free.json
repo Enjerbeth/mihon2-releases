@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.hentai4free",
+  "name": "Hentai4Free",
+  "baseUrl": "https://hentai4free.net",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/hentai",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://hentai4free.net/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://hentai4free.net/"
+    }
+  ],
+  "recipePath": "recipes/en.hentai4free.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    6625474581258090106
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://hentai4free.net"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/hentai4free/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.hentai4free",
+  "upstreamSourceId": 6625474581258090106,
+  "upstreamExtVersionCode": 106060,
+  "versionCode": 106060,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

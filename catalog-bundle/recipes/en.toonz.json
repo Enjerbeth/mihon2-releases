@@ -42,7 +42,7 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/toonz/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.toonz",
   "upstreamSourceId": 225310046014902430,
-  "upstreamExtVersionCode": 106007,
-  "versionCode": 106007,
+  "upstreamExtVersionCode": 106008,
+  "versionCode": 106008,
   "upstreamRepo": "keiyoushi/extensions-source"
 }

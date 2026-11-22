@@ -43,6 +43,18 @@
   "upstreamExtVersionCode": 106015,
   "versionCode": 106015,
   "upstreamRepo": "keiyoushi/extensions-source",
+  "authPreFlight": {
+    "url": "https://www.webnovel.com/",
+    "method": "GET",
+    "headers": {
+      "Referer": "https://www.webnovel.com/"
+    },
+    "extractMode": "REGEX",
+    "extractPattern": "<meta[^>]*name=[\"\\']csrf-token[\"\\'][^>]*content=[\"\\']([^\"\\']+)",
+    "cacheTtlSeconds": 1800,
+    "targetHeader": "X-CSRF-TOKEN",
+    "valuePrefix": ""
+  },
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false
 }

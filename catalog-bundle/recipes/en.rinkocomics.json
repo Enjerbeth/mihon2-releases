@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.rinkocomics",
+  "name": "Rinko Comics",
+  "baseUrl": "https://rinkocomics.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://rinkocomics.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://rinkocomics.com/"
+    }
+  ],
+  "recipePath": "recipes/en.rinkocomics.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    4915548839286527736
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://rinkocomics.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/rinkocomics/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.rinkocomics",
+  "upstreamSourceId": 4915548839286527736,
+  "upstreamExtVersionCode": 106003,
+  "versionCode": 106003,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}
