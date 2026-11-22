@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.mangaonline",
+  "name": "Manga Online",
+  "baseUrl": "https://mangaonline.love",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 3,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://mangaonline.love/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://mangaonline.love/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.mangaonline.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    2253598980094211710,
+    7203957529449460928
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://mangaonline.love"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/mangaonline/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.mangaonline",
+  "upstreamSourceId": 2253598980094211710,
+  "upstreamExtVersionCode": 106059,
+  "versionCode": 106059,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

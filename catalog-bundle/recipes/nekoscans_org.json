@@ -10,7 +10,7 @@
   "status": "ACTIVE",
   "maxHtmlBytes": 2097152,
   "catalogPath": "/manga",
-  "useHomeFallback": false,
+  "useHomeFallback": true,
   "headers": {
     "Referer": "https://nekoproject.org/"
   },
@@ -27,18 +27,20 @@
       "refererUrl": "https://nekoproject.org/"
     }
   ],
-  "mirrors": [
-    "https://nekoproject.org"
-  ],
-  "upstreamSourceId": 8396340084333456288,
-  "upstreamExtVersionCode": 106010,
-  "upstreamRepo": "keiyoushi/extensions-source",
   "recipePath": "recipes/nekoscans_org.json",
   "mode": "declarative",
   "upstreamSourceIds": [
     8396340084333456288
   ],
-  "versionCode": 106010,
   "license": "Apache-2.0",
-  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://nekoproject.org"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/nekoscans/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.nekoscans",
+  "upstreamSourceId": 8396340084333456288,
+  "upstreamExtVersionCode": 106010,
+  "versionCode": 106010,
+  "upstreamRepo": "keiyoushi/extensions-source"
 }

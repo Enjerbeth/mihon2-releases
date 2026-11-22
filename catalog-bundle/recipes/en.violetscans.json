@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.violetscans",
+  "name": "Violet Scans",
+  "baseUrl": "https://violetmanga.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MANGA_THEMESIA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/comics",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://violetmanga.com/"
+  },
+  "selectors": {
+    "listSelector": "div.listupd div.bsx a, div.bsx a",
+    "titleSelector": "div.tt",
+    "linkSelector": "a",
+    "chapterSelector": "div#chapterlist ul li a",
+    "pageImgSelector": "div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://violetmanga.com/"
+    }
+  ],
+  "recipePath": "recipes/en.violetscans.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    9079184529211162476
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://violetmanga.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/violetscans/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.shojoscans",
+  "upstreamSourceId": 9079184529211162476,
+  "upstreamExtVersionCode": 106008,
+  "versionCode": 106008,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

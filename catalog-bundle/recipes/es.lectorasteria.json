@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.lectorasteria",
+  "name": "Lector Asteria",
+  "baseUrl": "https://visor.chifa-tong.online",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://visor.chifa-tong.online/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "coverSelector": "div.item-thumb img, img.post-thumb",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img",
+    "detailsTitleSelector": "div.post-title h1, h1.entry-title",
+    "detailsCoverSelector": "div.summary_image img",
+    "descriptionSelector": "div.description-summary"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://visor.chifa-tong.online/"
+    }
+  ],
+  "recipePath": "recipes/es.lectorasteria.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    698506559036250327
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://visor.chifa-tong.online"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/lectorasteria/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.lectorasteria",
+  "upstreamSourceId": 698506559036250327,
+  "upstreamExtVersionCode": 106002,
+  "versionCode": 106002,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "multisrcTheme": "moonlighttl"
+}

@@ -43,7 +43,9 @@
     "nextListUrlPath": "$.props.pagination.next",
     "lockedComponentName": "Reader/Locked",
     "chapterLockedPath": "$.props.chapter.locked",
-    "urlRewriteHosts": ["imperiomanhua.com"]
+    "urlRewriteHosts": [
+      "imperiomanhua.com"
+    ]
   },
   "pipelineSteps": [
     {
@@ -66,5 +68,7 @@
   ],
   "versionCode": 106075,
   "license": "Apache-2.0",
-  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.emperorscan",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/emperorscan/res/mipmap-xhdpi/ic_launcher.png"
 }

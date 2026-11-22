@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.wuxiaworld",
+  "name": "WuxiaWorld",
+  "baseUrl": "https://wuxiaworld.site",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/novel",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://wuxiaworld.site/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://wuxiaworld.site/"
+    }
+  ],
+  "recipePath": "recipes/en.wuxiaworld.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    6540843430852844328
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://wuxiaworld.site"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/wuxiaworld/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.wuxiaworld",
+  "upstreamSourceId": 6540843430852844328,
+  "upstreamExtVersionCode": 106061,
+  "versionCode": 106061,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

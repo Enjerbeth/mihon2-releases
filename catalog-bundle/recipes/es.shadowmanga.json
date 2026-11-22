@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.shadowmanga",
+  "name": "Shadow Manga",
+  "baseUrl": "https://shademanga.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://shademanga.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://shademanga.com/"
+    }
+  ],
+  "recipePath": "recipes/es.shadowmanga.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1340622632921674920,
+    5649269152264667286
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://shademanga.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/shadowmanga/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.shadowmanga",
+  "upstreamSourceId": 5649269152264667286,
+  "upstreamExtVersionCode": 106006,
+  "versionCode": 106006,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

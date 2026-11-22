@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mihon Catalog Index v2",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "enum": [1, 2]
+    },
+    "generatedAt": {
+      "type": "string"
+    },
+    "catalogRevision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z0-9._-]+$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "baseUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "lang": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 12,
+            "pattern": "^[a-zA-Z]{2,5}(-[a-zA-Z0-9]{2,8})*$"
+          },
+          "version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "versionId": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "preset": {
+            "type": "string",
+            "enum": ["MADARA", "MANGA_THEMESIA", "MANGA_READER_CMS", "CSS_GENERIC", "JSON_API"]
+          },
+          "status": {
+            "type": "string",
+            "enum": ["DRAFT", "ACTIVE", "QUARANTINED", "DISABLED"]
+          },
+          "requiresCloudflareBypass": {
+            "type": "boolean"
+          },
+          "iconUrl": {
+            "type": ["string", "null"],
+            "format": "uri"
+          },
+          "recipePath": {
+            "type": ["string", "null"],
+            "minLength": 1
+          },
+          "mode": {
+            "type": ["string", "null"]
+          },
+          "pkgName": {
+            "type": ["string", "null"]
+          },
+          "versionCode": {
+            "type": ["integer", "null"],
+            "minimum": 0
+          },
+          "upstreamSourceId": {
+            "type": ["integer", "null"]
+          },
+          "upstreamSourceIds": {
+            "type": "array",
+            "items": { "type": "integer" }
+          },
+          "license": {
+            "type": ["string", "null"]
+          },
+          "attribution": {
+            "type": ["string", "null"]
+          }
+        },
+        "required": [
+          "sourceId",
+          "name",
+          "baseUrl",
+          "lang",
+          "version",
+          "versionId",
+          "preset",
+          "status",
+          "recipePath"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "recipes": {
+      "type": "array"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "generatedAt",
+    "catalogRevision",
+    "entries"
+  ],
+  "additionalProperties": true
+}

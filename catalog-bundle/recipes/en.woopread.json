@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.woopread",
+  "name": "WoopRead",
+  "baseUrl": "https://woopread.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga/",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://woopread.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "coverSelector": "div.item-thumb img",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img",
+    "detailsTitleSelector": "div.post-title h1, h1.entry-title",
+    "detailsCoverSelector": "div.summary_image img",
+    "descriptionSelector": "div.description-summary, div.summary__content",
+    "authorSelector": "div.author-content a",
+    "genresSelector": "div.genres-content a",
+    "statusSelector": "div.post-status div.summary-content"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://woopread.com/"
+    }
+  ],
+  "recipePath": "recipes/en.woopread.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    8919726581572234359
+  ],
+  "license": "Apache-2.0",
+  "attribution": "FelipeGFA Contributors",
+  "mirrors": [
+    "https://woopread.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/en/woopread/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.woopread",
+  "upstreamSourceId": 8919726581572234359,
+  "upstreamExtVersionCode": 104053,
+  "versionCode": 104053,
+  "upstreamRepo": "FelipeGFA/fonte-extensoes",
+  "multisrcTheme": "madaralegacy",
+  "popularRequest": {
+    "method": "GET",
+    "pathTemplate": "/manga/?m_orderby=views&page={page}",
+    "firstPagePathTemplate": "/manga/?m_orderby=views"
+  },
+  "latestRequest": {
+    "method": "GET",
+    "pathTemplate": "/manga/?m_orderby=latest&page={page}",
+    "firstPagePathTemplate": "/manga/?m_orderby=latest"
+  },
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

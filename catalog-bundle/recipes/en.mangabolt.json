@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.mangabolt",
+  "name": "MangaBolt",
+  "baseUrl": "https://mangabolt.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://mangabolt.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://mangabolt.com/"
+    }
+  ],
+  "recipePath": "recipes/en.mangabolt.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    286088605022156276
+  ],
+  "license": "Apache-2.0",
+  "attribution": "FelipeGFA Contributors",
+  "mirrors": [
+    "https://mangabolt.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/en/mangabolt/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.mangabolt",
+  "upstreamSourceId": 286088605022156276,
+  "upstreamExtVersionCode": 104001,
+  "versionCode": 104001,
+  "upstreamRepo": "FelipeGFA/fonte-extensoes",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

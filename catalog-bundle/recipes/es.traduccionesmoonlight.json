@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.traduccionesmoonlight",
+  "name": "Traducciones Moonlight",
+  "baseUrl": "https://traduccionesmoonlight.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 3,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://traduccionesmoonlight.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "coverSelector": "div.item-thumb img, img.post-thumb",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img",
+    "detailsTitleSelector": "div.post-title h1, h1.entry-title",
+    "detailsCoverSelector": "div.summary_image img",
+    "descriptionSelector": "div.description-summary"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://traduccionesmoonlight.com/"
+    }
+  ],
+  "recipePath": "recipes/es.traduccionesmoonlight.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    4349338377187141550
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://traduccionesmoonlight.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/traduccionesmoonlight/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.traduccionesmoonlight",
+  "upstreamSourceId": 4349338377187141550,
+  "upstreamExtVersionCode": 106002,
+  "versionCode": 106002,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "multisrcTheme": "moonlighttl"
+}

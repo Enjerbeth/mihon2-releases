@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.readcomicsonline",
+  "name": "Read Comics Online",
+  "baseUrl": "https://readcomicsonline.ru",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MANGA_READER_CMS",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga-list",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://readcomicsonline.ru/"
+  },
+  "selectors": {
+    "listSelector": "div.media, div.col-sm-6",
+    "titleSelector": "h5.media-heading a, h4.media-heading a",
+    "linkSelector": "h5.media-heading a, h4.media-heading a",
+    "chapterSelector": "ul.chapters li a",
+    "pageImgSelector": "div#all img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://readcomicsonline.ru/"
+    }
+  ],
+  "recipePath": "recipes/en.readcomicsonline.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    7185601298150078890
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://readcomicsonline.ru"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/lib-multisrc/mmrcms/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.readcomicsonline",
+  "upstreamSourceId": 7185601298150078890,
+  "upstreamExtVersionCode": 106003,
+  "versionCode": 106003,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

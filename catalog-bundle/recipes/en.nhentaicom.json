@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.nhentaicom",
+  "name": "nHentai.com (unoriginal)",
+  "baseUrl": "https://nhentai.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/api/comics",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://nhentai.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://nhentai.com/"
+    }
+  ],
+  "recipePath": "recipes/en.nhentaicom.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    5591830863732393712
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://nhentai.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/nhentaicom/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.all.nhentaicom",
+  "upstreamSourceId": 5591830863732393712,
+  "upstreamExtVersionCode": 106003,
+  "versionCode": 106003,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "jsonApi": {
+    "apiBaseUrl": "https://nhentai.com",
+    "popularRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/comics?page={page}&sort=popular",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://nhentai.com/"
+      }
+    },
+    "latestRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/comics?page={page}&sort=datetime",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://nhentai.com/"
+      }
+    },
+    "searchRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/comics?page={page}&q={query}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://nhentai.com/"
+      }
+    },
+    "mangaList": {
+      "itemsPath": "$.data[*]",
+      "titlePaths": [
+        "$.title"
+      ],
+      "urlTemplate": "/comic/{slug}",
+      "slugPath": "$.slug",
+      "idPath": "$.id",
+      "coverPaths": [
+        "$.image.thumb",
+        "$.thumb"
+      ],
+      "pagination": {
+        "mode": "PAGE_NUMBER",
+        "startPage": 1,
+        "pageSize": 24
+      }
+    },
+    "details": {
+      "rootPath": "$",
+      "titlePaths": [
+        "$.title"
+      ],
+      "descriptionPaths": [
+        "$.description"
+      ]
+    },
+    "chapters": {
+      "itemsPath": "$",
+      "namePath": "$.title",
+      "urlTemplate": "/comic/{slug}/reader"
+    },
+    "pages": {
+      "itemsPath": "$.images[*]",
+      "imageUrlPath": "$.source_url"
+    }
+  },
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.toonkotsu",
+  "name": "Toonkotsu",
+  "baseUrl": "https://toonkotsu.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://toonkotsu.com/"
+  },
+  "selectors": null,
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://toonkotsu.com/"
+    }
+  ],
+  "recipePath": "recipes/en.toonkotsu.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    3504033188132514684
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://toonkotsu.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/toonkotsu/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.toonkotsu",
+  "upstreamSourceId": 3504033188132514684,
+  "upstreamExtVersionCode": 106006,
+  "versionCode": 106006,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "jsonApi": {
+    "apiBaseUrl": "https://toonkotsu.com",
+    "popularRequest": {
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "latestRequest": {
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "searchRequest": {
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "popularMapping": {
+      "itemsPath": "$.items[*]",
+      "titlePath": "$.title",
+      "urlPath": "$.slug",
+      "coverPath": "$.cover"
+    }
+  },
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

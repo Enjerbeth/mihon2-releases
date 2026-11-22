@@ -82,11 +82,17 @@
     },
     "mangaList": {
       "itemsPath": "$.data.items[*]",
-      "titlePaths": ["$.title", "$.manga.title"],
+      "titlePaths": [
+        "$.title",
+        "$.manga.title"
+      ],
       "slugPath": "$.manga.slug",
       "orgPath": "$.organization.slug",
       "urlTemplate": "{slug}/{org}",
-      "coverPaths": ["$.imageUrl", "$.manga.imageUrl"],
+      "coverPaths": [
+        "$.imageUrl",
+        "$.manga.imageUrl"
+      ],
       "pagination": {
         "mode": "JSON_PAGE_COMPARE",
         "startPage": 1,
@@ -96,9 +102,19 @@
     },
     "details": {
       "rootPath": "$.data",
-      "titlePaths": ["$.title", "$.manga.title"],
-      "descriptionPaths": ["$.description", "$.shortDescription", "$.manga.description"],
-      "coverPaths": ["$.imageUrl", "$.manga.imageUrl"],
+      "titlePaths": [
+        "$.title",
+        "$.manga.title"
+      ],
+      "descriptionPaths": [
+        "$.description",
+        "$.shortDescription",
+        "$.manga.description"
+      ],
+      "coverPaths": [
+        "$.imageUrl",
+        "$.manga.imageUrl"
+      ],
       "genresPath": "$.genres[*].name"
     },
     "chapters": {
@@ -139,5 +155,7 @@
   ],
   "versionCode": 106005,
   "license": "Apache-2.0",
-  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.capibaratraductor",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/capibaratraductor/res/mipmap-xhdpi/ic_launcher.png"
 }

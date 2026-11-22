@@ -27,18 +27,20 @@
       "refererUrl": "https://bloomscans.com/"
     }
   ],
-  "mirrors": [
-    "https://bloomscans.com"
-  ],
-  "upstreamSourceId": 2598725055968738551,
-  "upstreamExtVersionCode": 106005,
-  "upstreamRepo": "keiyoushi/extensions-source",
   "recipePath": "recipes/bloomscans_com.json",
   "mode": "declarative",
   "upstreamSourceIds": [
     2598725055968738551
   ],
-  "versionCode": 106005,
   "license": "Apache-2.0",
-  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://bloomscans.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/bloomscans/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.bloomscans",
+  "upstreamSourceId": 2598725055968738551,
+  "upstreamExtVersionCode": 106005,
+  "versionCode": 106005,
+  "upstreamRepo": "keiyoushi/extensions-source"
 }

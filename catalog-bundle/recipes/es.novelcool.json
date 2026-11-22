@@ -59,5 +59,7 @@
   ],
   "versionCode": 106002,
   "license": "Apache-2.0",
-  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "pkgName": "eu.kanade.tachiyomi.extension.all.novelcool",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/novelcool/res/mipmap-xhdpi/ic_launcher.png"
 }

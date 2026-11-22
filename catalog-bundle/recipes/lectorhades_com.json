@@ -27,18 +27,20 @@
       "refererUrl": "https://lectorhades.latamtoon.com/"
     }
   ],
-  "mirrors": [
-    "https://lectorhades.latamtoon.com"
-  ],
-  "upstreamSourceId": 8311505150576608267,
-  "upstreamExtVersionCode": 106065,
-  "upstreamRepo": "keiyoushi/extensions-source",
   "recipePath": "recipes/lectorhades_com.json",
   "mode": "declarative",
   "upstreamSourceIds": [
     8311505150576608267
   ],
-  "versionCode": 106065,
   "license": "Apache-2.0",
-  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://lectorhades.latamtoon.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/hadesnofansub/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.hadesnofansub",
+  "upstreamSourceId": 8311505150576608267,
+  "upstreamExtVersionCode": 106065,
+  "versionCode": 106065,
+  "upstreamRepo": "keiyoushi/extensions-source"
 }

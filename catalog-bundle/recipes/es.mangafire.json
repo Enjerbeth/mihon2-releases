@@ -51,9 +51,15 @@
       "itemsPath": "$.items[*]",
       "idPath": "$.hid",
       "slugPath": "$.slug",
-      "titlePaths": ["$.title"],
+      "titlePaths": [
+        "$.title"
+      ],
       "urlTemplate": "/title/{id}-{slug}",
-      "coverPaths": ["$.poster.large", "$.poster.medium", "$.poster.small"],
+      "coverPaths": [
+        "$.poster.large",
+        "$.poster.medium",
+        "$.poster.small"
+      ],
       "pagination": {
         "mode": "JSON_HAS_NEXT",
         "startPage": 1,
@@ -66,14 +72,25 @@
       "idPath": "$.hid",
       "slugPath": "$.slug",
       "urlTemplate": "/title/{id}-{slug}",
-      "titlePaths": ["$.title"],
-      "descriptionPaths": ["$.synopsisHtml"],
+      "titlePaths": [
+        "$.title"
+      ],
+      "descriptionPaths": [
+        "$.synopsisHtml"
+      ],
       "stripHtmlInDescription": true,
-      "coverPaths": ["$.poster.large", "$.poster.medium", "$.poster.small"],
+      "coverPaths": [
+        "$.poster.large",
+        "$.poster.medium",
+        "$.poster.small"
+      ],
       "authorsPath": "$.authors[*].title",
       "artistsPath": "$.artists[*].title",
       "genresPath": "$.genres[*].title",
-      "extraGenrePaths": ["$.type", "$.themes[*].title"],
+      "extraGenrePaths": [
+        "$.type",
+        "$.themes[*].title"
+      ],
       "statusPath": "$.status",
       "statusMap": {
         "releasing": 1,
@@ -146,5 +163,7 @@
   ],
   "versionCode": 106038,
   "license": "Apache-2.0",
-  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "pkgName": "eu.kanade.tachiyomi.extension.all.mangafire",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/mangafire/res/mipmap-xhdpi/ic_launcher.png"
 }

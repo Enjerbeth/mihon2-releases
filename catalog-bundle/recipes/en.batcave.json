@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.batcave",
+  "name": "BatCave",
+  "baseUrl": "https://batcave.biz",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://batcave.biz/"
+  },
+  "selectors": null,
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://batcave.biz/"
+    }
+  ],
+  "recipePath": "recipes/en.batcave.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    7422099479605463706
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://batcave.biz"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/batcave/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.batcave",
+  "upstreamSourceId": 7422099479605463706,
+  "upstreamExtVersionCode": 106014,
+  "versionCode": 106014,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "jsonApi": {
+    "apiBaseUrl": "https://batcave.biz",
+    "popularRequest": {
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "latestRequest": {
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "searchRequest": {
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "popularMapping": {
+      "itemsPath": "$.items[*]",
+      "titlePath": "$.title",
+      "urlPath": "$.slug",
+      "coverPath": "$.cover"
+    }
+  },
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

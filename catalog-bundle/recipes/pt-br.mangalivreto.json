@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.mangalivreto",
+  "name": "Manga Livre.to",
+  "baseUrl": "https://mangalivre.to",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://mangalivre.to/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://mangalivre.to/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.mangalivreto.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1281902081932329042
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://mangalivre.to"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/mangalivreto/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.mangalivreto",
+  "upstreamSourceId": 1281902081932329042,
+  "upstreamExtVersionCode": 106062,
+  "versionCode": 106062,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

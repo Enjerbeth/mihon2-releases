@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.traducoesdolipe",
+  "name": "Traduções do Lipe",
+  "baseUrl": "https://traducoesdolipe.blogspot.com",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/feeds/posts/default?alt=json",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://traducoesdolipe.blogspot.com/"
+  },
+  "selectors": {
+    "listSelector": "$.feed.entry[*]"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://traducoesdolipe.blogspot.com/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.traducoesdolipe.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    3650511144741653873
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "jsonApi": {
+    "apiBaseUrl": "https://traducoesdolipe.blogspot.com",
+    "popularRequest": {
+      "method": "GET",
+      "pathTemplate": "/feeds/posts/default?alt=json&start-index={page}&max-results=24",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://traducoesdolipe.blogspot.com/"
+      }
+    },
+    "latestRequest": {
+      "method": "GET",
+      "pathTemplate": "/feeds/posts/default?alt=json&start-index={page}&max-results=24",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://traducoesdolipe.blogspot.com/"
+      }
+    },
+    "searchRequest": {
+      "method": "GET",
+      "pathTemplate": "/feeds/posts/default?alt=json&q={query}&start-index={page}&max-results=24",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://traducoesdolipe.blogspot.com/"
+      }
+    },
+    "mangaList": {
+      "itemsPath": "$.feed.entry[*]",
+      "titlePaths": [
+        "$.title.$t"
+      ],
+      "urlPath": "$.link[?(@.rel=='alternate')].href",
+      "coverPaths": [
+        "$.media$thumbnail.url"
+      ],
+      "htmlExtract": {
+        "titleSelector": "h1.entry-title, h1.post-title",
+        "coverSelector": "div.post-body img, div.entry-content img",
+        "baseUrl": "https://traducoesdolipe.blogspot.com"
+      },
+      "pagination": {
+        "mode": "PAGE_NUMBER",
+        "startPage": 1,
+        "pageSize": 24
+      }
+    },
+    "details": {
+      "rootPath": "$",
+      "titlePaths": [
+        "$.feed.entry[0].title.$t",
+        "$.title.$t"
+      ]
+    },
+    "chapters": {
+      "itemsPath": "$.feed.entry[*]",
+      "namePath": "$.title.$t",
+      "urlPath": "$.link[?(@.rel=='alternate')].href",
+      "datePath": "$.published.$t",
+      "dateFormat": "iso",
+      "htmlExtract": {
+        "titleSelector": "h1.entry-title",
+        "dateSelector": "time",
+        "baseUrl": "https://traducoesdolipe.blogspot.com"
+      }
+    },
+    "pages": {
+      "itemsPath": "$.feed.entry[*]",
+      "readerHtmlPageSelector": "div.post-body img, div.entry-content img",
+      "requiresReaderHtmlFallback": true
+    }
+  },
+  "mirrors": [
+    "https://traducoesdolipe.blogspot.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/traducoesdolipe/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.traducoesdolipe",
+  "upstreamSourceId": 3650511144741653873,
+  "upstreamExtVersionCode": 106020,
+  "versionCode": 106020,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

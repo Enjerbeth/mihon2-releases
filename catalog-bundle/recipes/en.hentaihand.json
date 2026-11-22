@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.hentaihand",
+  "name": "HentaiHand",
+  "baseUrl": "https://hentaihand.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/api/comics",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://hentaihand.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://hentaihand.com/"
+    }
+  ],
+  "recipePath": "recipes/en.hentaihand.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1438773694780928937
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://hentaihand.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/hentaihand/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.all.hentaihand",
+  "upstreamSourceId": 1438773694780928937,
+  "upstreamExtVersionCode": 106002,
+  "versionCode": 106002,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "jsonApi": {
+    "apiBaseUrl": "https://hentaihand.com",
+    "popularRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/comics?page={page}&sort=popular",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://hentaihand.com/"
+      }
+    },
+    "latestRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/comics?page={page}&sort=datetime",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://hentaihand.com/"
+      }
+    },
+    "searchRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/comics?page={page}&q={query}",
+      "headers": {
+        "Accept": "application/json",
+        "Referer": "https://hentaihand.com/"
+      }
+    },
+    "mangaList": {
+      "itemsPath": "$.data[*]",
+      "titlePaths": [
+        "$.title"
+      ],
+      "urlTemplate": "/comic/{slug}",
+      "slugPath": "$.slug",
+      "idPath": "$.id",
+      "coverPaths": [
+        "$.image.thumb",
+        "$.thumb"
+      ],
+      "pagination": {
+        "mode": "PAGE_NUMBER",
+        "startPage": 1,
+        "pageSize": 24
+      }
+    },
+    "details": {
+      "rootPath": "$",
+      "titlePaths": [
+        "$.title"
+      ],
+      "descriptionPaths": [
+        "$.description"
+      ]
+    },
+    "chapters": {
+      "itemsPath": "$",
+      "namePath": "$.title",
+      "urlTemplate": "/comic/{slug}/reader"
+    },
+    "pages": {
+      "itemsPath": "$.images[*]",
+      "imageUrlPath": "$.source_url"
+    }
+  }
+}

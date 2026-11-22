@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.webtoonscan",
+  "name": "WebtoonScan",
+  "baseUrl": "https://webtoonscan.org",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manhwa",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://webtoonscan.org/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://webtoonscan.org/"
+    }
+  ],
+  "recipePath": "recipes/en.webtoonscan.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    3062846066388633553
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://webtoonscan.org"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/webtoonscan/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.webtoonscan",
+  "upstreamSourceId": 3062846066388633553,
+  "upstreamExtVersionCode": 106061,
+  "versionCode": 106061,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

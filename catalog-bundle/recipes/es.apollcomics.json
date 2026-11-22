@@ -5,42 +5,87 @@
   "baseUrl": "https://apollcomics.es",
   "lang": "es",
   "version": 1,
+  "versionId": 1,
   "preset": "MADARA",
   "status": "ACTIVE",
-  "catalogPath": "/manga",
   "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://apollcomics.es/"
+  },
   "selectors": {
     "listSelector": "div.page-item-detail, div.c-tabs-item__content",
     "titleSelector": "h3.h5 a, div.post-title a",
     "linkSelector": "h3.h5 a, div.post-title a",
     "chapterSelector": "li.wp-manga-chapter a",
-    "pageImgSelector": "div.reading-content img.wp-manga-chapter-img, div.reading-content img"
+    "pageImgSelector": "div.reading-content img, div.page-break img"
   },
   "pipelineSteps": [
     {
-      "op": "css_select",
-      "selector": "div.page-item-detail",
-      "attribute": "innerHTML",
-      "takeFirst": false
-    },
-    {
-      "op": "trim_normalize",
-      "collapseWhitespace": true
+      "op": "referer_bind",
+      "refererUrl": "https://apollcomics.es/"
     }
   ],
-  "upstreamSourceId": 3044113561993269522,
-  "upstreamRepo": "keiyoushi/extensions-source",
-  "mirrors": [
-    "https://apollcomics.es"
-  ],
-  "upstreamExtVersionCode": 106063,
-  "versionId": 1,
   "recipePath": "recipes/es.apollcomics.json",
   "mode": "declarative",
   "upstreamSourceIds": [
     3044113561993269522
   ],
-  "versionCode": 106063,
   "license": "Apache-2.0",
-  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://apollcomics.es"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/apollcomics/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.apollcomics",
+  "upstreamSourceId": 3044113561993269522,
+  "upstreamExtVersionCode": 106063,
+  "versionCode": 106063,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "accountSync": {
+    "loginUrl": "https://apollcomics.es/wp-login.php",
+    "loggedOutStatusCodes": [
+      401,
+      403
+    ],
+    "loggedOutBodyMarkers": [
+      "c-modal_item",
+      "wp-login.php"
+    ],
+    "loggedOutRedirectContains": [
+      "wp-login.php"
+    ],
+    "maxPagesPerSection": 10,
+    "sections": [
+      {
+        "kind": "FAVORITES",
+        "format": "HTML",
+        "request": {
+          "pathTemplate": "/user-settings/?tab=bookmark&page={page}"
+        },
+        "itemsSelector": "table.list-bookmark tr:has(a[href*='/manga/']), div.c-tabs-item__content",
+        "urlSelector": "div.m-name a, h3 a, div.post-title a, a[href*='/manga/']",
+        "titleSelector": "div.m-name a, h3 a, div.post-title a, a[href*='/manga/']",
+        "coverSelector": "img",
+        "lastChapterSelector": "div.chapter a, span.chapter a, td.chapter a",
+        "lastChapterUrlSelector": "div.chapter a, span.chapter a, td.chapter a",
+        "nextPageSelector": "a.next.page-numbers, nav.navigation a.next"
+      },
+      {
+        "kind": "READING_HISTORY",
+        "format": "HTML",
+        "request": {
+          "pathTemplate": "/user-settings/?tab=history&page={page}"
+        },
+        "itemsSelector": "div.history-content div.row, div.c-tabs-item__content",
+        "urlSelector": "div.item-infor h3 a, div.post-title a, a[href*='/manga/']",
+        "titleSelector": "div.item-infor h3 a, div.post-title a, a[href*='/manga/']",
+        "coverSelector": "img",
+        "lastChapterSelector": "div.chapter a, span.chapter a",
+        "lastChapterUrlSelector": "div.chapter a, span.chapter a",
+        "nextPageSelector": "a.next.page-numbers, nav.navigation a.next"
+      }
+    ]
+  }
 }

@@ -42,5 +42,7 @@
   "upstreamExtVersionCode": 106002,
   "versionCode": 106002,
   "license": "Apache-2.0",
-  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.arenascans",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/arenascans/res/mipmap-xhdpi/ic_launcher.png"
 }

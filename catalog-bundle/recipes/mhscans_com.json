@@ -36,9 +36,12 @@
   "recipePath": "recipes/mhscans_com.json",
   "mode": "declarative",
   "upstreamSourceIds": [
+    3253304651550496369,
     9008444898589746680
   ],
   "versionCode": 106071,
   "license": "Apache-2.0",
-  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.mhscans",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/mhscans/res/mipmap-xhdpi/ic_launcher.png"
 }

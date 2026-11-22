@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.maidscan",
+  "name": "Maid Scan",
+  "baseUrl": "https://empreguetes.wtf",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga/",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://empreguetes.wtf/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "coverSelector": "div.item-thumb img",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img",
+    "detailsTitleSelector": "div.post-title h1",
+    "detailsCoverSelector": "div.summary_image img",
+    "descriptionSelector": "div.description-summary"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://empreguetes.wtf/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.maidscan.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    7624757094973334315
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://empreguetes.wtf"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/maidscan/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.maidscan",
+  "upstreamSourceId": 7624757094973334315,
+  "upstreamExtVersionCode": 106002,
+  "versionCode": 106002,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "multisrcTheme": "greenshit",
+  "popularRequest": {
+    "method": "GET",
+    "pathTemplate": "/manga/?m_orderby=views&page={page}",
+    "firstPagePathTemplate": "/manga/?m_orderby=views"
+  },
+  "latestRequest": {
+    "method": "GET",
+    "pathTemplate": "/manga/?m_orderby=latest&page={page}",
+    "firstPagePathTemplate": "/manga/?m_orderby=latest"
+  },
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "zonatmo_org",
+  "name": "ZonaTMO.org",
+  "baseUrl": "https://zonatmo.org",
+  "lang": "es",
+  "version": 1,
+  "preset": "CSS_GENERIC",
+  "status": "DRAFT",
+  "maxHtmlBytes": 2097152,
+  "selectors": {
+    "listSelector": "div.element",
+    "titleSelector": "h4.text-truncate",
+    "linkSelector": "a",
+    "chapterSelector": "li.upload-link a",
+    "pageImgSelector": "div.img-container img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "css_select",
+      "selector": "div.element",
+      "attribute": "innerHTML",
+      "takeFirst": false
+    },
+    {
+      "op": "trim_normalize",
+      "collapseWhitespace": true
+    },
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://zonatmo.org/"
+    }
+  ]
+}

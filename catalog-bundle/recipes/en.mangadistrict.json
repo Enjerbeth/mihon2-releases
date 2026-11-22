@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.mangadistrict",
+  "name": "Manga District",
+  "baseUrl": "https://mangadistrict.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/series",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://mangadistrict.com/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://mangadistrict.com/"
+    }
+  ],
+  "recipePath": "recipes/en.mangadistrict.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    2964723819258267786
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://mangadistrict.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/mangadistrict/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.mangadistrict",
+  "upstreamSourceId": 2964723819258267786,
+  "upstreamExtVersionCode": 106078,
+  "versionCode": 106078,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

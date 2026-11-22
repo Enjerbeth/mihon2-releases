@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.meitoon",
+  "name": "MeiToon",
+  "baseUrl": "https://meitoon.org",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/series",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://meitoon.org/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "coverSelector": "img.card-img-top, div.series-thumb img",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img",
+    "nextPageSelector": "a.next-page, a.next",
+    "detailsTitleSelector": "h1.series-title, h1.title",
+    "detailsCoverSelector": "div.series-poster img",
+    "descriptionSelector": "div.series-synopsis, div.synopsis",
+    "authorSelector": "div.author a, span.author",
+    "statusSelector": "div.status, span.status"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://meitoon.org/"
+    }
+  ],
+  "recipePath": "recipes/en.meitoon.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    3314074618469377356
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://meitoon.org"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/meitoon/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.meitoon",
+  "upstreamSourceId": 3314074618469377356,
+  "upstreamExtVersionCode": 106025,
+  "versionCode": 106025,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "multisrcTheme": "keyoapp",
+  "popularRequest": {
+    "method": "GET",
+    "pathTemplate": "/series?page={page}",
+    "firstPagePathTemplate": "/series"
+  },
+  "latestRequest": {
+    "method": "GET",
+    "pathTemplate": "/latest?page={page}",
+    "firstPagePathTemplate": "/latest"
+  },
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

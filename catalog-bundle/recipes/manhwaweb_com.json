@@ -76,9 +76,15 @@
     "mangaList": {
       "itemsPath": "$.data[*]",
       "slugPath": "$._id",
-      "titlePaths": ["$.the_real_name", "$.name_esp", "$._name"],
+      "titlePaths": [
+        "$.the_real_name",
+        "$.name_esp",
+        "$._name"
+      ],
       "urlTemplate": "manhwa/{slug}",
-      "coverPaths": ["$._imagen"],
+      "coverPaths": [
+        "$._imagen"
+      ],
       "pagination": {
         "mode": "JSON_HAS_NEXT",
         "startPage": 0,
@@ -88,9 +94,17 @@
     },
     "details": {
       "rootPath": "$.",
-      "titlePaths": ["$.the_real_name", "$.name_esp", "$._name"],
-      "descriptionPaths": ["$._sinopsis"],
-      "coverPaths": ["$._imagen"]
+      "titlePaths": [
+        "$.the_real_name",
+        "$.name_esp",
+        "$._name"
+      ],
+      "descriptionPaths": [
+        "$._sinopsis"
+      ],
+      "coverPaths": [
+        "$._imagen"
+      ]
     },
     "chapters": {
       "itemsPath": "$.chapters[*]",
@@ -127,5 +141,7 @@
   ],
   "versionCode": 106016,
   "license": "Apache-2.0",
-  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.manhwaweb",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/manhwaweb/res/mipmap-xhdpi/ic_launcher.png"
 }

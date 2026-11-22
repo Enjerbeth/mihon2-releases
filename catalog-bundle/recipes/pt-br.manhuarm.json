@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.manhuarm",
+  "name": "Manhuarm",
+  "baseUrl": "https://manhuarmtl.com",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://manhuarmtl.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "coverSelector": "div.thumb img, img.lazy",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img",
+    "nextPageSelector": "a.next",
+    "detailsTitleSelector": "h1.title, h1.name",
+    "detailsCoverSelector": "div.cover img",
+    "descriptionSelector": "div.desc, div.description",
+    "authorSelector": "div.author a",
+    "statusSelector": "div.status"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://manhuarmtl.com/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.manhuarm.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    5618121635049025093
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://manhuarmtl.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/manhuarm/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.all.manhuarm",
+  "upstreamSourceId": 5618121635049025093,
+  "upstreamExtVersionCode": 106004,
+  "versionCode": 106004,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "multisrcTheme": "manhuarm",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

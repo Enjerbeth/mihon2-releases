@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.funktoon",
+  "name": "Funktoon",
+  "baseUrl": "https://funktoon.com",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://funktoon.com/"
+  },
+  "selectors": null,
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://funktoon.com/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.funktoon.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    104093783822687912
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://funktoon.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/funktoon/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.funktoon",
+  "upstreamSourceId": 104093783822687912,
+  "upstreamExtVersionCode": 106001,
+  "versionCode": 106001,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "jsonApi": {
+    "apiBaseUrl": "https://funktoon.com",
+    "popularRequest": {
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "latestRequest": {
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "searchRequest": {
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "popularMapping": {
+      "itemsPath": "$.data[*]",
+      "titlePath": "$.title",
+      "urlPath": "$.slug",
+      "coverPath": "$.cover"
+    }
+  },
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

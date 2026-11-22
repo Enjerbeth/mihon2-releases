@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.taosect",
+  "name": "Tao Sect",
+  "baseUrl": "https://taosect.com",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://taosect.com/"
+  },
+  "selectors": null,
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://taosect.com/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.taosect.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    784276282691018699
+  ],
+  "license": "Apache-2.0",
+  "attribution": "FelipeGFA Contributors",
+  "mirrors": [
+    "https://taosect.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/pt/taosect/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.taosect",
+  "upstreamSourceId": 784276282691018699,
+  "upstreamExtVersionCode": 104022,
+  "versionCode": 104022,
+  "upstreamRepo": "FelipeGFA/fonte-extensoes",
+  "jsonApi": {
+    "apiBaseUrl": "https://taosect.com",
+    "popularRequest": {
+      "pathTemplate": "/$API_BASE_PATH/projetos"
+    },
+    "latestRequest": {
+      "pathTemplate": "/$API_BASE_PATH/projetos"
+    },
+    "searchRequest": {
+      "pathTemplate": "/$API_BASE_PATH/projetos"
+    },
+    "popularMapping": {
+      "itemsPath": "$.data[*]",
+      "titlePath": "$.title",
+      "urlPath": "$.slug",
+      "coverPath": "$.cover"
+    }
+  },
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

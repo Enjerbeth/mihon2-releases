@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.teamshadowi",
+  "name": "Team Shadowi",
+  "baseUrl": "https://www.team-shadowi.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://www.team-shadowi.com/"
+  },
+  "selectors": null,
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://www.team-shadowi.com/"
+    }
+  ],
+  "recipePath": "recipes/en.teamshadowi.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1326600535134927871
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://www.team-shadowi.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/teamshadowi/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.teamshadowi",
+  "upstreamSourceId": 1326600535134927871,
+  "upstreamExtVersionCode": 106004,
+  "versionCode": 106004,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "jsonApi": {
+    "apiBaseUrl": "https://www.team-shadowi.com",
+    "popularRequest": {
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "latestRequest": {
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "searchRequest": {
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "popularMapping": {
+      "itemsPath": "$.data[*]",
+      "titlePath": "$.title",
+      "urlPath": "$.slug",
+      "coverPath": "$.cover"
+    }
+  },
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

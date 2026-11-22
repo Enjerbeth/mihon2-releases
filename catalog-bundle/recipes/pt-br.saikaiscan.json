@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.saikaiscan",
+  "name": "Saikai Scan",
+  "baseUrl": "https://housesaikai.net",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://housesaikai.net/"
+  },
+  "selectors": null,
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://housesaikai.net/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.saikaiscan.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    273341846992513187
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://housesaikai.net"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/saikaiscan/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.saikaiscan",
+  "upstreamSourceId": 273341846992513187,
+  "upstreamExtVersionCode": 106001,
+  "versionCode": 106001,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "jsonApi": {
+    "apiBaseUrl": "https://housesaikai.net",
+    "popularRequest": {
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "latestRequest": {
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "searchRequest": {
+      "pathTemplate": "/api/manga?page={page}"
+    },
+    "popularMapping": {
+      "itemsPath": "$.data[*]",
+      "titlePath": "$.title",
+      "urlPath": "$.slug",
+      "coverPath": "$.cover"
+    }
+  },
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

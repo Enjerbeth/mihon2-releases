@@ -10,7 +10,7 @@
   "status": "ACTIVE",
   "maxHtmlBytes": 2097152,
   "catalogPath": "/manga",
-  "useHomeFallback": false,
+  "useHomeFallback": true,
   "headers": {
     "Referer": "https://inventariooculto.com/"
   },
@@ -27,18 +27,20 @@
       "refererUrl": "https://inventariooculto.com/"
     }
   ],
-  "mirrors": [
-    "https://inventariooculto.com"
-  ],
-  "upstreamSourceId": 609477585841458199,
-  "upstreamExtVersionCode": 106060,
-  "upstreamRepo": "keiyoushi/extensions-source",
   "recipePath": "recipes/inventariooculto_com.json",
   "mode": "declarative",
   "upstreamSourceIds": [
     609477585841458199
   ],
-  "versionCode": 106060,
   "license": "Apache-2.0",
-  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://inventariooculto.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/inventariooculto/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.inventariooculto",
+  "upstreamSourceId": 609477585841458199,
+  "upstreamExtVersionCode": 106060,
+  "versionCode": 106060,
+  "upstreamRepo": "keiyoushi/extensions-source"
 }

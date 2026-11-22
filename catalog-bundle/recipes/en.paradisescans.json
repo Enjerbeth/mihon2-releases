@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.paradisescans",
+  "name": "Paradise Scans",
+  "baseUrl": "https://paradisescans.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/series",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://paradisescans.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "coverSelector": "img.card-img-top, div.series-thumb img",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img",
+    "nextPageSelector": "a.next-page, a.next",
+    "detailsTitleSelector": "h1.series-title, h1.title",
+    "detailsCoverSelector": "div.series-poster img",
+    "descriptionSelector": "div.series-synopsis, div.synopsis",
+    "authorSelector": "div.author a, span.author",
+    "statusSelector": "div.status, span.status"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://paradisescans.com/"
+    }
+  ],
+  "recipePath": "recipes/en.paradisescans.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    5928300995303689257
+  ],
+  "license": "Apache-2.0",
+  "attribution": "FelipeGFA Contributors",
+  "mirrors": [
+    "https://paradisescans.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/en/paradisescans/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.paradisescans",
+  "upstreamSourceId": 5928300995303689257,
+  "upstreamExtVersionCode": 106022,
+  "versionCode": 106022,
+  "upstreamRepo": "FelipeGFA/fonte-extensoes",
+  "multisrcTheme": "keyoapp",
+  "popularRequest": {
+    "method": "GET",
+    "pathTemplate": "/series?page={page}",
+    "firstPagePathTemplate": "/series"
+  },
+  "latestRequest": {
+    "method": "GET",
+    "pathTemplate": "/latest?page={page}",
+    "firstPagePathTemplate": "/latest"
+  }
+}

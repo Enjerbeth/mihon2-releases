@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.vcpvmp",
+  "name": "VMP",
+  "baseUrl": "https://vermangasporno.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 2,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://vermangasporno.com/"
+  },
+  "selectors": {
+    "listSelector": "section.pp-section:not(:has(.pp-random-more)) article.pp-card:not(.pp-card-pinned)",
+    "titleSelector": "h3 a, h2 a, a.title",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter a",
+    "pageImgSelector": "div.pp-comic-content img",
+    "nextPageSelector": "a.next.page-numbers"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://vermangasporno.com/"
+    }
+  ],
+  "recipePath": "recipes/es.vcpvmp.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    4952451593357491304,
+    5709472190651245206,
+    8472215287946707583
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://vermangasporno.com",
+    "https://vercomicsporno.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/vcpvmp/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.vcpvmp",
+  "upstreamSourceId": 5709472190651245206,
+  "upstreamExtVersionCode": 106009,
+  "versionCode": 106009,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

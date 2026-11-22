@@ -54,9 +54,13 @@
     "mangaList": {
       "itemsPath": "$.data.series.data[*]",
       "slugPath": "$.slug",
-      "titlePaths": ["$.name"],
+      "titlePaths": [
+        "$.name"
+      ],
       "urlTemplate": "/series/comic-{slug}",
-      "coverPaths": ["$.cover"],
+      "coverPaths": [
+        "$.cover"
+      ],
       "pagination": {
         "mode": "JSON_PAGE_COMPARE",
         "startPage": 1,
@@ -67,9 +71,15 @@
     },
     "details": {
       "rootPath": "$.data",
-      "titlePaths": ["$.name"],
-      "descriptionPaths": ["$.summary"],
-      "coverPaths": ["$.cover"],
+      "titlePaths": [
+        "$.name"
+      ],
+      "descriptionPaths": [
+        "$.summary"
+      ],
+      "coverPaths": [
+        "$.cover"
+      ],
       "genresPath": "$.genres[*].name"
     },
     "chapters": {
@@ -95,8 +105,12 @@
       "requiresReaderHtmlFallback": true,
       "readerHtmlPageSelector": "img",
       "readerHtmlRegex": "https?://media\\.imagesolymp\\.xyz/comics/\\d+/\\d+/[^\"'\\s<>\\\\]+",
-      "readerHtmlAllowedTokens": ["/comics/"],
-      "readerHtmlExcludedTokens": ["/covers/"]
+      "readerHtmlAllowedTokens": [
+        "/comics/"
+      ],
+      "readerHtmlExcludedTokens": [
+        "/covers/"
+      ]
     }
   },
   "pipelineSteps": [
@@ -122,5 +136,7 @@
   ],
   "versionCode": 106005,
   "license": "Apache-2.0",
-  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.olympusscanlation",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/olympusscanlation/res/mipmap-xhdpi/ic_launcher.png"
 }

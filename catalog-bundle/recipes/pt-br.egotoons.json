@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.egotoons",
+  "name": "Ego Toons",
+  "baseUrl": "https://egotoons.com",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 3,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://egotoons.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://egotoons.com/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.egotoons.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    4749792168996703143
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://egotoons.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/egotoons/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.egotoons",
+  "upstreamSourceId": 4749792168996703143,
+  "upstreamExtVersionCode": 106011,
+  "versionCode": 106011,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

@@ -10,7 +10,7 @@
   "status": "ACTIVE",
   "maxHtmlBytes": 2097152,
   "catalogPath": "/manga",
-  "useHomeFallback": false,
+  "useHomeFallback": true,
   "headers": {
     "Referer": "https://legionscans.com/wp/"
   },
@@ -27,18 +27,20 @@
       "refererUrl": "https://legionscans.com/wp/"
     }
   ],
-  "mirrors": [
-    "https://legionscans.com/wp"
-  ],
-  "upstreamSourceId": 1814471239661920836,
-  "upstreamExtVersionCode": 106003,
-  "upstreamRepo": "keiyoushi/extensions-source",
   "recipePath": "recipes/cerberusseries_com.json",
   "mode": "declarative",
   "upstreamSourceIds": [
     1814471239661920836
   ],
-  "versionCode": 106003,
   "license": "Apache-2.0",
-  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://legionscans.com/wp"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/cerberusseries/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.cerberusseries",
+  "upstreamSourceId": 1814471239661920836,
+  "upstreamExtVersionCode": 106003,
+  "versionCode": 106003,
+  "upstreamRepo": "keiyoushi/extensions-source"
 }

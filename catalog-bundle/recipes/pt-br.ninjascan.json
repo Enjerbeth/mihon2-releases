@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.ninjascan",
+  "name": "Ninja Scan",
+  "baseUrl": "https://ninjacomics.xyz",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://ninjacomics.xyz/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://ninjacomics.xyz/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.ninjascan.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    4392067503694697213
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://ninjacomics.xyz"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/ninjascan/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.ninjascan",
+  "upstreamSourceId": 4392067503694697213,
+  "upstreamExtVersionCode": 106063,
+  "versionCode": 106063,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

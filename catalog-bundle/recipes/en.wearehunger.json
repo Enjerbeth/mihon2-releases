@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.wearehunger",
+  "name": "KokoMangas",
+  "baseUrl": "https://kokomangas.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 2,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://kokomangas.com/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://kokomangas.com/"
+    }
+  ],
+  "recipePath": "recipes/en.wearehunger.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    58992897252080929
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://kokomangas.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/wearehunger/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.wearehunger",
+  "upstreamSourceId": 58992897252080929,
+  "upstreamExtVersionCode": 106062,
+  "versionCode": 106062,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

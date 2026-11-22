@@ -33,7 +33,12 @@
     "chapterLinkSelector": "li a[href^='/capitulo/']",
     "pageUrlRegex": "https?://[^\\s\"'<>\\\\]+/series/\\d+/\\d+/[^\\s\"'<>\\\\]+\\.(?:webp|jpg|jpeg|png)(?:\\?[^\\s\"'<>\\\\]*)?",
     "requiredChapterSegmentRegex": "/series/\\d+/\\d+/",
-    "excludedImageTokens": ["/covers/", "rs:fill:", "/posts/misc/", "bannerikigai"]
+    "excludedImageTokens": [
+      "/covers/",
+      "rs:fill:",
+      "/posts/misc/",
+      "bannerikigai"
+    ]
   },
   "requiresWebViewCapture": false,
   "pipelineSteps": [
@@ -68,5 +73,7 @@
   ],
   "versionCode": 106044,
   "license": "Apache-2.0",
-  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.ikigaimangas",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/ikigaimangas/res/mipmap-xhdpi/ic_launcher.png"
 }

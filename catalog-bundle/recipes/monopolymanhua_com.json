@@ -10,7 +10,7 @@
   "status": "ACTIVE",
   "maxHtmlBytes": 2097152,
   "catalogPath": "/manga",
-  "useHomeFallback": false,
+  "useHomeFallback": true,
   "headers": {
     "Referer": "https://monopolymanhua.com/"
   },
@@ -27,18 +27,20 @@
       "refererUrl": "https://monopolymanhua.com/"
     }
   ],
-  "mirrors": [
-    "https://monopolymanhua.com"
-  ],
-  "upstreamSourceId": 5862188113261788590,
-  "upstreamExtVersionCode": 106060,
-  "upstreamRepo": "keiyoushi/extensions-source",
   "recipePath": "recipes/monopolymanhua_com.json",
   "mode": "declarative",
   "upstreamSourceIds": [
     5862188113261788590
   ],
-  "versionCode": 106060,
   "license": "Apache-2.0",
-  "attribution": "The Tachiyomi / Keiyoushi Contributors"
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://monopolymanhua.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/monopolyscan/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.monopolyscan",
+  "upstreamSourceId": 5862188113261788590,
+  "upstreamExtVersionCode": 106060,
+  "versionCode": 106060,
+  "upstreamRepo": "keiyoushi/extensions-source"
 }

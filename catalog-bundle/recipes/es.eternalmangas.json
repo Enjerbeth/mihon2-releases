@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.eternalmangas",
+  "name": "EternalMangas",
+  "baseUrl": "https://eternalmangas.org",
+  "lang": "es",
+  "version": 1,
+  "versionId": 2,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://eternalmangas.org/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://eternalmangas.org/"
+    }
+  ],
+  "recipePath": "recipes/es.eternalmangas.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1533901034425595323,
+    5749284484000945259
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://eternalmangas.org"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/eternalmangas/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.eternalmangas",
+  "upstreamSourceId": 5749284484000945259,
+  "upstreamExtVersionCode": 106032,
+  "versionCode": 106032,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

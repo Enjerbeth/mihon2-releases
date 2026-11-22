@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.mistscans",
+  "name": "Mist Scans",
+  "baseUrl": "https://mistscans.org",
+  "lang": "en",
+  "version": 1,
+  "versionId": 2,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/series",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://mistscans.org/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "coverSelector": "img.card-img-top, div.series-thumb img",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img",
+    "nextPageSelector": "a.next-page, a.next",
+    "detailsTitleSelector": "h1.series-title, h1.title",
+    "detailsCoverSelector": "div.series-poster img",
+    "descriptionSelector": "div.series-synopsis, div.synopsis",
+    "authorSelector": "div.author a, span.author",
+    "statusSelector": "div.status, span.status"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://mistscans.org/"
+    }
+  ],
+  "recipePath": "recipes/en.mistscans.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    80073424419623517,
+    5732165121603348598
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://mistscans.org"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/mistscans/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.mistscans",
+  "upstreamSourceId": 5732165121603348598,
+  "upstreamExtVersionCode": 106027,
+  "versionCode": 106027,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "multisrcTheme": "keyoapp",
+  "popularRequest": {
+    "method": "GET",
+    "pathTemplate": "/series?page={page}",
+    "firstPagePathTemplate": "/series"
+  },
+  "latestRequest": {
+    "method": "GET",
+    "pathTemplate": "/latest?page={page}",
+    "firstPagePathTemplate": "/latest"
+  },
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}
