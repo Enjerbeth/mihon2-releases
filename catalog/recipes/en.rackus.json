@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.rackus",
+  "name": "Rackus",
+  "baseUrl": "https://rackusreads.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 3,
+  "preset": "MANGA_THEMESIA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://rackusreads.com/"
+  },
+  "selectors": {
+    "listSelector": "div.listupd div.bsx a, div.bsx a",
+    "titleSelector": "div.tt",
+    "linkSelector": "a",
+    "chapterSelector": "div#chapterlist ul li a",
+    "pageImgSelector": "div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://rackusreads.com/"
+    }
+  ],
+  "recipePath": "recipes/en.rackus.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    263040414613624318
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://rackusreads.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/rackus/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.pmscans",
+  "upstreamSourceId": 263040414613624318,
+  "upstreamExtVersionCode": 106009,
+  "versionCode": 106009,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

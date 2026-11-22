@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.celestialmoon",
+  "name": "Celestial Moon",
+  "baseUrl": "https://lecturacelestialmoon.site",
+  "lang": "es",
+  "version": 1,
+  "versionId": 2,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://lecturacelestialmoon.site/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://lecturacelestialmoon.site/"
+    }
+  ],
+  "recipePath": "recipes/es.celestialmoon.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    7771256386177960897
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://lecturacelestialmoon.site"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/celestialmoon/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.celestialmoon",
+  "upstreamSourceId": 7771256386177960897,
+  "upstreamExtVersionCode": 106005,
+  "versionCode": 106005,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

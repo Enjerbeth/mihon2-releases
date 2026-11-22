@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.yurionline",
+  "name": "Yuri-Online",
+  "baseUrl": "https://yuri-online.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://yuri-online.com/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://yuri-online.com/"
+    }
+  ],
+  "recipePath": "recipes/es.yurionline.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    3410370616110029377
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://yuri-online.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/yurionline/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.yurionline",
+  "upstreamSourceId": 3410370616110029377,
+  "upstreamExtVersionCode": 106060,
+  "versionCode": 106060,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

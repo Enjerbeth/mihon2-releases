@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.readallcomicscom",
+  "name": "ReadAllComics",
+  "baseUrl": "https://readallcomics.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://readallcomics.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://readallcomics.com/"
+    }
+  ],
+  "recipePath": "recipes/en.readallcomicscom.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    58328287106519523
+  ],
+  "license": "Apache-2.0",
+  "attribution": "FelipeGFA Contributors",
+  "mirrors": [
+    "https://readallcomics.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/en/readallcomicscom/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.readallcomicscom",
+  "upstreamSourceId": 58328287106519523,
+  "upstreamExtVersionCode": 104008,
+  "versionCode": 104008,
+  "upstreamRepo": "FelipeGFA/fonte-extensoes",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

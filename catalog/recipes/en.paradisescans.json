@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.paradisescans",
+  "name": "Paradise Scans",
+  "baseUrl": "https://paradisescans.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://paradisescans.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://paradisescans.com/"
+    }
+  ],
+  "recipePath": "recipes/en.paradisescans.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    5928300995303689257
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://paradisescans.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/paradisescans/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.paradisescans",
+  "upstreamSourceId": 5928300995303689257,
+  "upstreamExtVersionCode": 106024,
+  "versionCode": 106024,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "uchuujin_com",
+  "name": "Uchuujin Projects",
+  "baseUrl": "https://uchuujinmangas.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MANGA_THEMESIA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://uchuujinmangas.com/"
+  },
+  "selectors": {
+    "listSelector": "div.listupd div.bsx a, div.bsx a",
+    "titleSelector": "div.tt",
+    "linkSelector": "a",
+    "chapterSelector": "div#chapterlist ul li a",
+    "pageImgSelector": "div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://uchuujinmangas.com/"
+    }
+  ],
+  "recipePath": "recipes/uchuujin_com.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    3953107753690791431
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://uchuujinmangas.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/uchuujinprojects/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.uchuujinprojects",
+  "upstreamSourceId": 3953107753690791431,
+  "upstreamExtVersionCode": 106004,
+  "versionCode": 106004,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

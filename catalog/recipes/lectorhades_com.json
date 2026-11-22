@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "lectorhades_com",
+  "name": "Hades no Fansub",
+  "baseUrl": "https://lectorhades.latamtoon.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/tmo",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://lectorhades.latamtoon.com/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://lectorhades.latamtoon.com/"
+    }
+  ],
+  "recipePath": "recipes/lectorhades_com.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    8311505150576608267
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://lectorhades.latamtoon.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/hadesnofansub/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.hadesnofansub",
+  "upstreamSourceId": 8311505150576608267,
+  "upstreamExtVersionCode": 106065,
+  "versionCode": 106065,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

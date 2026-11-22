@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "vortexscans_org",
+  "name": "Vortex Scans",
+  "baseUrl": "https://vortexscans.org",
+  "lang": "en",
+  "version": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "selectors": {
+    "listSelector": "a[href*='/series/']",
+    "titleSelector": "h1, h2, h3, span",
+    "linkSelector": "a[href*='/series/']",
+    "chapterSelector": "a[href*='/chapter-']",
+    "pageImgSelector": "main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "css_select",
+      "selector": "a[href*='/series/']",
+      "attribute": "innerHTML",
+      "takeFirst": false
+    },
+    {
+      "op": "trim_normalize",
+      "collapseWhitespace": true
+    },
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://vortexscans.org/"
+    }
+  ],
+  "versionId": 1,
+  "recipePath": "recipes/vortexscans_org.json",
+  "mode": "declarative",
+  "upstreamSourceId": 2559570015828016575,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "upstreamSourceIds": [
+    2559570015828016575
+  ],
+  "upstreamExtVersionCode": 106091,
+  "versionCode": 106091,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.arvenscans",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/vortexscans/res/mipmap-xhdpi/ic_launcher.png"
+}

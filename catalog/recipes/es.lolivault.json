@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.lolivault",
+  "name": "Lolivault",
+  "baseUrl": "https://lector.lolivault.net",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/directory/",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://lector.lolivault.net/"
+  },
+  "selectors": {
+    "listSelector": "div.list div.group, div.title",
+    "titleSelector": "div.title a",
+    "linkSelector": "div.title a",
+    "coverSelector": "div.thumb img",
+    "chapterSelector": "div.element div.title a",
+    "pageImgSelector": "div.inner img",
+    "detailsTitleSelector": "h1.title",
+    "detailsCoverSelector": "div.thumb img",
+    "descriptionSelector": "div.info, div.description",
+    "authorSelector": "div.author",
+    "artistSelector": "div.artist",
+    "chapterNameSelector": "div.title a",
+    "chapterDateSelector": "div.meta_r",
+    "chapterDateFormat": "yyyy.MM.dd"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://lector.lolivault.net/"
+    }
+  ],
+  "recipePath": "recipes/es.lolivault.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1420213267345607410
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://lector.lolivault.net"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/lolivault/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.lolivault",
+  "upstreamSourceId": 1420213267345607410,
+  "upstreamExtVersionCode": 106007,
+  "versionCode": 106007,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

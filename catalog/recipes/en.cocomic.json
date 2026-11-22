@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.cocomic",
+  "name": "Cocomic",
+  "baseUrl": "https://cocomic.co",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://cocomic.co/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://cocomic.co/"
+    }
+  ],
+  "recipePath": "recipes/en.cocomic.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    3544369893051520689
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://cocomic.co"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/cocomic/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.cocomic",
+  "upstreamSourceId": 3544369893051520689,
+  "upstreamExtVersionCode": 106063,
+  "versionCode": 106063,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

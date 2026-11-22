@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.tsundokutraducoes",
+  "name": "Tsundoku Traduções",
+  "baseUrl": "https://tsundoku.com.br",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MANGA_THEMESIA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://tsundoku.com.br/"
+  },
+  "selectors": {
+    "listSelector": "div.listupd div.bsx a, div.bsx a",
+    "titleSelector": "div.tt",
+    "linkSelector": "a",
+    "chapterSelector": "div#chapterlist ul li a",
+    "pageImgSelector": "div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://tsundoku.com.br/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.tsundokutraducoes.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    2091088265283814173
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://tsundoku.com.br"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/tsundokutraducoes/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.tsundokutraducoes",
+  "upstreamSourceId": 2091088265283814173,
+  "upstreamExtVersionCode": 106012,
+  "versionCode": 106012,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

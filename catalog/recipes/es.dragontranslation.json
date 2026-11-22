@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.dragontranslation",
+  "name": "DragonTranslation.org",
+  "baseUrl": "https://dragontranslation.org",
+  "lang": "es",
+  "version": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "requiresWebViewCapture": true,
+  "maxHtmlBytes": 2097152,
+  "selectors": {
+    "listSelector": "div#mkAgrid a[href*='/manga/'], div.agrid a[href*='/manga/'], div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "div.m3ae409d, h3.h5 a, div.post-title a, .g-title, .gcard-title",
+    "linkSelector": "a[href*='/manga/'], h3.h5 a, div.post-title a, a.gcard",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img.wp-manga-chapter-img, div.reading-content img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "css_select",
+      "selector": "div.page-item-detail",
+      "attribute": "innerHTML"
+    },
+    {
+      "op": "trim_normalize",
+      "collapseWhitespace": true
+    }
+  ],
+  "upstreamSourceId": 4647982373411241498,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "mirrors": [
+    "https://dragontranslation.org"
+  ],
+  "upstreamExtVersionCode": 106068,
+  "versionId": 1,
+  "recipePath": "recipes/es.dragontranslation.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    4647982373411241498
+  ],
+  "versionCode": 106068,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.dragontranslationorg",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/dragontranslationorg/res/mipmap-xhdpi/ic_launcher.png"
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "cerberusseries_com",
+  "name": "Cerberus Series",
+  "baseUrl": "https://legionscans.com/wp",
+  "lang": "es",
+  "version": 1,
+  "versionId": 2,
+  "preset": "MANGA_THEMESIA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://legionscans.com/wp/"
+  },
+  "selectors": {
+    "listSelector": "div.listupd div.bsx a, div.bsx a",
+    "titleSelector": "div.tt",
+    "linkSelector": "a",
+    "chapterSelector": "div#chapterlist ul li a",
+    "pageImgSelector": "div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://legionscans.com/wp/"
+    }
+  ],
+  "recipePath": "recipes/cerberusseries_com.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1814471239661920836
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://legionscans.com/wp"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/cerberusseries/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.cerberusseries",
+  "upstreamSourceId": 1814471239661920836,
+  "upstreamExtVersionCode": 106003,
+  "versionCode": 106003,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.yuriverso",
+  "name": "Yuri on Air",
+  "baseUrl": "https://yurionair.top",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://yurionair.top/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://yurionair.top/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.yuriverso.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    4476506734614164770
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://yurionair.top"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/yuriverso/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.yuriverso",
+  "upstreamSourceId": 4476506734614164770,
+  "upstreamExtVersionCode": 106066,
+  "versionCode": 106066,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

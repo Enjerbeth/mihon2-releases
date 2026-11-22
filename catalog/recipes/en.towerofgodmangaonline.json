@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.towerofgodmangaonline",
+  "name": "Tower Of God Manga Online",
+  "baseUrl": "https://w85.thetowerofgod.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://w85.thetowerofgod.com/"
+  },
+  "selectors": {
+    "listSelector": "div.content-list div.item, div.grid-item",
+    "titleSelector": "h3 a, a.title",
+    "linkSelector": "h3 a, a.title",
+    "coverSelector": "img",
+    "chapterSelector": "ul.chapter-list li a",
+    "pageImgSelector": "div.page-image img",
+    "detailsTitleSelector": "h1.manga-title",
+    "detailsCoverSelector": "div.manga-cover img",
+    "descriptionSelector": "div.manga-description, div.summary",
+    "authorSelector": "div.author span",
+    "artistSelector": "div.artist span",
+    "genresSelector": "div.genres a",
+    "statusSelector": "div.status span",
+    "chapterNameSelector": "span.chapter-name, a",
+    "chapterDateSelector": "span.chapter-date",
+    "chapterDateFormat": "yyyy-MM-dd"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://w85.thetowerofgod.com/"
+    }
+  ],
+  "recipePath": "recipes/en.towerofgodmangaonline.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    7174981474350393136
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://w85.thetowerofgod.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/towerofgodmangaonline/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.towerofgodmangaonline",
+  "upstreamSourceId": 7174981474350393136,
+  "upstreamExtVersionCode": 106003,
+  "versionCode": 106003,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

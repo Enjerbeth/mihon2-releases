@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.manhwalatino",
+  "name": "Manhwa-Latino",
+  "baseUrl": "https://manhwa-es.com",
+  "lang": "es",
+  "version": 2,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://manhwa-es.com/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://manhwa-es.com/"
+    }
+  ],
+  "recipePath": "recipes/es.manhwalatino.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    3548601371328353875
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://manhwa-es.com",
+    "https://manhwa-latino.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/manhwalatino/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.manhwalatino",
+  "upstreamSourceId": 3548601371328353875,
+  "upstreamExtVersionCode": 106071,
+  "versionCode": 106071,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "bloomscans_com",
+  "name": "Bloom Scans",
+  "baseUrl": "https://bloomscans.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MANGA_THEMESIA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/series",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://bloomscans.com/"
+  },
+  "selectors": {
+    "listSelector": "div.listupd div.bsx a, div.bsx a",
+    "titleSelector": "div.tt",
+    "linkSelector": "a",
+    "chapterSelector": "div#chapterlist ul li a",
+    "pageImgSelector": "div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://bloomscans.com/"
+    }
+  ],
+  "recipePath": "recipes/bloomscans_com.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    2598725055968738551
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://bloomscans.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/bloomscans/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.bloomscans",
+  "upstreamSourceId": 2598725055968738551,
+  "upstreamExtVersionCode": 106005,
+  "versionCode": 106005,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

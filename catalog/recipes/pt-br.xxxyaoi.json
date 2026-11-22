@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.xxxyaoi",
+  "name": "XXX Yaoi",
+  "baseUrl": "https://3xyaoi.com",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 2,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://3xyaoi.com/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://3xyaoi.com/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.xxxyaoi.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    2490962516027621137,
+    4493410832840030334
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://3xyaoi.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/xxxyaoi/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.xxxyaoi",
+  "upstreamSourceId": 4493410832840030334,
+  "upstreamExtVersionCode": 106069,
+  "versionCode": 106069,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.mangafire",
+  "name": "MangaFire",
+  "baseUrl": "https://mangafire.to",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "headers": {
+    "Referer": "https://mangafire.to/"
+  },
+  "mirrors": [
+    "https://mangafire.to"
+  ],
+  "selectors": {
+    "listSelector": "$.items[*]"
+  },
+  "jsonApi": {
+    "langMap": {
+      "es-419": "es-la",
+      "pt-BR": "pt-br"
+    },
+    "popularRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/titles?order[views_30d]=desc&languages[]={lang}&page={page}&limit=50"
+    },
+    "latestRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/titles?order[chapter_updated_at]=desc&languages[]={lang}&page={page}&limit=50"
+    },
+    "searchRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/titles?keyword={query}&languages[]={lang}&page={page}&limit=50"
+    },
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/titles/{hid}"
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/titles/{hid}/chapters?language={lang}&page={page}&limit=50"
+    },
+    "pagesRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/chapters/{chapterId}"
+    },
+    "mangaList": {
+      "itemsPath": "$.items[*]",
+      "idPath": "$.hid",
+      "slugPath": "$.slug",
+      "titlePaths": [
+        "$.title"
+      ],
+      "urlTemplate": "/title/{id}-{slug}",
+      "coverPaths": [
+        "$.poster.large",
+        "$.poster.medium",
+        "$.poster.small"
+      ],
+      "pagination": {
+        "mode": "JSON_HAS_NEXT",
+        "startPage": 1,
+        "pageSize": 50,
+        "hasNextPath": "$.meta.hasNext"
+      }
+    },
+    "details": {
+      "rootPath": "$.data",
+      "idPath": "$.hid",
+      "slugPath": "$.slug",
+      "urlTemplate": "/title/{id}-{slug}",
+      "titlePaths": [
+        "$.title"
+      ],
+      "descriptionPaths": [
+        "$.synopsisHtml"
+      ],
+      "stripHtmlInDescription": true,
+      "coverPaths": [
+        "$.poster.large",
+        "$.poster.medium",
+        "$.poster.small"
+      ],
+      "authorsPath": "$.authors[*].title",
+      "artistsPath": "$.artists[*].title",
+      "genresPath": "$.genres[*].title",
+      "extraGenrePaths": [
+        "$.type",
+        "$.themes[*].title"
+      ],
+      "statusPath": "$.status",
+      "statusMap": {
+        "releasing": 1,
+        "finished": 2,
+        "on_hiatus": 6,
+        "discontinued": 5
+      }
+    },
+    "chapters": {
+      "itemsPath": "$.items[*]",
+      "idPath": "$.id",
+      "numberPath": "$.number",
+      "namePath": "$.name",
+      "urlTemplate": "{mangaUrl}/{id}-chapter-{number}-{lang}",
+      "scanlatorPath": "$.type",
+      "defaultScanlator": "Unknown",
+      "datePath": "$.createdAt",
+      "dateFormat": "epoch_seconds",
+      "pagination": {
+        "mode": "JSON_HAS_NEXT",
+        "startPage": 1,
+        "pageSize": 50,
+        "hasNextPath": "$.meta.hasNext",
+        "currentPagePath": "$.meta.currentPage",
+        "lastPagePath": "$.meta.lastPage",
+        "maxPages": 200
+      }
+    },
+    "pages": {
+      "itemsPath": "$.data.pages[*]",
+      "imageUrlPath": "$.url"
+    }
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://mangafire.to/"
+    }
+  ],
+  "upstreamSourceId": 8098539940032331958,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "upstreamExtVersionCode": 106038,
+  "querySigner": {
+    "algorithm": "sbox_xor_cbc",
+    "pathPrefix": "/api",
+    "stripPathPrefix": true,
+    "paramName": "vrf",
+    "stages": [
+      {
+        "tableBase64": "yINlmUNho8VYJT+ibTIP+9ESiULpVEtMOoD6U6lRE0R/xwXo/Xp9NrUgC4cw/Lmo33vUyjUE40kUoEWIr/fxfNNcq2s79ShQ5NhNrFnJ4hXPwOu/SuXzIbuTQKGFvfm08E9jvCfqAtoDqvQq3dVWPQFmJjgvkISBeXY3BgANR+yVnjGbcxZ47d6kLNfZPIayTq3/YGySb1KuVZodWp/WGNAO5pfMcpaK53Hhs0allBszaMaxuouOwdxbwgxIw6YunSsXjI05Yi0j9j4eHKfSXR8Ifo/Od+8iamRfCXTyvm7NGRGYdcQ0ywcK/u6RXhrbcCm4t2eCtrDgQVecJGkQ+A==",
+        "keyBase64": "0Ec58JOY3uBzJK9m3zqIOpdlF7UFiax9DmA=",
+        "iv": 90
+      },
+      {
+        "tableBase64": "IUFltCxD3Oc2cwCgkJffthaOg9cgPUb0LgW6H/VtfcF0kc5F25t+aWj6JH9VOhOaY0rAFdUxlDnl5BLNvwEJvQtP5qcw7vdb/K+chnbwnspSHT8mz5lqwz41TezG0hkO06FTjJZhsyNuFLDpD2ZZxQj/QIRcF90zpmQ7Byu483WsQqUE0C342HL+JXngRB6fRzxRyVTaKu83h7UYTJ0QMt6ixFh6S3F8gqkKwrGTL3jHNBsD45UnifK8+RGtishQV2K3rujLKEkiZxpr2dYcudFW4oFsDKhad3CLBvuyTqsCo4B7mL5IKQ1vXo/MOOvq1I1d8ar9X6Ttu5KF4fZgiA==",
+        "keyBase64": "AAdjb1iPY8CiDmq9H34tKTBF8a3oDQ==",
+        "iv": 53
+      },
+      {
+        "tableBase64": "NQHlu1/wVO5EmkwQymF810qqY2xG1k2obcas4Z9mCsPEIFl9pRIjFxbJ7ybMHbBckT5Ton85E0FOeHezbh/mjlEYpmpnlXOS8dgrqeq2KfxImTh1YK9y0PeMNhzA1OQzSY9brYOJq/l2QnE/hwOeZIhPixVSKIUlDb5vLcH6RWKxkIEMuP0bDwIqQ71AJJaEaMJL7A6YtyIwoRT+L5v4aZzodN/0+3nOGsfblFjgxSfPzVDjNFeNl5P26+kEC/8AHgdrpAbt3hHz3HrRN1Y6e+JHgF7ncFWnoF0y3THL1S71WgWGCa6KtSzTCCG58n68nTyj2T3Sshk7utqCtMi/ZQ==",
+        "keyBase64": "DELOJgPsVaCcblDtTGMdHzM=",
+        "iv": 186
+      }
+    ]
+  },
+  "recipePath": "recipes/es.mangafire.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    8098539940032331958
+  ],
+  "versionCode": 106038,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "pkgName": "eu.kanade.tachiyomi.extension.all.mangafire",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/mangafire/res/mipmap-xhdpi/ic_launcher.png"
+}

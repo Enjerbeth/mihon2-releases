@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "spicyscan_com",
+  "name": "Spicy Scan",
+  "baseUrl": "https://spicyseries.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "requiresWebViewCapture": true,
+  "headers": {
+    "Referer": "https://spicyseries.com/"
+  },
+  "mirrors": [
+    "https://spicyseries.com"
+  ],
+  "upstreamSourceId": 2665002677795338092,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "selectors": {
+    "listSelector": "a[href*='/comic/'], article, div.group",
+    "titleSelector": "h3, h4, p, span",
+    "linkSelector": "a[href*='/comic/'], a[href]",
+    "chapterSelector": "a[href*='/capitulo'], a[href*='/chapter'], a[href*='/comic/']",
+    "pageImgSelector": "main img, div.reading-content img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://spicyseries.com/"
+    }
+  ],
+  "upstreamExtVersionCode": 106001,
+  "recipePath": "recipes/spicyscan_com.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    2665002677795338092
+  ],
+  "versionCode": 106001,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.spicyscan",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/spicyscan/res/mipmap-xhdpi/ic_launcher.png"
+}

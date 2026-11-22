@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.mangalivreorg",
+  "name": "MangaLivre.org",
+  "baseUrl": "https://noxmangas.org",
+  "lang": "pt-BR",
+  "version": 2,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://noxmangas.org/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://noxmangas.org/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.mangalivreorg.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    4160203623654115966
+  ],
+  "license": "Apache-2.0",
+  "attribution": "FelipeGFA Contributors",
+  "mirrors": [
+    "https://noxmangas.org",
+    "https://mangalivre.org"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/pt/mangalivreorg/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.mangalivreorg",
+  "upstreamSourceId": 4160203623654115966,
+  "upstreamExtVersionCode": 106007,
+  "versionCode": 106007,
+  "upstreamRepo": "FelipeGFA/fonte-extensoes",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

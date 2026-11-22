@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.asmhentai",
+  "name": "AsmHentai",
+  "baseUrl": "https://asmhentai.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://asmhentai.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "coverSelector": "img.lazyload, img.cover-image",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img",
+    "detailsTitleSelector": "h1.title, h2.title",
+    "detailsCoverSelector": "div#cover img, div.cover img",
+    "descriptionSelector": "div#tags, div.tags"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://asmhentai.com/"
+    }
+  ],
+  "recipePath": "recipes/en.asmhentai.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    6135783261825346877
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://asmhentai.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/asmhentai/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.all.asmhentai",
+  "upstreamSourceId": 6135783261825346877,
+  "upstreamExtVersionCode": 106015,
+  "versionCode": 106015,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "authPreFlight": {
+    "url": "https://asmhentai.com/",
+    "method": "GET",
+    "headers": {
+      "Referer": "https://asmhentai.com/"
+    },
+    "extractMode": "REGEX",
+    "extractPattern": "<meta[^>]*name=[\"\\']csrf-token[\"\\'][^>]*content=[\"\\']([^\"\\']+)",
+    "cacheTtlSeconds": 1800,
+    "targetHeader": "X-CSRF-TOKEN",
+    "valuePrefix": ""
+  },
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

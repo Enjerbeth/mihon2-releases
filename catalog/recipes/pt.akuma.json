@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt.akuma",
+  "name": "Akuma",
+  "baseUrl": "https://akuma.moe",
+  "lang": "pt",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://akuma.moe/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://akuma.moe/"
+    }
+  ],
+  "recipePath": "recipes/pt.akuma.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    5253884715906393116
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://akuma.moe"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/akuma/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.all.akuma",
+  "upstreamSourceId": 5253884715906393116,
+  "upstreamExtVersionCode": 106011,
+  "versionCode": 106011,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

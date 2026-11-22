@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "leermangaesp_org",
+  "name": "LeerMangaEsp",
+  "baseUrl": "https://mangalect.org",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "",
+  "requiresWebViewCapture": true,
+  "headers": {
+    "Referer": "https://mangalect.org/"
+  },
+  "mirrors": [
+    "https://mangalect.org"
+  ],
+  "upstreamSourceId": 8196066207928937350,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "selectors": {
+    "listSelector": "div.manga-card-v2, div.nx-search-item, article",
+    "titleSelector": "h3.overlay-text-title, h3, h4, span, a",
+    "linkSelector": "a[href^='/info/'], a[href*='/info/'], a[href]",
+    "chapterSelector": "a[href*='/lectura/'], a[href*='/leer-m/'], a[href*='/capitulo']",
+    "pageImgSelector": "img[src*='/mangas/'], div.reading-content img, main img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://mangalect.org/"
+    }
+  ],
+  "upstreamExtVersionCode": 106001,
+  "recipePath": "recipes/leermangaesp_org.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    8196066207928937350
+  ],
+  "versionCode": 106001,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.leermangaesp",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/leermangaesp/res/mipmap-xhdpi/ic_launcher.png"
+}

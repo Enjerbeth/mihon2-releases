@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.aethonwebcomics",
+  "name": "Aethon Webcomics",
+  "baseUrl": "https://aethonwebcomics.com",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://aethonwebcomics.com/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://aethonwebcomics.com/"
+    }
+  ],
+  "recipePath": "recipes/en.aethonwebcomics.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    5210693156893032326
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://aethonwebcomics.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/aethonwebcomics/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.aethonwebcomics",
+  "upstreamSourceId": 5210693156893032326,
+  "upstreamExtVersionCode": 106000,
+  "versionCode": 106000,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

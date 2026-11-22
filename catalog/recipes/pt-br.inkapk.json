@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.inkapk",
+  "name": "Inkapk",
+  "baseUrl": "https://inkapk.net",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/obras",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://inkapk.net/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://inkapk.net/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.inkapk.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    8541224312340631016
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://inkapk.net"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/inkapk/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.inkapk",
+  "upstreamSourceId": 8541224312340631016,
+  "upstreamExtVersionCode": 106063,
+  "versionCode": 106063,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

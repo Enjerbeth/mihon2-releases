@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "es.heavenmanga",
+  "name": "HeavenManga",
+  "baseUrl": "https://heavenmanga.com",
+  "lang": "es",
+  "version": 2,
+  "preset": "CSS_GENERIC",
+  "family": "DATATABLES_AJAX",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "headers": {
+    "Referer": "https://heavenmanga.com/"
+  },
+  "selectors": {
+    "listSelector": "div.c-tabs-item__content, div.media, div.page-item-detail, article, div.col-sm-6, div.col-md-3",
+    "titleSelector": "div.post-title a, h4 a, h3 a, h5 a",
+    "linkSelector": "a[href*='/manga/']",
+    "chapterSelector": "a[href*='/manga/ver/']",
+    "pageImgSelector": "div#all img, div.reading-content img",
+    "nextPageSelector": "a[rel=next], ul.pagination a[href*='page={page+1}']"
+  },
+  "popularRequest": {
+    "method": "GET",
+    "firstPagePathTemplate": "/top",
+    "pathTemplate": "/top?page={page}"
+  },
+  "latestRequest": {
+    "method": "GET",
+    "firstPagePathTemplate": "/",
+    "pathTemplate": "/?page={page}"
+  },
+  "searchRequest": {
+    "method": "GET",
+    "firstPagePathTemplate": "/buscar?query={query}",
+    "pathTemplate": "/buscar?query={query}&page={page}"
+  },
+  "chaptersRequest": {
+    "method": "GET",
+    "pathTemplate": "{mangaUrl}?draw=1&columns[0][data]=number&columns[0][name]=number&columns[1][data]=created_at&columns[1][name]=created_at&order[0][column]=1&order[0][dir]=desc&start=0&length=1000",
+    "headers": {
+      "X-Requested-With": "XMLHttpRequest",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "{mangaUrl}"
+    }
+  },
+  "requiresWebViewCapture": false,
+  "pipelineSteps": [
+    {
+      "op": "css_select",
+      "selector": "script:containsData(imgURL)",
+      "takeFirst": false
+    },
+    {
+      "op": "regex_extract",
+      "pattern": "\"imgURL\"\\s*:\\s*\"([^\"]+)\"",
+      "group": 1,
+      "takeAll": true
+    },
+    {
+      "op": "trim_normalize",
+      "collapseWhitespace": true
+    },
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://heavenmanga.com/"
+    }
+  ],
+  "upstreamSourceId": 1872740333369520717,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "mirrors": [
+    "https://heavenmanga.com"
+  ],
+  "upstreamExtVersionCode": 106002,
+  "versionId": 1,
+  "recipePath": "recipes/es.heavenmanga.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1872740333369520717
+  ],
+  "versionCode": 106002,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.heavenmanga",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/heavenmanga/res/mipmap-xhdpi/ic_launcher.png"
+}

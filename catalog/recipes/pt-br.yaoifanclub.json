@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.yaoifanclub",
+  "name": "Yaoi Fan Club",
+  "baseUrl": "https://yaoifanclub.com",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 2,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/obra",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://yaoifanclub.com/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://yaoifanclub.com/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.yaoifanclub.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1639406669358106687,
+    3609380518472019202
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://yaoifanclub.com"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/pt/yaoifanclub/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.yaoifanclub",
+  "upstreamSourceId": 1639406669358106687,
+  "upstreamExtVersionCode": 106063,
+  "versionCode": 106063,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

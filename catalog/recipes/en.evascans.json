@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.evascans",
+  "name": "Eva Scans",
+  "baseUrl": "https://evascans.net",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MANGA_THEMESIA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/series",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://evascans.net/"
+  },
+  "selectors": {
+    "listSelector": "div.listupd div.bsx a, div.bsx a",
+    "titleSelector": "div.tt",
+    "linkSelector": "a",
+    "chapterSelector": "div#chapterlist ul li a",
+    "pageImgSelector": "div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://evascans.net/"
+    }
+  ],
+  "recipePath": "recipes/en.evascans.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    1911019612901009263
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://evascans.net"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/evascans/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.evascans",
+  "upstreamSourceId": 1911019612901009263,
+  "upstreamExtVersionCode": 106007,
+  "versionCode": 106007,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

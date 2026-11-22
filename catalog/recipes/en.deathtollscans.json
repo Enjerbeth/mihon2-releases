@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.deathtollscans",
+  "name": "Death Toll Scans",
+  "baseUrl": "https://reader.deathtollscans.net",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/directory/",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://reader.deathtollscans.net/"
+  },
+  "selectors": {
+    "listSelector": "div.list div.group, div.title",
+    "titleSelector": "div.title a",
+    "linkSelector": "div.title a",
+    "coverSelector": "div.thumb img",
+    "chapterSelector": "div.element div.title a",
+    "pageImgSelector": "div.inner img",
+    "detailsTitleSelector": "h1.title",
+    "detailsCoverSelector": "div.thumb img",
+    "descriptionSelector": "div.info, div.description",
+    "authorSelector": "div.author",
+    "artistSelector": "div.artist",
+    "chapterNameSelector": "div.title a",
+    "chapterDateSelector": "div.meta_r",
+    "chapterDateFormat": "yyyy.MM.dd"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://reader.deathtollscans.net/"
+    }
+  ],
+  "recipePath": "recipes/en.deathtollscans.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    4722346859737894698
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://reader.deathtollscans.net"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/deathtollscans/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.deathtollscans",
+  "upstreamSourceId": 4722346859737894698,
+  "upstreamExtVersionCode": 106007,
+  "versionCode": 106007,
+  "upstreamRepo": "keiyoushi/extensions-source"
+}

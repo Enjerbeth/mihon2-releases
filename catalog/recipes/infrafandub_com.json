@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "infrafandub_com",
+  "name": "InfraFandub",
+  "baseUrl": "https://infrafandub.com",
+  "lang": "es",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://infrafandub.com/"
+  },
+  "mirrors": [
+    "https://infrafandub.com"
+  ],
+  "upstreamSourceId": 5594696691862732725,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "selectors": {
+    "listSelector": "div.manga-item, div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "div.title a, h3.h5 a, div.post-title a",
+    "linkSelector": "div.title a, h3.h5 a, div.post-title a",
+    "chapterSelector": "a.chapter-item, li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://infrafandub.com/"
+    }
+  ],
+  "upstreamExtVersionCode": 106064,
+  "recipePath": "recipes/infrafandub_com.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    5594696691862732725
+  ],
+  "versionCode": 106064,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.infrafandub",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/infrafandub/res/mipmap-xhdpi/ic_launcher.png"
+}

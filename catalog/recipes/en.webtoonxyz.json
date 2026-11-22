@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.webtoonxyz",
+  "name": "WebtoonXYZ",
+  "baseUrl": "https://www.webtoon.xyz",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "MADARA",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/read",
+  "useHomeFallback": false,
+  "headers": {
+    "Referer": "https://www.webtoon.xyz/"
+  },
+  "selectors": {
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content",
+    "titleSelector": "h3.h5 a, div.post-title a",
+    "linkSelector": "h3.h5 a, div.post-title a",
+    "chapterSelector": "li.wp-manga-chapter a",
+    "pageImgSelector": "div.reading-content img, div.page-break img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://www.webtoon.xyz/"
+    }
+  ],
+  "recipePath": "recipes/en.webtoonxyz.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    6750082404202711318
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://www.webtoon.xyz"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/webtoonxyz/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.en.webtoonxyz",
+  "upstreamSourceId": 6750082404202711318,
+  "upstreamExtVersionCode": 106064,
+  "versionCode": 106064,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

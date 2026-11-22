@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.nhentaiwebsite",
+  "name": "NHentai.website",
+  "baseUrl": "https://nhentai.jp.net",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://nhentai.jp.net/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "coverSelector": "img.lazyload, img.cover-image",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img",
+    "detailsTitleSelector": "h1.title, h2.title",
+    "detailsCoverSelector": "div#cover img, div.cover img",
+    "descriptionSelector": "div#tags, div.tags"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://nhentai.jp.net/"
+    }
+  ],
+  "recipePath": "recipes/en.nhentaiwebsite.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    4655985745385044320
+  ],
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "mirrors": [
+    "https://nhentai.jp.net",
+    "https://nhentai.website",
+    "https://hitomi.uk",
+    "https://9hentai.uk",
+    "https://9hentai.us"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/nhentaiwebsite/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.all.nhentaiwebsite",
+  "upstreamSourceId": 4655985745385044320,
+  "upstreamExtVersionCode": 106012,
+  "versionCode": 106012,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

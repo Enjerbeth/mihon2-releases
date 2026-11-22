@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "en.nhentai",
+  "name": "NHentai",
+  "baseUrl": "https://nhentai.net",
+  "lang": "en",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://nhentai.net/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://nhentai.net/"
+    }
+  ],
+  "recipePath": "recipes/en.nhentai.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    3122156392225024195
+  ],
+  "license": "Apache-2.0",
+  "attribution": "FelipeGFA Contributors",
+  "mirrors": [
+    "https://nhentai.net"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/all/nhentai/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.all.nhentai",
+  "upstreamSourceId": 3122156392225024195,
+  "upstreamExtVersionCode": 104055,
+  "versionCode": 104055,
+  "upstreamRepo": "FelipeGFA/fonte-extensoes",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

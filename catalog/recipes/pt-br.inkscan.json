@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "pt-br.inkscan",
+  "name": "Ink Scan",
+  "baseUrl": "https://inkscann.live",
+  "lang": "pt-BR",
+  "version": 1,
+  "versionId": 1,
+  "preset": "CSS_GENERIC",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "catalogPath": "/manga",
+  "useHomeFallback": true,
+  "headers": {
+    "Referer": "https://inkscann.live/"
+  },
+  "selectors": {
+    "listSelector": "article, div.manga-item, div.page-item-detail",
+    "titleSelector": "h3 a, h4 a, a",
+    "linkSelector": "a",
+    "chapterSelector": "li a, div.chapter-item a",
+    "pageImgSelector": "div.reading-content img, div#readerarea img"
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://inkscann.live/"
+    }
+  ],
+  "recipePath": "recipes/pt-br.inkscan.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    2060124440831877790
+  ],
+  "license": "Apache-2.0",
+  "attribution": "FelipeGFA Contributors",
+  "mirrors": [
+    "https://inkscann.live"
+  ],
+  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/pt/inkscan/res/mipmap-xhdpi/ic_launcher.png",
+  "pkgName": "eu.kanade.tachiyomi.extension.pt.inkscan",
+  "upstreamSourceId": 2060124440831877790,
+  "upstreamExtVersionCode": 104001,
+  "versionCode": 104001,
+  "upstreamRepo": "FelipeGFA/fonte-extensoes",
+  "requiresCloudflareBypass": true,
+  "requiresWebViewCapture": false
+}

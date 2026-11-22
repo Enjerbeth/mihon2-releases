@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 2,
+  "sourceId": "manhwaweb_com",
+  "name": "ManhwaWeb",
+  "baseUrl": "https://manhwaweb.com",
+  "lang": "es",
+  "version": 1,
+  "preset": "JSON_API",
+  "status": "ACTIVE",
+  "maxHtmlBytes": 2097152,
+  "headers": {
+    "Referer": "https://manhwaweb.com/",
+    "Origin": "https://manhwaweb.com"
+  },
+  "selectors": {
+    "listSelector": "$.data[*]",
+    "titleSelector": "$.name",
+    "linkSelector": "$._id",
+    "chapterSelector": "$.chapters[*]",
+    "pageImgSelector": "$.chapters.img[*]"
+  },
+  "jsonApi": {
+    "apiBaseUrl": "https://api.manhwaweb.com",
+    "popularRequest": {
+      "method": "GET",
+      "pathTemplate": "/manhwa/library?estado=&tipo=&erotico=&demografia=&order_item=popularidad&order_dir=desc&page={page}&generes=",
+      "headers": {
+        "Origin": "{baseUrl}",
+        "Referer": "{baseUrl}/"
+      }
+    },
+    "latestRequest": {
+      "method": "GET",
+      "pathTemplate": "/manhwa/library?estado=&tipo=&erotico=&demografia=&order_item=actualizacion&order_dir=desc&page={page}&generes=",
+      "headers": {
+        "Origin": "{baseUrl}",
+        "Referer": "{baseUrl}/"
+      }
+    },
+    "searchRequest": {
+      "method": "GET",
+      "pathTemplate": "/manhwa/library?buscar={query}&estado=&tipo=&erotico=&demografia=&order_item=alfabetico&order_dir=desc&page={page}&generes=",
+      "headers": {
+        "Origin": "{baseUrl}",
+        "Referer": "{baseUrl}/"
+      }
+    },
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/manhwa/see/{slug}",
+      "headers": {
+        "Origin": "{baseUrl}",
+        "Referer": "{baseUrl}/"
+      }
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/manhwa/see/{slug}",
+      "headers": {
+        "Origin": "{baseUrl}",
+        "Referer": "{baseUrl}/"
+      }
+    },
+    "pagesRequest": {
+      "method": "GET",
+      "pathTemplate": "/chapters/see/{chapterSlug}",
+      "headers": {
+        "Origin": "{baseUrl}",
+        "Referer": "{baseUrl}/"
+      }
+    },
+    "imageHeaders": {
+      "Origin": "{baseUrl}",
+      "Referer": "{baseUrl}/"
+    },
+    "mangaList": {
+      "itemsPath": "$.data[*]",
+      "slugPath": "$._id",
+      "titlePaths": [
+        "$.the_real_name",
+        "$.name_esp",
+        "$._name"
+      ],
+      "urlTemplate": "manhwa/{slug}",
+      "coverPaths": [
+        "$._imagen"
+      ],
+      "pagination": {
+        "mode": "JSON_HAS_NEXT",
+        "startPage": 0,
+        "pageSize": 20,
+        "hasNextPath": "$.next"
+      }
+    },
+    "details": {
+      "rootPath": "$.",
+      "titlePaths": [
+        "$.the_real_name",
+        "$.name_esp",
+        "$._name"
+      ],
+      "descriptionPaths": [
+        "$._sinopsis"
+      ],
+      "coverPaths": [
+        "$._imagen"
+      ]
+    },
+    "chapters": {
+      "itemsPath": "$.chapters[*]",
+      "numberPath": "$.chapter",
+      "urlPath": "$.link",
+      "urlTemplate": "/leer/{slug}-{number}_01",
+      "nameTemplate": "Capítulo {number}",
+      "datePath": "$.create",
+      "dateFormat": "epoch_millis",
+      "sortDescending": true
+    },
+    "pages": {
+      "itemsPath": "$.chapter.img[*]",
+      "imageUrlPath": "$"
+    }
+  },
+  "pipelineSteps": [
+    {
+      "op": "referer_bind",
+      "refererUrl": "https://manhwaweb.com/"
+    }
+  ],
+  "upstreamSourceId": 5943212552955476721,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "mirrors": [
+    "https://manhwaweb.com"
+  ],
+  "upstreamExtVersionCode": 106016,
+  "versionId": 1,
+  "recipePath": "recipes/manhwaweb_com.json",
+  "mode": "declarative",
+  "upstreamSourceIds": [
+    5943212552955476721
+  ],
+  "versionCode": 106016,
+  "license": "Apache-2.0",
+  "attribution": "The Tachiyomi / Keiyoushi Contributors",
+  "pkgName": "eu.kanade.tachiyomi.extension.es.manhwaweb",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/manhwaweb/res/mipmap-xhdpi/ic_launcher.png"
+}
