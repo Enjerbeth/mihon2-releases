@@ -87,6 +87,10 @@
           },
           "attribution": {
             "type": ["string", "null"]
+          },
+          "sha256": {
+            "type": ["string", "null"],
+            "pattern": "^[a-f0-9]{64}$"
           }
         },
         "required": [

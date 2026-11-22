@@ -4,22 +4,26 @@
   "name": "LeerCapitulo",
   "baseUrl": "https://www.leercapitulo.co",
   "lang": "es",
-  "version": 1,
-  "versionId": 1,
+  "version": 2,
+  "versionId": 2,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
   "maxHtmlBytes": 2097152,
-  "catalogPath": "/manga",
+  "catalogPath": "/manga/",
   "useHomeFallback": true,
   "headers": {
     "Referer": "https://www.leercapitulo.co/"
   },
   "selectors": {
-    "listSelector": "article, div.manga-item, div.page-item-detail",
-    "titleSelector": "h3 a, h4 a, a",
-    "linkSelector": "a",
-    "chapterSelector": "li a, div.chapter-item a",
-    "pageImgSelector": "div.reading-content img, div#readerarea img"
+    "listSelector": "article.lc-card, article.lc-release, div.lc-slide",
+    "titleSelector": "a.lc-card-name, a.lc-release-title, a.lc-slide-name",
+    "linkSelector": "a.lc-card-name, a.lc-release-title, a.lc-slide-name, a.lc-card-cover",
+    "coverSelector": "img",
+    "chapterSelector": "a.lc-chapter-row, div.chapter-list ul li a",
+    "chapterNameSelector": "span.n",
+    "chapterDateSelector": "span.d",
+    "chapterDateFormat": "yyyy-MM-dd",
+    "pageImgSelector": "main#lcPages img, main.lc-pages img, div.comic_wraCon img"
   },
   "pipelineSteps": [
     {

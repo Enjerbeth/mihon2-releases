@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-22T18:05:14Z",
-  "catalogRevision": 21,
+  "generatedAt": "2026-11-22T20:40:17Z",
+  "catalogRevision": 23,
   "entries": [
     {
       "sourceId": "anzmanga_com",
@@ -22,7 +22,8 @@
         7374498796507972405
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "fba108ec6c343ae6f3a60967d53b943060b40cc52fc503156fa2f288deeb56a1"
     },
     {
       "sourceId": "arenascan_com",
@@ -43,7 +44,8 @@
         8861274191478178487
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "9851e3b952bcd7758b00436a5992d70eb4adca78095b252ff4398669c1aa7bf1"
     },
     {
       "sourceId": "bloomscans_com",
@@ -64,7 +66,8 @@
         2598725055968738551
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "093076a747c09d39a06671b5a8e7650f6c5789d5f8011b9c06001ff7fffda99d"
     },
     {
       "sourceId": "cerberusseries_com",
@@ -85,7 +88,8 @@
         1814471239661920836
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "0939d82c5802bc8e672e3689a6e47a7d1b31ea8d1d0bf38b7ab0170f837f6a54"
     },
     {
       "sourceId": "emperorscan_es",
@@ -107,7 +111,8 @@
         8065115147869874040
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "331c7d582e5728d9bc76160c5f545cb9b30348b275287c3c79a7ced5897838b1"
     },
     {
       "sourceId": "en.achymanga",
@@ -128,7 +133,8 @@
         2311891545723109443
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "d31f0d20baa916341490f2b1198d54c5e3d9efb9532a1afaec08f63825ba1f18"
     },
     {
       "sourceId": "en.akazascans",
@@ -149,7 +155,8 @@
         8513894820944573933
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "cca57ec71b6a7f9f0ffeae25e688fc681add4e9e1e19a06dca41d3c8d002777a"
     },
     {
       "sourceId": "en.akuma",
@@ -171,7 +178,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "03e6f231a295a723d4ccbd26f165c8c6c1da6319e0574d0381d81ba36ef910eb"
     },
     {
       "sourceId": "en.allporncomic",
@@ -193,7 +201,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "6429994d7c3002c403849096be22a11fb7de46bc20905216521bd9c2b5d743a1"
     },
     {
       "sourceId": "en.allporncomicio",
@@ -214,7 +223,8 @@
         6660493687892371703
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "1b43c0d8c22d66d22de56ae41532c010b107a41e3b01cdc7c4b90c617fe58be4"
     },
     {
       "sourceId": "en.apcomics",
@@ -235,7 +245,8 @@
         7848750588298461115
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "aa3963ac2deedde07312d3d2555c91385fc57fe17aab23d4370651270e4f3ac0"
     },
     {
       "sourceId": "en.aquamanga",
@@ -257,7 +268,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "53645355ba9ac88a35080fa1309e1b7291d1f8cb8f58154a3bbb4fd8bda2eb24"
     },
     {
       "sourceId": "en.artlapsa",
@@ -279,7 +291,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "3a3858844ade3da2b9905790ae7933393665c8d716a4050f789fdbed4a968d8d"
     },
     {
       "sourceId": "en.asiatoon",
@@ -301,7 +314,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "FelipeGFA Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "ac6493da150b34fb2503ade7304062bb6d12ef22cb7182e9ecf8e9d5c66d72d8"
     },
     {
       "sourceId": "en.asmhentai",
@@ -323,7 +337,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "cee83a3b5214f5ea0769bdde33506551c20fe33bd497b429436d422e8ce6554a"
     },
     {
       "sourceId": "en.asmotoon",
@@ -345,7 +360,8 @@
         5258838449396844455
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "4751f6b82ec61fe75ca9c79b19a7b103fe8281b454e97045736a15a45a99be24"
     },
     {
       "sourceId": "en.asterscans",
@@ -366,7 +382,8 @@
         1931493862544259486
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "0c56ce6bf8eba625eeb86df6e00b1b4e0efc10292d35174f5fb4c3ba7d0915fb"
     },
     {
       "sourceId": "en.asuratoons",
@@ -388,7 +405,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "3f6aa556746b2ff7ee416aaf78ad158455ef587632e5304b5d9a2f904aafeccc"
     },
     {
       "sourceId": "en.athreascans",
@@ -409,7 +427,8 @@
         427734044452073936
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "485287eae2dddb96cb4a248d06fdab54e8f24513c486b2de1b94ad12faaa6f41"
     },
     {
       "sourceId": "en.baetoon",
@@ -430,7 +449,8 @@
         6907136690809864188
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "1bf1d30c0d20636746f77a064837683366d0f4f2fadf723bf4c7891876e77c68"
     },
     {
       "sourceId": "en.bakaloli",
@@ -452,7 +472,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "9907acd46ae31a015994aa387a89c55524c584154523be80bba52cd8c6e4d4cb"
     },
     {
       "sourceId": "en.batcave",
@@ -474,7 +495,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "a05560867ff922da029ff38b1f3522364e00660ee3e48621a99b05abc2ecccf8"
     },
     {
       "sourceId": "en.bookwalker",
@@ -496,7 +518,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "070cb4124b2e3f23181e31f30024be804226257c1adbbf3789bb867ca833b1e4"
     },
     {
       "sourceId": "en.boratscans",
@@ -518,7 +541,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "bf14f29d2ab7c7e2042c86341890cf8cb185880b664a873813fe50f0f00c8082"
     },
     {
       "sourceId": "en.brainrotcomics",
@@ -540,7 +564,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "d38cc9dc634762b596a7c73d66ad03c509cef973e94fa3f4022ddd43e020bae6"
     },
     {
       "sourceId": "en.bunmanga",
@@ -561,7 +586,8 @@
         5944672760629857205
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "d8ae819b8690b3f8dc904459600daa0df7c8c831e355d1ed2042a34faaf1b219"
     },
     {
       "sourceId": "en.buttsmithy",
@@ -582,7 +608,8 @@
         5116114496934092518
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "e330d38bd9bcb62de20e4759c09b368973b4192374c9251ff67fe7bbc609efed"
     },
     {
       "sourceId": "en.cartoonporn",
@@ -603,7 +630,8 @@
         7034264791241222160
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "912d695c94fb0ce53aaec0d993633d54f3d407c3bd698f1609919a517eed97fe"
     },
     {
       "sourceId": "en.cmanhua",
@@ -625,7 +653,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "FelipeGFA Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "5fedcf742398b5d85fbbd1105063742d009780754e5956dc0afbc050258710df"
     },
     {
       "sourceId": "en.cocomic",
@@ -647,7 +676,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "1b0f0964867fe408743c23b56d78d8689bd8f73c8f6c9d78552fb09cbeda6b9e"
     },
     {
       "sourceId": "en.comichubfree",
@@ -669,7 +699,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "63be3ecf8addc129b19bf359f9c986bce44cce9fae81b8d5289d9200a297c1ee"
     },
     {
       "sourceId": "en.cucumbermanga",
@@ -690,7 +721,8 @@
         3890119680043332770
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "af48cc936432c3d16fff9309a7411a9039a6793964fcdb7aaf70f5c56029e5c7"
     },
     {
       "sourceId": "en.cutiecomics",
@@ -712,7 +744,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "b1ab632fece3d5b31f24f671c4d47278e3055b35dc64a506ef75cf34dd2ab466"
     },
     {
       "sourceId": "en.d9comics",
@@ -734,7 +767,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "10d1c22e6e7cb2353e58a1c02c880b6b878c9a1da3b8c29eb138b128f07c7466"
     },
     {
       "sourceId": "en.dankefurslesen",
@@ -755,7 +789,8 @@
         370316150648855996
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "85f84aad807834d909e7f5c08956403784a1ca47c327d9909dea46f50f308d5b"
     },
     {
       "sourceId": "en.deathtollscans",
@@ -776,7 +811,8 @@
         4722346859737894698
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "b654222ec9f965b815fdb998aa4f00183f4cc04bbaf32a068f84afe00efb96c6"
     },
     {
       "sourceId": "en.decadencescans",
@@ -797,7 +833,8 @@
         7432245132662185058
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "e51d3322a5594bfd553cdafc16baad2b5167915a61450506beb1a5f4a82acac1"
     },
     {
       "sourceId": "en.desirescans",
@@ -819,7 +856,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "075dd40afd65cb7de06640b0f0d7e0f53ac67fa07775e42ddd3ab4d783d2e601"
     },
     {
       "sourceId": "en.digitalcomicmuseum",
@@ -841,7 +879,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "e2be679d7969b728b6ded0994b36080cf605cc8ade6b3af76d6742ddf2d712ed"
     },
     {
       "sourceId": "en.divascans",
@@ -863,7 +902,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "686ec094067ec36cc956e1003037fe2d8470816327178d18aec7092933d3c12a"
     },
     {
       "sourceId": "en.dragontea",
@@ -885,7 +925,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "7a40a864a6f53e883ebea9333c0038133929599de10247d3020b0db3f95ad2d4"
     },
     {
       "sourceId": "en.eggporncomics",
@@ -907,7 +948,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "defeeca4460847fa55f99a4678597a5df955c5d4b86134a992defc1a06c73a1d"
     },
     {
       "sourceId": "en.eightmusesxxx",
@@ -928,7 +970,8 @@
         2505371998253764970
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "0819d6823af658178a3cbfd5ba4dc8c573e32771eff013cf0d7c6c0e34be8dfc"
     },
     {
       "sourceId": "en.elanschool",
@@ -950,7 +993,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "f93051d6c6850075a4d401c313154953893815471bcb0d58bac95240b04a5727"
     },
     {
       "sourceId": "en.erisscans",
@@ -972,7 +1016,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "cb2fcaf2a7800c9d1c2b7a14a23d2bd31a2741b5a3caacd6d086235a45188291"
     },
     {
       "sourceId": "en.ero18x",
@@ -994,7 +1039,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "04df8edc3db7fa10089369cd1cc181577b2a53271411c078a71bff018e2fb731"
     },
     {
       "sourceId": "en.erosscans",
@@ -1015,7 +1061,8 @@
         1124131000360667434
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "0cb3be1ef056628f1f9e923b2c9bc840364145587c9130ef6de7f627e2830e0b"
     },
     {
       "sourceId": "en.evascans",
@@ -1036,7 +1083,8 @@
         1911019612901009263
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "b985548497534942c75b336b024abe7eb994250afd65ffcab16cbb938cf2cfa4"
     },
     {
       "sourceId": "en.extrafabulouscomics",
@@ -1057,7 +1105,8 @@
         633679469952676219
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "be41de611a6a802eb3a31055e06564fe370c436cb1b2cc236d477e4e4ab7d648"
     },
     {
       "sourceId": "en.fastestmanga",
@@ -1078,7 +1127,8 @@
         2159341238645919191
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "f1d7cc162dde0b29a3d37e52b836137dd23735bfd65d1f478c4acba95ff3c435"
     },
     {
       "sourceId": "en.flamecomics",
@@ -1100,7 +1150,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "34358e8c36d884b0465a3885460990ed969e8fed085531abc69017043311b9f4"
     },
     {
       "sourceId": "en.futapo",
@@ -1122,7 +1173,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "9acde175ddf68fb7f10676ba565683a149dea8929b64021ade19e315fb0d29ad"
     },
     {
       "sourceId": "en.gakamangas",
@@ -1143,7 +1195,8 @@
         5246625723235112128
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "4673ef891860ff74f5aaf49dc6c16ddc1f67a2b523ced585c74bb17692c73a31"
     },
     {
       "sourceId": "en.galaxydegenscans",
@@ -1164,7 +1217,8 @@
         4598626990187882152
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "f7cd63ff01a052c9506b683ec121f6796bb12f0bff38ec25d45417b71b228707"
     },
     {
       "sourceId": "en.galleryepic",
@@ -1186,7 +1240,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "1a3c2ddc6f5d2637648e199cf3241e41a429ed0076c2efcb67b83849c7e64d2b"
     },
     {
       "sourceId": "en.gedecomix",
@@ -1207,7 +1262,8 @@
         3956136651279281107
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "88672d7cab45c3eaf0d454d25633b547dd8503ce0700de232b438f78afa43d14"
     },
     {
       "sourceId": "en.gocomics",
@@ -1228,7 +1284,8 @@
         5960491017424675036
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "ffecae2d6320122ebd528868a80d2f196d387c46f42657f860bde2a8cbcbdd5b"
     },
     {
       "sourceId": "en.gourmetscans",
@@ -1250,7 +1307,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "fee8f45084417e808eb08217ca4f75d7eef4af49bb2cd24025e8aeccb78141bc"
     },
     {
       "sourceId": "en.grrlpower",
@@ -1271,7 +1329,8 @@
         1991252499508931836
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "83b9ee465a1f756e6fe152931502e5a17c372d15a33fbdcd0816f458d92714ca"
     },
     {
       "sourceId": "en.guya",
@@ -1292,7 +1351,8 @@
         4637971935551651734
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "58643103d6943dba1607d2f2c185f9235dcd1059146856f5802f3306322b04fe"
     },
     {
       "sourceId": "en.hachirumi",
@@ -1313,7 +1373,8 @@
         593241987912872030
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "04a2e3e192c0ac582b34fa6de326d8c2d01a801cb17ae02521c1a674dac1d3c4"
     },
     {
       "sourceId": "en.hdporncomics",
@@ -1335,7 +1396,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "d56d74f15fe661d0590dbc286d7fa36132a0317823fdf898279738f92ee4babe"
     },
     {
       "sourceId": "en.hentai18",
@@ -1356,7 +1418,8 @@
         1054622014336587048
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "07bd33854c9fc92e91e1aac8934fd98cab554b8e4f50a5fedcfea00169d7a224"
     },
     {
       "sourceId": "en.hentai1io",
@@ -1377,7 +1440,8 @@
         8561426018751869351
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "4e1d6d96e81afd792532242754f4512f502b662807b300c00322b79ddf275084"
     },
     {
       "sourceId": "en.hentai4free",
@@ -1399,7 +1463,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "9e7721a18d71362c591606b5eb2a6cf41e41bbbc0daffae91342330c40bc5237"
     },
     {
       "sourceId": "en.hentaidad",
@@ -1420,7 +1485,8 @@
         4395452767720916400
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "b400194d30bbcb1ebfca977ece35ea6098bafa986e7cdf18fea492cfe19bd137"
     },
     {
       "sourceId": "en.hentaideck",
@@ -1441,7 +1507,8 @@
         3060711657360263651
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "05ce773b5752f1aab986b8680f8902538ec5c35e5ee4e41a9c59a0e53e08d838"
     },
     {
       "sourceId": "en.hentaidesi",
@@ -1462,7 +1529,8 @@
         1428377199095994277
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "da117554e293d8a887a75854e06845d307ec5e1615c55e9731f8160e36df4807"
     },
     {
       "sourceId": "en.hentaiera",
@@ -1484,7 +1552,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "f01c1b3a296670fc5d35b13b2f0c1aef5b403e514b3bb7c6d825afbe6649fc28"
     },
     {
       "sourceId": "en.hentaihand",
@@ -1505,7 +1574,8 @@
         1438773694780928937
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "bc3e6bee702ffe505b2b75dd08658392800686d0e67e0b15aad313ed8058a754"
     },
     {
       "sourceId": "en.hentaihere",
@@ -1526,7 +1596,8 @@
         7266624490370375187
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "91ba33cfb8bbc35008f4c1c7e5971518f893acf16d8556b523f85c38f8399f31"
     },
     {
       "sourceId": "en.hentairead",
@@ -1548,7 +1619,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "d1779444781245adcb1f250b383f66db5e59342d4e0fcc76818bb314c140efcf"
     },
     {
       "sourceId": "en.hentaireadio",
@@ -1570,7 +1642,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "600de8acf83237775dad0746e68d46c1f820c3fc85182779246c3f917b2ab4b9"
     },
     {
       "sourceId": "en.hentaixcomic",
@@ -1591,7 +1664,8 @@
         7664311260874726882
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "911626f1f9008585e7495a74b392c5d24fda711bfece672224d548627e395458"
     },
     {
       "sourceId": "en.hentaixdickgirl",
@@ -1612,7 +1686,8 @@
         918523496924275699
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "7b63287bbec1ad3754f5a29d33541a4c8e7153dc00f026f8c15b4088ef3ef52b"
     },
     {
       "sourceId": "en.hentaixyuri",
@@ -1633,7 +1708,8 @@
         1089473637776666044
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "2a615c18054943bdf6e664a0b06daa18c293e383db1cd094b6921c3136faf75e"
     },
     {
       "sourceId": "en.hentaiyoga",
@@ -1654,7 +1730,8 @@
         4629014421013059878
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "e7cee47b2f0a9c37ab8d5d9c6b9ce21ae92b678022ad4030a92ae19d65726d1f"
     },
     {
       "sourceId": "en.hentaizap",
@@ -1676,7 +1753,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "dd89a151f6a5bf3a6cbf60163f2bf96b9bd3b0d60a3c437fae5b40242289f8ef"
     },
     {
       "sourceId": "en.heytoon",
@@ -1698,7 +1776,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "f3678fc87f66ec8741579f8025db9b2a26f3b1397c5838a679c44a5b53252c3e"
     },
     {
       "sourceId": "en.hijalascans",
@@ -1719,7 +1798,8 @@
         454381816904772144
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "c5a79780ab192f61eb11b25ca4af6a686079d049f803e38f2a7b4f9ecadf4ffb"
     },
     {
       "sourceId": "en.hivescans",
@@ -1740,7 +1820,8 @@
         6311653253665366075
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "df57617161158cbffba1284973b3355f70abf29de41a6ccab54e5e6d52deb77a"
     },
     {
       "sourceId": "en.hm2d",
@@ -1761,7 +1842,8 @@
         7329798563365402763
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "b12c5de0afb8033e89a64fc361c0d14044a3c3d95d109caf9a5e5c80888eeea0"
     },
     {
       "sourceId": "en.hotcomics",
@@ -1783,7 +1865,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "99fd5a9438fc4e129f519fe8ed7faded2feb9be6a992426e9561346fe7d80b0e"
     },
     {
       "sourceId": "en.hunlightcomics",
@@ -1804,7 +1887,8 @@
         3876544289472679486
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "3daadd1ef77516f83a4bc2f65467fcfedc99a7440d85868a7b0f595135322fb5"
     },
     {
       "sourceId": "en.hyakuro",
@@ -1825,7 +1909,8 @@
         4981643024311726529
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "17cd127df212a63aedaf771b7960ce7775033b8ead74ad41389d3dbae19e3869"
     },
     {
       "sourceId": "en.ilikecomix",
@@ -1847,7 +1932,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "dd17e508c79c672d8b4c34f7570771a04fb3fabeb442934650ba95f3649cef08"
     },
     {
       "sourceId": "en.imhentai",
@@ -1869,7 +1955,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "a21fa2368ae02ebabdb92745e4df8fc10b32d83e4571ad73ac5d3337c88a38d0"
     },
     {
       "sourceId": "en.inkora",
@@ -1890,7 +1977,8 @@
         3924688286823005722
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "10af7e656c91491bc7ac9dbef29c8c9cde0870adbb6ba6a597e1ca913478b234"
     },
     {
       "sourceId": "en.jinmangas",
@@ -1912,7 +2000,8 @@
         5727368826344311935
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "e2e2ccbebdb9f8cb48774f0283f4023887b59966116cb8efa276f489cf1f51d9"
     },
     {
       "sourceId": "en.jnovel",
@@ -1933,7 +2022,8 @@
         2482510125735992610
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "27c0ed221d3f5da10547c1dee879fa285fd9f6b3cf0f5f5d1d9ff2a2a3b74885"
     },
     {
       "sourceId": "en.kagane",
@@ -1955,7 +2045,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "05091109bf4353cd947f685213efebdb94de248b3862f07dbdd3d6f4398e4ebe"
     },
     {
       "sourceId": "en.kaizenscan",
@@ -1977,7 +2068,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "b5d959dcbd2fa94680f7bd4b4d3bc7737363632003b10809a168a216851dfe22"
     },
     {
       "sourceId": "en.kaliscanorg",
@@ -1998,7 +2090,8 @@
         5815628626283130746
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "dd0a83444d250812fa8a21beb2b8f0c0fed496af7e8acdd9d76a738fec9525ef"
     },
     {
       "sourceId": "en.kaynscans",
@@ -2019,7 +2112,8 @@
         6622233282902198923
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "95ff1f609da988638cff0d57cd041ef113a3f2b0a6e61dd7d867104d4d0edcaf"
     },
     {
       "sourceId": "en.kemonocafe",
@@ -2040,7 +2134,8 @@
         8676020771282634711
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "e2c6c473a4db4b42ef76502a6ab40351d832a0a6b722f4368534b5ebe1abb380"
     },
     {
       "sourceId": "en.kenscans",
@@ -2061,7 +2156,8 @@
         7831933086917318633
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "4dcab278f86be3218f9993cc38f2401c0ca1f4b1dd5c2cbbcbf06d2f2a2b6268"
     },
     {
       "sourceId": "en.keroscans",
@@ -2082,7 +2178,8 @@
         7842256049285233541
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "17a511eb7d8e0206a8e7d01b964815bb61a71c946a88db40e3656b1bb8977795"
     },
     {
       "sourceId": "en.kewnscans",
@@ -2103,7 +2200,8 @@
         2816768640766208312
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "7ed40c7348836bc8012bb5954bbcb6d08bbe6ab218c50853c07f00984143e998"
     },
     {
       "sourceId": "en.kingcomix",
@@ -2125,7 +2223,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "3898b3329db72f81ef3af3cc0e9aa4320f1a3a3159267b95f18a421402a41b80"
     },
     {
       "sourceId": "en.kingofshojo",
@@ -2146,7 +2245,8 @@
         9153097368891994905
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "01e9aad815caff4d959ffb9cdf84d59b0401c952528a9c14d3ca0d5044415561"
     },
     {
       "sourceId": "en.kissmangain",
@@ -2168,7 +2268,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "dfdd35a038b7f8e79c9eadce5ab6a8953d764ca269ba1c4ff2475c2ae2a28567"
     },
     {
       "sourceId": "en.kitsunedawn",
@@ -2189,7 +2290,8 @@
         7739452864322240494
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "69967c8ca26fff38198268ea49b21ebe443a5a9afa0085156d54a16f9d882248"
     },
     {
       "sourceId": "en.kodansha",
@@ -2212,7 +2314,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "1dd4db26f36e824c06a674566bfb7f683383aa660037de4199d6fa825ad6dfd4"
     },
     {
       "sourceId": "en.komix",
@@ -2233,7 +2336,8 @@
         6862842453918709699
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "9820e8cd672578ce512df5ee23615b218574c0df72057c5727e26c97c7839b6c"
     },
     {
       "sourceId": "en.ksgroupscans",
@@ -2254,7 +2358,8 @@
         4307007494151154546
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "45ed0381f848dbaf432a73178ad04f473abf7d996c64ebe6b57706685869802f"
     },
     {
       "sourceId": "en.kunmangaonline",
@@ -2275,7 +2380,8 @@
         7947062020376654174
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "6ff8de6776c6015f0a9a4f684390b1e1a72584962eaf28233bc6f34009325617"
     },
     {
       "sourceId": "en.lectorhentai",
@@ -2296,7 +2402,8 @@
         8489181931479760463
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "7d9b0bc8b8a435f4d6eeadaaff9e3de4b75c2924187aa6b1861fddaf8074d348"
     },
     {
       "sourceId": "en.lgbtics",
@@ -2318,7 +2425,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "dc7dca0ac7655e73032843a4398efdcd5d77591e068e382b9fa279b6eda836da"
     },
     {
       "sourceId": "en.lhtranslation",
@@ -2339,7 +2447,8 @@
         8802607595629671202
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "1a8225273387a7c92a9d39f08b5ea565cf4c870e369cbb13b4ffc2c5f0e227ee"
     },
     {
       "sourceId": "en.likemanga",
@@ -2361,7 +2470,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "FelipeGFA Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "f9c8b8da5413385986f191b8780a9a61a98ce143c92d53c65c50ac841203d495"
     },
     {
       "sourceId": "en.linkmanga",
@@ -2382,7 +2492,8 @@
         8622937201319058235
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "e8d107fa9b1dbb353d165e74a10fd9ebe16ee08e896b89419dad9451de7ca5d2"
     },
     {
       "sourceId": "en.loadingartist",
@@ -2403,7 +2514,8 @@
         1555415289901855998
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "7740986d4f6f9f9782f65963d2abcb9bee91faec70c66fae1986957fbc0f2c76"
     },
     {
       "sourceId": "en.lovesjanescans",
@@ -2424,7 +2536,8 @@
         3971812949560196318
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "f0b0232cd343cbfe45bf20b9817d1a919a3a0a70ff8cb5f9eec9b4e8b0076de0"
     },
     {
       "sourceId": "en.luminaretranslations",
@@ -2445,7 +2558,8 @@
         1698654724978495521
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "4f6ed08ba406c4915ee9d2e035459570f1cbfc655f92f805066054f0e5131507"
     },
     {
       "sourceId": "en.lunatoons",
@@ -2467,7 +2581,8 @@
         4513668905743562887
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "0ce5ee05ff727089293b3972c691f3bb81b6ee9d8c76749657796996117244fa"
     },
     {
       "sourceId": "en.luscious",
@@ -2489,7 +2604,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "29ebfa7273c08e2c647259fa7cda429c589a72015add5254b79d774d02ba6350"
     },
     {
       "sourceId": "en.madaradex",
@@ -2511,7 +2627,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "3539254fd123300427d93dafa731840a309916580b4cc622b396339fea43b7dd"
     },
     {
       "sourceId": "en.madarascans",
@@ -2532,7 +2649,8 @@
         9025563662441338944
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "827fc023b48bfb4eed36021158b5a3889f0b52c0217a9524be8968cbbd058f42"
     },
     {
       "sourceId": "en.magicaltranslators",
@@ -2553,7 +2671,8 @@
         4033172788130537982
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "1d3678a32f5ff6ad32721f7bbce64a00ab8a0c3bc7209dad2755c16820a39859"
     },
     {
       "sourceId": "en.magusmanga",
@@ -2574,7 +2693,8 @@
         1589747287364201069
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "86968280a0d6e154371c4d61223690c8d36311c8df14836c970990786a870446"
     },
     {
       "sourceId": "en.manga18free",
@@ -2595,7 +2715,8 @@
         4446818596127611511
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "ebbc58adfa856e0b689fe5cbf55f2d5c4926a8927e61203bc82f471d386b8652"
     },
     {
       "sourceId": "en.manga18me",
@@ -2616,7 +2737,8 @@
         6244055465910932489
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "9d104690b88342c51a419397e73d488f3fcfd360baeeb3fa808e431d42aa96d2"
     },
     {
       "sourceId": "en.manga18x",
@@ -2637,7 +2759,8 @@
         6802623574377987877
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "af303eb8c899173b9b5cc70d11dcec4d5d6f14628910e457edae2cbd58506048"
     },
     {
       "sourceId": "en.mangabat",
@@ -2658,7 +2781,8 @@
         4215511432986138970
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "17b218b524ad45cb5a429b4913f58d56536372f52c5c8b44cc23722d5e31cc56"
     },
     {
       "sourceId": "en.mangabay",
@@ -2680,7 +2804,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "18a4ce7f07fb1d8b812f02e850be2e402d3d26d69e7a7c62886b61048a89c1ff"
     },
     {
       "sourceId": "en.mangabolt",
@@ -2701,7 +2826,8 @@
         286088605022156276
       ],
       "license": "Apache-2.0",
-      "attribution": "FelipeGFA Contributors"
+      "attribution": "FelipeGFA Contributors",
+      "sha256": "7537f0eb53ed693aea965444c68f49236e93be6f66fdca24a1940942e4cb3583"
     },
     {
       "sourceId": "en.mangacherri",
@@ -2722,7 +2848,8 @@
         9127501903906189261
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "90f1ce3d2865be7aa8c77815f2e9bad1efbd8ec4f2c62aee89fe5950ef388227"
     },
     {
       "sourceId": "en.mangacloud",
@@ -2744,7 +2871,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "b6566d12553806b742d916b43e0516ee019a6dac5f279c72e79eb8566a8a070e"
     },
     {
       "sourceId": "en.mangadass",
@@ -2765,7 +2893,8 @@
         5571661567325096882
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "b0840afbf1f11d6e3a8bbc5cfe54f5a65b1f2a8081625982f4146f09d51b7501"
     },
     {
       "sourceId": "en.mangademon",
@@ -2787,7 +2916,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "a8568b80084264923dd73626ba78690af73930d5f5fd4d29867c8dcf1e027a67"
     },
     {
       "sourceId": "en.mangadistrict",
@@ -2808,7 +2938,8 @@
         2964723819258267786
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "c890e4f23d1231e1a1bed7b14cd48e974af7c2c1f61d2f027fcaaa3e3f2cced3"
     },
     {
       "sourceId": "en.mangadrama",
@@ -2830,7 +2961,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "e7ae2c6a925181554e1c8c15c556ee527fb05a717b4d09c45b711ad9104025ee"
     },
     {
       "sourceId": "en.mangaeclipse",
@@ -2851,7 +2983,8 @@
         5229341270935044914
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "e0e4cc639bad52e72fada76eaff84fdbf4f0ea285f8abfd2f8384f3df9bce24c"
     },
     {
       "sourceId": "en.mangafire",
@@ -2872,7 +3005,8 @@
         6084907896154116083
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "a86e4921a1fc2d95c7b732cd7d4ba14c3c3d83485e5c2fc83a74a036823ac792"
     },
     {
       "sourceId": "en.mangaforfree",
@@ -2893,7 +3027,8 @@
         7450882931813509619
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "55dcf2743a4578d95491449b9595b60a1575c0f036efa51c7f270de407cdc617"
     },
     {
       "sourceId": "en.mangaforfreecom",
@@ -2914,7 +3049,8 @@
         1099222169691387069
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "b5ebf5b015a6d3a14219b8d7d7431d9d6dfad270d1a125ae8e7c30e578fcb40f"
     },
     {
       "sourceId": "en.mangafox",
@@ -2935,7 +3071,8 @@
         6484561431658238800
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "28c7d6019d81c2880720bf6e83055d80feeb143d10f87d6b4b678611246e0c39"
     },
     {
       "sourceId": "en.mangagg",
@@ -2957,7 +3094,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "8b67aa5b95101d18aea288089acab0cf5cac6218fb4118399304af5d914333fe"
     },
     {
       "sourceId": "en.mangahere",
@@ -2978,7 +3116,8 @@
         2
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "6fe58e6c5f88b3460fc72a14a71b16afb77a3b74df3b9d47ddc6bcbf1703438e"
     },
     {
       "sourceId": "en.mangahome",
@@ -2999,7 +3138,8 @@
         933332296024902732
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "5f8c782b9290ec687576c4a1a7ad6e73f6dff6d472aeb5b40085125307f5d682"
     },
     {
       "sourceId": "en.mangahot",
@@ -3020,7 +3160,8 @@
         1536742225206613908
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "8536c287916119b796748dd03cf8f6774f6eb280a76d810404cdb18ea5a8cd3b"
     },
     {
       "sourceId": "en.mangakakalot",
@@ -3041,7 +3182,8 @@
         2528986671771677900
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "3543f3172df627294598b264580c2b017f7eeffb152d0c9315a3a14f0c8dceb6"
     },
     {
       "sourceId": "en.mangalotus",
@@ -3062,7 +3204,8 @@
         2494989395865456034
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "ef7eb62b9f3f23e8608f7c10b5d95fc176801d7259b3f361a682380ee812dbb3"
     },
     {
       "sourceId": "en.mangamaniacs",
@@ -3083,7 +3226,8 @@
         5502656519292762717
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "48c2a5b4a03c3a6b236074bd08ae24b6a112528760ff0fa7fb629c3938bac95e"
     },
     {
       "sourceId": "en.mangamelon",
@@ -3105,7 +3249,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "ed9c753e97d302cff4fa7b3497af83bb0f39805408cfc419483d89197e8c4c2e"
     },
     {
       "sourceId": "en.mangamob",
@@ -3126,7 +3271,8 @@
         954997815643613941
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "7f9195e78d92a2d29d2d88430a7ca2c5309440265418697766ecbf248ee0e5eb"
     },
     {
       "sourceId": "en.mangamtl",
@@ -3148,7 +3294,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "95e8991abd2bd3425d142ae1edb32527e08d2ca7a84509be1880037ae82101c9"
     },
     {
       "sourceId": "en.manganelo",
@@ -3169,7 +3316,8 @@
         1024627298672457456
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "0768fe242ccf9fb4b0b96b4f5a45ea2c3b356b7137de7412f59d0fffd6b5429d"
     },
     {
       "sourceId": "en.mangaomega",
@@ -3190,7 +3338,8 @@
         2894342535414560681
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "c7408b4849180a5a31ba6d5955333767afb5bed665414895313e8ac7c1d91187"
     },
     {
       "sourceId": "en.mangaowlio",
@@ -3211,7 +3360,8 @@
         2031498907928923621
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "11d514a8ba206215b2d6be50338ebd5e66f8f49b3d16c9af3d71652ac2329570"
     },
     {
       "sourceId": "en.mangaparktv",
@@ -3232,7 +3382,8 @@
         4265503553734005106
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "1918ec6c6329372eb419cae814473e8d11945faf6224b425dcae5860f61cca49"
     },
     {
       "sourceId": "en.mangapluscreators",
@@ -3254,7 +3405,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "7f2401a1439d9fbcc2522e9ec1338dc59677db6500ddac83af060d4671bf0202"
     },
     {
       "sourceId": "en.mangareadorg",
@@ -3275,7 +3427,8 @@
         2681651342533848540
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "fad7f95e3d534bad5e2ed6bb8acfd828340b449275a768aaa61a48c66abcf841"
     },
     {
       "sourceId": "en.mangastash",
@@ -3297,7 +3450,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "dc441e5d4239516d93a6e430f7b7588999d4456dda9cc16e65f5852a3d65add7"
     },
     {
       "sourceId": "en.mangasushi",
@@ -3318,7 +3472,8 @@
         3606721916149050760
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "70b8adcb5bc10c3b5a3fc30586708c9dc82fb010e84d98cd99ee7ef462707c11"
     },
     {
       "sourceId": "en.mangatellers",
@@ -3339,7 +3494,8 @@
         3478835885302345699
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "f8969c526f7946468b1d11e29f7c401060b32c01df3091fbe21c73fcc873aec2"
     },
     {
       "sourceId": "en.mangatrend",
@@ -3360,7 +3516,8 @@
         1983630122600815139
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "cdf1f3d78cfe679af18bc11f9e35609e54bc79d8a9d279c149f07cce085c0431"
     },
     {
       "sourceId": "en.manhuahot",
@@ -3381,7 +3538,8 @@
         7638481723868333116
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "30ce454dfd9c5ba2ddef3743c378c3339183516e502a6a7fe7cf33f419e80fa4"
     },
     {
       "sourceId": "en.manhuanext",
@@ -3402,7 +3560,8 @@
         3544957587727489204
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "6f8679d38406c1c09ae62ccc307942864616cc15e3ebda196e204c03fcf23aaa"
     },
     {
       "sourceId": "en.manhuaplus",
@@ -3423,7 +3582,8 @@
         9030178752551947945
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "ad7e739e3dee5acb8b0bf5f942e998992bfea0e0565bdd87387cd953bc38ed24"
     },
     {
       "sourceId": "en.manhuarm",
@@ -3445,7 +3605,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "eedfc88e925de2bf386e9d7145bb73dcaeb5c49a6576b2530ed8b8dbf1aac843"
     },
     {
       "sourceId": "en.manhuatop",
@@ -3466,7 +3627,8 @@
         1903782575226230108
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "e806358198b7d117d22607361446bd71f758d1daa693d4a0f0782e7966ef0a49"
     },
     {
       "sourceId": "en.manhuaus",
@@ -3488,7 +3650,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "c94f864fe39ef1456de771d932eab8d914520e0b8415c572ffc23b9e737d193b"
     },
     {
       "sourceId": "en.manhuazonghe",
@@ -3510,7 +3673,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "263dcea901c1581df0f04d19bde09cb570f4c656045d83f4210906a08a58dba0"
     },
     {
       "sourceId": "en.manhwa18dash",
@@ -3532,7 +3696,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "1472a16274a4fb891f2c04d6f13779644f1a2af75b3f115a0e1f5c2b41035ed8"
     },
     {
       "sourceId": "en.manhwa18today",
@@ -3554,7 +3719,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "cbb7476586681ba74d8d75544007ad78e309b157c06e2659f96ef7027683476f"
     },
     {
       "sourceId": "en.manhwa68",
@@ -3576,7 +3742,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "5168895c89f7bba04318984a738a0d7bfeaa8f294ae6b175b14b364e006e4846"
     },
     {
       "sourceId": "en.manhwaclubnet",
@@ -3597,7 +3764,8 @@
         6720687475375335817
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "b59f88052170bbed04e6b01898bfce26fb5c80acff6462931951779f8f9a29cc"
     },
     {
       "sourceId": "en.manhwacomics",
@@ -3618,7 +3786,8 @@
         3386088694317815151
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "c21b1a48039f55691979d2316dffc6c6b9c7fd6bf3b9a8a9a591c62ba4bd3312"
     },
     {
       "sourceId": "en.manhwaden",
@@ -3639,7 +3808,8 @@
         7672439791159944710
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "aece8c39d70373f4ab91d256573d6dcb7feb0373f6d1288b10a5ddd679bb2f99"
     },
     {
       "sourceId": "en.manhwahubto",
@@ -3660,7 +3830,8 @@
         3868891550336834170
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "3aba3c70ba0a1b4897ff62003a646091b4930df605a0fc56a9c04f8a30e3a7ba"
     },
     {
       "sourceId": "en.manhwanex",
@@ -3681,7 +3852,8 @@
         3663840686576348637
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "ba6cb06d33f4878a3153a401552c57e2c96d2eb1b79b4bddb5f90d97c2a050e5"
     },
     {
       "sourceId": "en.manhwaread",
@@ -3703,7 +3875,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "8949819552a342bc4b349f65e9af95b5c5d780e3fc75286b17acbf60ac149e83"
     },
     {
       "sourceId": "en.manhwareads",
@@ -3724,7 +3897,8 @@
         3315938131690984352
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "c7fc4d257cdb66b43d17226fd52b4c7f8c3eef786cf36ae674b84068750eda19"
     },
     {
       "sourceId": "en.manhwatoon",
@@ -3746,7 +3920,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "a6e31611d95fa36138f730c0db1eac5716da5c653ed704cc44348ca74fc06e82"
     },
     {
       "sourceId": "en.manhwatop",
@@ -3768,7 +3943,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "38e9c8212801ab19fabf31056605673e1bc5c168c4a3688f33659932b9115fb7"
     },
     {
       "sourceId": "en.manhwaus",
@@ -3789,7 +3965,8 @@
         3074048504222281188
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "b45b5a8a81b1ff0907293490c3544d75c30d7ee190a61b7f1b34c1b88c9cf7df"
     },
     {
       "sourceId": "en.manhwax",
@@ -3810,7 +3987,8 @@
         6800665234733328599
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "014db5ada4dfeeeee27972bfc67f8e7b8506941ed05e43031c327df8b217d774"
     },
     {
       "sourceId": "en.manhwaz",
@@ -3831,7 +4009,8 @@
         651625426989893977
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "906ba8bab101eec7c2d168d8e3fa0a095fa31d7c42d4660484556d393899ad6f"
     },
     {
       "sourceId": "en.mayotune",
@@ -3853,7 +4032,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "ffaad15b51282c126241bedfed807e1855b3a44e338dc7ee3bb63f52a865b320"
     },
     {
       "sourceId": "en.meitoon",
@@ -3875,7 +4055,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "5384760aea996bcee02bd5699d2d7f63a9f813ea2230acfc9e6aaa4e1303a817"
     },
     {
       "sourceId": "en.mgreadio",
@@ -3897,7 +4078,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "FelipeGFA Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "54ed890f33d4d33a66fa15890ae02e574faee9941aa950cba8b2ffa8986bb5ad"
     },
     {
       "sourceId": "en.milftoon",
@@ -3919,7 +4101,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "FelipeGFA Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "0097d62c0ddc54f96b3c8b0a883727553b878acb3393b1809c15adbcbe114095"
     },
     {
       "sourceId": "en.mistscans",
@@ -3942,7 +4125,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "723d099901dc1f420f8c12b1a8f5165ba3260651bc2b54d179ed4e34a542d139"
     },
     {
       "sourceId": "en.murimscan",
@@ -3963,7 +4147,8 @@
         5524031489110351257
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "1a9e02d4474a1ee3d7a1b3c817df6283a56087370d60d7000f18e8f3b11917c0"
     },
     {
       "sourceId": "en.myhentaicomics",
@@ -3985,7 +4170,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "b35dc079e80743aaf77608b8f5afded3137c4515a1173dd041bf03167c6dfe15"
     },
     {
       "sourceId": "en.myhentaigallery",
@@ -4007,7 +4193,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "5b19aa1df0d5eb13629976d840caa5823d82daba955d44081f3bfc4a0e8db965"
     },
     {
       "sourceId": "en.myreadingmanga",
@@ -4029,7 +4216,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "a31e3496b22778e23e8476a6720c507a9b08b59810b6840eb77af0146f65bec9"
     },
     {
       "sourceId": "en.mythtoons",
@@ -4050,7 +4238,8 @@
         4095669960873681987
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "4f534ce6b5edb4941ce68f0ec191ef376c034da323a02f1010e24421aec74c55"
     },
     {
       "sourceId": "en.nexcomic",
@@ -4071,7 +4260,8 @@
         3024771939240549070
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "8ea2631d684792c187f2494359a69cf863aca9ea6d075b15a177de404f056766"
     },
     {
       "sourceId": "en.nhentai",
@@ -4093,7 +4283,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "FelipeGFA Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "9775e53c062b1614524a8542ba3671f65c554321e8a39024aad8d3fb2872952a"
     },
     {
       "sourceId": "en.nhentaicom",
@@ -4115,7 +4306,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "ed2dd94230a71a597c0f227725d4edf9ba2b7b0f6bba7594bd40be43c6958a73"
     },
     {
       "sourceId": "en.nhentaiwebsite",
@@ -4136,7 +4328,8 @@
         4655985745385044320
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "7cd35288fd26cd9ffd6e79f61fef1aa91163b2461791906e684e349a6cfb2516"
     },
     {
       "sourceId": "en.nhentaixxx",
@@ -4158,7 +4351,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "721f32d45c098bebcfe86b430ad7ab5ee1ef547b1653d97f59e74628144773da"
     },
     {
       "sourceId": "en.ninkocomics",
@@ -4179,7 +4373,8 @@
         6441436063565688111
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "f77ab68046b7e3d56106243700b3ee9294dcfb2dd7869bf577edf82bca2ab418"
     },
     {
       "sourceId": "en.nortverse",
@@ -4201,7 +4396,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "d5b2e962a5eee77448343b237d7fe3da8641039374806676d5df8fe7f84df936"
     },
     {
       "sourceId": "en.novelcrow",
@@ -4223,7 +4419,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "d95cc954c920d1232bb3cffeb13193463ea8f0c0a8b7f5c6ae22c33d0d11efe5"
     },
     {
       "sourceId": "en.nyanukafe",
@@ -4244,7 +4441,8 @@
         3025454996745441538
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "bd02a3cc747163b47d766725ffda9b00ea3f532da2dbd1607cbdd63e0ae28610"
     },
     {
       "sourceId": "en.octopusmanga",
@@ -4265,7 +4463,8 @@
         2527256034272235453
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "90f8bd351cdea3d21a58918e342d8eee8bdd644bb382c4721359f47164150320"
     },
     {
       "sourceId": "en.onisaga",
@@ -4287,7 +4486,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "e36e3b204c89fec21472dace306d44075335029eea9a0acf8cdcffe9205df51f"
     },
     {
       "sourceId": "en.orchisasia",
@@ -4308,7 +4508,8 @@
         4403086215261921832
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "3b37574a69269960a0c8bbdf6ab65ca9c16a5f540c23f0f29299b0a07e5986e7"
     },
     {
       "sourceId": "en.orionscans",
@@ -4329,7 +4530,8 @@
         7776050777496310004
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "2fd9890a456eef0f596eba7a7d75dcd1923d616389176ad3152ed9936b92e8c6"
     },
     {
       "sourceId": "en.otranslations",
@@ -4350,7 +4552,8 @@
         8863679261776988936
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "c8e622629a82893866598e59a8c4bc487386538677299dfabb1a432f090f80b3"
     },
     {
       "sourceId": "en.paradisescans",
@@ -4371,7 +4574,8 @@
         5928300995303689257
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "b7f2eea7068298b8609a5732446450c31f34c2523131e693726bae8239904123"
     },
     {
       "sourceId": "en.paritehaber",
@@ -4392,7 +4596,8 @@
         3740623306758763677
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "4e2030111374d510d94b0a15549d85db4958b246b742ec1bd990481a7ddf1859"
     },
     {
       "sourceId": "en.petrotechsociety",
@@ -4413,7 +4618,8 @@
         20045885295638720
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "b49e180c069635c85db64d3863eb0fb1b5c972ce793a2c5ec1e2873eead645f2"
     },
     {
       "sourceId": "en.porncomix",
@@ -4435,7 +4641,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "9f12fcfc23e67ebde10c0ac8e9f2d1c7b843ccac5aa00dc83fb26a47ed47714d"
     },
     {
       "sourceId": "en.pornhwadbreader",
@@ -4456,7 +4663,8 @@
         2192193647376309998
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "b131ee05285f2dabe00ef4b1af374f5a4739db9fc55488cb9a8d0ebfd7bc4bd1"
     },
     {
       "sourceId": "en.pornhwame",
@@ -4478,7 +4686,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "1f2b31fb1c2c3d705bdc9222a5e60e9676fcd8055b836f08966b2ffb6765f906"
     },
     {
       "sourceId": "en.pornhwaz",
@@ -4499,7 +4708,8 @@
         2311025425739352818
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "f5cc57e2c2d95d9e5a3a022dd1130faf6124e93b20b6bb0e9c46c375258f3852"
     },
     {
       "sourceId": "en.qtoonunoriginal",
@@ -4520,7 +4730,8 @@
         7737368858056367259
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "3e8add8c33fc0228b0b6e0e5e7392a0ddac6006a84a23e57726dce976c1c4e77"
     },
     {
       "sourceId": "en.rackus",
@@ -4541,7 +4752,8 @@
         263040414613624318
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "8e26e12dd2b759870d6c3b1c974e389c368e31d900a6583be8d000e061500fc8"
     },
     {
       "sourceId": "en.ragescans",
@@ -4563,7 +4775,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "26759e6c7cd22a7f9eafb7de79d88166c6345def797fb66bb265df517355bff9"
     },
     {
       "sourceId": "en.randowiz",
@@ -4585,7 +4798,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "e201ebf22f83cb7772af789a48ce7f9682279e64ef7a3f0be3b221466ea8c3a9"
     },
     {
       "sourceId": "en.ravenscans",
@@ -4607,7 +4821,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "c280d9d113bd98aacb76258cdcc8669b8eaf56ec98ae1925462369fb26071a5d"
     },
     {
       "sourceId": "en.readallcomicscom",
@@ -4629,7 +4844,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "FelipeGFA Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "e1b5cf5b2c6e0e8135aa07413fda04d61baf555ec43bc01092ec9bbce0bac2b1"
     },
     {
       "sourceId": "en.readcomicsonline",
@@ -4651,7 +4867,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "8bd79c422a281af7a71ee6e1976ebf9e6520c8cc442db04af75fc273874352c2"
     },
     {
       "sourceId": "en.readcomicsonlinelol",
@@ -4672,7 +4889,8 @@
         3920948196044407056
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "1ff06c3c68cd752b5d4a97a9ccc81a91e29bf1678c246e30abe12113871adc19"
     },
     {
       "sourceId": "en.reimanga",
@@ -4693,7 +4911,8 @@
         5627909338430537186
       ],
       "license": "Apache-2.0",
-      "attribution": "FelipeGFA Contributors"
+      "attribution": "FelipeGFA Contributors",
+      "sha256": "aa869aeb0629f358ee3c02f646c5e1bc6f7710ecad6159525692dad4c4162b33"
     },
     {
       "sourceId": "en.revivalscans",
@@ -4714,7 +4933,8 @@
         6875037148225675112
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "9105e59d9c082678edf40dd978f0657a3ce9605272da708dd50cedccca4de969"
     },
     {
       "sourceId": "en.rinkocomics",
@@ -4735,7 +4955,8 @@
         4915548839286527736
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "70307f7a1ce71e727ed7787c4483a4654d469bc598f1884d1a232b2946fda291"
     },
     {
       "sourceId": "en.ritharscans",
@@ -4757,7 +4978,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "d4cad0b82aa1c3df583d8e86e03d40e49e5f69a9bc7411ae8265917f1dc80547"
     },
     {
       "sourceId": "en.rizzcomic",
@@ -4778,7 +5000,8 @@
         3062320139670175675
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "0c2a87bf0b29b0adbcc15f8ada49cdbb035e5586d4bd90cee180e4d880e6e7a7"
     },
     {
       "sourceId": "en.rokaricomics",
@@ -4799,7 +5022,8 @@
         830150807344972132
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "5c6144142646cb2fc80fb1d584c87992ae0d9cf3d650ca3b1859c5cd4d0e9117"
     },
     {
       "sourceId": "en.rubycomics",
@@ -4820,7 +5044,8 @@
         6792243715659475719
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "7cfcebd9665150dc0ef769492b6337aecdd92c31ebc359674d60ebccc3a1f3cc"
     },
     {
       "sourceId": "en.s2manga",
@@ -4841,7 +5066,8 @@
         4870917758913494428
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "834c336da091ea5a38d99cd7be51b5171534b896ab51f89d95343d68e4a4c955"
     },
     {
       "sourceId": "en.sanascans",
@@ -4862,7 +5088,8 @@
         1931508394363321246
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "2b4f1a2010c6966d0c43f9fd2811db01785b1668101e00e581f6a1622c152b17"
     },
     {
       "sourceId": "en.saymanhwa",
@@ -4883,7 +5110,8 @@
         160957764321519511
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "926836582a1fba9570a76c7f0333bf24df0770b053a5ea98a7c5a755c7c54f27"
     },
     {
       "sourceId": "en.schalescans",
@@ -4904,7 +5132,8 @@
         135437514280789093
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "39beb6793820066942cf52d273c343454ef5bac2e9fa252b79f83cc8fab4d9d7"
     },
     {
       "sourceId": "en.schlockmercenary",
@@ -4925,7 +5154,8 @@
         4705692208637300585
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "61abf40aa1b7c27d6826263744598ca5e46c34bb3de31c99e7e2a55b15ee40b6"
     },
     {
       "sourceId": "en.seinagi",
@@ -4946,7 +5176,8 @@
         89967806248598714
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "ed79bc8fe85b8768a004d33974be0a95dbe317f2168baac685c0a11a479591a3"
     },
     {
       "sourceId": "en.seraphicdeviltry",
@@ -4967,7 +5198,8 @@
         5395306515630347602
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "1ab7518db16b1aa14da73c9ff3c8c26eafe5539de2ae8405fca38c0f2447704b"
     },
     {
       "sourceId": "en.setsuscans",
@@ -4989,7 +5221,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "533fd44be79b5bc0ec32b785dee6556246d8f27d1c2b639df5261a32c135d96d"
     },
     {
       "sourceId": "en.silentquill",
@@ -5010,7 +5243,8 @@
         3696994059835859589
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "05d23f0bce4db0c34b30431b5f8daf359a73e69ec8a70e272bc2627a7cd52726"
     },
     {
       "sourceId": "en.simplyhentai",
@@ -5032,7 +5266,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "36f7db8f8c9d90d0a0a664695139b9ce27615794631e12b92eaf43ca040f84b1"
     },
     {
       "sourceId": "en.sirenscans",
@@ -5053,7 +5288,8 @@
         5804710058654490234
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "5979accc032b5d98f9094a2f87fe9bdedf703e1dfc591f0699fe927ffdc12d64"
     },
     {
       "sourceId": "en.sleepytranslations",
@@ -5075,7 +5311,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "1fee32d29e79ece2df6d0d2ebeefe2fcebd9c57fe8eb321ddde8d7c393948f83"
     },
     {
       "sourceId": "en.suryascans",
@@ -5096,7 +5333,8 @@
         1061713767402958340
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "c7b116743125a5687e3153fd9692e14ca255e6c3719c99a3476a4f1fe9c93810"
     },
     {
       "sourceId": "en.swordmangas",
@@ -5117,7 +5355,8 @@
         6517303589557585080
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "9c53608655c2f96e5b3c41bb7884fa29b89cb2950ade21f9bc7215f4805bc628"
     },
     {
       "sourceId": "en.teamshadowi",
@@ -5139,7 +5378,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "4109cf32163e3f965517d84fb702e57ded314185363d321a300837e19b6b4a26"
     },
     {
       "sourceId": "en.thelibraryofohara",
@@ -5161,7 +5401,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "2930eb96975344ceb6a0f39ac3f6145eb6ade0f5ae6c9380cb30a0bb053e77a8"
     },
     {
       "sourceId": "en.thewanderinginn",
@@ -5183,7 +5424,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "ca4a9063a2f58c7fda0746ad37fab61dcdfc54705c5d82e32e15b0ccde327abf"
     },
     {
       "sourceId": "en.timelesstoons",
@@ -5204,7 +5446,8 @@
         9063123408669132087
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "d0d87b0a54bbbfa1ea1b7e03e2464cf323aaf00223c5ac976b79dea786473ee0"
     },
     {
       "sourceId": "en.toomics",
@@ -5225,7 +5468,8 @@
         7004582542854505662
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "62a27e33b27354ffafab70aff78c63beaa1203659e352d9671ecb234b7fc0989"
     },
     {
       "sourceId": "en.toongod",
@@ -5247,7 +5491,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "15d963a3dbed941a491984b731c1391e884d3a1e9e0953297ab2b0ae47344811"
     },
     {
       "sourceId": "en.toongrab",
@@ -5268,7 +5513,8 @@
         2047317004215433863
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "5dfd518cfca19abdfb233ce346426ae0ba40460be71faf41a46259298e25a191"
     },
     {
       "sourceId": "en.toonhub",
@@ -5290,7 +5536,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "6fb708cd1540c6d974df7a7e67b7c318209c15dd32771ba50c31a8c3aec43f9b"
     },
     {
       "sourceId": "en.toonily",
@@ -5312,7 +5559,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "e6552327468e98eb291166576b8eccc276d9abedec1bb80248c503d964b3f5e6"
     },
     {
       "sourceId": "en.toonizy",
@@ -5333,7 +5581,8 @@
         5404499323728358840
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "bba84f917efc78143b405fd3399665be07cb17744422959c6d2aaa5ad11be2a2"
     },
     {
       "sourceId": "en.toonkotsu",
@@ -5355,7 +5604,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "4d23f274db5f9e105d52bad5790ad6d4d6ee5ec5d4f0483a6318be30aeac1134"
     },
     {
       "sourceId": "en.toonz",
@@ -5378,7 +5628,8 @@
         3627030858599443012
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "574648dbbba6af1c5268b6186787921039a11ef2a5a22c987384452d10a74b4a"
     },
     {
       "sourceId": "en.topmanhua",
@@ -5399,7 +5650,8 @@
         368848319592333339
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "ab2e5e19821b5d40490a94b705b5fec12e83202b4d7f02c6bf2bef062a99b625"
     },
     {
       "sourceId": "en.topmanhuafan",
@@ -5420,7 +5672,8 @@
         6293890187960663957
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "bed12f54335a9d252143ada7b6e0dbd4e7d1ce1ec80f8d4e3cc96f88a1f941be"
     },
     {
       "sourceId": "en.topmanhuanet",
@@ -5441,7 +5694,8 @@
         6421630287504544593
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "6f30544223411c400e62b4b101d95081a5c276755749f5adc08dfa08384b229b"
     },
     {
       "sourceId": "en.towerofgodmangaonline",
@@ -5463,7 +5717,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "bd5d7f9204f332e55ba63f91205dcc7571448c3860024d92954ed6bc10e345f3"
     },
     {
       "sourceId": "en.tritiniascans",
@@ -5484,7 +5739,8 @@
         6032516943051342273
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "df809a4c335f306608c3069cc03ea51fc3afaa7140fcc7eb22e8b0cdb70cb7cf"
     },
     {
       "sourceId": "en.valirscans",
@@ -5506,7 +5762,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "145a4125438d0fb8688bb166925a983c1617fab17585d0a92360b9a762bf22f7"
     },
     {
       "sourceId": "en.violetscans",
@@ -5527,7 +5784,8 @@
         9079184529211162476
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "f4fd24753d6a5588cf994321c1406d89de4d002ed9dc5ae9b61630da7d6c83fd"
     },
     {
       "sourceId": "en.visionhaze",
@@ -5549,7 +5807,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "f5e28a4a6b9fb603483469a5251d1b13d8828520ea09a564d13074a79dff99ad"
     },
     {
       "sourceId": "en.wearehunger",
@@ -5570,7 +5829,8 @@
         58992897252080929
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "dfe17bfc034ca0649de9b1d423bb1f9f463736646e52e79f0b98f45e7fda6023"
     },
     {
       "sourceId": "en.webnex",
@@ -5591,7 +5851,8 @@
         319678837350572744
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "e72574f81e1763264d5f0bce7129a478a3fbbb22936264cfc0620df311d5fef4"
     },
     {
       "sourceId": "en.webnovel",
@@ -5613,7 +5874,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "bc7bef9f614370eec835086dd47727aa948f2fae6d7ca0925645d7045c59da07"
     },
     {
       "sourceId": "en.webtoonclub",
@@ -5634,7 +5896,8 @@
         5827665338810887442
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "7f4dbab7c924b5d71fd93a2a8164eb798be5d31bff598eef40c7a7e4ec40e448"
     },
     {
       "sourceId": "en.webtoonhentai",
@@ -5655,7 +5918,8 @@
         5114393880070298909
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "699631965b17de76200a7575ad8e3d0583090c42fec81344df8a6c51e005cbc1"
     },
     {
       "sourceId": "en.webtoonlib",
@@ -5677,7 +5941,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "11659d3bef24758e3a24415f312cf22b34839b3dceccbcac375470a746c4c1c9"
     },
     {
       "sourceId": "en.webtoonscan",
@@ -5698,7 +5963,8 @@
         3062846066388633553
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "251d19c591f49f642c8c252eb28f646b3851cb8acd6d0df772c6ae16805eca88"
     },
     {
       "sourceId": "en.webtoonxyz",
@@ -5720,7 +5986,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "03d3c3a2dbaaf15606648b3e5a1fcd522f693a7dda30e2125fce8a077a479cb5"
     },
     {
       "sourceId": "en.weebcentral",
@@ -5741,7 +6008,8 @@
         2131019126180322627
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "70245e16a87e24651722814823ecb93f8dd1522b7179acf3b340c33eaf77a1a0"
     },
     {
       "sourceId": "en.wildtoon",
@@ -5763,7 +6031,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "7bdbd35c8d9cb52cca425c404c7e575563bd567c86b27779da399a1ad0f88883"
     },
     {
       "sourceId": "en.woopread",
@@ -5785,7 +6054,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "FelipeGFA Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "49f20754f954fbf8d7a3ff24d8b611e263e2c19dd550531c0deb170b0bde41cb"
     },
     {
       "sourceId": "en.writerscans",
@@ -5806,7 +6076,8 @@
         561830040001881975
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "3c0ffd132817863ecc6035de374e76420cdc738fd0cef5f29becd5baf01b7ac4"
     },
     {
       "sourceId": "en.wuxiaworld",
@@ -5827,7 +6098,8 @@
         6540843430852844328
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "5a54d28ba0fa517d3a967f8dc8b3ba5567f8a9d3f505402a37661afbf089eee8"
     },
     {
       "sourceId": "en.xomanga",
@@ -5849,7 +6121,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "537758515bb75e11e039ecbca8000f2f59e03516c748ea50063ceb74bc706976"
     },
     {
       "sourceId": "en.xoxocomics",
@@ -5870,7 +6143,8 @@
         2385956107618754468
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "c317172a21e12db4b2f68ab2f1c0e3bda89ecd7ecb040c269f9203f7c35c4d96"
     },
     {
       "sourceId": "en.xyzcomics",
@@ -5892,7 +6166,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "a495f64760c3408828abee3468df3ccfa1d871020b67c86d473ab71ca6989847"
     },
     {
       "sourceId": "en.yakshacomics",
@@ -5913,7 +6188,8 @@
         4871612284225100668
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "f6f89231a310e26f178eb33de3a9c320cfae3cdcbdf85040c509795a10ac0bd1"
     },
     {
       "sourceId": "en.yaoihub",
@@ -5934,7 +6210,8 @@
         6718273076571980404
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "3e8fc8ca511bbaf396e976c8061b69f9e4645d7260d0f55409f891c36c0dbb0e"
     },
     {
       "sourceId": "en.yaoimangaonline",
@@ -5955,7 +6232,8 @@
         9170758785588278310
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "3aca5abe73177aa45564ef00184e5573aa0a027c4d304ac72af6b5d37a7dc003"
     },
     {
       "sourceId": "en.yaoime",
@@ -5976,7 +6254,8 @@
         3681435886557602253
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "8477465fb0ab4ef6479856033b4a82d5875e373a5b2a413abb966949f7fec5f8"
     },
     {
       "sourceId": "en.yaoiscan",
@@ -5998,7 +6277,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "82867be8b36efa7caad3b7a501e44920c83115a9e36838107281f3842f6061d5"
     },
     {
       "sourceId": "en.yellownote",
@@ -6020,7 +6300,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "b0159b654aa14e2cf8d1af844f5db2796058ef472277f3c5032904c46573af6d"
     },
     {
       "sourceId": "en.yskcomics",
@@ -6041,7 +6322,8 @@
         177448809266948921
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "3fbe6b9bfa2d1e77fe2edbf386af56ae6f783ed4d223549d4cf30febd14a3f3b"
     },
     {
       "sourceId": "en.yurivan",
@@ -6063,7 +6345,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "be6e757048ee9ce57f0a2dceb40160027773fb07a671ef2710fd66972ed14741"
     },
     {
       "sourceId": "en.zazamanga",
@@ -6084,7 +6367,8 @@
         1264036757248780997
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "fe52566f906292cf8addb4821b14eaefe2007ebabae37156c4f5e039e63b462a"
     },
     {
       "sourceId": "en.zinmanga",
@@ -6105,7 +6389,8 @@
         5990114708086767078
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "a2b89f1583e9dec4bf3628ecd5597ee1aa4f10b817a8e0711c2e306dd7e83cd4"
     },
     {
       "sourceId": "en.zinmanganet",
@@ -6126,7 +6411,8 @@
         1987105317893699901
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "aa227360fdf89e3b73587246da816fb5d60ce562b9f4ef3786aa36170a1e4e92"
     },
     {
       "sourceId": "en.zipcomic",
@@ -6148,7 +6434,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "f3d45dc541de0ad28787a8def227915dbd44f911c5385925fb6d904c630948ec"
     },
     {
       "sourceId": "es-419.kagane",
@@ -6170,7 +6457,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "8a1a7e13b11fca6ab0b746d0ba7c3ea4e0d1b3a8c50af4c451f8c0569a92da49"
     },
     {
       "sourceId": "es-419.mangafire",
@@ -6191,7 +6479,8 @@
         3849324770075062403
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "0cde803cc570acb66bb1b884ba31f732cc988a811375b384b141df0a1b95d479"
     },
     {
       "sourceId": "es-419.onisaga",
@@ -6213,7 +6502,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "2c82309283f111325eb72a8abfc489a857cae84bed0bc95af4c2d41aa80a775f"
     },
     {
       "sourceId": "es-419.toomics",
@@ -6234,7 +6524,8 @@
         7362369816539610504
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "00fdc3ce0fceed4b0210bfd74922108ae5b62c0110a89b6bdfab3b715b90526c"
     },
     {
       "sourceId": "es-419.yaoime",
@@ -6255,7 +6546,8 @@
         5641437402179331405
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "26d827af3b09b17ac6e3290a1a9e11827cd94234817478120dca5328007cbece"
     },
     {
       "sourceId": "es.achymanga",
@@ -6276,7 +6568,8 @@
         9124545289113350724
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "4ca83531eb8c402a8ed2652ea2f2f255f25a85a0b1803f47012280378b342ae4"
     },
     {
       "sourceId": "es.akuma",
@@ -6298,7 +6591,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "20be520527dcbfdcba26b49a4b985753f4e8ac989b7ee91f053961cf3706d2a3"
     },
     {
       "sourceId": "es.animebbg",
@@ -6320,7 +6614,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "05bcb42df42dff28b7fa2cf3d37bff8076aa6353824cdd57c7e6195cde0da779"
     },
     {
       "sourceId": "es.apollcomics",
@@ -6341,7 +6636,8 @@
         3044113561993269522
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "d0c1837e6370129ed49b5b08cc099fef0bebb902b45b982ae053c331ee2d7cde"
     },
     {
       "sourceId": "es.asialotus",
@@ -6362,7 +6658,8 @@
         3655128076360662290
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "2127cd6dce6e3923b1a4cb5bab5915c301675cb4e362ea21b3af101bdc818561"
     },
     {
       "sourceId": "es.barmanga",
@@ -6383,7 +6680,8 @@
         404674447362480247
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "b8ce0d950179ab332e89f458a2f980d75ea985ffc87b4a12641d573428df681e"
     },
     {
       "sourceId": "es.begatranslation",
@@ -6405,7 +6703,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "73edf2be57c9a164c37c440148524ee213f9d0bc3cc610c08527a7c57a04c5a2"
     },
     {
       "sourceId": "es.bokugentranslation",
@@ -6427,7 +6726,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "b08b591b293e19b46680f68090073f29f34e3d40272498856b4fe5ec6d30ceb8"
     },
     {
       "sourceId": "es.bymichiscan",
@@ -6448,7 +6748,8 @@
         4436777272781358384
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "571f0b8dc6034a88bc3a525cc7926a43a3cc0b5662bd109588dd3cac60f39f03"
     },
     {
       "sourceId": "es.capibaratraductor",
@@ -6469,7 +6770,8 @@
         3335229490349802396
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "434c116f1f277436db968e96c4c8d15b0c0a3e83ec24de15964f88ec78c722ca"
     },
     {
       "sourceId": "es.celestialmoon",
@@ -6490,7 +6792,8 @@
         7771256386177960897
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "25d6b4c4c0372d2f208c8ff418217cab79cb25c8a14fb5936bc12131fef0e138"
     },
     {
       "sourceId": "es.colorcitoscan",
@@ -6512,7 +6815,8 @@
         4591173925927777888
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "90a204544f20463cfd3e2833023a50d0ec865796438b41bca48c3ed3265c96e3"
     },
     {
       "sourceId": "es.comics18",
@@ -6533,7 +6837,8 @@
         264249399620309998
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "e19a061cd98dbff582513d2e1dacb15fa994ecde7f4044b40eabb39803df87d6"
     },
     {
       "sourceId": "es.d9comics",
@@ -6555,7 +6860,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "a5e474efedcb1c4322598b1b295a5888f29e381065d3108691e6dbc287613cb1"
     },
     {
       "sourceId": "es.darkroomfansub",
@@ -6576,7 +6882,8 @@
         2769673412724723872
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "7066bad300ce3a478220ed30e1ba9bbfd3cd08a02bfd98491f2d75d39833964c"
     },
     {
       "sourceId": "es.datgarscanlation",
@@ -6597,7 +6904,8 @@
         1626637101814976364
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "d88454b7b4b14b57679c0dbe36368169a71d8a9cfd6a557a7a07a2cce4746921"
     },
     {
       "sourceId": "es.doujinhentai",
@@ -6618,7 +6926,8 @@
         3895171315878328595
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "92db8930c23e654f5df8e404e78da5712fd453feb446778a970631e0d545b677"
     },
     {
       "sourceId": "es.dragontranslation",
@@ -6639,7 +6948,8 @@
         4647982373411241498
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "c3399985f65cf5db553bb9dccb95ecf3840e58ac584f2c154294d6bf74d1b8de"
     },
     {
       "sourceId": "es.dynasty",
@@ -6660,7 +6970,8 @@
         1788469981763672104
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "7c85c72aebbf9f978ca33b8fd92f0c401248786440b9f8c3e57b02ae3047c0fb"
     },
     {
       "sourceId": "es.eternalmangas",
@@ -6683,7 +6994,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "bcdac4bd41d33e98a2c9e1ba522b41aecf25431fe6960f8230aec944793f2008"
     },
     {
       "sourceId": "es.gocomics",
@@ -6704,7 +7016,8 @@
         343600051336441579
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "a4913517fa664fbf0d3178208f3686a527bafd680cd17f41210949fcf71ab7f6"
     },
     {
       "sourceId": "es.heavenmanga",
@@ -6725,7 +7038,8 @@
         1872740333369520717
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "a3686b8467067a961fb1de47723567f1ded2c98709b155113e37f1c855f17dac"
     },
     {
       "sourceId": "es.hentaiera",
@@ -6747,7 +7061,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "5a253ac7c6c07d6f19fa6b8f9bafdc32783bad03f5247108b4cd4bf4d686bb4f"
     },
     {
       "sourceId": "es.hentaihand",
@@ -6768,7 +7083,8 @@
         1049245690865797006
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "449e7499a215cdeac0db3e6465dd204edd620aa5eec1a1d326e92837739eddb0"
     },
     {
       "sourceId": "es.hentaizap",
@@ -6790,7 +7106,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "40298afe62949e9e69196c0eed690dbcc739531750faa4b9200f046c66c44313"
     },
     {
       "sourceId": "es.hibonblscanlation",
@@ -6811,7 +7128,8 @@
         6836697941845374072
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "0715e6c5265314f37bfcd5d5da9b4e9da01b95d7a012147677f3afb97ebd35ae"
     },
     {
       "sourceId": "es.homocdrs",
@@ -6832,7 +7150,8 @@
         9152760302020017063
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "79f4152b5615a504a9021b3907b5e17c32ccab6ba2f1eceefc93466b4fde6b3f"
     },
     {
       "sourceId": "es.ichijou",
@@ -6854,7 +7173,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "2cafa9ee8ae74ec143bc75c40de057c1a327085dbf876fbbb1582100e84cd29d"
     },
     {
       "sourceId": "es.ikuhentai",
@@ -6875,7 +7195,8 @@
         7567013997438852760
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "298bf27c8cd154fe93a6dbdfbb6771a96f49f372fe42b73cbf10aaaccee405a2"
     },
     {
       "sourceId": "es.imhentai",
@@ -6897,7 +7218,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "8717446dcc264e4abd1f16d30807f1580dd8f5a86ba743f4704d1aa3d5e68680"
     },
     {
       "sourceId": "es.inmanga",
@@ -6919,7 +7241,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "f13889da481083e56a000107468c72245d211f1c06a1690ccf3e7cc08ac8d98d"
     },
     {
       "sourceId": "es.insanosscan",
@@ -6941,7 +7264,8 @@
         5322003068520429479
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "a5bb7006c4ab740c15c5bd87537b6e9644445cf717dd1d5a6f28ca5e8d143ad6"
     },
     {
       "sourceId": "es.jeazscans",
@@ -6962,7 +7286,8 @@
         8103409233756077332
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "72715bcc2915de8ed334cbc1261a9d079515c5e2f07402b296c86096c9c6b6df"
     },
     {
       "sourceId": "es.jentranslation",
@@ -6983,7 +7308,8 @@
         6637675624589915581
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "022ce4d1acc7e8f6c81f55fe86f63281cf9119ff3670fc77be91f8a7e5a9e69f"
     },
     {
       "sourceId": "es.kagane",
@@ -7005,7 +7331,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "141bdea77ddefc173bdf38d6e964f2342b32cd4e2c90305accff84c63b1e92ae"
     },
     {
       "sourceId": "es.kokkokuteiscankt",
@@ -7026,7 +7353,8 @@
         2159936368130445305
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "99a8669dfe1deb9dec3878c6c81c988c9d5f3ddaa98509ef26c7897d6ca48046"
     },
     {
       "sourceId": "es.komiwa",
@@ -7047,7 +7375,8 @@
         62756090386045468
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "95e78c05da3654120a33460cac918d1feb802f3d4bf20e84d7864285af117b4a"
     },
     {
       "sourceId": "es.lectorasteria",
@@ -7068,7 +7397,8 @@
         698506559036250327
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "952e5c785bda68274449bcfbb5104456fe860d5f6ae92cc23e24874d39bf1c75"
     },
     {
       "sourceId": "es.lectorhentai",
@@ -7089,7 +7419,8 @@
         8958717893181709494
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "70e43f91590dc33e80d5770a2a65c7790e8ec870b4be0afc58f77cbd58487325"
     },
     {
       "sourceId": "es.lectormonline",
@@ -7110,7 +7441,8 @@
         4234224579308349686
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "d393cc1ec51dd27251c836c274ed422a0144d462ddbfdd14c1d50545ba9b2e26"
     },
     {
       "sourceId": "es.lectortaurus",
@@ -7131,7 +7463,8 @@
         5157867187592331768
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "c2dacb8cec978fdc59cc9e2b2bb77324b5d4320e0fff9db9aa84586569ebe2ad"
     },
     {
       "sourceId": "es.lectortmoonlineunoriginal",
@@ -7153,7 +7486,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "ad0ba6da93b504b7a1a50d9a90c5d056741a55ef120efb61048b7fb713d60913"
     },
     {
       "sourceId": "es.lectortmounoriginal",
@@ -7175,7 +7509,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "8f592f9fcf7852f5ad064a48b4cc367a23c3448caa5a8e46641ceb0a47a13248"
     },
     {
       "sourceId": "es.lectorxd",
@@ -7197,15 +7532,16 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "8bb5fdc9147105218e3eb8016560f4f83e668bbe4086279379281807c1d3f861"
     },
     {
       "sourceId": "es.leercapitulo",
       "name": "LeerCapitulo",
       "baseUrl": "https://www.leercapitulo.co",
       "lang": "es",
-      "version": 1,
-      "versionId": 1,
+      "version": 2,
+      "versionId": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/leercapitulo/res/mipmap-xhdpi/ic_launcher.png",
@@ -7218,7 +7554,8 @@
         5621901596522308538
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "2609628fac9e45de0d4dc7a533796d318fab97a4b0a6a2c7d6551cdc13e3e897"
     },
     {
       "sourceId": "es.lhentaiunoriginal",
@@ -7239,7 +7576,8 @@
         6809619983940497141
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "ad9803caa7635db79b8ffe1311afa462438b042885c7f943a1c1b948647d0520"
     },
     {
       "sourceId": "es.lmtoonline",
@@ -7261,7 +7599,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "25789928ce64c3a9b40ce4501c6dc6c0fcfefc50ff7e1acacf965e677e681ac7"
     },
     {
       "sourceId": "es.lolivault",
@@ -7282,7 +7621,8 @@
         1420213267345607410
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "23b4a06ba513130e02fe3a8c355d7d9b65cb2aba33083995e4f77750bcd604aa"
     },
     {
       "sourceId": "es.luscious",
@@ -7304,7 +7644,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "552206e9bb69121aeb1fd0f30c8cd44441abef3a1c4412b40f4d0bfbef56562d"
     },
     {
       "sourceId": "es.magicaltranslators",
@@ -7325,7 +7666,8 @@
         8666919453546333116
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "39cb94e91c32d8d0316a9135d3826cd8bcd6564370148cba2c701898f3276771"
     },
     {
       "sourceId": "es.mangacrab",
@@ -7347,7 +7689,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "6a7c3f4027a0f02775d1780d863bbcd23a6393cdc6b7049433aeaa74dd66d7a7"
     },
     {
       "sourceId": "es.mangafire",
@@ -7368,7 +7711,8 @@
         8098539940032331958
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "2ad078ab5ece7e2a3cf885b6dfab7713d6bb53babff170e0c5e657688f1dc1c2"
     },
     {
       "sourceId": "es.mangaomega",
@@ -7389,7 +7733,8 @@
         8289860289735224810
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "106d2b5025005ed58d947c2f475a95d8f60950c4dd2485e7c3548cbc6c8ed5f6"
     },
     {
       "sourceId": "es.mangapluscreators",
@@ -7411,7 +7756,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "e1b9df3fde6fe118aedb2964db0e8a4fa38a5783eaf4586706c9a66eb5a3d750"
     },
     {
       "sourceId": "es.mangaromance",
@@ -7433,7 +7779,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "FelipeGFA Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "35f3dae0e88d7a0c9db727aea02bc7d2de9a1c1ea7422e004b1e98aacde80553"
     },
     {
       "sourceId": "es.mangasnosekai",
@@ -7455,7 +7802,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "04119260db77b46af856ad2eccd748ad3967f1a7f27116a0931674599c76e710"
     },
     {
       "sourceId": "es.mangavault",
@@ -7477,7 +7825,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "0e4f04a92d406d56946a948fa615682ab760840659e800b771de55543abdd913"
     },
     {
       "sourceId": "es.manhuarm",
@@ -7499,7 +7848,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "520c94f7925b2e57837a9b98bc358e0ca7b9130185da588204baa9519d2f7929"
     },
     {
       "sourceId": "es.manhwalatino",
@@ -7521,15 +7871,16 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "22ad92a38923df5c9fd369dbe4efae1d138c0d8895178f44ca641b311088749f"
     },
     {
       "sourceId": "es.manhwaonline",
       "name": "ManhwaOnline",
       "baseUrl": "https://manhwa-online.com",
       "lang": "es",
-      "version": 1,
-      "versionId": 1,
+      "version": 2,
+      "versionId": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/manhwaonline/res/mipmap-xhdpi/ic_launcher.png",
@@ -7542,7 +7893,8 @@
         5414998368888208528
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "0f6defab24137ddf30d523980599c70914b15f143bde3aab935da77ec9d4b5f1"
     },
     {
       "sourceId": "es.manhwashot",
@@ -7563,7 +7915,8 @@
         6396464356141656797
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "3cc7519a45a1b4d6425c74882de7a9d79f69a308b9073cea2674e8284ec27df6"
     },
     {
       "sourceId": "es.mantrazscan",
@@ -7584,7 +7937,8 @@
         7172992930543738693
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "0ba7adff698bb0889c6d5db510adc546c2b457a4880d5f28845a89c45461b2ed"
     },
     {
       "sourceId": "es.melapelacomics",
@@ -7606,7 +7960,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "88f97d18a41dd6dbbf7564ba5deba35eb4bc25ff88d8d659cf90a952c527429b"
     },
     {
       "sourceId": "es.miauscan",
@@ -7627,7 +7982,8 @@
         2886862669347225416
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "38c19b2cd89a1b7c125eb92687457f4c76ff11c64a389e2b3e9ab74c4b0d893f"
     },
     {
       "sourceId": "es.mundomanhwa",
@@ -7648,7 +8004,8 @@
         7121772696835562045
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "72f0794843a15ba2588ee3b632ec6136a98a11e059f52d90d5c51e4108aee97d"
     },
     {
       "sourceId": "es.myreadingmanga",
@@ -7670,7 +8027,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "92a0a3f0aa1c1ca18ba7c938665ab3409fd320d33aa5f6810d2fb25c5c1decee"
     },
     {
       "sourceId": "es.nartag",
@@ -7692,7 +8050,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "789828fd229781a5973a8c5001aa9a5dd94cc6fd6ed3943405ae3bb139e655ac"
     },
     {
       "sourceId": "es.novelcool",
@@ -7713,7 +8072,8 @@
         438359803442833644
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "929d7bce993160fb86bd2724ae2675a205c3c0975668e2c8f0b80e56e7ff4b14"
     },
     {
       "sourceId": "es.onisaga",
@@ -7735,7 +8095,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "271994c7b46b5518299e32d53d1f4712072f9e935420f90c4874cf4bf9217d36"
     },
     {
       "sourceId": "es.orckumangas",
@@ -7757,7 +8118,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "66f923c9ddd4d713ee21df45d3cfbfb369a5b99d83480f8881763b6fae2916d9"
     },
     {
       "sourceId": "es.platinumlilyscan",
@@ -7778,7 +8140,8 @@
         5939158356306781713
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "c76c6662fa94786a151918c6c2d1fc485785faa9ee20a39ff7f5e42783c38f97"
     },
     {
       "sourceId": "es.plottwistnofansub",
@@ -7800,7 +8163,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "c78dc8b60e3da017e57e65d57c6a4c06ff296b4d52a803071c7bfffebbdffbd4"
     },
     {
       "sourceId": "es.pzykosis666hfansub",
@@ -7821,7 +8185,8 @@
         6241339222563280170
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "45cff8526b8ebf2a2c0033c9ba3ad621f281ea190381ba82083e1fdb96bb57ae"
     },
     {
       "sourceId": "es.qtoonunoriginal",
@@ -7842,7 +8207,8 @@
         2899806380745042388
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "175fb002b6f53cd56ef96bec41159a643685810511dea359a047e93c8bf82c31"
     },
     {
       "sourceId": "es.rakuentranslations",
@@ -7863,7 +8229,8 @@
         1527666187989988991
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "9341fdddbd5959d9092240853d88638dd6d488627b06c3dcb0b0747283ca3ee2"
     },
     {
       "sourceId": "es.ranoa",
@@ -7884,7 +8251,8 @@
         2991182735828713279
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "b30b1fa2216ee1be04e68fb6d7491a68862a68c07e9ee8e5645bccde77ef8630"
     },
     {
       "sourceId": "es.sapphirescan",
@@ -7906,7 +8274,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "FelipeGFA Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "2397b61695cba2db892e08586923053953b088c4842e141df751416bf9324ca2"
     },
     {
       "sourceId": "es.saymanhwa",
@@ -7928,7 +8297,8 @@
         4746791862486594870
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "6fe16bb870056fedbc4151d054dd0ad051050b8d232cc6a6e3e1c21f07777ce4"
     },
     {
       "sourceId": "es.seinagi",
@@ -7950,7 +8320,8 @@
         7420083686986747493
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "dc17b35c3bc477125e8eaa9bc876f9efc8eeaba91bf428c129c13835b15f8ba1"
     },
     {
       "sourceId": "es.seraphicdeviltry",
@@ -7971,7 +8342,8 @@
         6626112947749020527
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "ceb34cad4b0555de56fe30146f11679c67433941f29f07b0523adb7f52a4987d"
     },
     {
       "sourceId": "es.shadowmanga",
@@ -7994,7 +8366,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "d79111bb4d6daf1073e5d0d479ab46430b74a2a6adc646af0fb35a5a4269cb3a"
     },
     {
       "sourceId": "es.simplyhentai",
@@ -8016,7 +8389,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "e3fd03754a484cb5c5c7d6fd1cd56ee1a1b66c34ed0dc0acfafbb366024bc7c2"
     },
     {
       "sourceId": "es.spnmanga",
@@ -8037,7 +8411,8 @@
         8680653475935544022
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "8f7760a2893a983b765f9cca65673e25a3e07dcc22a10509c29344c4d2d593a6"
     },
     {
       "sourceId": "es.submanhwa",
@@ -8058,7 +8433,8 @@
         1136717301008230074
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "9c57d405da2f9365f12bd21c7899e07a19a87348ea05ff2fb6aee921509df5f1"
     },
     {
       "sourceId": "es.swordmangas",
@@ -8079,7 +8455,8 @@
         1932567923574648765
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "d146fb65c394af64be2eec2728cba18731fd00203b68632e49bad50caa7861b4"
     },
     {
       "sourceId": "es.tenkaiscan",
@@ -8101,7 +8478,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "4e4e8ddaaafcd1e374e11d47d189dc02a06e23145a7f4a3d45ef423ac29ced4a"
     },
     {
       "sourceId": "es.thelibraryofohara",
@@ -8123,7 +8501,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "205b2a0a8859580f52dc22c90a9db507d9bcf8ce23707e144cdfc6dd981898ba"
     },
     {
       "sourceId": "es.tmohentaiunoriginal",
@@ -8145,7 +8524,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "7746110d5b0e15ad7452b7c655dcb22e3cfc3a355cb1c28d60dcd551bb819779"
     },
     {
       "sourceId": "es.toomics",
@@ -8166,7 +8546,8 @@
         4863693274136077953
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "529b0caa0dfab7f6e0ae5fbbaf76278879e3578eefef42cdcc3d092c7f2bef8b"
     },
     {
       "sourceId": "es.toones",
@@ -8188,7 +8569,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "8a676905222d3065cdb5603a6b8fcb884e11caa988fc02d0c9935d1331f263bd"
     },
     {
       "sourceId": "es.topcomicporno",
@@ -8209,7 +8591,8 @@
         6716313068102878996
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "8720399f9b409adc40de688b64fc1f6c084e298bdd8f78759131dd3203beebd3"
     },
     {
       "sourceId": "es.topcomicpornonet",
@@ -8231,7 +8614,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "5d6723715ddb5780e574280af8680c690a6f3b0b6af4d370358893623b8998f2"
     },
     {
       "sourceId": "es.traduccionesmoonlight",
@@ -8252,7 +8636,8 @@
         4349338377187141550
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "3d3621b1694a26c0407ba541f70e12c8763eb7b2d70cf742d1da8a94251a0c54"
     },
     {
       "sourceId": "es.undertranslations",
@@ -8273,7 +8658,8 @@
         6130972683394103021
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "864c9f7d7c942a24072f639c001bbc0f3c80d8644edfe24a448e85ffe101667a"
     },
     {
       "sourceId": "es.vcpvmp",
@@ -8296,7 +8682,8 @@
         8472215287946707583
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "1931a49b217dafdac09cb082941f15cef139fa1ae4ad90b44f114a3e9fc416ab"
     },
     {
       "sourceId": "es.vermanhwas",
@@ -8318,7 +8705,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "1398d529cbb41c78ca35af9d57ca49a311b5f69e2c5304ccad3dcb9e5948554f"
     },
     {
       "sourceId": "es.yaoimangaonline",
@@ -8339,7 +8727,8 @@
         6023955409820928295
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "b69e898fc4e77fb47890eaba1002857a4d96b5d3f47f851b0d430fa3996079e4"
     },
     {
       "sourceId": "es.yaoime",
@@ -8360,7 +8749,8 @@
         8120530126288646203
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "8620e91e0b6338cd915519ba42c9d15b2d2467ca612ea999bc3e922d798ee439"
     },
     {
       "sourceId": "es.yellownote",
@@ -8382,7 +8772,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "5d0748e64440062b778205603d91f0ddc17fa3f16136164278607aa2c8e293b2"
     },
     {
       "sourceId": "es.yupmanga",
@@ -8404,7 +8795,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "902062144144164a65f1205458221e26967de85f0c2e65455dec81ceae2d92ca"
     },
     {
       "sourceId": "es.yurionline",
@@ -8425,7 +8817,8 @@
         3410370616110029377
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "a9e2aa373d02e495b2a4f1d931c7cf294e89028005f23e3229f89edd1a795e4f"
     },
     {
       "sourceId": "houseofotakus_xyz",
@@ -8446,7 +8839,8 @@
         1968531533450563052
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "ca192acf855f1a1028e564cd923ae16e85ff36cb4642b09108e097476639df4d"
     },
     {
       "sourceId": "ikigai_mangas",
@@ -8469,7 +8863,8 @@
         7749406396573482811
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "ab528255c1b024e5cb4edadeff150f5bd9e9b2b01c10127b6b6addd7efdc7bcf"
     },
     {
       "sourceId": "infrafandub_com",
@@ -8490,7 +8885,8 @@
         5594696691862732725
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "53e65c370bf2685fc4e3fa80564d2774dbda46683ca126629c1506a8abe11bb7"
     },
     {
       "sourceId": "inventariooculto_com",
@@ -8511,7 +8907,8 @@
         609477585841458199
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "6c73e106630471b8f5330da0e27ae55e261f97f323d239718bbaccf26096a173"
     },
     {
       "sourceId": "kazokuden_com",
@@ -8532,7 +8929,8 @@
         475788948976592183
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "e396d314d50f580b89432eb49dac68a5e0059373e4ecb078e8f8d3cb41264248"
     },
     {
       "sourceId": "lagoonscans_com",
@@ -8553,7 +8951,8 @@
         7925933833035450162
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "58bbf37c3ccef4cea37dc8000e6d94131c2e25aaf50739e25a7f52d7031b4983"
     },
     {
       "sourceId": "lectorhades_com",
@@ -8574,7 +8973,8 @@
         8311505150576608267
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "15fdbbc8dee487ce372fe834aba81ed1ededaf3ac82596cc2299a4c35927afcb"
     },
     {
       "sourceId": "leermangaesp_org",
@@ -8595,7 +8995,8 @@
         8196066207928937350
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "012a63a61bda38bac3d5ca6997f46dfae32fd88ada2177c9bddf716b68b48d76"
     },
     {
       "sourceId": "mangadot_net",
@@ -8617,7 +9018,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "f44faabe4ec182c0c96a3806642b673f94b7c2f9b888e023abd3c3c9d38312a8"
     },
     {
       "sourceId": "mangaoni_com",
@@ -8638,7 +9040,8 @@
         2202687009511923782
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "e585e04b9e20160c026d2ba84dc26e931f73e974f35a573b021b90e517fed49d"
     },
     {
       "sourceId": "mangatv_net",
@@ -8659,7 +9062,8 @@
         7214040353404261084
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "c3d85384d0eaefbc115c9af27f00c39a77ad51ff83e5b4c7f7440936bff0785b"
     },
     {
       "sourceId": "manhwaweb_com",
@@ -8680,7 +9084,8 @@
         5943212552955476721
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "87390ad1dcf7c011d872613a4b15a9b89e79ce87529e7acfe33adc73932b6b17"
     },
     {
       "sourceId": "marmota_me",
@@ -8701,7 +9106,8 @@
         5937472249278743372
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "eb67a6bef5f10ec1007605a5c6f3cc403c8af43e9b839fd44154ddc072646ca3"
     },
     {
       "sourceId": "mhscans_com",
@@ -8723,7 +9129,8 @@
         9008444898589746680
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "88fdcfd440a6ef0d6467a72205aafff9f9359bacefe6e694090196f77825d701"
     },
     {
       "sourceId": "monopolymanhua_com",
@@ -8744,7 +9151,8 @@
         5862188113261788590
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "5a83232f507551a6361f21a3497d4941f9ccec457f16198f16f81b72a7fb02b7"
     },
     {
       "sourceId": "nekoscans_org",
@@ -8765,7 +9173,8 @@
         8396340084333456288
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "0d79bd9ce0ca4bf7e69303576601d2c222608d2302ea346795a09b63b29bdcb3"
     },
     {
       "sourceId": "olympusxyz_com",
@@ -8789,7 +9198,8 @@
         4629124532272720968
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "5c227beb3f2c128609a0080169d44f53c9e071ed7908e1981c1b0912ae220f2f"
     },
     {
       "sourceId": "pt-br.acervohentai",
@@ -8811,7 +9221,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "4187f359bfc55c9c2186b03239bd56f177994d3e9fb641f659cf991c0a432a84"
     },
     {
       "sourceId": "pt-br.akaitomangas",
@@ -8832,7 +9243,8 @@
         2836576732412182275
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "6a7cd01f0095192fa14bfe541958ed8c8d12bf497b4049e3619be8e3316b810a"
     },
     {
       "sourceId": "pt-br.amuy",
@@ -8854,7 +9266,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "4303380a2f200589623327fc0f5345c5a41c9ba0452670296c42075e1045a793"
     },
     {
       "sourceId": "pt-br.animexnovel",
@@ -8875,7 +9288,8 @@
         3639622845750368999
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "9fc79b2fa4e8803ba1b1cbabff27186e487518bd21f469cbc578e443104b0e35"
     },
     {
       "sourceId": "pt-br.apenasumafa",
@@ -8896,7 +9310,8 @@
         6897166867127039489
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "742dbe79510a1c7351c88498abd644e04c383dd611ced23e1100bd2d35fab4f5"
     },
     {
       "sourceId": "pt-br.argoscomics",
@@ -8917,7 +9332,8 @@
         2731562656488805764
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "279e41c20ef8224181fad6a70f9c370a77d4fc14e42b11c8379ed4ff838f99ee"
     },
     {
       "sourceId": "pt-br.arthurscan",
@@ -8939,7 +9355,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "48d58c4c5f04a6e746e998616600eab8141f78775e0cc8974ff762361558f379"
     },
     {
       "sourceId": "pt-br.bakai",
@@ -8961,7 +9378,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "1c3fc02dbd32f1a5b0c9125f42eabb820c650c497f7745c6b7196bee50511169"
     },
     {
       "sourceId": "pt-br.blackoutcomics",
@@ -8983,7 +9401,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "1ef9873aecf8222a46b604a054590326ddd28ed8639be50d0a9794023aabe0fc"
     },
     {
       "sourceId": "pt-br.blitztoons",
@@ -9004,7 +9423,8 @@
         2916575821827748941
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "219f7119b8a3766ab0b3be767acbc9af80d724ace7aadb5529d05ce67d688fc3"
     },
     {
       "sourceId": "pt-br.borutoexplorer",
@@ -9025,7 +9445,8 @@
         2962682340286299668
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "2b853857ea6e8d1355e9a4218103ddb9accd4c1483c438fc61a7c0de2ea581de"
     },
     {
       "sourceId": "pt-br.brasilhentai",
@@ -9046,7 +9467,8 @@
         8020430975962445741
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "2dd932a46c5729d8c8cb8854735ad32afeaa4d4005a6658ffc5a637f4e020bbf"
     },
     {
       "sourceId": "pt-br.cafecomyaoi",
@@ -9067,7 +9489,8 @@
         340055543197648554
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "a2b4f8b632399b002e4a9f074fb5143ec377c253bf48077a662099a45169d98d"
     },
     {
       "sourceId": "pt-br.d9comics",
@@ -9089,7 +9512,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "4b9f42ae00fd97ab7c24a91dbafef3da033daa612875291f68f13167374cc2d1"
     },
     {
       "sourceId": "pt-br.dropescan",
@@ -9111,7 +9535,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "3e15dd7f63691ad220f72e2dc0e4245128ca3af3c6af4e6a585ee460b828b12c"
     },
     {
       "sourceId": "pt-br.duoscans",
@@ -9132,7 +9557,8 @@
         5738568067614123099
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "2e77cb1cbbe48a7afa3b7057b6faea78e821f191ffbda41cacbf32fb1c222571"
     },
     {
       "sourceId": "pt-br.egotoons",
@@ -9153,7 +9579,8 @@
         4749792168996703143
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "f35d60fee03c6bf71fec8a6b48d13ca753702582b700d0ddfee904c2d0c1acbf"
     },
     {
       "sourceId": "pt-br.euphoriascan",
@@ -9174,7 +9601,8 @@
         6045078216682014867
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "d227dd43e56081c1ddf355309c55248f858f9365ab7f157f31e74100a659ade7"
     },
     {
       "sourceId": "pt-br.exhentainetbr",
@@ -9195,7 +9623,8 @@
         1408140394859123923
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "6705475a3ad41d340ca13a3d22a491f4f8d3ec7dd48939a3e3767412eaf2126b"
     },
     {
       "sourceId": "pt-br.fleurblanche",
@@ -9216,7 +9645,8 @@
         2748000026130339026
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "8392f6854d6fe18aa99208acc0f9dd546d9093cb8f6c46f6cc0c0ad8d27576e4"
     },
     {
       "sourceId": "pt-br.fliptru",
@@ -9238,7 +9668,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "ab00bf5a9e44ff83c7ace88d42229e1ce2aa41afa286b8b0e6cd1e222b458cbe"
     },
     {
       "sourceId": "pt-br.flowermanga",
@@ -9259,7 +9690,8 @@
         2421010180391442293
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "d83f77d0c660cd284d7f03022f51d95bb91f0f86280950c3e3a583dbe472c04f"
     },
     {
       "sourceId": "pt-br.funktoon",
@@ -9281,7 +9713,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "67cc9217ed2099606365058e460a07d91a30ddb491ddf784bc81856493025c0c"
     },
     {
       "sourceId": "pt-br.galaxscanlator",
@@ -9302,7 +9735,8 @@
         5553519415877811746
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "d59ba087de702ff431672e8ecc322309e1d1e9167543a36deb760d3343081603"
     },
     {
       "sourceId": "pt-br.geasscomics",
@@ -9323,7 +9757,8 @@
         7839519253265657488
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "747fcc67df0708ef08d904f1ac650e7543cceea548224872dc7338b0cd5d6bc0"
     },
     {
       "sourceId": "pt-br.hanmokkuscan",
@@ -9344,7 +9779,8 @@
         2374282752350973310
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "ea437db033415a19db756ae02f5f617665a992179bfcd416f64d6217b01494a7"
     },
     {
       "sourceId": "pt-br.hentaidatia",
@@ -9366,7 +9802,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "719b68b3b45aaa44fdea22af0d46096fafa58dd02d0536f8189222bd0dd85e18"
     },
     {
       "sourceId": "pt-br.hentaihand",
@@ -9387,7 +9824,8 @@
         2516244587139644000
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "6d815eefff2df9715b9b259a827e27dd0350afecaeaacbf6f48f6f9ebf21a682"
     },
     {
       "sourceId": "pt-br.hentaiteca",
@@ -9408,7 +9846,8 @@
         5744105605190975461
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "3c1513d139ab119040c62c11ba8a44ff62eb51039087df0968c5762b7d6db4a3"
     },
     {
       "sourceId": "pt-br.hentaitecanet",
@@ -9430,7 +9869,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "8744ea3f2145e88e74e50cf328f9e2ded6cc9a6e0806fdccb1462cfc1367494c"
     },
     {
       "sourceId": "pt-br.horahentai",
@@ -9451,7 +9891,8 @@
         542325806354392983
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "97862b5b601df242a4eda0968b9a5fe52f868f23adbf2234f58ae0ee729865c9"
     },
     {
       "sourceId": "pt-br.hotcabaretscan",
@@ -9472,7 +9913,8 @@
         8778000927023046626
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "804b797fadf66c661220a876cb0e2c3a46cd7de68ef4da7baa08c7d49f79fdaa"
     },
     {
       "sourceId": "pt-br.inkapk",
@@ -9494,7 +9936,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "f171517830139c5a397d3eafb89bffcbc5a191be2ce3602e444a2167e19a6ed8"
     },
     {
       "sourceId": "pt-br.instahentai",
@@ -9515,7 +9958,8 @@
         7005133773025256564
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "8add328df5f1e26f8cd89da380a29ff6ce2a2f2cdf3d4daadf6b3e583dcf9105"
     },
     {
       "sourceId": "pt-br.kagane",
@@ -9537,7 +9981,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "b7ff1b570ec256cdb0c6abb630c33f15f16ea9ce3909d8882159ecebb46ec4ec"
     },
     {
       "sourceId": "pt-br.lectorhentai",
@@ -9558,7 +10003,8 @@
         5058580091709701948
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "35d2bfbbbe9e1142e26111c132d2922b3a5e095c808c59e54a2823dc2f6b47d1"
     },
     {
       "sourceId": "pt-br.leitorreverse",
@@ -9579,7 +10025,8 @@
         3373598802026857820
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "ed8cd901469eb1905c3b573da0d4bf7587644830fb75119e73202f9c58fae2d5"
     },
     {
       "sourceId": "pt-br.leituramanga",
@@ -9600,7 +10047,8 @@
         1445343849143422351
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "176bc6d2dca1703b79d9dc2f90ab03e2c9c2d61fc789b0a20e1d8bbcf8c4e29b"
     },
     {
       "sourceId": "pt-br.ler999",
@@ -9621,7 +10069,8 @@
         11864058740306611
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "d057569db4465c535706e3339ff790247ec501fc0a34bc253814744b10de1a00"
     },
     {
       "sourceId": "pt-br.luscious",
@@ -9643,7 +10092,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "6ebd95bdcf08642e8cde1382308f54e7efb13de3c4e0e54e1fa455caeba3bb13"
     },
     {
       "sourceId": "pt-br.lycantoons",
@@ -9665,7 +10115,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "b70f80866da05924f8ba0785e2954123b1527fe3ec58b31ecac65a106a83658b"
     },
     {
       "sourceId": "pt-br.maidscan",
@@ -9687,7 +10138,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "f5640098cad55e490f0037bf3527082a92d9186a47706487638f9242ef65d8d7"
     },
     {
       "sourceId": "pt-br.mangafire",
@@ -9708,7 +10160,8 @@
         7842137233968841729
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "8322fee465089d1189633c751925870cda28ef3ed1cc24d538678b694620d38e"
     },
     {
       "sourceId": "pt-br.mangalivreblog",
@@ -9729,7 +10182,8 @@
         588678420372440028
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "52bf843db789bcef7d7c3a5c1b03fa79dd99a816556137c234b049fcdf0769f9"
     },
     {
       "sourceId": "pt-br.mangalivreorg",
@@ -9751,7 +10205,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "FelipeGFA Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "f35ed0006fbcca197c8bfa39c9a5844d710a98ba1f040c15261800c2d24b4033"
     },
     {
       "sourceId": "pt-br.mangalivreto",
@@ -9772,7 +10227,8 @@
         1281902081932329042
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "4b8c416d86cbbb0a0931602ec2bcd767e8e76233fe9c2bf92333f7bdd2ececa0"
     },
     {
       "sourceId": "pt-br.mangaonline",
@@ -9794,7 +10250,8 @@
         7203957529449460928
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "3dacbdf6e9019993e1f7e5500915c98fe28407cde40f3d89b3b4b4ce249f39cb"
     },
     {
       "sourceId": "pt-br.mangastop",
@@ -9816,7 +10273,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "c57e0d3db4730b24e585b501c683f04e6aa93bab312d07536acf05f5d093226a"
     },
     {
       "sourceId": "pt-br.mangotoons",
@@ -9837,7 +10295,8 @@
         8989984812354857153
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "51b6a51838a4c397bd72fd422d90ad8372fbd2f9f8b255fbf6a32299e20b9dff"
     },
     {
       "sourceId": "pt-br.manhastro",
@@ -9859,7 +10318,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "673e4b5795a8e51bfb40ad476ce2f0908d0b5b90d2d25b00d00242403c400c04"
     },
     {
       "sourceId": "pt-br.manhuarm",
@@ -9881,7 +10341,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "63ed8dd3c0b42a18144aff7495f3c5eb4a130cb058f16148a81943cd5ee11722"
     },
     {
       "sourceId": "pt-br.megahentai",
@@ -9902,7 +10363,8 @@
         6293316436960053544
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "c8323da41d9e73b6ce8e737648003d2cacf6c3409f271f1e459a099fb7b362ac"
     },
     {
       "sourceId": "pt-br.miauscan",
@@ -9923,7 +10385,8 @@
         6705370418823255358
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "0b542882c2ed4d20e91cd99d4a6b1a023d274e3fb59b347f2587c3f3d031090a"
     },
     {
       "sourceId": "pt-br.minitwoscan",
@@ -9945,7 +10408,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "0e5cfd6ddd641b47863c8c0c2c1cae1a4f8f04d11da6db3146e4b1654e9190e4"
     },
     {
       "sourceId": "pt-br.mrtenzus",
@@ -9966,7 +10430,8 @@
         4272456161813617008
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "fa27f358d6256a6f5007276a97b6e9bffb46dfa4ed408ffcb2c08539ceec330e"
     },
     {
       "sourceId": "pt-br.muitohentai",
@@ -9987,7 +10452,8 @@
         1062606379654091909
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "7473a271f7f9428012b45681cb887613b0363e38fc16a720b88607139a801645"
     },
     {
       "sourceId": "pt-br.myreadingmanga",
@@ -10009,7 +10475,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "5f7a0544cb7fa452707443fd793e57b8593a0b8c0a47a40aeeba064834af693d"
     },
     {
       "sourceId": "pt-br.nebulosascan",
@@ -10030,7 +10497,8 @@
         1410750574939174515
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "693748bf013d6af81385e0f85e4a4315860e2041e4de05b9d04f0dab41679f67"
     },
     {
       "sourceId": "pt-br.ninjascan",
@@ -10051,7 +10519,8 @@
         4392067503694697213
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "7669b77b0a101e434958c93db4f2cd6c0a31e77a986bab778d170e474316a934"
     },
     {
       "sourceId": "pt-br.nocturnesummer",
@@ -10073,7 +10542,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "ae170cd941e9c41fbdd3a4670683b2eeb444e2870c78860715c39734c20ccb37"
     },
     {
       "sourceId": "pt-br.noindexscan",
@@ -10094,7 +10564,8 @@
         987786689720213769
       ],
       "license": "Apache-2.0",
-      "attribution": "FelipeGFA Contributors"
+      "attribution": "FelipeGFA Contributors",
+      "sha256": "6e5c66700a621d408678e6b266a2a633d2c24a5053faf7745f3c28f70b4577c4"
     },
     {
       "sourceId": "pt-br.onisaga",
@@ -10116,7 +10587,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "b02b510f769cc79cf01a80218b73f6f8ff512150eb1f2a16821c26f80089bd7d"
     },
     {
       "sourceId": "pt-br.pinkrosa",
@@ -10137,7 +10609,8 @@
         8456404960509331854
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "64460062d9ecb687837dc21dd7234a6d0c03d346c4a0369128e3d711eced8c42"
     },
     {
       "sourceId": "pt-br.pointzerotoons",
@@ -10158,7 +10631,8 @@
         2210021497257492329
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "ec2e0c6cc2e4b9bd1d314c8321bba9cf091042d6b43c39418dbfb0fc995ad7e7"
     },
     {
       "sourceId": "pt-br.portalyaoi",
@@ -10180,7 +10654,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "e4c652fe565bcb8cb2ccae0e4586c4a76d421e1180bcec87c422df646f3c0f4e"
     },
     {
       "sourceId": "pt-br.qtoonunoriginal",
@@ -10201,7 +10676,8 @@
         4901123399146575201
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "620ac6ff69941c2a419cec26eae6f7b49911363eaf441c2c49f68daba8890e19"
     },
     {
       "sourceId": "pt-br.remangas",
@@ -10223,7 +10699,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "16008687187d41a3dfa3ddd6639f0f15683cf287173034de47e0340ce80afc9f"
     },
     {
       "sourceId": "pt-br.remangas_noxmanga",
@@ -10245,7 +10722,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "149b5854a2d145fa781ac50b7257f37f837493d3e832632746ace0dcf5f2439f"
     },
     {
       "sourceId": "pt-br.remangas_v1",
@@ -10267,7 +10745,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "99f8a0a6db68d3c859da4d2fc8f17d8c798b2e088207e05414c0a44c3c623c28"
     },
     {
       "sourceId": "pt-br.rfdragonscan",
@@ -10288,7 +10767,8 @@
         3492404357721425345
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "08fb4f0359d6d033054bf137416b12829fe05f50b4e4a0b46bf158efcef5c14b"
     },
     {
       "sourceId": "pt-br.saikaiscan",
@@ -10310,7 +10790,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "8fb996fc9818896db91b7fa2dcd13a61d8b324e5d6485cb1eae967d9ac5d2365"
     },
     {
       "sourceId": "pt-br.shiraiscans",
@@ -10332,7 +10813,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "c7e2d7b6f344a0bb31b98477ae3e37d493af53b77e5aebd32a22286a1e28c62b"
     },
     {
       "sourceId": "pt-br.superhq",
@@ -10353,7 +10835,8 @@
         8618551173246946816
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "c9cf9fbaae6d326de47c5887c3b297f8a3660ac45be5b969935224e6c4cd4cff"
     },
     {
       "sourceId": "pt-br.taimumangas",
@@ -10375,7 +10858,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "2a946aefd1939a8457d2a306ff5c842e0dc6d5873b497527419347920c9b96ec"
     },
     {
       "sourceId": "pt-br.tankouhentai",
@@ -10396,7 +10880,8 @@
         9200419821846585447
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "beac526ffde9cf1556c30e36c985a455d0734c547d3cada4244ffe05f1066547"
     },
     {
       "sourceId": "pt-br.taosect",
@@ -10418,7 +10903,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "328efc6b5a2c0ec544227cb035be98e124a49c10116cbe0057b9f7c89532239d"
     },
     {
       "sourceId": "pt-br.tiamanhwa",
@@ -10440,7 +10926,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "22c32d9554302b1967b33ca1fe4bc4083b8e28049f175b144a31d61b4a0e838b"
     },
     {
       "sourceId": "pt-br.toomics",
@@ -10461,7 +10948,8 @@
         4488498756724948818
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "0d35c2f4b6b1d16fcc79d1049019ffaf28072cd1f315a34c07741c54e3d751d1"
     },
     {
       "sourceId": "pt-br.traducoesdolipe",
@@ -10482,7 +10970,8 @@
         3650511144741653873
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "d3e142a428d946af1778dbcfb7c4a86cadabfcea57cd3d27c89847edd560c93d"
     },
     {
       "sourceId": "pt-br.tsundokutraducoes",
@@ -10503,7 +10992,8 @@
         2091088265283814173
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "602a35406cf09c181adb49c8b6e3d02b4d24bfaf692e485dee08308afe304b32"
     },
     {
       "sourceId": "pt-br.xxxyaoi",
@@ -10526,7 +11016,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "fdd075bd27f8471af3b6230ced2743e86b9c2d44ee631c139b8cdec6f67b3150"
     },
     {
       "sourceId": "pt-br.yaoifanclub",
@@ -10549,7 +11040,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "8bbd0c578f8eb73d672de94de1e26106a513d80f6fd48a03886e17e7838c4d10"
     },
     {
       "sourceId": "pt-br.yaoime",
@@ -10570,7 +11062,8 @@
         539129098615592048
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "bf234e97dff5d4d2df16c73e4fa4f8c08b27ca83ecf9f70c8e077d478c2933eb"
     },
     {
       "sourceId": "pt-br.yuriverso",
@@ -10591,7 +11084,8 @@
         4476506734614164770
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "ad27035e8a21bc9343abdf1271039b0bf10dbe8c72714f7036494130a158c9e9"
     },
     {
       "sourceId": "pt-br.zettahq",
@@ -10612,7 +11106,8 @@
         4655858297496198897
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "4033332b187d00da0e592a9cf014b1b8a1252d6890ad09795ba806eae7c23437"
     },
     {
       "sourceId": "pt.akuma",
@@ -10634,7 +11129,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "b6d7f331fb6f9fb2ac3d9a2b50974165832d51e772d8349f43dde724f1fd711d"
     },
     {
       "sourceId": "pt.hentaicomics",
@@ -10655,7 +11151,8 @@
         5674532035279095345
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "57377392cc77952c9e6d7b781ca4be682edea6ee830729fe21c52b783a57bff5"
     },
     {
       "sourceId": "pt.hentaikai",
@@ -10676,7 +11173,8 @@
         8041889466081243774
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "e94132fe0dcb60dfbc6018c8378de82242d3031f07300a21beed4f61785d2d90"
     },
     {
       "sourceId": "pt.kagane",
@@ -10698,7 +11196,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "3216c33d459c908f7b820726910e548c0e2ee6f1c465caab5f71f275083204aa"
     },
     {
       "sourceId": "pt.mangafire",
@@ -10719,7 +11218,8 @@
         758400875161895515
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "2a9d246f56781dd802a9d4921a306fa9c755eb3ad8113394fb15bdf447636b49"
     },
     {
       "sourceId": "pt.onisaga",
@@ -10741,7 +11241,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "703f83c47c22bb952a5b518471c83ea09dedfa4e0b83207445797576990e32fc"
     },
     {
       "sourceId": "pt.revistasequadrinhos",
@@ -10763,7 +11264,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "requiresCloudflareBypass": true
+      "requiresCloudflareBypass": true,
+      "sha256": "89488b66d2dde1046bfdb3cdbfe19ae66a21bad988a92c690fe43813e31d7fe7"
     },
     {
       "sourceId": "pt.saymanhwa",
@@ -10785,7 +11287,8 @@
         6718937619873538111
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "6267043cde6beefa8a4bf64f21ab04b99714a82512f96e05b108476d49ed4818"
     },
     {
       "sourceId": "pt.yaoime",
@@ -10806,7 +11309,8 @@
         232952896490317872
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "84003b7f6bd147762b9067b98708a10310508f955c1d3848943f9a3af821c3a7"
     },
     {
       "sourceId": "ragnarokscanlation_org",
@@ -10827,7 +11331,8 @@
         1348827658894665970
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "698da7bdb5ac8ece4d9456548ec92fd07ba7daa880d5a7fe2972f93a3dfb127c"
     },
     {
       "sourceId": "spicyscan_com",
@@ -10848,7 +11353,8 @@
         2665002677795338092
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "92e9736325f5650f42082b47eacbe40cfb170da6071a702b15258c7b586ade09"
     },
     {
       "sourceId": "uchuujin_com",
@@ -10869,7 +11375,8 @@
         3953107753690791431
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "139f7da19e3fe3962f5b7aefc1a72865a5577698eb10b78aa93e8254aa346f27"
     },
     {
       "sourceId": "vortexscans_org",
@@ -10890,7 +11397,8 @@
         2559570015828016575
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "7abe3a04ac3300b28bd508a7421143f60c547e64c679fb104efa18c56c00e3ce"
     },
     {
       "sourceId": "zonatmo_org",
@@ -10911,7 +11419,8 @@
         7391754027638645731
       ],
       "license": "Apache-2.0",
-      "attribution": "The Tachiyomi / Keiyoushi Contributors"
+      "attribution": "The Tachiyomi / Keiyoushi Contributors",
+      "sha256": "2c83473a5868cfb38e6491eb6a2c8126a4705863b9fc8a4d881f986e6ed4373d"
     }
   ]
 }
