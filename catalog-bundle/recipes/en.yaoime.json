@@ -4,12 +4,12 @@
   "name": "Yaoi.me",
   "baseUrl": "https://yaoi.me",
   "lang": "en",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
   "maxHtmlBytes": 2097152,
-  "catalogPath": "/manga",
+  "catalogPath": "",
   "useHomeFallback": true,
   "headers": {
     "Referer": "https://yaoi.me/"

@@ -4,12 +4,12 @@
   "name": "Colorcito Scan",
   "baseUrl": "https://coloresito.site",
   "lang": "es",
-  "version": 2,
+  "version": 3,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
   "maxHtmlBytes": 2097152,
-  "catalogPath": "/manga",
+  "catalogPath": "",
   "useHomeFallback": true,
   "headers": {
     "Referer": "https://coloresito.site/"

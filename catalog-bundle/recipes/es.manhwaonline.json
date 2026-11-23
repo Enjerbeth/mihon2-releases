@@ -4,7 +4,7 @@
   "name": "ManhwaOnline",
   "baseUrl": "https://manhwa-online.com",
   "lang": "es",
-  "version": 2,
+  "version": 3,
   "versionId": 2,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -15,11 +15,14 @@
     "Referer": "https://manhwa-online.com/"
   },
   "selectors": {
-    "listSelector": "article, div.manga-item, div.page-item-detail",
-    "titleSelector": "h3 a, h4 a, a",
-    "linkSelector": "a",
+    "listSelector": "article.chapter-card, article, div.manga-item",
+    "titleSelector": "a.title p, a.title, h3 a, h4 a",
+    "linkSelector": "a.title, a.cover, a",
     "chapterSelector": "div.chapter-list-full a.chapter-link",
-    "pageImgSelector": "div.reading-content img, div#readerarea img"
+    "chapterNameSelector": "span.chapter-num",
+    "chapterDateSelector": "span.chapter-date",
+    "chapterDateFormat": "dd.MM.yy",
+    "pageImgSelector": "img.reader-page, main img, div.reading-content img, div#readerarea img"
   },
   "pipelineSteps": [
     {

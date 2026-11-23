@@ -4,7 +4,7 @@
   "name": "ManhwaOnline",
   "baseUrl": "https://manhwaonline.org",
   "lang": "en",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -20,6 +20,9 @@
     "titleSelector": "h3, h4, h5, span, a",
     "linkSelector": "a[href*='/manga/']",
     "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/manga/']",
+    "chapterNameSelector": "span.chapter-name",
+    "chapterDateSelector": "span.ct-update",
+    "chapterDateFormat": "dd MMM yyyy",
     "pageImgSelector": "div.reading-content img, div.page-break img"
   },
   "pipelineSteps": [

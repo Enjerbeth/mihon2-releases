@@ -4,12 +4,12 @@
   "name": "Luminare Translations",
   "baseUrl": "https://luminaretranslations.com",
   "lang": "en",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
   "maxHtmlBytes": 2097152,
-  "catalogPath": "/manga",
+  "catalogPath": "",
   "useHomeFallback": true,
   "headers": {
     "Referer": "https://luminaretranslations.com/"

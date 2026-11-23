@@ -4,12 +4,12 @@
   "name": "Lector Hentai",
   "baseUrl": "https://lectorhentai.com",
   "lang": "pt-BR",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "MANGA_THEMESIA",
   "status": "ACTIVE",
   "maxHtmlBytes": 2097152,
-  "catalogPath": "/manga",
+  "catalogPath": "",
   "useHomeFallback": true,
   "headers": {
     "Referer": "https://lectorhentai.com/"
