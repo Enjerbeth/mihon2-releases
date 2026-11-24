@@ -4,7 +4,7 @@
   "name": "Sinergia sin control",
   "baseUrl": "https://sinergiasincontrol.blogspot.com",
   "lang": "es",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -41,5 +41,8 @@
   "pkgName": "eu.kanade.tachiyomi.extension.es.sinergiasincontrol",
   "upstreamExtVersionCode": 104001,
   "versionCode": 104001,
-  "upstreamRepo": "keiyoushi/extensions-source"
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "curated": true,
+  "singlePostAsChapter": true,
+  "chapterOrder": "BY_NUMBER_DESC"
 }

@@ -4,7 +4,7 @@
   "name": "Bloom Scans",
   "baseUrl": "https://bloomscans.com",
   "lang": "es",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "MANGA_THEMESIA",
   "status": "ACTIVE",
@@ -18,7 +18,7 @@
     "listSelector": "div.listupd div.bsx a, div.bsx a",
     "titleSelector": "div.tt",
     "linkSelector": "a",
-    "chapterSelector": "div#chapterlist ul li a",
+    "chapterSelector": "div.lrs-caps-wrap li a, div#chapterlist ul li a",
     "pageImgSelector": "div#readerarea img"
   },
   "pipelineSteps": [
@@ -42,5 +42,6 @@
   "upstreamSourceId": 2598725055968738551,
   "upstreamExtVersionCode": 106005,
   "versionCode": 106005,
-  "upstreamRepo": "keiyoushi/extensions-source"
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "curated": true
 }

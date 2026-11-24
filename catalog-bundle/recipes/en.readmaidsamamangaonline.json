@@ -4,7 +4,7 @@
   "name": "Read Maid Sama Manga Online",
   "baseUrl": "https://w14.maid-sama.com",
   "lang": "en",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -17,7 +17,7 @@
   },
   "selectors": {
     "listSelector": "a[href*='/manga/']",
-    "titleSelector": "h3, h4, h5, span, a",
+    "titleSelector": "h3, h4, h5, a",
     "linkSelector": "a[href*='/manga/']",
     "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/manga/']",
     "pageImgSelector": "main img"

@@ -4,7 +4,7 @@
   "name": "Aedex",
   "baseUrl": "https://aedexnox.com",
   "lang": "es",
-  "version": 1,
+  "version": 3,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -16,11 +16,12 @@
     "Referer": "https://aedexnox.com/"
   },
   "selectors": {
-    "listSelector": "a[href*='/comic/']",
-    "titleSelector": "h3, h4, h5, span, a",
+    "listSelector": "a[aria-label][href*='/comic/']",
+    "titleSelector": "img[alt]",
     "linkSelector": "a[href*='/comic/']",
     "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/comic/']",
-    "pageImgSelector": "main img, article img, div img"
+    "pageImgSelector": "section img, article img, main img",
+    "coverSelector": "img"
   },
   "pipelineSteps": [
     {
@@ -43,5 +44,7 @@
   "upstreamExtVersionCode": 106079,
   "versionCode": 106079,
   "upstreamRepo": "keiyoushi/extensions-source",
-  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/aedex/res/mipmap-xhdpi/ic_launcher.png"
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/aedex/res/mipmap-xhdpi/ic_launcher.png",
+  "curated": true,
+  "singlePostAsChapter": true
 }

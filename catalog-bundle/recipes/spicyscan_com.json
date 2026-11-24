@@ -4,7 +4,7 @@
   "name": "Spicy Scan",
   "baseUrl": "https://spicyseries.com",
   "lang": "es",
-  "version": 2,
+  "version": 3,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -21,7 +21,7 @@
   "upstreamRepo": "keiyoushi/extensions-source",
   "selectors": {
     "listSelector": "a[href*='/comic/'], article, div.group",
-    "titleSelector": "h3, h4, p, span",
+    "titleSelector": "h3, h4, p",
     "linkSelector": "a[href*='/comic/'], a[href]",
     "chapterSelector": "div.grid a[href*='/capitulo'], a[href*='/comic/'][href*='/capitulo-'], a[href*='/comic/'][href*='/chapter-']",
     "pageImgSelector": "main img, div.reading-content img"

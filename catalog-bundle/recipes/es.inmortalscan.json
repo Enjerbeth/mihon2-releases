@@ -4,7 +4,7 @@
   "name": "Inmortal Scan",
   "baseUrl": "https://scan-inmortal.com",
   "lang": "es",
-  "version": 1,
+  "version": 3,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -17,10 +17,11 @@
   },
   "selectors": {
     "listSelector": "article",
-    "titleSelector": "h3, h4, h5, span, a",
+    "titleSelector": "h3 a, h4 a, h3, h4",
     "linkSelector": "a[href]",
     "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/leer/'], a[href*='/read/'], li a",
-    "pageImgSelector": "main img"
+    "pageImgSelector": "main img",
+    "coverSelector": "img"
   },
   "pipelineSteps": [
     {
@@ -43,5 +44,6 @@
   "upstreamExtVersionCode": 106065,
   "versionCode": 106065,
   "upstreamRepo": "keiyoushi/extensions-source",
-  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/inmortalscan/res/mipmap-xhdpi/ic_launcher.png"
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/inmortalscan/res/mipmap-xhdpi/ic_launcher.png",
+  "curated": true
 }

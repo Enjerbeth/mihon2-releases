@@ -4,7 +4,7 @@
   "name": "Seinagi",
   "baseUrl": "https://online.seinagi.org.es",
   "lang": "es",
-  "version": 2,
+  "version": 3,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -15,7 +15,7 @@
     "Referer": "https://online.seinagi.org.es/"
   },
   "selectors": {
-    "listSelector": "div.list div.group, div.title",
+    "listSelector": "div.list div.group",
     "titleSelector": "div.title a",
     "linkSelector": "div.title a",
     "coverSelector": "div.thumb img",
@@ -68,5 +68,6 @@
   "upstreamSourceId": 7420083686986747493,
   "upstreamExtVersionCode": 106007,
   "versionCode": 106007,
-  "upstreamRepo": "keiyoushi/extensions-source"
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "curated": true
 }

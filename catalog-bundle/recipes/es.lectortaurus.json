@@ -4,18 +4,19 @@
   "name": "Taurus Fansub",
   "baseUrl": "https://lectortaurus.com",
   "lang": "es",
-  "version": 1,
+  "version": 2,
   "preset": "MADARA",
   "status": "ACTIVE",
   "catalogPath": "/manga",
   "useHomeFallback": true,
   "maxHtmlBytes": 2097152,
   "selectors": {
-    "listSelector": "div.page-item-detail, div.c-tabs-item__content, div.manga__item, div.manga__thumb_item",
+    "listSelector": "div.page-item-detail, div.c-tabs-item__content, div.manga__item",
     "titleSelector": "h3.h5 a, div.post-title a, h4 a",
     "linkSelector": "h3.h5 a, div.post-title a, a[href]",
     "chapterSelector": "li.wp-manga-chapter a",
-    "pageImgSelector": "div.reading-content img.wp-manga-chapter-img, div.reading-content img"
+    "pageImgSelector": "div.reading-content img.wp-manga-chapter-img, div.reading-content img",
+    "coverSelector": "div.manga__thumb_item img"
   },
   "pipelineSteps": [
     {
@@ -89,5 +90,6 @@
         "nextPageSelector": "a.next.page-numbers, nav.navigation a.next"
       }
     ]
-  }
+  },
+  "curated": true
 }

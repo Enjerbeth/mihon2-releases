@@ -4,7 +4,7 @@
   "name": "Manga Crab",
   "baseUrl": "https://es.mangacrab.org",
   "lang": "es",
-  "version": 3,
+  "version": 4,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -16,7 +16,7 @@
   },
   "selectors": {
     "listSelector": "a[href*='/series/'], article, div.page-item-detail",
-    "titleSelector": "h3, h4, span, a",
+    "titleSelector": "h3, h4, a",
     "linkSelector": "a[href*='/series/'], a",
     "chapterSelector": "a[href*='/capitulo'], a[href*='/chapter'], li.wp-manga-chapter a",
     "pageImgSelector": "main img, div.reading-content img"

@@ -4,7 +4,7 @@
   "name": "SpnManga",
   "baseUrl": "https://www.spnmanga.com",
   "lang": "es",
-  "version": 2,
+  "version": 3,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -18,7 +18,7 @@
     "listSelector": "article, div.manga-item, div.page-item-detail",
     "titleSelector": "h3 a, h4 a, a",
     "linkSelector": "a",
-    "chapterSelector": "li a, div.chapter-item a",
+    "chapterSelector": "div.chapters a",
     "pageImgSelector": "div.reading-content img, div#readerarea img"
   },
   "pipelineSteps": [
@@ -42,5 +42,6 @@
   "upstreamSourceId": 8680653475935544022,
   "upstreamExtVersionCode": 106001,
   "versionCode": 106001,
-  "upstreamRepo": "keiyoushi/extensions-source"
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "curated": true
 }

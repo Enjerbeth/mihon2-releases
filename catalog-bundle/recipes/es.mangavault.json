@@ -4,7 +4,7 @@
   "name": "MangaVault",
   "baseUrl": "https://mangavault.lat",
   "lang": "es",
-  "version": 3,
+  "version": 4,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -16,7 +16,7 @@
   },
   "selectors": {
     "listSelector": "a[href*='/manga/']",
-    "titleSelector": "h3, h4, span, a",
+    "titleSelector": "h3, h4, a",
     "linkSelector": "a[href*='/manga/']",
     "chapterSelector": "a[href^='/manga/']",
     "pageImgSelector": "img[src*='media.mangavault.lat/manga/'], main img"

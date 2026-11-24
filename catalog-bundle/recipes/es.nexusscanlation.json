@@ -4,7 +4,7 @@
   "name": "NexusScanlation",
   "baseUrl": "https://nexusscanlation.com",
   "lang": "es",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -17,7 +17,7 @@
   },
   "selectors": {
     "listSelector": "a[href*='/series/']",
-    "titleSelector": "h3, h4, h5, span, a",
+    "titleSelector": "h3, h4, h5, a",
     "linkSelector": "a[href*='/series/']",
     "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/read/'], a[href*='/series/']",
     "pageImgSelector": "div.reading-content img, div#readerarea img, main img"

@@ -4,7 +4,7 @@
   "name": "Manga Omega",
   "baseUrl": "https://mangaomega.com",
   "lang": "es",
-  "version": 2,
+  "version": 3,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -42,5 +42,7 @@
   "upstreamSourceId": 8289860289735224810,
   "upstreamExtVersionCode": 106002,
   "versionCode": 106002,
-  "upstreamRepo": "keiyoushi/extensions-source"
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "curated": true,
+  "chapterOrder": "BY_NUMBER_DESC"
 }

@@ -4,7 +4,7 @@
   "name": "Lector Hentai",
   "baseUrl": "https://lectorhentai.com",
   "lang": "es",
-  "version": 2,
+  "version": 3,
   "versionId": 1,
   "preset": "MANGA_THEMESIA",
   "status": "ACTIVE",
@@ -18,7 +18,7 @@
     "listSelector": "div.listupd div.bsx a, div.bsx a",
     "titleSelector": "div.tt",
     "linkSelector": "a",
-    "chapterSelector": "div#chapterlist ul li a",
+    "chapterSelector": "div.bixbox.bxcl.epcheck a[href*='/read/'], div#chapterlist ul li a",
     "pageImgSelector": "div#readerarea img"
   },
   "pipelineSteps": [
@@ -49,5 +49,6 @@
   "upstreamSourceId": 8958717893181709494,
   "upstreamExtVersionCode": 106002,
   "versionCode": 106002,
-  "upstreamRepo": "keiyoushi/extensions-source"
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "curated": true
 }

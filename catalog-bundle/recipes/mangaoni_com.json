@@ -4,7 +4,7 @@
   "name": "MangaOni",
   "baseUrl": "https://manga-oni.com",
   "lang": "es",
-  "version": 2,
+  "version": 3,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -22,7 +22,7 @@
   "upstreamRepo": "keiyoushi/extensions-source",
   "selectors": {
     "listSelector": "div#article-div a, a[href*='/manga/'], a[href*='/manhwa/']",
-    "titleSelector": "strong, h3, h4, span",
+    "titleSelector": "strong, h3, h4",
     "linkSelector": "a[href]",
     "chapterSelector": "div#c_list a, div.chapters-list a, a[href*='/lector/'][href*='capitulo']",
     "pageImgSelector": "img#m_img, div#slider img, div#all img, div.reading-content img, main img"

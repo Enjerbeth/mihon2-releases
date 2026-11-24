@@ -4,7 +4,7 @@
   "name": "MangaDot",
   "baseUrl": "https://mangadot.net",
   "lang": "es",
-  "version": 3,
+  "version": 4,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -21,7 +21,7 @@
   "upstreamRepo": "keiyoushi/extensions-source",
   "selectors": {
     "listSelector": "a[href^='/manga/'], article",
-    "titleSelector": "h3, h4, span, a",
+    "titleSelector": "h3, h4, a",
     "linkSelector": "a[href^='/manga/'], a[href]",
     "chapterSelector": "a[href^='/chapter/'], ul.chapters a, div.chapters a, div.chapter-list a, a[href*='/chapter-'], a[href*='/ch-'], a[href*='/capitulo-']",
     "pageImgSelector": "main img, div.reading-content img"

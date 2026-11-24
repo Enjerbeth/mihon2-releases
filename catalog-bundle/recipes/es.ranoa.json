@@ -4,7 +4,7 @@
   "name": "Ranoa",
   "baseUrl": "https://www.ranoa.lat",
   "lang": "es",
-  "version": 2,
+  "version": 3,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -42,5 +42,7 @@
   "upstreamSourceId": 2991182735828713279,
   "upstreamExtVersionCode": 106001,
   "versionCode": 106001,
-  "upstreamRepo": "keiyoushi/extensions-source"
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "curated": true,
+  "chapterOrder": "REVERSE"
 }

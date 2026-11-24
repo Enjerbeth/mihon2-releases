@@ -4,7 +4,7 @@
   "name": "Honeytoon",
   "baseUrl": "https://honeytoon.com",
   "lang": "es",
-  "version": 1,
+  "version": 3,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -16,11 +16,12 @@
     "Referer": "https://honeytoon.com/"
   },
   "selectors": {
-    "listSelector": "a[href*='/comic/']",
-    "titleSelector": "h3, h4, h5, span, a",
-    "linkSelector": "a[href*='/comic/']",
+    "listSelector": "div.preview-card",
+    "titleSelector": "span.preview-card__title",
+    "linkSelector": "a.preview-card__link",
     "chapterSelector": "a[href*='capitulo'], a[href*='chapter'], a[href*='/comic/']",
-    "pageImgSelector": "main img"
+    "pageImgSelector": "main img",
+    "coverSelector": "img.preview-card__image"
   },
   "pipelineSteps": [
     {
@@ -43,5 +44,7 @@
   "upstreamExtVersionCode": 106002,
   "versionCode": 106002,
   "upstreamRepo": "keiyoushi/extensions-source",
-  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/honeytoon/res/mipmap-xhdpi/ic_launcher.png"
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/honeytoon/res/mipmap-xhdpi/ic_launcher.png",
+  "curated": true,
+  "chapterOrder": "BY_NUMBER_DESC"
 }

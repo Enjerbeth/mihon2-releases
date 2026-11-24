@@ -4,7 +4,7 @@
   "name": "Kensscan",
   "baseUrl": "https://kensscan.com",
   "lang": "en",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -17,7 +17,7 @@
   },
   "selectors": {
     "listSelector": "div.manga-item",
-    "titleSelector": "h3, h4, h5, span, a",
+    "titleSelector": "h3, h4, h5, a",
     "linkSelector": "h3 a, a[href*='/manga/'], a",
     "chapterSelector": "ul.chapters li a, a[href*='/manga/'], a[href*='/read/']",
     "pageImgSelector": "div.reading-content img, div.page-break img"
