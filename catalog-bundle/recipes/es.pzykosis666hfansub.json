@@ -4,21 +4,27 @@
   "name": "Pzykosis666HFansub",
   "baseUrl": "https://lector.pzykosis666hfansub.com",
   "lang": "es",
-  "version": 2,
+  "version": 3,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
   "maxHtmlBytes": 2097152,
   "catalogPath": "/directory/",
   "useHomeFallback": false,
+  "searchRequest": {
+    "method": "POST",
+    "pathTemplate": "/search/",
+    "contentType": "application/x-www-form-urlencoded",
+    "bodyTemplate": "search={query}"
+  },
   "headers": {
     "Referer": "https://lector.pzykosis666hfansub.com/"
   },
   "selectors": {
-    "listSelector": "div.list div.group, div.title",
+    "listSelector": "div.list div.group",
     "titleSelector": "div.title a",
     "linkSelector": "div.title a",
-    "coverSelector": "div.thumb img",
+    "coverSelector": "img.preview, div.thumb img, img",
     "chapterSelector": "div.element div.title a",
     "pageImgSelector": "div.inner img",
     "detailsTitleSelector": "h1.title",
@@ -30,6 +36,7 @@
     "chapterDateSelector": "div.meta_r",
     "chapterDateFormat": "yyyy.MM.dd"
   },
+  "curated": true,
   "pipelineSteps": [
     {
       "op": "css_select",

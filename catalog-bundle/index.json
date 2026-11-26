@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-26T13:44:24Z",
-  "catalogRevision": 30,
+  "generatedAt": "2026-11-26T16:23:34Z",
+  "catalogRevision": 31,
   "entries": [
     {
       "sourceId": "anzmanga_com",
@@ -8601,7 +8601,7 @@
       "name": "AnimeBbg",
       "baseUrl": "https://animebbg.net",
       "lang": "es",
-      "version": 2,
+      "version": 3,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -8617,7 +8617,7 @@
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
       "requiresCloudflareBypass": true,
-      "sha256": "f5d63e7832f26f26371fb53a019a48ab1ad8dd9875a66f6f8241d2b8e18dfccf"
+      "sha256": "e80856f8021096332533c69eb5ce935c1472bf322cede33121bdf6f92404c1ec"
     },
     {
       "sourceId": "es.apollcomics",
@@ -9763,7 +9763,7 @@
       "name": "Luscious",
       "baseUrl": "https://www.luscious.net",
       "lang": "es",
-      "version": 3,
+      "version": 4,
       "versionId": 1,
       "preset": "JSON_API",
       "status": "ACTIVE",
@@ -9779,7 +9779,7 @@
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
       "requiresCloudflareBypass": true,
-      "sha256": "c1c93052c41891f5c9886b4f6a1908242936275e629324d6828ef8eabb4a21d6"
+      "sha256": "c4598713329cf803f4d39e0e8487a25f8f78fc862afbc223713108eca506491c"
     },
     {
       "sourceId": "es.magicaltranslators",
@@ -9942,10 +9942,10 @@
       "name": "Manga Romance",
       "baseUrl": "https://mangaromance19.com",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "MADARA",
-      "status": "ACTIVE",
+      "status": "QUARANTINED",
       "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/es/mangaromance/res/mipmap-xhdpi/ic_launcher.png",
       "recipePath": "recipes/es.mangaromance.json",
       "mode": "declarative",
@@ -9958,7 +9958,7 @@
       "license": "Apache-2.0",
       "attribution": "FelipeGFA Contributors",
       "requiresCloudflareBypass": true,
-      "sha256": "35f3dae0e88d7a0c9db727aea02bc7d2de9a1c1ea7422e004b1e98aacde80553"
+      "sha256": "44809d10d8ac88de4bc11993f84a453fe82f1fd10da296c6a1393ed39b2dfe72"
     },
     {
       "sourceId": "es.mangasin",
@@ -10101,7 +10101,7 @@
       "name": "ManhwaShot",
       "baseUrl": "https://manhwashot.lat",
       "lang": "es",
-      "version": 3,
+      "version": 4,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -10116,7 +10116,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "7755e986c73f003a9926e68a03aaa8f098dfcde6ca08ce9362e391597025e3f4"
+      "sha256": "49138dc9b0ec0f25c8a77ec438e615bff397498b55d7419131882f3ccadf379e"
     },
     {
       "sourceId": "es.mantrazscan",
@@ -10258,7 +10258,7 @@
       "name": "NexusScanlation",
       "baseUrl": "https://nexusscanlation.com",
       "lang": "es",
-      "version": 2,
+      "version": 3,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -10273,7 +10273,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "12e568eda13876c36ef14ea62fdc53199cbb353d7e26fcbb3ca9c55004c49f59"
+      "sha256": "850422ced66a5fa09828b595631b2b5aba94b4af5fd9c3ef8ea294794fabc7b6"
     },
     {
       "sourceId": "es.noranofansub",
@@ -10459,7 +10459,7 @@
       "name": "Pzykosis666HFansub",
       "baseUrl": "https://lector.pzykosis666hfansub.com",
       "lang": "es",
-      "version": 2,
+      "version": 3,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -10474,7 +10474,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "6d65ba55f0cf94c55312776092f65093c447478eef7555e3462a10a43d84665b"
+      "sha256": "2d2ed0e10a3fc102c117399a71619fa33a3f47e36fa657d71ca4ef8b8ea902f4"
     },
     {
       "sourceId": "es.qtoonunoriginal",
@@ -11112,10 +11112,10 @@
       "name": "Yupmanga",
       "baseUrl": "https://www.yupmanga.com",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "JSON_API",
-      "status": "ACTIVE",
+      "status": "QUARANTINED",
       "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/yupmanga/res/mipmap-xhdpi/ic_launcher.png",
       "recipePath": "recipes/es.yupmanga.json",
       "mode": "declarative",
@@ -11128,7 +11128,7 @@
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
       "requiresCloudflareBypass": true,
-      "sha256": "902062144144164a65f1205458221e26967de85f0c2e65455dec81ceae2d92ca"
+      "sha256": "8f45e051a0f34e18d6a9b3f4d2c72dd9434a04e73f72cf858f466b0cd4a7aed5"
     },
     {
       "sourceId": "es.yurionline",

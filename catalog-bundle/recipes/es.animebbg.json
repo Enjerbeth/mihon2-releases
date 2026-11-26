@@ -4,22 +4,25 @@
   "name": "AnimeBbg",
   "baseUrl": "https://animebbg.net",
   "lang": "es",
-  "version": 2,
+  "version": 3,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
+  "curated": true,
   "maxHtmlBytes": 2097152,
-  "catalogPath": "",
-  "useHomeFallback": true,
+  "catalogPath": "/obras/",
+  "searchPath": "/obras/?q={query}",
+  "useHomeFallback": false,
   "headers": {
     "Referer": "https://animebbg.net/"
   },
   "selectors": {
-    "listSelector": "article, div.manga-item, div.page-item-detail",
-    "titleSelector": "h3 a, h4 a, a",
-    "linkSelector": "a",
-    "chapterSelector": "li a, div.chapter-item a",
-    "pageImgSelector": "div.reading-content img, div#readerarea img"
+    "listSelector": "div.abbgBib-row",
+    "titleSelector": "h3.abbgBib-row-title a",
+    "linkSelector": "h3.abbgBib-row-title a",
+    "coverSelector": "div.abbgBib-row-cover img, img",
+    "chapterSelector": "a[href*='/leer/']",
+    "pageImgSelector": "div.reading-content img, div#readerarea img, main img"
   },
   "pipelineSteps": [
     {
@@ -43,18 +46,6 @@
   "upstreamExtVersionCode": 106001,
   "versionCode": 106001,
   "upstreamRepo": "keiyoushi/extensions-source",
-  "authPreFlight": {
-    "url": "https://animebbg.net/",
-    "method": "GET",
-    "headers": {
-      "Referer": "https://animebbg.net/"
-    },
-    "extractMode": "REGEX",
-    "extractPattern": "<meta[^>]*name=[\"\\']csrf-token[\"\\'][^>]*content=[\"\\']([^\"\\']+)",
-    "cacheTtlSeconds": 1800,
-    "targetHeader": "X-CSRF-TOKEN",
-    "valuePrefix": ""
-  },
   "requiresCloudflareBypass": true,
-  "requiresWebViewCapture": false
+  "requiresWebViewCapture": true
 }

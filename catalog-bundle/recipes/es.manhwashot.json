@@ -4,23 +4,26 @@
   "name": "ManhwaShot",
   "baseUrl": "https://manhwashot.lat",
   "lang": "es",
-  "version": 3,
+  "version": 4,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
   "maxHtmlBytes": 2097152,
   "catalogPath": "",
+  "searchPath": "/?s={query}",
   "useHomeFallback": true,
   "headers": {
     "Referer": "https://manhwashot.lat/"
   },
   "selectors": {
-    "listSelector": "article",
-    "titleSelector": "h3, h4, a",
-    "linkSelector": "a",
+    "listSelector": "article.tsl-slide, article",
+    "titleSelector": "h2.tsl-title, h3, h4",
+    "linkSelector": "a.tsl-cover, a[href*='/manga/']",
+    "coverSelector": "a.tsl-cover img, img",
     "chapterSelector": "a[href*='/capitulo']",
     "pageImgSelector": "main img"
   },
+  "curated": true,
   "pipelineSteps": [
     {
       "op": "referer_bind",
