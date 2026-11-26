@@ -40,7 +40,7 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/ninkocomics/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.ninkocomics",
   "upstreamSourceId": 6441436063565688111,
-  "upstreamExtVersionCode": 106002,
-  "versionCode": 106002,
+  "upstreamExtVersionCode": 106003,
+  "versionCode": 106003,
   "upstreamRepo": "keiyoushi/extensions-source"
 }

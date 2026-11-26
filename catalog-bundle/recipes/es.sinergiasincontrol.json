@@ -29,8 +29,9 @@
   ],
   "recipePath": "recipes/es.sinergiasincontrol.json",
   "mode": "declarative",
-  "upstreamSourceId": 3918824056607119069,
+  "upstreamSourceId": 1386799750012022728,
   "upstreamSourceIds": [
+    1386799750012022728,
     3918824056607119069
   ],
   "license": "Apache-2.0",
@@ -39,10 +40,11 @@
     "https://sinergiasincontrol.blogspot.com"
   ],
   "pkgName": "eu.kanade.tachiyomi.extension.es.sinergiasincontrol",
-  "upstreamExtVersionCode": 104001,
-  "versionCode": 104001,
+  "upstreamExtVersionCode": 106001,
+  "versionCode": 106001,
   "upstreamRepo": "keiyoushi/extensions-source",
   "curated": true,
   "singlePostAsChapter": true,
-  "chapterOrder": "BY_NUMBER_DESC"
+  "chapterOrder": "BY_NUMBER_DESC",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/sinergiasincontrol/res/mipmap-xhdpi/ic_launcher.png"
 }

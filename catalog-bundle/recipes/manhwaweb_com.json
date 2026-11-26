@@ -132,14 +132,14 @@
   "mirrors": [
     "https://manhwaweb.com"
   ],
-  "upstreamExtVersionCode": 106016,
+  "upstreamExtVersionCode": 106017,
   "versionId": 1,
   "recipePath": "recipes/manhwaweb_com.json",
   "mode": "declarative",
   "upstreamSourceIds": [
     5943212552955476721
   ],
-  "versionCode": 106016,
+  "versionCode": 106017,
   "license": "Apache-2.0",
   "attribution": "The Tachiyomi / Keiyoushi Contributors",
   "pkgName": "eu.kanade.tachiyomi.extension.es.manhwaweb",

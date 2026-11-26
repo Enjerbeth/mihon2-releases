@@ -45,8 +45,8 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/divascans/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.divascans",
   "upstreamSourceId": 3513996752712952755,
-  "upstreamExtVersionCode": 106034,
-  "versionCode": 106034,
+  "upstreamExtVersionCode": 106035,
+  "versionCode": 106035,
   "upstreamRepo": "keiyoushi/extensions-source",
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false

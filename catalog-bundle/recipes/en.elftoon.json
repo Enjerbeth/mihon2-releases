@@ -32,6 +32,7 @@
   "mode": "declarative",
   "upstreamSourceId": 7881856136524765210,
   "upstreamSourceIds": [
+    3896703921896511395,
     7881856136524765210
   ],
   "license": "Apache-2.0",
@@ -40,8 +41,8 @@
     "https://elftoon.net"
   ],
   "pkgName": "eu.kanade.tachiyomi.extension.en.elftoon",
-  "upstreamExtVersionCode": 106013,
-  "versionCode": 106013,
+  "upstreamExtVersionCode": 106014,
+  "versionCode": 106014,
   "upstreamRepo": "keiyoushi/extensions-source",
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/elftoon/res/mipmap-xhdpi/ic_launcher.png"
 }

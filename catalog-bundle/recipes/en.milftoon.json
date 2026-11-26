@@ -37,12 +37,12 @@
   "mirrors": [
     "https://milftoon.xxx"
   ],
-  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/en/milftoon/res/mipmap-xhdpi/ic_launcher.png",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/milftoon/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.milftoon",
   "upstreamSourceId": 4002667303103881826,
-  "upstreamExtVersionCode": 106057,
-  "versionCode": 106057,
-  "upstreamRepo": "FelipeGFA/fonte-extensoes",
+  "upstreamExtVersionCode": 106060,
+  "versionCode": 106060,
+  "upstreamRepo": "keiyoushi/extensions-source",
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false
 }

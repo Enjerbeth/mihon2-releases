@@ -40,8 +40,8 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/onisaga/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.all.onisaga",
   "upstreamSourceId": 2644848669022862951,
-  "upstreamExtVersionCode": 106006,
-  "versionCode": 106006,
+  "upstreamExtVersionCode": 106007,
+  "versionCode": 106007,
   "upstreamRepo": "keiyoushi/extensions-source",
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false

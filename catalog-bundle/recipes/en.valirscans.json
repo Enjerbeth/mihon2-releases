@@ -45,8 +45,8 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/valirscans/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.valirscans",
   "upstreamSourceId": 9114028255622294379,
-  "upstreamExtVersionCode": 106031,
-  "versionCode": 106031,
+  "upstreamExtVersionCode": 106032,
+  "versionCode": 106032,
   "upstreamRepo": "keiyoushi/extensions-source",
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false

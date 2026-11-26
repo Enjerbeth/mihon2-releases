@@ -41,7 +41,7 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/mangasin/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.es.mangasin",
   "upstreamSourceId": 3344386250058668105,
-  "upstreamExtVersionCode": 106004,
-  "versionCode": 106004,
+  "upstreamExtVersionCode": 106005,
+  "versionCode": 106005,
   "upstreamRepo": "keiyoushi/extensions-source"
 }

@@ -35,13 +35,14 @@
   "license": "Apache-2.0",
   "attribution": "The Tachiyomi / Keiyoushi Contributors",
   "mirrors": [
-    "https://aquareader.org"
+    "https://aquareader.org",
+    "https://aquamanga.io"
   ],
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/aquamanga/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.aquamanga",
   "upstreamSourceId": 626267698662819838,
-  "upstreamExtVersionCode": 106078,
-  "versionCode": 106078,
+  "upstreamExtVersionCode": 106079,
+  "versionCode": 106079,
   "upstreamRepo": "keiyoushi/extensions-source",
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false

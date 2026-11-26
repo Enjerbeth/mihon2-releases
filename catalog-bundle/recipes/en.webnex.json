@@ -40,7 +40,7 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/webnex/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.webnex",
   "upstreamSourceId": 319678837350572744,
-  "upstreamExtVersionCode": 106012,
-  "versionCode": 106012,
+  "upstreamExtVersionCode": 106013,
+  "versionCode": 106013,
   "upstreamRepo": "keiyoushi/extensions-source"
 }

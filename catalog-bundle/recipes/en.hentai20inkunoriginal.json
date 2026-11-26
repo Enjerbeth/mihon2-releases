@@ -30,8 +30,9 @@
   ],
   "recipePath": "recipes/en.hentai20inkunoriginal.json",
   "mode": "declarative",
-  "upstreamSourceId": 2602706581383358969,
+  "upstreamSourceId": 2040440472226999633,
   "upstreamSourceIds": [
+    2040440472226999633,
     2602706581383358969
   ],
   "license": "Apache-2.0",

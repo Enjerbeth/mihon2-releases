@@ -40,8 +40,8 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/bloomscans/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.es.bloomscans",
   "upstreamSourceId": 2598725055968738551,
-  "upstreamExtVersionCode": 106005,
-  "versionCode": 106005,
+  "upstreamExtVersionCode": 106006,
+  "versionCode": 106006,
   "upstreamRepo": "keiyoushi/extensions-source",
   "curated": true
 }

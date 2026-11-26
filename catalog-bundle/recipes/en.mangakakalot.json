@@ -53,8 +53,8 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/mangakakalot/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.mangakakalot",
   "upstreamSourceId": 2528986671771677900,
-  "upstreamExtVersionCode": 106030,
-  "versionCode": 106030,
+  "upstreamExtVersionCode": 106031,
+  "versionCode": 106031,
   "upstreamRepo": "keiyoushi/extensions-source",
   "multisrcTheme": "mangabox",
   "popularRequest": {

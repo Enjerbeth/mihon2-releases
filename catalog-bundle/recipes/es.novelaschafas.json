@@ -29,8 +29,9 @@
   ],
   "recipePath": "recipes/es.novelaschafas.json",
   "mode": "declarative",
-  "upstreamSourceId": 5995681780527202568,
+  "upstreamSourceId": 2856728344376003939,
   "upstreamSourceIds": [
+    2856728344376003939,
     5995681780527202568
   ],
   "license": "Apache-2.0",
@@ -39,7 +40,8 @@
     "https://novelasmaschafas.blogspot.com"
   ],
   "pkgName": "eu.kanade.tachiyomi.extension.es.novelaschafas",
-  "upstreamExtVersionCode": 104002,
-  "versionCode": 104002,
-  "upstreamRepo": "keiyoushi/extensions-source"
+  "upstreamExtVersionCode": 106001,
+  "versionCode": 106001,
+  "upstreamRepo": "keiyoushi/extensions-source",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/novelaschafas/res/mipmap-xhdpi/ic_launcher.png"
 }

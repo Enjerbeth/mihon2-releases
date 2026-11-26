@@ -48,13 +48,14 @@
   "mirrors": [
     "https://www.natomanga.com",
     "https://www.nelomanga.net",
-    "https://www.manganato.gg"
+    "https://www.manganato.gg",
+    "https://www.saiyanmanga.com"
   ],
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/manganelo/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.manganelo",
   "upstreamSourceId": 1024627298672457456,
-  "upstreamExtVersionCode": 106027,
-  "versionCode": 106027,
+  "upstreamExtVersionCode": 106028,
+  "versionCode": 106028,
   "upstreamRepo": "keiyoushi/extensions-source",
   "multisrcTheme": "mangabox",
   "popularRequest": {

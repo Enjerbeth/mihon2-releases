@@ -40,8 +40,8 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/lib-multisrc/mmrcms/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.readcomicsonline",
   "upstreamSourceId": 7185601298150078890,
-  "upstreamExtVersionCode": 106003,
-  "versionCode": 106003,
+  "upstreamExtVersionCode": 106004,
+  "versionCode": 106004,
   "upstreamRepo": "keiyoushi/extensions-source",
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false

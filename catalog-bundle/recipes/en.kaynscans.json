@@ -45,7 +45,7 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/kaynscans/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.kaynscans",
   "upstreamSourceId": 6622233282902198923,
-  "upstreamExtVersionCode": 106040,
-  "versionCode": 106040,
+  "upstreamExtVersionCode": 106041,
+  "versionCode": 106041,
   "upstreamRepo": "keiyoushi/extensions-source"
 }

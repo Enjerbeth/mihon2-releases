@@ -30,9 +30,10 @@
   ],
   "recipePath": "recipes/en.toonlook.json",
   "mode": "declarative",
-  "upstreamSourceId": 5739821732870359662,
+  "upstreamSourceId": 8320348786843379620,
   "upstreamSourceIds": [
-    5739821732870359662
+    5739821732870359662,
+    8320348786843379620
   ],
   "license": "Apache-2.0",
   "attribution": "The Tachiyomi / Keiyoushi Contributors",

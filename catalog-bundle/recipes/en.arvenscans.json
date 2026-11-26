@@ -37,11 +37,12 @@
   "license": "Apache-2.0",
   "attribution": "The Tachiyomi / Keiyoushi Contributors",
   "mirrors": [
-    "https://arvenscans.net"
+    "https://arvenscans.net",
+    "https://arventoons.com"
   ],
   "pkgName": "eu.kanade.tachiyomi.extension.en.arvenscansnet",
-  "upstreamExtVersionCode": 106001,
-  "versionCode": 106001,
+  "upstreamExtVersionCode": 106002,
+  "versionCode": 106002,
   "upstreamRepo": "keiyoushi/extensions-source",
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/arvenscansnet/res/mipmap-xhdpi/ic_launcher.png"
 }

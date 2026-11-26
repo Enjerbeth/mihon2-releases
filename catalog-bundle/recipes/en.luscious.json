@@ -35,8 +35,8 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/luscious/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.all.luscious",
   "upstreamSourceId": 2774395484485436593,
-  "upstreamExtVersionCode": 106003,
-  "versionCode": 106003,
+  "upstreamExtVersionCode": 106004,
+  "versionCode": 106004,
   "upstreamRepo": "keiyoushi/extensions-source",
   "jsonApi": {
     "apiBaseUrl": "https://apicdn.luscious.net",

@@ -132,7 +132,7 @@
   ],
   "upstreamSourceId": 8098539940032331958,
   "upstreamRepo": "keiyoushi/extensions-source",
-  "upstreamExtVersionCode": 106039,
+  "upstreamExtVersionCode": 106041,
   "querySigner": {
     "algorithm": "sbox_xor_cbc",
     "pathPrefix": "/api",
@@ -161,7 +161,7 @@
   "upstreamSourceIds": [
     8098539940032331958
   ],
-  "versionCode": 106039,
+  "versionCode": 106041,
   "license": "Apache-2.0",
   "attribution": "The Tachiyomi / Keiyoushi Contributors",
   "pkgName": "eu.kanade.tachiyomi.extension.all.mangafire",

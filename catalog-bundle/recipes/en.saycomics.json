@@ -30,18 +30,21 @@
   ],
   "recipePath": "recipes/en.saycomics.json",
   "mode": "declarative",
-  "upstreamSourceId": 2550435243743833052,
+  "upstreamSourceId": 3639911276143172075,
   "upstreamSourceIds": [
-    2550435243743833052
+    160957764321519511,
+    2550435243743833052,
+    3639911276143172075
   ],
   "license": "Apache-2.0",
   "attribution": "The Tachiyomi / Keiyoushi Contributors",
   "mirrors": [
-    "https://saycomic.com"
+    "https://saycomic.com",
+    "https://saymanhwa.com"
   ],
-  "pkgName": "eu.kanade.tachiyomi.extension.all.saymanhwa",
-  "upstreamExtVersionCode": 106005,
-  "versionCode": 106005,
-  "upstreamRepo": "keiyoushi/extensions-source",
-  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/all/saymanhwa/res/mipmap-xhdpi/ic_launcher.png"
+  "pkgName": "eu.kanade.tachiyomi.extension.en.newmanhwa",
+  "upstreamExtVersionCode": 106035,
+  "versionCode": 106035,
+  "upstreamRepo": "FelipeGFA/fonte-extensoes",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/en/newmanhwa/res/mipmap-xhdpi/ic_launcher.png"
 }

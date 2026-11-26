@@ -32,7 +32,8 @@
   "mode": "declarative",
   "upstreamSourceId": 5065732785260259278,
   "upstreamSourceIds": [
-    5065732785260259278
+    5065732785260259278,
+    7652472715104061281
   ],
   "license": "Apache-2.0",
   "attribution": "The Tachiyomi / Keiyoushi Contributors",

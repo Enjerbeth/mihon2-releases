@@ -40,8 +40,8 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/madaradex/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.madaradex",
   "upstreamSourceId": 2136088453725931591,
-  "upstreamExtVersionCode": 106065,
-  "versionCode": 106065,
+  "upstreamExtVersionCode": 106066,
+  "versionCode": 106066,
   "upstreamRepo": "keiyoushi/extensions-source",
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false

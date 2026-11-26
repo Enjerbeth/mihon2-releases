@@ -37,10 +37,10 @@
   "mirrors": [
     "https://reimanga.net"
   ],
-  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/en/reimanga/res/mipmap-xhdpi/ic_launcher.png",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/reimanga/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.reimanga",
   "upstreamSourceId": 5627909338430537186,
-  "upstreamExtVersionCode": 106005,
-  "versionCode": 106005,
-  "upstreamRepo": "FelipeGFA/fonte-extensoes"
+  "upstreamExtVersionCode": 106010,
+  "versionCode": 106010,
+  "upstreamRepo": "keiyoushi/extensions-source"
 }

@@ -37,12 +37,12 @@
   "mirrors": [
     "https://mgread.io"
   ],
-  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/en/mgreadio/res/mipmap-xhdpi/ic_launcher.png",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/mgreadio/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.mgreadio",
   "upstreamSourceId": 15083818169656208,
-  "upstreamExtVersionCode": 106003,
-  "versionCode": 106003,
-  "upstreamRepo": "FelipeGFA/fonte-extensoes",
+  "upstreamExtVersionCode": 106011,
+  "versionCode": 106011,
+  "upstreamRepo": "keiyoushi/extensions-source",
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false
 }

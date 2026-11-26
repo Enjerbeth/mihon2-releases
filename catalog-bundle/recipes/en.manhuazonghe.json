@@ -37,12 +37,12 @@
   "mirrors": [
     "https://www.manhuazonghe.com"
   ],
-  "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/manhuazonghe/res/mipmap-xhdpi/ic_launcher.png",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/FelipeGFA/fonte-extensoes@main/src/en/manhuazonghe/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.en.manhuazonghe",
   "upstreamSourceId": 6077132944162952766,
-  "upstreamExtVersionCode": 106061,
-  "versionCode": 106061,
-  "upstreamRepo": "keiyoushi/extensions-source",
+  "upstreamExtVersionCode": 106056,
+  "versionCode": 106056,
+  "upstreamRepo": "FelipeGFA/fonte-extensoes",
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false
 }

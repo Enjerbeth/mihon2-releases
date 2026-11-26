@@ -40,7 +40,7 @@
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/komiwa/res/mipmap-xhdpi/ic_launcher.png",
   "pkgName": "eu.kanade.tachiyomi.extension.es.komiwa",
   "upstreamSourceId": 62756090386045468,
-  "upstreamExtVersionCode": 106006,
-  "versionCode": 106006,
+  "upstreamExtVersionCode": 106007,
+  "versionCode": 106007,
   "upstreamRepo": "keiyoushi/extensions-source"
 }

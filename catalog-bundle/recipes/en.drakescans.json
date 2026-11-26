@@ -40,8 +40,8 @@
     "https://drakecomic.net"
   ],
   "pkgName": "eu.kanade.tachiyomi.extension.en.drakescans",
-  "upstreamExtVersionCode": 106057,
-  "versionCode": 106057,
+  "upstreamExtVersionCode": 106058,
+  "versionCode": 106058,
   "upstreamRepo": "keiyoushi/extensions-source",
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/en/drakescans/res/mipmap-xhdpi/ic_launcher.png"
 }
