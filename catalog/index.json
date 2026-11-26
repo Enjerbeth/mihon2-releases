@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-22T21:42:14Z",
-  "catalogRevision": 10,
+  "generatedAt": "2026-11-23T20:00:30Z",
+  "catalogRevision": 29,
   "recipes": [
     {
       "schemaVersion": 1,
@@ -204,7 +204,7 @@
         "https://bloomscans.com"
       ],
       "upstreamSourceId": 2598725055968738551,
-      "upstreamExtVersionCode": 106005,
+      "upstreamExtVersionCode": 106006,
       "upstreamRepo": "keiyoushi/extensions-source"
     },
     {
@@ -240,7 +240,7 @@
         "https://bokugents.com"
       ],
       "upstreamSourceId": 1598762687295904337,
-      "upstreamExtVersionCode": 106020,
+      "upstreamExtVersionCode": 106021,
       "upstreamRepo": "keiyoushi/extensions-source"
     },
     {
@@ -493,7 +493,7 @@
       "mirrors": [
         "https://heavenmanga.com"
       ],
-      "upstreamExtVersionCode": 106002
+      "upstreamExtVersionCode": 106003
     },
     {
       "schemaVersion": 1,
@@ -564,7 +564,7 @@
       ],
       "upstreamSourceId": 8098539940032331958,
       "upstreamRepo": "keiyoushi/extensions-source",
-      "upstreamExtVersionCode": 106038,
+      "upstreamExtVersionCode": 106040,
       "querySigner": {
         "algorithm": "sbox_xor_cbc",
         "pathPrefix": "/api",
@@ -668,7 +668,7 @@
       "baseUrl": "https://kiraproject.lat",
       "lang": "es",
       "version": 1,
-      "versionId": 1,
+      "versionId": 2,
       "preset": "MADARA",
       "status": "QUARANTINED",
       "maxHtmlBytes": 2097152,
@@ -737,9 +737,9 @@
       "schemaVersion": 1,
       "sourceId": "ikigai_mangas",
       "name": "Ikigai Mangas",
-      "baseUrl": "https://visorikigai.gettocaboca.com",
+      "baseUrl": "https://visualikigai.cmpunjabrashancard.pk",
       "lang": "es",
-      "version": 2,
+      "version": 3,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
@@ -764,13 +764,14 @@
         },
         {
           "op": "referer_bind",
-          "refererUrl": "https://visorikigai.gettocaboca.com/"
+          "refererUrl": "https://visualikigai.cmpunjabrashancard.pk/"
         }
       ],
       "upstreamSourceId": 7749406396573482811,
       "upstreamRepo": "keiyoushi/extensions-source",
       "mirrors": [
-        "https://visorikigai.gettocaboca.com"
+        "https://visualikigai.com",
+        "https://visualikigai.cmpunjabrashancard.pk"
       ],
       "versionId": 2,
       "upstreamExtVersionCode": 106044
@@ -986,7 +987,7 @@
       "baseUrl": "https://www.leercapitulo.co",
       "lang": "es",
       "version": 2,
-      "versionId": 2,
+      "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
@@ -1026,7 +1027,7 @@
       "baseUrl": "https://mangalect.org",
       "lang": "es",
       "version": 2,
-      "versionId": 2,
+      "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
@@ -1062,7 +1063,7 @@
       "baseUrl": "https://leermanhwas.com",
       "lang": "es",
       "version": 2,
-      "versionId": 2,
+      "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
@@ -1139,7 +1140,7 @@
       "baseUrl": "https://mangadot.net",
       "lang": "es",
       "version": 3,
-      "versionId": 2,
+      "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
@@ -1166,7 +1167,7 @@
           "refererUrl": "https://mangadot.net/"
         }
       ],
-      "upstreamExtVersionCode": 106030,
+      "upstreamExtVersionCode": 106031,
       "useHomeFallback": true
     },
     {
@@ -1176,7 +1177,7 @@
       "baseUrl": "https://manga-oni.com",
       "lang": "es",
       "version": 2,
-      "versionId": 2,
+      "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
@@ -1396,7 +1397,7 @@
       "baseUrl": "https://mhscans.com",
       "lang": "es",
       "version": 2,
-      "versionId": 3,
+      "versionId": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
@@ -1423,7 +1424,7 @@
           "refererUrl": "https://mhscans.com/"
         }
       ],
-      "upstreamExtVersionCode": 106071
+      "upstreamExtVersionCode": 106072
     },
     {
       "schemaVersion": 1,
@@ -1693,7 +1694,7 @@
       "baseUrl": "https://spicyseries.com",
       "lang": "es",
       "version": 2,
-      "versionId": 2,
+      "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
@@ -1729,7 +1730,7 @@
       "baseUrl": "https://submanhwa.com",
       "lang": "es",
       "version": 3,
-      "versionId": 2,
+      "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "maxHtmlBytes": 2097152,
@@ -1793,7 +1794,7 @@
         "https://uchuujinmangas.com"
       ],
       "upstreamSourceId": 3953107753690791431,
-      "upstreamExtVersionCode": 106004,
+      "upstreamExtVersionCode": 106005,
       "upstreamRepo": "keiyoushi/extensions-source"
     },
     {
