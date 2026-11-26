@@ -4,24 +4,48 @@
   "name": "DoujinHentai",
   "baseUrl": "https://doujinhentai.net",
   "lang": "es",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
+  "curated": true,
   "maxHtmlBytes": 2097152,
-  "catalogPath": "/manga",
-  "useHomeFallback": true,
+  "catalogPath": "/lista-manga-hentai",
+  "searchPath": "/lista-manga-hentai?search={query}&page={page}",
+  "useHomeFallback": false,
+  "popularRequest": {
+    "method": "GET",
+    "pathTemplate": "/lista-manga-hentai?page={page}"
+  },
+  "latestRequest": {
+    "method": "GET",
+    "pathTemplate": "/lista-manga-hentai?orderby=last&page={page}"
+  },
   "headers": {
     "Referer": "https://doujinhentai.net/"
   },
   "selectors": {
-    "listSelector": "article, div.manga-item, div.page-item-detail",
-    "titleSelector": "h3 a, h4 a, a",
-    "linkSelector": "a",
-    "chapterSelector": "li a, div.chapter-item a",
-    "pageImgSelector": "div.reading-content img, div#readerarea img"
+    "listSelector": "div.group.bg-white.rounded-2xl",
+    "titleSelector": "h3",
+    "linkSelector": "a.block, a",
+    "coverSelector": "img",
+    "nextPageSelector": "a[rel=next], a[href*='page={page+1}']",
+    "detailsTitleSelector": "main#main-content h1",
+    "detailsCoverSelector": "main#main-content figure img",
+    "descriptionSelector": "main#main-content div.prose",
+    "genresSelector": "a[rel=tag][href*='/category/'], a[rel=tag][href*='/tag/']",
+    "authorSelector": "a[rel=author]",
+    "artistSelector": "a[href*='/artist/']",
+    "chapterSelector": "div.flex.items-center.gap-4 div.flex-1 a.font-bold, div.flex.items-center.gap-4 div.flex-1 a",
+    "pageImgSelector": "div#vertical-pages-container div[data-page] img"
   },
   "pipelineSteps": [
+    {
+      "op": "regex_extract",
+      "pattern": "\"\\d+\"\\s*:\\s*\"(https?:[^\"]+)\"",
+      "group": 1,
+      "takeAll": true
+    },
     {
       "op": "referer_bind",
       "refererUrl": "https://doujinhentai.net/"

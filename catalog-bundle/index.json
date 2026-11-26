@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-26T10:59:57Z",
-  "catalogRevision": 29,
+  "generatedAt": "2026-11-26T13:44:24Z",
+  "catalogRevision": 30,
   "entries": [
     {
       "sourceId": "anzmanga_com",
@@ -52,10 +52,10 @@
       "name": "Bloom Scans",
       "baseUrl": "https://bloomscans.com",
       "lang": "es",
-      "version": 2,
+      "version": 3,
       "versionId": 1,
       "preset": "MANGA_THEMESIA",
-      "status": "ACTIVE",
+      "status": "QUARANTINED",
       "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/bloomscans/res/mipmap-xhdpi/ic_launcher.png",
       "recipePath": "recipes/bloomscans_com.json",
       "mode": "declarative",
@@ -67,7 +67,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "d8b47c46d23bd8ec6e3d5b6e6b5294c40590f3bb585eee81ff9cc47cbda122e9"
+      "sha256": "7dcc169d5d8a005350bde339dbc2ecd5508b8f55eb8a0c8b1dcb74a3edabab85"
     },
     {
       "sourceId": "cerberusseries_com",
@@ -8780,10 +8780,10 @@
       "name": "Celestial Moon",
       "baseUrl": "https://celestialnocturno.sbs",
       "lang": "es",
-      "version": 4,
+      "version": 5,
       "versionId": 2,
       "preset": "CSS_GENERIC",
-      "status": "ACTIVE",
+      "status": "QUARANTINED",
       "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/celestialmoon/res/mipmap-xhdpi/ic_launcher.png",
       "recipePath": "recipes/es.celestialmoon.json",
       "mode": "declarative",
@@ -8795,7 +8795,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "9e32eb258bbec1b11079069baab3f02439e25b2a0a20f74b01ca2fb99f225261"
+      "sha256": "ae6dd5c05f9241ad80471d9f78bc4f7d7f8770dd5bf75d194a216f44f757618d"
     },
     {
       "sourceId": "es.colorcitoscan",
@@ -8914,7 +8914,7 @@
       "name": "DoujinHentai",
       "baseUrl": "https://doujinhentai.net",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -8929,7 +8929,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "92db8930c23e654f5df8e404e78da5712fd453feb446778a970631e0d545b677"
+      "sha256": "01f84408e9b46411a1885e308af7cd29beec9f89cbe1e96db3f9dced390e1837"
     },
     {
       "sourceId": "es.dragontranslation",
@@ -8958,7 +8958,7 @@
       "name": "Dynasty",
       "baseUrl": "https://manhuako.net",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "JSON_API",
       "status": "ACTIVE",
@@ -8973,7 +8973,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "7c85c72aebbf9f978ca33b8fd92f0c401248786440b9f8c3e57b02ae3047c0fb"
+      "sha256": "16711cad9d6511375dc809dfd95c75bd02fbc84f52213b92f6d5c6555b4f2350"
     },
     {
       "sourceId": "es.elvosque",
@@ -9605,7 +9605,7 @@
       "name": "LectorTmo.online (unoriginal)",
       "baseUrl": "https://lectortmo.online",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "JSON_API",
       "status": "ACTIVE",
@@ -9621,16 +9621,16 @@
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
       "requiresCloudflareBypass": true,
-      "sha256": "ad0ba6da93b504b7a1a50d9a90c5d056741a55ef120efb61048b7fb713d60913"
+      "sha256": "3ba2cd781ff6fba2f45f318f804af61ac602b64210c29a7c3968e13fbf351aa2"
     },
     {
       "sourceId": "es.lectortmounoriginal",
       "name": "LectorTMO (unoriginal)",
       "baseUrl": "https://lectortmo.vip",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
-      "preset": "JSON_API",
+      "preset": "CSS_GENERIC",
       "status": "ACTIVE",
       "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/lectortmounoriginal/res/mipmap-xhdpi/ic_launcher.png",
       "recipePath": "recipes/es.lectortmounoriginal.json",
@@ -9644,7 +9644,7 @@
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
       "requiresCloudflareBypass": true,
-      "sha256": "8f592f9fcf7852f5ad064a48b4cc367a23c3448caa5a8e46641ceb0a47a13248"
+      "sha256": "71be8e3ba68ecdf2266d4dacee7fcd48dbe602a1a01e9d7837460b5e9bbc76fd"
     },
     {
       "sourceId": "es.lectorxd",
@@ -10586,8 +10586,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "ed919f0e95e59b0c314126583d147a4b17b3a66ef4b5e142386730ce8d9fda5c",
-      "chapterOrder": "BY_NUMBER_DESC"
+      "sha256": "ed919f0e95e59b0c314126583d147a4b17b3a66ef4b5e142386730ce8d9fda5c"
     },
     {
       "sourceId": "es.seinagi",
@@ -10774,10 +10773,10 @@
       "name": "Falco Scan",
       "baseUrl": "https://falcoscan.net",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "versionId": 1,
       "preset": "CSS_GENERIC",
-      "status": "ACTIVE",
+      "status": "QUARANTINED",
       "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/tenkaiscan/res/mipmap-xhdpi/ic_launcher.png",
       "recipePath": "recipes/es.tenkaiscan.json",
       "mode": "declarative",
@@ -10790,7 +10789,7 @@
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
       "requiresCloudflareBypass": true,
-      "sha256": "4e4e8ddaaafcd1e374e11d47d189dc02a06e23145a7f4a3d45ef423ac29ced4a"
+      "sha256": "3d7c000eea0d9138938c2c50640045dd52110d3ae4304b325a7a4e661f30dca4"
     },
     {
       "sourceId": "es.thelibraryofohara",

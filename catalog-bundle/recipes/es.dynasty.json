@@ -4,10 +4,11 @@
   "name": "Dynasty",
   "baseUrl": "https://manhuako.net",
   "lang": "es",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "JSON_API",
   "status": "ACTIVE",
+  "curated": true,
   "maxHtmlBytes": 2097152,
   "catalogPath": "/manga",
   "useHomeFallback": true,
@@ -49,15 +50,15 @@
     },
     "searchRequest": {
       "method": "GET",
-      "pathTemplate": "/api/mangas"
+      "pathTemplate": "/api/mangas?search={query}&page={page}&limit=20&sort=popular"
     },
     "detailsRequest": {
       "method": "GET",
-      "pathTemplate": "/api/mangas/$id"
+      "pathTemplate": "/api/mangas/{id}"
     },
     "chaptersRequest": {
       "method": "GET",
-      "pathTemplate": "/page/{page}"
+      "pathTemplate": "/api/chapters/paginated?manga_id={id}&page={page}&limit=100&sort=desc"
     },
     "pagesRequest": {
       "method": "GET",
@@ -69,10 +70,12 @@
         "$.title",
         "$.name"
       ],
+      "urlTemplate": "{id}-{slug}",
       "urlPath": "$.url",
       "slugPath": "$.slug",
       "idPath": "$.id",
       "coverPaths": [
+        "$.cover_image",
         "$.cover",
         "$.thumbnail",
         "$.image"
@@ -80,11 +83,11 @@
       "pagination": {
         "mode": "PAGE_NUMBER",
         "startPage": 1,
-        "pageSize": 24
+        "pageSize": 20
       }
     },
     "details": {
-      "rootPath": "$.data",
+      "rootPath": "$.",
       "titlePaths": [
         "$.title",
         "$.name"
@@ -94,6 +97,7 @@
         "$.synopsis"
       ],
       "coverPaths": [
+        "$.cover_image",
         "$.cover",
         "$.thumbnail",
         "$.image"
@@ -101,19 +105,35 @@
       "authorsPath": "$.author",
       "artistsPath": "$.artist",
       "genresPath": "$.genres[*]",
-      "statusPath": "$.status"
+      "extraGenrePaths": [
+        "$.type"
+      ],
+      "statusPath": "$.status",
+      "statusMap": {
+        "ongoing": 1,
+        "completed": 2,
+        "hiatus": 6
+      }
     },
     "chapters": {
       "itemsPath": "$.chapters[*]",
+      "urlTemplate": "{id}",
       "namePath": "$.title",
-      "urlPath": "$.url",
       "idPath": "$.id",
       "numberPath": "$.number",
-      "datePath": "$.createdAt"
+      "datePath": "$.created_at",
+      "pagination": {
+        "mode": "JSON_PAGE_COMPARE",
+        "startPage": 1,
+        "pageSize": 100,
+        "currentPagePath": "$.page",
+        "lastPagePath": "$.totalPages"
+      }
     },
     "pages": {
-      "itemsPath": "$.pages[*]",
-      "imageUrlPath": "$.url"
+      "itemsPath": "$[*]",
+      "imageUrlPath": "$.image_url",
+      "orderPath": "$.page_number"
     }
   }
 }

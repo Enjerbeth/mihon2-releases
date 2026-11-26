@@ -4,23 +4,17 @@
   "name": "LectorTmo.online (unoriginal)",
   "baseUrl": "https://lectortmo.online",
   "lang": "es",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
   "preset": "JSON_API",
   "status": "ACTIVE",
+  "curated": true,
   "maxHtmlBytes": 2097152,
   "catalogPath": "/manga",
   "useHomeFallback": true,
-  "headers": {
-    "Referer": "https://lectortmo.online/"
-  },
+  "headers": {},
   "selectors": null,
-  "pipelineSteps": [
-    {
-      "op": "referer_bind",
-      "refererUrl": "https://lectortmo.online/"
-    }
-  ],
+  "pipelineSteps": [],
   "recipePath": "recipes/es.lectortmoonlineunoriginal.json",
   "mode": "declarative",
   "upstreamSourceIds": [
@@ -40,19 +34,79 @@
   "jsonApi": {
     "apiBaseUrl": "https://lectortmo.online",
     "popularRequest": {
-      "pathTemplate": "/api/manga?page={page}"
+      "method": "GET",
+      "pathTemplate": "/api/mangas?order=views&lang=es&per_page=30&page={page}"
     },
     "latestRequest": {
-      "pathTemplate": "/api/manga?page={page}"
+      "method": "GET",
+      "pathTemplate": "/api/mangas?order=date&lang=es&per_page=30&page={page}"
     },
     "searchRequest": {
-      "pathTemplate": "/api/manga?page={page}"
+      "method": "GET",
+      "pathTemplate": "/api/mangas?q={query}&order=views&lang=es&per_page=30&page={page}"
     },
-    "popularMapping": {
+    "detailsRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/mangas/{slug}"
+    },
+    "chaptersRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/mangas/{slug}"
+    },
+    "pagesRequest": {
+      "method": "GET",
+      "pathTemplate": "/api/chapters/{chapterSlug}"
+    },
+    "mangaUrlTemplate": "{baseUrl}/manga/{slug}",
+    "chapterUrlTemplate": "{baseUrl}/{chapterSlug}",
+    "mangaList": {
       "itemsPath": "$.data[*]",
-      "titlePath": "$.title",
+      "titlePaths": [
+        "$.title"
+      ],
+      "urlTemplate": "{slug}",
+      "slugPath": "$.slug",
+      "coverPaths": [
+        "$.cover"
+      ],
+      "pagination": {
+        "mode": "JSON_PAGE_COMPARE",
+        "startPage": 1,
+        "pageSize": 30,
+        "currentPagePath": "$.meta.current_page",
+        "lastPagePath": "$.meta.last_page"
+      }
+    },
+    "details": {
+      "rootPath": "$.data",
+      "titlePaths": [
+        "$.title"
+      ],
+      "descriptionPaths": [
+        "$.synopsis",
+        "$.description"
+      ],
+      "coverPaths": [
+        "$.cover"
+      ],
+      "authorsPath": "$.author",
+      "artistsPath": "$.artist",
+      "genresPath": "$.genres[*].name",
+      "extraGenrePaths": [
+        "$.type"
+      ],
+      "statusPath": "$.status"
+    },
+    "chapters": {
+      "itemsPath": "$.data.chapters[*]",
+      "namePath": "$.title",
       "urlPath": "$.slug",
-      "coverPath": "$.cover"
+      "numberPath": "$.number",
+      "datePath": "$.created_at"
+    },
+    "pages": {
+      "itemsPath": "$.data.pages[*]",
+      "imageUrlPath": "$"
     }
   },
   "requiresCloudflareBypass": true,

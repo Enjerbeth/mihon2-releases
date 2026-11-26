@@ -4,17 +4,35 @@
   "name": "LectorTMO (unoriginal)",
   "baseUrl": "https://lectortmo.vip",
   "lang": "es",
-  "version": 1,
+  "version": 2,
   "versionId": 1,
-  "preset": "JSON_API",
+  "preset": "CSS_GENERIC",
   "status": "ACTIVE",
+  "curated": true,
   "maxHtmlBytes": 2097152,
   "catalogPath": "/manga",
-  "useHomeFallback": true,
+  "searchPath": "/manga/?s={query}&page={page}",
+  "useHomeFallback": false,
+  "chapterOrder": "REVERSE",
   "headers": {
     "Referer": "https://lectortmo.vip/"
   },
-  "selectors": null,
+  "selectors": {
+    "listSelector": ".manga-card-wrapper > a.block",
+    "titleSelector": "h3.manga-title",
+    "linkSelector": "a",
+    "coverSelector": ".manga-cover-wrap img",
+    "nextPageSelector": "#manga-pagination a.next, a.next",
+    "detailsTitleSelector": "main h1",
+    "detailsCoverSelector": "main section img",
+    "descriptionSelector": "main div.prose p, main h2 + div p",
+    "genresSelector": "main a[href*='/manga-genre/']",
+    "chapterSelector": "#mn-chapters-list a.chapter-card",
+    "chapterNameSelector": "span.font-bold",
+    "chapterDateSelector": "div:last-child span",
+    "chapterDateFormat": "dd/MM/yyyy",
+    "pageImgSelector": "main#reader-strip img"
+  },
   "pipelineSteps": [
     {
       "op": "referer_bind",
@@ -37,85 +55,6 @@
   "upstreamExtVersionCode": 106001,
   "versionCode": 106001,
   "upstreamRepo": "keiyoushi/extensions-source",
-  "jsonApi": {
-    "apiBaseUrl": "https://lectortmo.vip",
-    "popularRequest": {
-      "method": "GET",
-      "pathTemplate": "/api/manga?page={page}"
-    },
-    "latestRequest": {
-      "method": "GET",
-      "pathTemplate": "/api/manga?page={page}"
-    },
-    "searchRequest": {
-      "method": "GET",
-      "pathTemplate": "/api/manga?page={page}&q={query}"
-    },
-    "detailsRequest": {
-      "method": "GET",
-      "pathTemplate": "/api/manga/{slug}"
-    },
-    "chaptersRequest": {
-      "method": "GET",
-      "pathTemplate": "/api/manga/{slug}/chapters"
-    },
-    "pagesRequest": {
-      "method": "GET",
-      "pathTemplate": "/api/chapters/{chapterId}/pages"
-    },
-    "mangaList": {
-      "itemsPath": "$.data[*]",
-      "titlePaths": [
-        "$.title",
-        "$.name"
-      ],
-      "urlPath": "$.url",
-      "slugPath": "$.slug",
-      "idPath": "$.id",
-      "coverPaths": [
-        "$.cover",
-        "$.thumbnail",
-        "$.image"
-      ],
-      "pagination": {
-        "mode": "PAGE_NUMBER",
-        "startPage": 1,
-        "pageSize": 24
-      }
-    },
-    "details": {
-      "rootPath": "$.data",
-      "titlePaths": [
-        "$.title",
-        "$.name"
-      ],
-      "descriptionPaths": [
-        "$.description",
-        "$.synopsis"
-      ],
-      "coverPaths": [
-        "$.cover",
-        "$.thumbnail",
-        "$.image"
-      ],
-      "authorsPath": "$.author",
-      "artistsPath": "$.artist",
-      "genresPath": "$.genres[*]",
-      "statusPath": "$.status"
-    },
-    "chapters": {
-      "itemsPath": "$.data[*]",
-      "namePath": "$.title",
-      "urlPath": "$.url",
-      "idPath": "$.id",
-      "numberPath": "$.number",
-      "datePath": "$.createdAt"
-    },
-    "pages": {
-      "itemsPath": "$.data[*]",
-      "imageUrlPath": "$.url"
-    }
-  },
   "requiresCloudflareBypass": true,
   "requiresWebViewCapture": false
 }
