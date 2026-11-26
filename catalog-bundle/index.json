@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-24T11:08:39Z",
-  "catalogRevision": 28,
+  "generatedAt": "2026-11-26T10:59:57Z",
+  "catalogRevision": 29,
   "entries": [
     {
       "sourceId": "anzmanga_com",
@@ -8778,9 +8778,9 @@
     {
       "sourceId": "es.celestialmoon",
       "name": "Celestial Moon",
-      "baseUrl": "https://lecturacelestialmoon.site",
+      "baseUrl": "https://celestialnocturno.sbs",
       "lang": "es",
-      "version": 3,
+      "version": 4,
       "versionId": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -8795,7 +8795,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "8ac507dc3b379e606476ec20477906a56be050484dc99cb39b8f9c3155e05988"
+      "sha256": "9e32eb258bbec1b11079069baab3f02439e25b2a0a20f74b01ca2fb99f225261"
     },
     {
       "sourceId": "es.colorcitoscan",
@@ -10570,7 +10570,7 @@
       "name": "SayManhwa",
       "baseUrl": "https://saymanhwa.net",
       "lang": "es",
-      "version": 3,
+      "version": 4,
       "versionId": 1,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -10586,7 +10586,8 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "5eef9d813aaa2f86bd50ca2a11bdba882fec6b4ea144defee1123420ea112c97"
+      "sha256": "ed919f0e95e59b0c314126583d147a4b17b3a66ef4b5e142386730ce8d9fda5c",
+      "chapterOrder": "BY_NUMBER_DESC"
     },
     {
       "sourceId": "es.seinagi",
@@ -11177,9 +11178,9 @@
     {
       "sourceId": "ikigai_mangas",
       "name": "Ikigai Mangas",
-      "baseUrl": "https://visorikigai.gettocaboca.com",
+      "baseUrl": "https://visualikigai.cmpunjabrashancard.pk",
       "lang": "es",
-      "version": 2,
+      "version": 3,
       "versionId": 2,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
@@ -11196,7 +11197,7 @@
       ],
       "license": "Apache-2.0",
       "attribution": "The Tachiyomi / Keiyoushi Contributors",
-      "sha256": "ab528255c1b024e5cb4edadeff150f5bd9e9b2b01c10127b6b6addd7efdc7bcf"
+      "sha256": "b8c5cb2b64cb301b2624cf2785822dad511f1b804779ec54ea30ad788a233b77"
     },
     {
       "sourceId": "infrafandub_com",

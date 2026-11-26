@@ -745,6 +745,34 @@ class TestValidateCatalogV2(unittest.TestCase):
         self.assertFalse(ok_gql)
         self.assertTrue(any("without bodyTemplate, graphqlQuery" in e for e in errs_gql))
 
+    def test_validates_curated_chapter_order_single_post_and_search_selectors(self):
+        valid_rec = self._base_v2_recipe(
+            sourceId="es.curated_sel",
+            recipePath="recipes/es.curated_sel.json",
+            curated=True,
+            lockedFields=["selectors", "searchPath"],
+            chapterOrder="BY_NUMBER_DESC",
+            singlePostAsChapter=True,
+            selectors={
+                "listSelector": "div.manga",
+                "searchListSelector": "div.search-item",
+                "searchTitleSelector": "h4.title",
+                "searchLinkSelector": "a.read",
+                "searchCoverSelector": "img.thumb",
+            },
+        )
+        ok, errs = validate_recipe(valid_rec, base_dir=BUNDLE_ROOT)
+        self.assertTrue(ok, f"Expected valid recipe, got: {errs}")
+
+        bad_order = self._base_v2_recipe(chapterOrder="RANDOM_ORDER")
+        self.assertFalse(validate_recipe(bad_order, base_dir=BUNDLE_ROOT)[0])
+
+        bad_locked = self._base_v2_recipe(lockedFields=[""])
+        self.assertFalse(validate_recipe(bad_locked, base_dir=BUNDLE_ROOT)[0])
+
+        bad_curated = self._base_v2_recipe(curated="yes")
+        self.assertFalse(validate_recipe(bad_curated, base_dir=BUNDLE_ROOT)[0])
+
 
 if __name__ == "__main__":
     unittest.main()

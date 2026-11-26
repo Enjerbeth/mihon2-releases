@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "sourceId": "es.celestialmoon",
   "name": "Celestial Moon",
-  "baseUrl": "https://lecturacelestialmoon.site",
+  "baseUrl": "https://celestialnocturno.sbs",
   "lang": "es",
-  "version": 3,
+  "version": 4,
   "versionId": 2,
   "preset": "CSS_GENERIC",
   "status": "ACTIVE",
@@ -12,7 +12,7 @@
   "catalogPath": "",
   "useHomeFallback": true,
   "headers": {
-    "Referer": "https://lecturacelestialmoon.site/"
+    "Referer": "https://celestialnocturno.sbs/"
   },
   "selectors": {
     "listSelector": "article, div.manga-item, div.page-item-detail",
@@ -24,7 +24,7 @@
   "pipelineSteps": [
     {
       "op": "referer_bind",
-      "refererUrl": "https://lecturacelestialmoon.site/"
+      "refererUrl": "https://celestialnocturno.sbs/"
     }
   ],
   "recipePath": "recipes/es.celestialmoon.json",
@@ -35,6 +35,7 @@
   "license": "Apache-2.0",
   "attribution": "The Tachiyomi / Keiyoushi Contributors",
   "mirrors": [
+    "https://celestialnocturno.sbs",
     "https://lecturacelestialmoon.site"
   ],
   "iconUrl": "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main/src/es/celestialmoon/res/mipmap-xhdpi/ic_launcher.png",

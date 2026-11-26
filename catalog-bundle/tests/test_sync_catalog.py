@@ -2704,6 +2704,114 @@ class TestSyncCatalogV2(unittest.TestCase):
                 f"Expected sha256 mismatch error in {errs_mismatch}",
             )
 
+    def test_curated_and_locked_fields_protect_from_overwrite_and_downgrade(self):
+        import tempfile
+
+        curated_recipe = {
+            "schemaVersion": 1,
+            "sourceId": "es.curated_test",
+            "name": "Curated Test",
+            "baseUrl": "https://curated.example",
+            "lang": "es",
+            "version": 3,
+            "versionId": 1,
+            "preset": "CSS_GENERIC",
+            "status": "ACTIVE",
+            "maxHtmlBytes": 2097152,
+            "curated": True,
+            "lockedFields": ["baseUrl", "name"],
+            "searchPath": "/buscar?q={query}",
+            "chapterOrder": "REVERSE",
+            "singlePostAsChapter": True,
+            "selectors": {
+                "listSelector": "div.card",
+                "titleSelector": "h3.title",
+                "linkSelector": "a.card-link",
+                "chapterSelector": "ul.custom-ch a",
+            },
+        }
+        self.assertTrue(sync_catalog._is_specialized_recipe(curated_recipe))
+
+        merged = sync_catalog._merge_upstream_metadata_into_recipe(
+            curated_recipe,
+            {
+                "sourceId": 555,
+                "name": "Upstream Hijack Name",
+                "baseUrl": "https://hijack.example",
+                "pkgName": "eu.kanade.tachiyomi.extension.es.curated",
+                "versionCode": 9,
+            },
+        )
+        self.assertEqual(merged["baseUrl"], "https://curated.example")
+        self.assertEqual(merged["name"], "Curated Test")
+        self.assertEqual(merged["pkgName"], "eu.kanade.tachiyomi.extension.es.curated")
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            rdir = os.path.join(tmpdir, "recipes")
+            os.makedirs(rdir, exist_ok=True)
+            rpath = os.path.join(rdir, "es.curated_test.json")
+            with open(rpath, "w", encoding="utf-8", newline="\n") as f:
+                json.dump(curated_recipe, f, indent=2, ensure_ascii=False)
+                f.write("\n")
+
+            def failing_fetcher(url, **kw):
+                return 503, "Service Unavailable", "HTTP 503"
+
+            reports = sync_catalog.sync_existing_recipes(
+                rdir,
+                ({}, {}, {}),
+                apply=True,
+                probe_live=True,
+                fetcher=failing_fetcher,
+                langs="es",
+                probe_chapters=True,
+            )
+            self.assertEqual(len(reports), 1)
+            self.assertIn("CURATED_SMOKE_WARN", reports[0][1])
+
+            with open(rpath, "r", encoding="utf-8") as f:
+                saved = json.load(f)
+            self.assertEqual(saved["status"], "ACTIVE")
+            self.assertEqual(saved["selectors"]["chapterSelector"], "ul.custom-ch a")
+            self.assertEqual(saved["searchPath"], "/buscar?q={query}")
+
+    def test_new_recipe_with_junk_or_dup_titles_stays_draft(self):
+        recipe = {
+            "schemaVersion": 1,
+            "sourceId": "es.junk_new",
+            "name": "Junk New",
+            "baseUrl": "https://junknew.example",
+            "lang": "es",
+            "version": 1,
+            "versionId": 1,
+            "preset": "CSS_GENERIC",
+            "status": "DRAFT",
+            "maxHtmlBytes": 2097152,
+            "catalogPath": "/manga",
+            "selectors": {
+                "listSelector": "div.card",
+                "titleSelector": "span",
+                "linkSelector": "a",
+            },
+        }
+        junk_html = "".join(
+            f'<div class="card"><span>NEW</span><a href="/m/{i}">NEW</a></div>'
+            for i in range(1, 6)
+        )
+
+        def fetcher(url, **kw):
+            return 200, junk_html, "OK"
+
+        ok, cnt, msg, upd = sync_catalog.run_http_smoke_test(
+            recipe,
+            fetcher=fetcher,
+            is_existing_active=False,
+        )
+        self.assertFalse(ok)
+        self.assertEqual(cnt, 5)
+        self.assertEqual(msg, "JUNK_OR_DUP_TITLES")
+        self.assertEqual(upd.get("status"), "DRAFT")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -390,7 +390,11 @@
         "statusSelector": { "type": ["string", "null"] },
         "chapterNameSelector": { "type": ["string", "null"] },
         "chapterDateSelector": { "type": ["string", "null"] },
-        "chapterDateFormat": { "type": ["string", "null"] }
+        "chapterDateFormat": { "type": ["string", "null"] },
+        "searchListSelector": { "type": ["string", "null"] },
+        "searchTitleSelector": { "type": ["string", "null"] },
+        "searchLinkSelector": { "type": ["string", "null"] },
+        "searchCoverSelector": { "type": ["string", "null"] }
       },
       "required": ["listSelector"],
       "additionalProperties": true
@@ -399,6 +403,20 @@
       "type": "boolean"
     },
     "requiresWebViewCapture": {
+      "type": "boolean"
+    },
+    "curated": {
+      "type": "boolean"
+    },
+    "lockedFields": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "chapterOrder": {
+      "type": ["string", "null"],
+      "enum": ["AS_IS", "REVERSE", "BY_NUMBER_DESC", null]
+    },
+    "singlePostAsChapter": {
       "type": "boolean"
     },
     "catalogPath": {

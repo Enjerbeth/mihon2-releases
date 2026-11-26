@@ -431,7 +431,7 @@ def extract_html_selectors(kt_text: str) -> dict[str, str]:
         if m:
             title_sel = m.group(1)
     if title_sel:
-        selectors["titleSelector"] = title_sel
+        selectors["detailsTitleSelector"] = title_sel
 
     chapter_sel = extract_selector(kt_text, "chapterListSelector")
     if chapter_sel:

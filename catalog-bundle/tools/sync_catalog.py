@@ -265,6 +265,27 @@ CONTENT_WARNING_MAP = {
 
 MIN_SMOKE_ITEMS = 3
 
+_SMOKE_JUNK_TITLE_RE = re.compile(
+    r"^(new|nuevo|novela|novel|manga|manhwa|manhua|hot|top|\+18|18\+|leer( ahora| cap[ií]tulo| m[aá]s)?|"
+    r"read( now| more| chapter)?|ver( m[aá]s)?|cap[ií]tulo|chapter|\d+([.,]\d+)?%?)$",
+    re.I,
+)
+_CURATED_PROTECTED_KEYS = frozenset(
+    {"selectors", "searchPath", "catalogPath", "headers", "chapterOrder", "singlePostAsChapter"}
+)
+
+
+def _is_junk_smoke_title(raw):
+    text = str(raw or "").strip()
+    return (not text) or bool(_SMOKE_JUNK_TITLE_RE.match(text))
+
+
+def _locked_field_set(recipe):
+    locked = set(recipe.get("lockedFields") or [])
+    if recipe.get("curated") is True:
+        locked |= _CURATED_PROTECTED_KEYS
+    return locked
+
 _DOMAIN_RATE_LOCK = threading.Lock()
 _DOMAIN_NEXT_ALLOWED = {}
 _DEFAULT_DOMAIN_INTERVAL_SEC = 0.25
@@ -3071,6 +3092,8 @@ def run_http_smoke_test(
     auto_fix_chapters=False,
 ):
     """Verify source responds cleanly and yields >= 3 valid items, with redirect auto-adoption."""
+    if recipe.get("curated") is True:
+        auto_fix_chapters = False
     smoke_requests = build_smoke_requests(recipe)
     orig_base = recipe["baseUrl"].rstrip("/")
     orig_domain = normalize_domain(orig_base)
@@ -3121,6 +3144,31 @@ def run_http_smoke_test(
 
             items = extract_items_for_smoke(recipe, body_text)
             if len(items) >= MIN_SMOKE_ITEMS:
+                if not is_existing_active and not recipe.get("curated"):
+                    non_empty_titles = [
+                        str(it.get("title", "")).strip()
+                        for it in items
+                        if isinstance(it, dict) and str(it.get("title", "")).strip()
+                    ]
+                    junk_count = sum(1 for t in non_empty_titles if _is_junk_smoke_title(t))
+                    distinct_titles = {t.lower() for t in non_empty_titles}
+                    if non_empty_titles and (
+                        (junk_count / len(non_empty_titles) > 0.5)
+                        or (len(non_empty_titles) >= 4 and len(distinct_titles) < 2)
+                    ):
+                        details = {
+                            "category": "NEEDS_PRIMITIVE",
+                            "subReason": "JUNK_OR_DUP_TITLES",
+                            "httpStatus": status_code,
+                            "headers": probe.get("headers") or {},
+                            "bodySample": body_text[:4096],
+                            "finalUrl": final_url,
+                            "domainChanged": False,
+                            "domainAdopted": False,
+                            "itemsFound": len(items),
+                        }
+                        res = (False, len(items), "JUNK_OR_DUP_TITLES", {"status": "DRAFT"})
+                        return (*res, details) if return_details else res
                 if probe_chapters:
                     ch_res = probe_chapters_for_recipe(
                         recipe,
@@ -4658,19 +4706,28 @@ def sync_existing_recipes(
 
         if probe_live or fetcher is not None:
             is_active = recipe.get("status") == "ACTIVE"
+            is_curated = recipe.get("curated") is True
+            locked = _locked_field_set(recipe)
             smoke_ok, _, smoke_msg, updates = run_http_smoke_test(
                 recipe,
                 fetcher=fetcher,
                 is_existing_active=is_active,
                 probe_chapters=probe_chapters,
-                auto_fix_chapters=probe_chapters,
+                auto_fix_chapters=False if is_curated else probe_chapters,
             )
             for k, v in updates.items():
+                if k in locked:
+                    continue
+                if is_curated and is_active and k == "status" and v in ("DISABLED", "QUARANTINED"):
+                    continue
                 if recipe.get(k) != v:
                     recipe[k] = v
                     changes.append(f"SMOKE_{k.upper()}={v}")
-            if not smoke_ok and f"SMOKE_{updates.get('status', '')}" not in changes:
-                changes.append(f"SMOKE:{smoke_msg}")
+            if not smoke_ok:
+                if is_curated and is_active:
+                    changes.append(f"CURATED_SMOKE_WARN:{smoke_msg}")
+                elif f"SMOKE_{updates.get('status', '')}" not in changes:
+                    changes.append(f"SMOKE:{smoke_msg}")
 
         if apply and changes:
             base_dir = os.path.dirname(os.path.abspath(recipes_dir))
@@ -4691,6 +4748,12 @@ def sync_existing_recipes(
 def _is_specialized_recipe(recipe):
     if not isinstance(recipe, dict):
         return False
+    if recipe.get("curated") is True or recipe.get("lockedFields"):
+        return True
+    if recipe.get("searchPath") or recipe.get("singlePostAsChapter") is True:
+        return True
+    if (recipe.get("chapterOrder") or "AS_IS") != "AS_IS":
+        return True
     if recipe.get("preset") == "JSON_API":
         return True
     if recipe.get("family") and recipe.get("family") != "STANDARD":
@@ -4706,6 +4769,7 @@ def _is_specialized_recipe(recipe):
 
 def _merge_upstream_metadata_into_recipe(recipe, cand, repo_meta=None):
     updated = copy.deepcopy(recipe)
+    locked = _locked_field_set(updated)
     merged_sids = sorted(
         {
             int(s)
@@ -4713,29 +4777,35 @@ def _merge_upstream_metadata_into_recipe(recipe, cand, repo_meta=None):
             if s is not None
         }
     )
-    updated["upstreamSourceIds"] = merged_sids
-    if cand.get("sourceId") is not None:
+    if "upstreamSourceIds" not in locked:
+        updated["upstreamSourceIds"] = merged_sids
+    if cand.get("sourceId") is not None and "upstreamSourceId" not in locked:
         updated["upstreamSourceId"] = int(cand["sourceId"])
     norm_repo = normalize_upstream_repo(cand.get("upstreamRepo"))
-    if norm_repo:
+    if norm_repo and "upstreamRepo" not in locked:
         updated["upstreamRepo"] = norm_repo
-    if cand.get("pkgName"):
+    if cand.get("pkgName") and "pkgName" not in locked:
         updated["pkgName"] = cand["pkgName"]
-    if cand.get("iconUrl") and validate_ssrf(cand["iconUrl"])[0]:
+    if cand.get("iconUrl") and validate_ssrf(cand["iconUrl"])[0] and "iconUrl" not in locked:
         updated["iconUrl"] = cand["iconUrl"]
     vc = cand.get("versionCode") or cand.get("extVersionCode")
     if vc:
-        updated["upstreamExtVersionCode"] = int(vc)
-        updated["versionCode"] = int(vc)
+        if "upstreamExtVersionCode" not in locked:
+            updated["upstreamExtVersionCode"] = int(vc)
+        if "versionCode" not in locked:
+            updated["versionCode"] = int(vc)
     if repo_meta and repo_meta.get("licenseOk"):
-        updated["license"] = repo_meta["license"]
-        if repo_meta.get("attribution"):
+        if "license" not in locked:
+            updated["license"] = repo_meta["license"]
+        if repo_meta.get("attribution") and "attribution" not in locked:
             updated["attribution"] = repo_meta["attribution"]
-        if repo_meta.get("gradle"):
+        if repo_meta.get("gradle") and "versionId" not in locked:
             updated["versionId"] = int(cand.get("versionId") or repo_meta["gradle"].get("versionId") or updated.get("versionId") or 1)
     else:
-        updated["license"] = updated.get("license") or "Apache-2.0"
-        updated["attribution"] = updated.get("attribution") or cand.get("defaultAttribution") or "Upstream Contributors"
+        if "license" not in locked:
+            updated["license"] = updated.get("license") or "Apache-2.0"
+        if "attribution" not in locked:
+            updated["attribution"] = updated.get("attribution") or cand.get("defaultAttribution") or "Upstream Contributors"
     return updated
 
 
@@ -4920,8 +4990,22 @@ def _build_candidate_recipe_for_attempt(
                 recipe["authPreFlight"] = preflight
 
     if existing_recipe:
-        for keep_key in ("accountSync", "authPreFlight", "listPipelineSteps", "chaptersPipelineSteps", "querySigner"):
-            if existing_recipe.get(keep_key) is not None and recipe.get(keep_key) is None:
+        for keep_key in (
+            "accountSync",
+            "authPreFlight",
+            "listPipelineSteps",
+            "chaptersPipelineSteps",
+            "querySigner",
+            "searchPath",
+            "catalogPath",
+            "headers",
+            "useHomeFallback",
+            "chapterOrder",
+            "singlePostAsChapter",
+            "curated",
+            "lockedFields",
+        ):
+            if existing_recipe.get(keep_key) is not None and (recipe.get(keep_key) is None or keep_key in ("searchPath", "catalogPath", "headers", "useHomeFallback", "chapterOrder", "singlePostAsChapter", "curated", "lockedFields")):
                 recipe[keep_key] = copy.deepcopy(existing_recipe[keep_key])
 
     has_unresolved, unresolved_reasons = has_unresolved_native_primitives(
@@ -5096,6 +5180,7 @@ def _evaluate_candidate_group_live(job, fetcher=None, timeout=10, include_nsfw=F
 
         # Run live probe for SPECIALIZED, DECLARATIVE, or UNMAPPED_THEME (for accurate WAF/Down vs Theme classification)
         is_existing_active = bool(existing_recipe and existing_recipe.get("status") == "ACTIVE")
+        is_curated = recipe.get("curated") is True
         smoke_ok, items_cnt, smoke_msg, updates, details = run_http_smoke_test(
             recipe,
             fetcher=fetcher,
@@ -5105,7 +5190,7 @@ def _evaluate_candidate_group_live(job, fetcher=None, timeout=10, include_nsfw=F
             return_details=True,
             include_cloudflare=include_cloudflare,
             probe_chapters=probe_chapters,
-            auto_fix_chapters=probe_chapters,
+            auto_fix_chapters=False if is_curated else probe_chapters,
         )
 
         # If an existing specialized recipe failed on its saved baseUrl AND upstream has a different URL, try upstream URL too
@@ -5187,7 +5272,10 @@ def _evaluate_candidate_group_live(job, fetcher=None, timeout=10, include_nsfw=F
             continue
 
         if smoke_ok:
-            recipe.update(updates)
+            locked = _locked_field_set(recipe)
+            for k, v in updates.items():
+                if k not in locked:
+                    recipe[k] = v
             recipe["status"] = "ACTIVE"
             if updates.get("requiresCloudflareBypass") or details.get("requiresCloudflareBypass"):
                 recipe["requiresCloudflareBypass"] = True

@@ -32,6 +32,7 @@ SUPPORTED_SCHEMA_VERSIONS = (1, 2)
 ALLOWED_PRESETS = {"MADARA", "MANGA_THEMESIA", "MANGA_READER_CMS", "CSS_GENERIC", "JSON_API"}
 ALLOWED_STATUSES = {"DRAFT", "ACTIVE", "QUARANTINED", "DISABLED"}
 ALLOWED_FAMILIES = {"STANDARD", "QWIK_SERIES", "INERTIA_SSR", "DATATABLES_AJAX", "MULTI_VIEW_HTML"}
+ALLOWED_CHAPTER_ORDERS = {"AS_IS", "REVERSE", "BY_NUMBER_DESC"}
 ALLOWED_HTTP_METHODS = {"GET", "POST"}
 ALLOWED_PAGINATION_MODES = {
     "PAGE_NUMBER",
@@ -1568,6 +1569,21 @@ def validate_recipe(recipe, base_dir=BUNDLE_ROOT, expected_filename=None):
     if "useHomeFallback" in recipe and not isinstance(recipe["useHomeFallback"], bool):
         errors.append("useHomeFallback must be a boolean")
 
+    if "curated" in recipe and not isinstance(recipe["curated"], bool):
+        errors.append("curated must be a boolean")
+
+    if "singlePostAsChapter" in recipe and not isinstance(recipe["singlePostAsChapter"], bool):
+        errors.append("singlePostAsChapter must be a boolean")
+
+    if "lockedFields" in recipe and recipe["lockedFields"] is not None:
+        lf = recipe["lockedFields"]
+        if not isinstance(lf, list) or any(not isinstance(x, str) or not x.strip() for x in lf):
+            errors.append("lockedFields must be an array of non-empty strings")
+
+    if "chapterOrder" in recipe and recipe["chapterOrder"] is not None:
+        if recipe["chapterOrder"] not in ALLOWED_CHAPTER_ORDERS:
+            errors.append(f"Invalid chapterOrder: {recipe['chapterOrder']}")
+
     if "catalogPath" in recipe and recipe["catalogPath"] is not None and not isinstance(recipe["catalogPath"], str):
         errors.append("catalogPath must be a string")
 
@@ -1673,6 +1689,10 @@ def validate_recipe(recipe, base_dir=BUNDLE_ROOT, expected_filename=None):
                 "chapterNameSelector",
                 "chapterDateSelector",
                 "chapterDateFormat",
+                "searchListSelector",
+                "searchTitleSelector",
+                "searchLinkSelector",
+                "searchCoverSelector",
             ):
                 if s_field in selectors and selectors[s_field] is not None and not isinstance(selectors[s_field], str):
                     errors.append(f"selectors.{s_field} must be a string or null")

@@ -2,16 +2,17 @@
   "schemaVersion": 2,
   "sourceId": "ikigai_mangas",
   "name": "Ikigai Mangas",
-  "baseUrl": "https://visorikigai.gettocaboca.com",
+  "baseUrl": "https://visualikigai.cmpunjabrashancard.pk",
   "lang": "es",
-  "version": 2,
+  "version": 3,
   "preset": "CSS_GENERIC",
   "family": "QWIK_SERIES",
   "status": "ACTIVE",
+  "curated": true,
   "maxHtmlBytes": 2097152,
   "headers": {
-    "Referer": "https://visorikigai.gettocaboca.com/",
-    "Origin": "https://visorikigai.gettocaboca.com"
+    "Referer": "https://visualikigai.cmpunjabrashancard.pk/",
+    "Origin": "https://visualikigai.cmpunjabrashancard.pk"
   },
   "selectors": {
     "listSelector": "a[href^='/series/']:not(:has(img.w-10))",
@@ -54,13 +55,14 @@
     },
     {
       "op": "referer_bind",
-      "refererUrl": "https://visorikigai.gettocaboca.com/"
+      "refererUrl": "https://visualikigai.cmpunjabrashancard.pk/"
     }
   ],
   "upstreamSourceId": 7749406396573482811,
   "upstreamRepo": "keiyoushi/extensions-source",
   "mirrors": [
-    "https://visorikigai.gettocaboca.com"
+    "https://visualikigai.com",
+    "https://visualikigai.cmpunjabrashancard.pk"
   ],
   "versionId": 2,
   "upstreamExtVersionCode": 106044,
