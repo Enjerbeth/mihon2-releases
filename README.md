@@ -5,7 +5,7 @@ Repositorio público de lanzamientos APK y catálogo abierto en español para **
 ## Descargas
 
 - **Último APK (`arm64-v8a` y `universal`):** https://github.com/Enjerbeth/mihon2-releases/releases/latest
-- **Catálogo remoto (`catalog/index.json`):** revisión `29` (52 fuentes declarativas activas/mantenidas)
+- **Catálogo remoto (`catalog/index.json`):** revisión `31` (52 fuentes declarativas activas/mantenidas)
 
 ## Contenido
 
