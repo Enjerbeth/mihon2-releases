@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-23T20:00:30Z",
-  "catalogRevision": 29,
+  "generatedAt": "2026-11-27T10:31:30Z",
+  "catalogRevision": 31,
   "recipes": [
     {
       "schemaVersion": 1,
@@ -36,7 +36,7 @@
         "https://www.anzmanga25.com"
       ],
       "upstreamSourceId": 7374498796507972405,
-      "upstreamExtVersionCode": 106002,
+      "upstreamExtVersionCode": 106003,
       "upstreamRepo": "keiyoushi/extensions-source"
     },
     {
@@ -418,7 +418,7 @@
       "name": "DragonTranslation.org",
       "baseUrl": "https://dragontranslation.org",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "preset": "MADARA",
       "status": "ACTIVE",
       "catalogPath": "/manga",
@@ -432,17 +432,6 @@
         "chapterSelector": "li.wp-manga-chapter a",
         "pageImgSelector": "div.reading-content img.wp-manga-chapter-img, div.reading-content img"
       },
-      "pipelineSteps": [
-        {
-          "op": "css_select",
-          "selector": "div.page-item-detail",
-          "attribute": "innerHTML"
-        },
-        {
-          "op": "trim_normalize",
-          "collapseWhitespace": true
-        }
-      ],
       "upstreamSourceId": 4647982373411241498,
       "upstreamRepo": "keiyoushi/extensions-source",
       "mirrors": [
@@ -564,7 +553,7 @@
       ],
       "upstreamSourceId": 8098539940032331958,
       "upstreamRepo": "keiyoushi/extensions-source",
-      "upstreamExtVersionCode": 106040,
+      "upstreamExtVersionCode": 106041,
       "querySigner": {
         "algorithm": "sbox_xor_cbc",
         "pathPrefix": "/api",
@@ -617,7 +606,7 @@
       "mirrors": [
         "https://m440.in"
       ],
-      "upstreamExtVersionCode": 106004,
+      "upstreamExtVersionCode": 106005,
       "catalogPath": "",
       "useHomeFallback": true,
       "requiresWebViewCapture": true,
@@ -739,12 +728,12 @@
       "name": "Ikigai Mangas",
       "baseUrl": "https://visualikigai.cmpunjabrashancard.pk",
       "lang": "es",
-      "version": 3,
+      "version": 4,
       "preset": "CSS_GENERIC",
       "status": "ACTIVE",
-      "maxHtmlBytes": 2097152,
+      "maxHtmlBytes": 3145728,
       "selectors": {
-        "listSelector": "a[href^='/series/']:not(:has(img.w-10))",
+        "listSelector": "a[href^='/series/']:not([href='/series/']):not([href*='?']):not(:has(img.w-10))",
         "titleSelector": "h2, h3, h4, span.font-bold",
         "linkSelector": "a[href^='/series/']",
         "chapterSelector": "li a[href^='/capitulo/']",
@@ -771,7 +760,8 @@
       "upstreamRepo": "keiyoushi/extensions-source",
       "mirrors": [
         "https://visualikigai.com",
-        "https://visualikigai.cmpunjabrashancard.pk"
+        "https://visualikigai.cmpunjabrashancard.pk",
+        "https://visorikigai.gettocaboca.com"
       ],
       "versionId": 2,
       "upstreamExtVersionCode": 106044
@@ -1352,7 +1342,7 @@
       "mirrors": [
         "https://manhwaweb.com"
       ],
-      "upstreamExtVersionCode": 106016
+      "upstreamExtVersionCode": 106017
     },
     {
       "schemaVersion": 1,
